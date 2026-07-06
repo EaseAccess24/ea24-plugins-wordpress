@@ -1,0 +1,290 @@
+{
+  "status": {
+    "notConnected": "No connectat",
+    "healthy": "Connectat · Sa",
+    "attention": "Connectat · Necessita atenció"
+  },
+  "common": {
+    "appName": "EaseAccess24 Accessibilitat",
+    "appNameShort": "EaseAccess24",
+    "saving": "Desant…",
+    "cancel": "Cancel·lar",
+    "retry": "Reintentar",
+    "updateKey": "Actualitzar clau"
+  },
+  "onboarding": {
+    "title": "Connecta el teu lloc web a EaseAccess24",
+    "subtitle": "Enganxa la teva Clau de Widget (o l'extracte complet de l'script) per afegir el widget d'accessibilitat a aquest lloc.",
+    "emptyTitle": "Encara no tens una Clau de Widget?",
+    "emptyBody": "Crea la teva organització, tria un pla i afegeix aquest domini a EaseAccess24. Obtindràs una Clau de Widget per enganxar aquí.",
+    "getKeyCta": "Obtenir la teva Clau de Widget",
+    "fieldLabel": "Clau de Widget o extracte d'script",
+    "helper": "Enganxa només la clau (per exemple, ABC123) o l'extracte complet de <script> — en extreurem la clau.",
+    "placeholder": "ABC123 —o— <script async src=\"https://widget.easeaccess24.com/sdk.js?key=ABC123\"></script>",
+    "whereLink": "On la trobo?",
+    "connectCta": "Connectar i Verificar",
+    "revealKey": "Revelar",
+    "hideKey": "Amagar",
+    "copyKey": "Copiar",
+    "copied": "Copiat",
+    "errors": {
+      "empty": "Enganxa primer la teva Clau de Widget o l'extracte d'script.",
+      "noKey": "No hem pogut trobar una Clau de Widget en això. Enganxa només la clau, o l'extracte complet de l'script que la conté.",
+      "network": "No hem pogut desar la teva clau. Comprova la teva connexió i torna-ho a provar."
+    }
+  },
+  "stepper": {
+    "aria": "Progrés de la configuració",
+    "paste": "Enganxar",
+    "validate": "Validar",
+    "healthCheck": "Comprovació d'estat",
+    "done": "Fet",
+    "state": {
+      "done": "completat",
+      "current": "pas actual",
+      "upcoming": "proper"
+    }
+  },
+  "dashboard": {
+    "statusBadge": "Connectat",
+    "title": "Connexió",
+    "subtitle": "La teva Clau de Widget està desada. Executa una Comprovació d'estat per confirmar que el widget es carrega i és visible al teu lloc.",
+    "keyLabel": "Clau de Widget",
+    "domainLabel": "Domini",
+    "lastCheckLabel": "Última comprovació d'estat",
+    "neverChecked": "Encara no comprovat",
+    "healthNotRunYet": "No s'ha executat cap comprovació encara"
+  },
+  "health": {
+    "heading": "Comprovació d'estat",
+    "intro": "Això s'executa al teu navegador: carrega el teu lloc i comprova si el widget apareix realment. No s'envia res a EaseAccess24.",
+    "run": "Executar Comprovació d'estat",
+    "rerun": "Executar de nou",
+    "running": "Executant la Comprovació d'estat…",
+    "resultsHeading": "Resultat",
+    "checklistHeading": "Què hem comprovat",
+    "advisoriesHeading": "També val la pena comprovar",
+    "timeoutTitle": "No hem pogut completar la comprovació",
+    "timeoutBody": "La comprovació no va acabar a temps. Això pot passar si la pàgina va trigar a carregar-se o si una configuració de seguretat la va bloquejar. Torna a provar."
+  },
+  "checklist": {
+    "keySaved": "Clau del widget desada",
+    "sdkTag": "Etiqueta del script del widget afegida al vostre lloc",
+    "sdkReachable": "El script del widget és accessible",
+    "widgetVisible": "El widget apareix i és visible",
+    "singleInstance": "Exactament un widget a la pàgina",
+    "status": {
+      "pass": "superat",
+      "fail": "ha fallat",
+      "warn": "advertència",
+      "info": "informació",
+      "na": "no aplicable"
+    }
+  },
+  "actions": {
+    "openDashboard": "Obre el tauler d'EaseAccess24",
+    "retry": "Torna a executar la comprovació"
+  },
+  "diagnostics": {
+    "whyLabel": "Per què",
+    "fixLabel": "Com arreglar-ho",
+    "OK": {
+      "title": "El vostre widget està actiu",
+      "why": "Hem carregat el vostre lloc i el widget d'accessibilitat ha aparegut i és visible.",
+      "fix": "Res a fer: ja ho teniu tot a punt."
+    },
+    "DOMAIN_NOT_ALLOWED": {
+      "title": "Domini no permès / clau no autoritzada",
+      "why": "El script del widget es va carregar però va informar que aquest domini no està autoritzat per a la vostra clau de widget. El mateix missatge cobreix una clau incorrecta i un domini que encara no s'ha afegit.",
+      "fix": "Obriu el vostre tauler d'EaseAccess24, confirmeu que aquest domini exacte s'ha afegit a la vostra organització, comproveu que la clau del widget coincideixi i, a continuació, torneu a executar la comprovació."
+    },
+    "SDK_UNREACHABLE": {
+      "title": "El script del widget no s'ha pogut carregar",
+      "why": "El vostre navegador no ha pogut accedir a l'URL del script del widget. Això sol ser un problema de xarxa, CDN o memòria cau, més que un problema de configuració.",
+      "fix": "Comproveu la xarxa/CDN del vostre lloc, esborreu les memòries cau i torneu a executar la comprovació."
+    },
+    "WIDGET_NOT_INITIALIZED": {
+      "title": "El widget no s'ha carregat",
+      "why": "El script del widget està al seu lloc, però no ha aparegut cap widget visible i no s'ha informat de cap raó específica. Causes comunes: el domini encara no s'ha afegit, la clau és incorrecta o s'ha bloquejat un script.",
+      "fix": "Confirmeu aquest domini i la clau del widget al vostre tauler d'EaseAccess24, assegureu-vos que res no estigui bloquejant el script i, a continuació, torneu a executar la comprovació."
+    },
+    "DUPLICATE_WIDGET": {
+      "title": "S'ha detectat un widget duplicat",
+      "why": "Més d'un widget s'està carregant a la pàgina. Això normalment significa que l'SDK s'ha afegit dues vegades, per exemple, tant per aquest connector com per un fragment manual al vostre tema.",
+      "fix": "Manteniu només un mètode. Si heu afegit el script al vostre tema o a un altre connector, traieu-lo i deixeu que aquest connector se'n encarregui. Mai no us traiem els scripts."
+    },
+    "POSSIBLE_DUPLICATE_WIDGET": {
+      "title": "Possible widget duplicat",
+      "why": "Hem trobat indicis d'un segon script de widget (per exemple, una etiqueta de script addicional), però no hem pogut confirmar un segon widget visible; la memòria cau pot ocultar això.",
+      "fix": "Assegureu-vos que el widget només s'afageix una vegada. Si teniu un fragment manual al vostre tema, traieu-lo i confieu en aquest connector."
+    },
+    "OPTIMIZER_INTERFERENCE": {
+      "title": "Pot haver-hi interferències d'un connector de memòria cau o optimització",
+      "why": "S'ha desat una clau de widget, però el script del widget no estava present a la pàgina; un connector de memòria cau/optimització podria haver-lo eliminat o alterat.",
+      "fix": "Excloeu el script d'EaseAccess24 de la memòria cau/optimització. Properament hi haurà recomanacions detallades per connector a la secció de Compatibilitat."
+    },
+    "STAGING_DETECTED": {
+      "title": "S'ha detectat un entorn de staging",
+      "why": "Això sembla un lloc de staging o desenvolupament. El widget només es renderitza en dominis autoritzats a EaseAccess24, de manera que pot no aparèixer aquí.",
+      "fix": "Això és el que s'espera en staging. Afegiu aquest domini al vostre tauler si voleu que el widget aparegui aquí, o proveu al vostre domini en directe."
+    },
+    "LOCALHOST_DETECTED": {
+      "title": "S'ha detectat un entorn local",
+      "why": "Aquest lloc s'està executant a localhost. El widget només es renderitza en dominis autoritzats a EaseAccess24, per la qual cosa no apareixerà localment.",
+      "fix": "Això és el que s'espera localment. Proveu al vostre domini en directe i autoritzat per veure el widget."
+    },
+    "KEY_INVALID": {
+      "title": "Clau del widget no acceptada",
+      "why": "La clau del widget ha estat rebutjada.",
+      "fix": "Comproveu la clau al vostre tauler d'EaseAccess24 i deseu-la de nou."
+    },
+    "SUBSCRIPTION_EXPIRED": {
+      "title": "Subscripció caducada",
+      "why": "La subscripció per a aquesta clau de widget ja no està activa.",
+      "fix": "Renoveu el vostre pla al tauler d'EaseAccess24."
+    },
+    "ORG_DISABLED": {
+      "title": "Organització inhabilitada",
+      "why": "L'organització per a aquesta clau de widget està deshabilitada.",
+      "fix": "Contacta amb el suport d'EaseAccess24 o consulta el teu Tauler de control."
+    }
+  },
+  "nav": {
+    "aria": "Seccions d'EaseAccess24",
+    "connection": "Connexió",
+    "compatibility": "Compatibilitat",
+    "activity": "Activitat",
+    "support": "Suport",
+    "help": "Ajuda"
+  },
+  "compatibility": {
+    "title": "Compatibilitat de memòria cau i optimització",
+    "intro": "Els plugins de memòria cau i optimització poden ajornar, combinar o eliminar scripts, inclòs el widget d'EaseAccess24. Afegim pistes que els demanen que deixin el nostre script en pau, però algunes configuracions encara necessiten una exclusió manual. Mai canviem la configuració d'un altre plugin per tu.",
+    "noneTitle": "No s'han detectat plugins de memòria cau o d'optimització coneguts",
+    "noneBody": "No hem trobat cap dels plugins de memòria cau/optimització que reconeguem. Si el widget encara no apareix, executeu una Comprovació de salut a la pestanya Connexió.",
+    "cloudflareCdnNote": "Nota: Cloudflare executat com a CDN (Rocket Loader, Auto Minify al límit) no es pot detectar des del vostre lloc. Si utilitzeu Cloudflare, també comproveu aquestes configuracions.",
+    "detectedTitle": "Plugins detectats",
+    "recommendationLabel": "Recomanació",
+    "modifiedTitle": "És possible que el script del widget s'estigui modificant",
+    "modifiedBody": "Hi ha un plugin de memòria cau/optimització actiu i la vostra última Comprovació de salut va trobar que el script del widget no era a la pàgina. Apliqueu l'exclusió següent i torneu a executar la comprovació.",
+    "plugins": {
+      "wp-rocket": {
+        "recommendation": "A WP Rocket → Optimització de fitxers, excloeu “widget.easeaccess24.com/sdk.js” de la minificació de JavaScript, la combinació i la “Retard de l'execució de JavaScript”. WP Rocket també respecta la nostra pista data-no-minify."
+      },
+      "litespeed": {
+        "recommendation": "A LiteSpeed Cache → Optimització de pàgines → Configuració de JS, afegiu “widget.easeaccess24.com” a les Exclusions de JS (i exclusions ajornades/retardades si estan habilitades)."
+      },
+      "autoptimize": {
+        "recommendation": "A Autoptimize → JS, Imatges..., afegiu “easeaccess24” a “Exclou scripts d'Autoptimize”. Autoptimize també respecta la nostra pista data-no-optimize."
+      },
+      "perfmatters": {
+        "recommendation": "A Perfmatters → Assets, afegiu “easeaccess24” a les exclusions per a “Retard de JavaScript” i qualsevol opció de retard/minificació d'scripts."
+      },
+      "asset-cleanup": {
+        "recommendation": "A Asset CleanUp, assegureu-vos que el script d'EaseAccess24 no s'estigui descarregant a les vostres pàgines, i excloeu-lo de qualsevol opció de minificació/combinació/retard de JS."
+      },
+      "cloudflare": {
+        "recommendation": "A Cloudflare, excloeu el script del widget de Rocket Loader (la nostra etiqueta ja estableix data-cfasync=\"false\") i de l'Auto Minify/Mirage si estan habilitats per a scripts."
+      }
+    }
+  },
+  "eventLog": {
+    "title": "Registre d'activitat",
+    "intro": "Un breu historial de comprovacions de salut i esdeveniments de plugins. Aquest registre roman al vostre lloc i mai s'envia automàticament enlloc.",
+    "empty": "Encara no hi ha esdeveniments registrats. Executeu una Comprovació de salut a la pestanya Connexió per registrar-ne un.",
+    "clear": "Esborra el registre",
+    "clearConfirm": "Esborrar tots els esdeveniments registrats?",
+    "confirmClear": "Sí, esborra",
+    "cancel": "Cancel·la",
+    "cleared": "Registre d'activitat esborrat.",
+    "loadError": "No hem pogut carregar el registre d'activitat. Torneu a carregar la pàgina i torneu-ho a provar.",
+    "loading": "Carregant activitat...",
+    "types": {
+      "health_check": "Comprovació de salut",
+      "key_saved": "Clau de widget guardada",
+      "key_updated": "Clau de widget actualitzada",
+      "activated": "Plugin activat",
+      "deactivated": "Plugin desactivat"
+    },
+    "relative": {
+      "justNow": "Ara mateix",
+      "minutesAgo": "{{n}} minuts ago",
+      "hoursAgo": "{{n}} hores ago",
+      "daysAgo": "{{n}} dies ago"
+    }
+  },
+  "supportReport": {
+    "title": "Informe de suport",
+    "intro": "Genereu un informe que podeu compartir amb el suport d'EaseAccess24. Inclou el vostre entorn, estat de la connexió, plugins de memòria cau detectats i esdeveniments recents. La vostra clau de widget està emmascarada i no s'inclouen dades personals.",
+    "privacyNote": "No s'envia res automàticament. No hi ha cap servidor involucrat: copieu o descarregueu l'informe a continuació i compartiu-lo vosaltres mateixos.",
+    "generate": "Genera informe",
+    "regenerate": "Torna a generar",
+    "generating": "Generant...",
+    "previewLabel": "Vista prèvia de l'informe (exactament el que es copiarà o descarregarà)",
+    "copy": "Copia",
+    "copied": "Copiat",
+    "copyFailed": "La còpia no està disponible en aquest navegador. Utilitza Descarregar en el seu lloc.",
+    "downloadTxt": "Descarregar .txt",
+    "downloadJson": "Descarregar .json",
+    "generateError": "No hem pogut generar l'informe. Torna a carregar la pàgina i torna a provar."
+  },
+  "pluginInfo": {
+    "title": "Informació del connector",
+    "version": "Versió",
+    "wpCompat": "Compatibilitat amb WordPress",
+    "phpMin": "Mínim PHP",
+    "testedUpTo": "Provada fins a",
+    "supportStatus": "Estat del suport",
+    "supportStatusActive": "Suport actiu"
+  },
+  "faq": {
+    "title": "Ajuda i Preguntes Freqüents",
+    "intro": "Respostes a preguntes comunes sobre la connexió i la resolució de problemes del widget.",
+    "learnMore": "Més informació",
+    "items": {
+      "findKey": {
+        "q": "On trobo la meva clau del widget?",
+        "a": "Inicia sessió a app.easeaccess24.com, obre la secció Integrar i copia la teva clau del widget (o l'extracte de codi complet). Enganxa-la a la pestanya Connexió; extreurem la clau d'un extracte per a tu."
+      },
+      "notShowing": {
+        "q": "El widget no es mostra: què he de comprovar?",
+        "a": "Executa una Comprovació de Salut a la pestanya Connexió. T'indica si l'script s'ha afegit, si és accessible i si el widget realment apareix. Les causes més comunes són que el domini no estigui afegit al teu tauler, una clau incorrecta, o un connector de memòria cau que elimina l'script."
+      },
+      "cachePlugin": {
+        "q": "Utilitzo un connector de memòria cau o d'optimització. Entrarà en conflicte?",
+        "a": "Pot ser. La nostra etiqueta d'script demana als connectors comuns que l'ometin, però algunes configuracions encara necessiten una exclusió manual. Consulta la pestanya Compatibilitat per obtenir recomanacions per a cada connector. Mai modifiquem la configuració d'un altre connector per a tu."
+      },
+      "stagingLocalhost": {
+        "q": "El widget funciona en entorns de preproducció o localhost?",
+        "a": "El widget només es renderitza en dominis autoritzats per la teva clau de widget, per la qual cosa normalment no apareixerà en preproducció o localhost. Això és esperat i no un error del connector; prova-ho al teu domini actiu i autoritzat."
+      },
+      "dataPrivacy": {
+        "q": "Quines dades emmagatzema o envia aquest connector?",
+        "a": "El connector emmagatzema la teva clau de widget i la configuració al teu propi lloc, a més d'un registre d'activitat local curt. No fa trucades automàtiques a EaseAccess24 més enllà d'afegir l'script del widget i, durant una Comprovació de Salut, provant si aquest script és accessible. Els informes de suport només es comparteixen per tu, manualment."
+      },
+      "removeData": {
+        "q": "Com elimino totes les dades del connector?",
+        "a": "La teva configuració es conserva quan desactives el connector per poder-lo reactivar més tard. Per eliminar-ho tot, activa \"Eliminar totes les dades d'EaseAccess24\" abans d'eliminar el connector, i després elimina'l des de la pantalla de connectors. Els teus fitxers de tema mai no es toquen."
+      }
+    }
+  },
+  "settings": {
+    "languageLabel": "Idioma",
+    "languageAria": "Idioma de la interfície",
+    "dataTitle": "Dades i privacitat",
+    "removeDataLabel": "Eliminar totes les dades d'EaseAccess24 quan s'elimina el connector",
+    "removeDataHelp": "Quan està activat, eliminar el connector també elimina la teva clau de widget, la configuració i el registre d'activitat. Deixa-ho apagat per conservar la teva configuració per a una futura reinstal·lació. Els teus fitxers de tema mai no es modifiquen.",
+    "saved": "Guardat",
+    "saveError": "No hem pogut desar la teva configuració. Comprova la teva connexió i torna a provar.",
+    "loadError": "No hem pogut carregar la teva configuració. Torna a carregar la pàgina i torna a provar."
+  },
+  "footer": {
+    "tagline": "Fent el web accessible per a tothom.",
+    "madeBy": "Fet per EaseAccess24",
+    "platform": "Plataforma EaseAccess24",
+    "docs": "Suport i documentació",
+    "privacyLink": "Política de privacitat",
+    "reportIssueLink": "Informa d'un problema",
+    "copyright": "© {{year}} EaseAccess24"
+  }
+}

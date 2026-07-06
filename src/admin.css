@@ -1,0 +1,122 @@
+/* Tailwind entry for the EaseAccess24 admin app. Preflight is disabled in
+ * tailwind.config.js so Tailwind's global reset does not clobber wp-admin; the
+ * scoped reset below is CONTAINED to `#easeaccess24-admin-root` instead. Every
+ * utility is emitted with the `ea24-` prefix. */
+/* stylelint-disable-next-line scss/at-rule-no-unknown -- Tailwind directive. */
+@tailwind base;
+/* stylelint-disable-next-line scss/at-rule-no-unknown -- Tailwind directive. */
+@tailwind components;
+/* stylelint-disable-next-line scss/at-rule-no-unknown -- Tailwind directive. */
+@tailwind utilities;
+
+/* ------------------------------------------------------------------------- *
+ * Bundled fonts (Phase 08). Inter (UI) + JetBrains Mono (keys/code) are
+ * shipped locally as latin-subset .woff2 — NO external Google Fonts request,
+ * so there is nothing to disclose in readme.txt and no third-party call.
+ * `@wordpress/scripts` (webpack asset modules) copies these into build/fonts/
+ * and rewrites the url() to the hashed output path automatically.
+ * ------------------------------------------------------------------------- */
+@font-face {
+	font-family: Inter;
+	font-style: normal;
+	font-weight: 400;
+	font-display: swap;
+	src: url(./fonts/inter-400.woff2) format("woff2");
+}
+
+@font-face {
+	font-family: Inter;
+	font-style: normal;
+	font-weight: 500;
+	font-display: swap;
+	src: url(./fonts/inter-500.woff2) format("woff2");
+}
+
+@font-face {
+	font-family: Inter;
+	font-style: normal;
+	font-weight: 600;
+	font-display: swap;
+	src: url(./fonts/inter-600.woff2) format("woff2");
+}
+
+@font-face {
+	font-family: Inter;
+	font-style: normal;
+	font-weight: 700;
+	font-display: swap;
+	src: url(./fonts/inter-700.woff2) format("woff2");
+}
+
+@font-face {
+	font-family: Inter;
+	font-style: normal;
+	font-weight: 800;
+	font-display: swap;
+	src: url(./fonts/inter-800.woff2) format("woff2");
+}
+
+@font-face {
+	font-family: "JetBrains Mono";
+	font-style: normal;
+	font-weight: 400;
+	font-display: swap;
+	src: url(./fonts/jetbrains-mono-400.woff2) format("woff2");
+}
+
+@font-face {
+	font-family: "JetBrains Mono";
+	font-style: normal;
+	font-weight: 500;
+	font-display: swap;
+	src: url(./fonts/jetbrains-mono-500.woff2) format("woff2");
+}
+
+/* ------------------------------------------------------------------------- *
+ * Scoped reset — CONTAINED to our mount point so it can never leak into
+ * wp-admin. Gives the app clean box-sizing and Inter typography without
+ * enabling Tailwind's global preflight.
+ * ------------------------------------------------------------------------- */
+#easeaccess24-admin-root,
+#easeaccess24-admin-root *,
+#easeaccess24-admin-root *::before,
+#easeaccess24-admin-root *::after {
+	box-sizing: border-box;
+}
+
+#easeaccess24-admin-root {
+	font-family: Inter, system-ui, -apple-system, sans-serif;
+	color: #1f2230;
+	line-height: 1.5;
+	-webkit-font-smoothing: antialiased;
+	text-rendering: optimizelegibility;
+}
+
+/* Normalize only elements wp-admin would style, scoped to our root. */
+#easeaccess24-admin-root h1,
+#easeaccess24-admin-root h2,
+#easeaccess24-admin-root h3,
+#easeaccess24-admin-root h4,
+#easeaccess24-admin-root p,
+#easeaccess24-admin-root dl,
+#easeaccess24-admin-root dd,
+#easeaccess24-admin-root figure {
+	margin: 0;
+}
+
+#easeaccess24-admin-root button {
+	font-family: inherit;
+}
+
+/* Visible focus ring for keyboard users, scoped to our root. */
+#easeaccess24-admin-root :focus-visible {
+	outline: 3px solid #5d29d7;
+	outline-offset: 2px;
+	border-radius: 8px;
+}
+
+/* Gradient (brand) buttons sit on purple, so use a dark ring for contrast. */
+#easeaccess24-admin-root .ea24-gradbtn:focus-visible {
+	outline: 3px solid #1f2230;
+	outline-offset: 3px;
+}

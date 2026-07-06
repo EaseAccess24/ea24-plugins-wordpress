@@ -1,0 +1,290 @@
+{
+  "status": {
+    "notConnected": "Ní dhíreach",
+    "healthy": "Ceangailte · Slán",
+    "attention": "Ceangailte · An gá aird"
+  },
+  "common": {
+    "appName": "EaseAccess24 Inrochtaineacht",
+    "appNameShort": "EaseAccess24",
+    "saving": "Ag sábháil…",
+    "cancel": "Cealaigh",
+    "retry": "Déan iarracht arís",
+    "updateKey": "Nuashonraigh eochair"
+  },
+  "onboarding": {
+    "title": "Ceangail do shuíomh le EaseAccess24",
+    "subtitle": "Greamaigh d’Eochair Giuirléid (nó an sliocht script iomlán) chun an ghiuirléid inrochtaineachta a chur leis an suíomh seo.",
+    "emptyTitle": "Níl Eochair Ghiuirléid agat fós?",
+    "emptyBody": "Cruthaigh d’eagraíocht, roghnaigh plean, agus cuir an fearann seo le EaseAccess24. Gheobhaidh tú Eochair Ghiuirléid le greamú anseo.",
+    "getKeyCta": "Faigh d’Eochair Ghiuirléid",
+    "fieldLabel": "Eochair Ghiuirléid nó sliocht script",
+    "helper": "Greamaigh an eochair amháin (mar shampla ABC123) nó an <script> sliocht iomlán — bainfimid an eochair as.",
+    "placeholder": "ABC123  —nó—  <script async src=\"https://widget.easeaccess24.com/sdk.js?key=ABC123\"></script>",
+    "whereLink": "Cá bhfaighidh mé é seo?",
+    "connectCta": "Ceangail & Deimhnigh",
+    "revealKey": "Nocht",
+    "hideKey": "Folaigh",
+    "copyKey": "Cóipeáil",
+    "copied": "Cóipeálta",
+    "errors": {
+      "empty": "Greamaigh d’Eochair Ghiuirléid nó sliocht script ar dtús.",
+      "noKey": "Níorbh fhéidir linn Eochair Ghiuirléid a fháil ann. Greamaigh an eochair amháin, nó an sliocht script iomlán ina bhfuil í.",
+      "network": "Níorbh fhéidir linn d’eochair a shábháil. Seiceáil do nasc agus déan iarracht arís."
+    }
+  },
+  "stepper": {
+    "aria": "Dul chun cinn socraithe",
+    "paste": "Greamaigh",
+    "validate": "Bailíochtaigh",
+    "healthCheck": "Seiceáil Sláinte",
+    "done": "Críochnaithe",
+    "state": {
+      "done": "críochnaithe",
+      "current": "céim reatha",
+      "upcoming": "le teacht"
+    }
+  },
+  "dashboard": {
+    "statusBadge": "Ceangailte",
+    "title": "Nasc",
+    "subtitle": "Tá d’Eochair Ghiuirléid sábháilte. Rith Seiceáil Sláinte chun a chinntiú go luchtú an ghiuirléid agus go bhfuil sé le feiceáil ar do shuíomh.",
+    "keyLabel": "Eochair Ghiuirléid",
+    "domainLabel": "Fearann",
+    "lastCheckLabel": "Seiceáil sláinte is déanaí",
+    "neverChecked": "Níor seiceáladh fós",
+    "healthNotRunYet": "Níor ritheadh aon seiceáil fós"
+  },
+  "health": {
+    "heading": "Seiceáil Sláinte",
+    "intro": "Ritheann sé seo i do bhrabhsálaí: luchtú sé do shuíomh agus seiceálann sé an mbíonn an ghiuirléid le feiceáil i ndáiríre. Ní sheoltar aon rud chuig EaseAccess24.",
+    "run": "Rith Seiceáil Sláinte",
+    "rerun": "Rith arís",
+    "running": "Ag rith Seiceáil Sláinte…",
+    "resultsHeading": "Torthaí",
+    "checklistHeading": "An méid a sheiceáltas",
+    "advisoriesHeading": "Freisin fiú a sheiceáil",
+    "timeoutTitle": "We couldn’t complete the check",
+    "timeoutBody": "The check didn’t finish in time. This can happen if the page was slow to load or a security setting blocked it. Try again."
+  },
+  "checklist": {
+    "keySaved": "Widget Key saved",
+    "sdkTag": "Widget script added to your site",
+    "sdkReachable": "Widget script is reachable",
+    "widgetVisible": "Widget appears and is visible",
+    "singleInstance": "Exactly one widget on the page",
+    "status": {
+      "pass": "passed",
+      "fail": "failed",
+      "warn": "warning",
+      "info": "info",
+      "na": "not applicable"
+    }
+  },
+  "actions": {
+    "openDashboard": "Open EaseAccess24 Dashboard",
+    "retry": "Run check again"
+  },
+  "diagnostics": {
+    "whyLabel": "Why",
+    "fixLabel": "How to fix",
+    "OK": {
+      "title": "Your widget is live",
+      "why": "We loaded your site and the accessibility widget appeared and is visible.",
+      "fix": "Nothing to do — you’re all set."
+    },
+    "DOMAIN_NOT_ALLOWED": {
+      "title": "Domain not allowed / key not authorized",
+      "why": "The widget script loaded but reported that this domain isn’t authorized for your Widget Key. The same message covers a wrong key and a domain that hasn’t been added yet.",
+      "fix": "Open your EaseAccess24 Dashboard, confirm this exact domain is added under your organization, check the Widget Key matches, then run the check again."
+    },
+    "SDK_UNREACHABLE": {
+      "title": "The widget script couldn’t be loaded",
+      "why": "Your browser couldn’t reach the widget script URL. This is usually a network, CDN, or caching issue rather than a configuration problem.",
+      "fix": "Check your site’s network/CDN, clear any caches, and run the check again."
+    },
+    "WIDGET_NOT_INITIALIZED": {
+      "title": "The widget didn’t load",
+      "why": "The widget script is in place, but no visible widget appeared and no specific reason was reported. Common causes: the domain isn’t added yet, the key is wrong, or a script was blocked.",
+      "fix": "Confirm this domain and Widget Key in your EaseAccess24 Dashboard, make sure nothing is blocking the script, then run the check again."
+    },
+    "DUPLICATE_WIDGET": {
+      "title": "Duplicate widget detected",
+      "why": "More than one widget is loading on the page. This usually means the SDK is added twice — for example, both by this plugin and by a manual snippet in your theme.",
+      "fix": "Keep only one method. If you added the script to your theme or another plugin, remove it and let this plugin handle it. We never remove scripts for you."
+    },
+    "POSSIBLE_DUPLICATE_WIDGET": {
+      "title": "Possible duplicate widget",
+      "why": "We found signs of a second widget script (for example, an extra script tag) but couldn’t confirm a second visible widget — caching can obscure this.",
+      "fix": "Make sure the widget is added only once. If you have a manual snippet in your theme, remove it and rely on this plugin."
+    },
+    "OPTIMIZER_INTERFERENCE": {
+      "title": "A caching or optimization plugin may be interfering",
+      "why": "A Widget Key is saved, but the widget script wasn’t present on the page — a caching/optimization plugin may have removed or altered it.",
+      "fix": "Exclude the EaseAccess24 script from caching/optimization. Detailed, per-plugin recommendations are coming to the Compatibility section."
+    },
+    "STAGING_DETECTED": {
+      "title": "Staging environment detected",
+      "why": "This looks like a staging or development site. The widget only renders on domains authorized in EaseAccess24, so it may not appear here.",
+      "fix": "This is expected on staging. Add this domain in your Dashboard if you want the widget to appear here, or test on your live domain."
+    },
+    "LOCALHOST_DETECTED": {
+      "title": "Local environment detected",
+      "why": "This site is running on localhost. The widget only renders on domains authorized in EaseAccess24, so it won’t appear locally.",
+      "fix": "This is expected locally. Test on your live, authorized domain to see the widget."
+    },
+    "KEY_INVALID": {
+      "title": "Widget Key not accepted",
+      "why": "The Widget Key was rejected.",
+      "fix": "Check the key in your EaseAccess24 Dashboard and save it again."
+    },
+    "SUBSCRIPTION_EXPIRED": {
+      "title": "Subscription expired",
+      "why": "The subscription for this Widget Key is no longer active.",
+      "fix": "Renew your plan in the EaseAccess24 Dashboard."
+    },
+    "ORG_DISABLED": {
+      "title": "Organization disabled",
+      "why": "Tá an eagraíocht don Eochair Giuirléid seo díchumasaithe.",
+      "fix": "Déan teagmháil le tacaíocht EaseAccess24 nó seiceáil do Phainéal."
+    }
+  },
+  "nav": {
+    "aria": "Ranna EaseAccess24",
+    "connection": "Ceangal",
+    "compatibility": "Comhoiriúnacht",
+    "activity": "Gníomhaíocht",
+    "support": "Tacaíocht",
+    "help": "Cabhair"
+  },
+  "compatibility": {
+    "title": "Comhoiriúnacht le taisce & optamú",
+    "intro": "Is féidir le breiseáin taisce agus optamú láithrithe, comhcheangal, nó baint a bhaint as an gcód — lena n-áirítear an giuirléid EaseAccess24. Cuirimid leideanna leis a iarrann orthu ár gcód a fhágáil ina aonar, ach éilíonn roinnt socruithe eisiaimh láimhe fós. Ní athraímid socruithe breiseáin eile duit riamh.",
+    "noneTitle": "Ní bhfuarthas aon bhreiseáin taisce nó optamú aitheanta",
+    "noneBody": "Ní bhfuair muid aon cheann de na breiseáin taisce/optamú a aithnímid. Mura dtarlaíonn an giuirléid fós, rith Seiceáil Sláinte ar an táb le „Ceangal”.",
+    "cloudflareCdnNote": "Nóta: Ní féidir Cloudflare a reáchtáil mar CDN (Rocket Loader, Auto Minify ag an imeall) a bhrath ó do shuíomh. Má úsáideann tú Cloudflare, seiceáil na socruithe sin freisin.",
+    "detectedTitle": "Breiseáin braite",
+    "recommendationLabel": "Moladh",
+    "modifiedTitle": "D’fhéadfadh an cód giuirléid a bheith á mhodhnú",
+    "modifiedBody": "Tá breiseán taisce/optamú gníomhach agus fuair do Seiceáil Sláinte dheireanach nach raibh an cód giuirléid ar an leathanach. Cuir an t-eisiaimh thíos i bhfeidhm agus déan an seiceáil arís.",
+    "plugins": {
+      "wp-rocket": {
+        "recommendation": "In WP Rocket → Optamú Comhad, eisiaigh „widget.easeaccess24.com/sdk.js” ó mhiondealú JavaScript, comhcheangal, agus „Moill ar fheidhmiú JavaScript”. Tacaíonn WP Rocket freisin le leideanna ár sonraí-gan-mhiondealú."
+      },
+      "litespeed": {
+        "recommendation": "In LiteSpeed Cache → Optamú Leathanaigh → Socruithe JS, cuir „widget.easeaccess24.com” leis na heisiaimh JS (agus na heisiaimh moillithe/foirfe más gníomhach iad)."
+      },
+      "autoptimize": {
+        "recommendation": "In Autoptimize → JS, Íomhánna..., cuir „easeaccess24” leis na „Eisiaimh cód ó Autoptimize”. Tacaíonn Autoptimize freisin le leideanna ár sonraí-gan-optamú."
+      },
+      "perfmatters": {
+        "recommendation": "In Perfmatters → Sócmhainní, cuir „easeaccess24” leis na heisiaimh le haghaidh „Moill ar JavaScript” agus aon roghanna cód moillithe/comhcheangail/miondealú."
+      },
+      "asset-cleanup": {
+        "recommendation": "In Asset CleanUp, déan cinnte nach ndéantar an cód EaseAccess24 a dhí-ualú ar do leathanaigh, agus eisiaigh é ó aon roghanna miondealú/comhcheangal/moillithe JS."
+      },
+      "cloudflare": {
+        "recommendation": "In Cloudflare, eisiaigh an cód giuirléid ó Rocket Loader (cuireann ár dtáscaire srian leis an srian data-cfasync=\"false\") agus ó Auto Minify/Mirage más gníomhach é do chóid."
+      }
+    }
+  },
+  "eventLog": {
+    "title": "Log gníomhaíochta",
+    "intro": "Stair ghearr de sheiceálacha sláinte agus imeachtaí breiseán. Fanann an log seo ar do shuíomh agus ní sheoltar go dtí aon áit go huathoibríoch é.",
+    "empty": "Níl aon imeachtaí logáilte fós. Rith Seiceáil Sláinte ar an táb Ceangal chun ceann a thaifeadadh.",
+    "clear": "Scrios log",
+    "clearConfirm": "Scrios gach imeacht logáilte?",
+    "confirmClear": "Sea, scrios",
+    "cancel": "Cealaigh",
+    "cleared": "Scriosadh log na gníomhaíochta.",
+    "loadError": "Níor éirigh linn an log gníomhaíochta a luchtú. Athluchtaigh an leathanach agus bain triail eile as.",
+    "loading": "Ag luchtú gníomhaíochta...",
+    "types": {
+      "health_check": "Seiceáil Sláinte",
+      "key_saved": "Eochair Giuirléid sábháilte",
+      "key_updated": "Eochair Giuirléid nuashonraithe",
+      "activated": "Gníomhachtaíodh breiseán",
+      "deactivated": "Díchumasaíodh breiseán"
+    },
+    "relative": {
+      "justNow": "Anois féin",
+      "minutesAgo": "{{n}} nóiméad ó shin",
+      "hoursAgo": "{{n}} uair an chloig ó shin",
+      "daysAgo": "{{n}} lá ó shin"
+    }
+  },
+  "supportReport": {
+    "title": "Tuarascáil tacaíochta",
+    "intro": "Gineann tuarascáil ar féidir leat a roinnt le tacaíocht EaseAccess24. Áirítear inti do thimpeallacht, stádas ceangail, breiseáin taisce braite, agus imeachtaí le déanaí. Tá do Eochair Giuirléid masked agus níl aon sonraí pearsanta san áireamh.",
+    "privacyNote": "Ní sheoltar aon rud go huathoibríoch. Níl freastalaí i gceist — cóipeann tú nó íoslódann tú an tuarascáil thíos agus roinneann tú í féin.",
+    "generate": "Gine an tuarascáil",
+    "regenerate": "Athghin",
+    "generating": "Ag giniúint...",
+    "previewLabel": "Réamhamharc ar an tuarascáil (díreach cad a cóipeálfar nó a íoslódálfar)",
+    "copy": "Cóipeáil",
+    "copied": "Cóipeáladh",
+    "copyFailed": "Níl an cóipeáil ar fáil sa bhrabhálaí seo. Bain úsáid as Íoslódáil ina ionad sin.",
+    "downloadTxt": "Íoslódáil .txt",
+    "downloadJson": "Íoslódáil .json",
+    "generateError": "Níorbh fhéidir linn an tuarascáil a ghiniúint. Athlódáil an leathanach agus bain triail eile as."
+  },
+  "pluginInfo": {
+    "title": "Eolas faoin mBreiseán",
+    "version": "Leagan",
+    "wpCompat": "Comhoiriúnacht WordPress",
+    "phpMin": "Min. PHP",
+    "testedUpTo": "Tástáladh suas le",
+    "supportStatus": "Stádas tacaíochta",
+    "supportStatusActive": "Tacaíocht ghníomhach"
+  },
+  "faq": {
+    "title": "Cabhair & CCanna",
+    "intro": "Freagraí ar cheisteanna coitianta maidir le nascadh agus fabhtcheartú an ghearrthaisce.",
+    "learnMore": "Tuilleadh eolais",
+    "items": {
+      "findKey": {
+        "q": "Cá bhfaighidh mé mo Eochair Ghearrthaisce?",
+        "a": "Logáil isteach ag app.easeaccess24.com, oscail an chuid Comhtháthú, agus cóipeáil do Eochair Ghearrthaisce (nó an sliocht cód iomlán). Greamaigh é isteach sa táb Nasc - bainfimid an eochair as sliocht duit."
+      },
+      "notShowing": {
+        "q": "Níl an ghearrthaisce á thaispeáint – cad ba cheart dom a sheiceáil?",
+        "a": "Rith Seiceáil Sláinte ar an táb Nasc. Insíonn sé duit an bhfuil an cód á chur leis, an bhfuil rochtain air, agus an bhfuil an ghearrthaisce le feiceáil i ndáiríre. Is iad na cúiseanna is coitianta ná nach bhfuil an fearann curtha leis i do phainéal, eochair mhícheart, nó go mbainfidh breiseán taisce an cód. "
+      },
+      "cachePlugin": {
+        "q": "Bainim úsáid as breiseán taisce nó optamaithe. An mbeidh coinbhleacht ann?",
+        "a": "Is féidir. Iarrann ár gclib cód ar bhreiseáin choitianta é a scipeáil, ach bíonn eisiaimh láimhe ag teastáil ó roinnt socruithe fós. Seiceáil an táb Comhoiriúnacht le haghaidh moltaí de réir breiseáin. Ní athraímid socruithe breiseáin eile duit riamh."
+      },
+      "stagingLocalhost": {
+        "q": "An n-oibríonn an ghearrthaisce ar stáitsiú nó localhost?",
+        "a": "Ní dhéanann an ghearrthaisce ach render ar fhearainn atá údaraithe do d’Eochair Ghearrthaisce, mar sin de ghnáth ní bheidh sé le feiceáil ar stáitsiú nó localhost. Tá sé seo ionchais agus ní earráid breiseáin é – déan tástáil ar d’fhearann beo, údaraithe."
+      },
+      "dataPrivacy": {
+        "q": "Cén sonraí a stórálann nó a sheolann an breiseán seo?",
+        "a": "Stórálann an breiseán do Eochair Ghearrthaisce agus do shocruithe ar do shuíomh féin, chomh maith le log gníomhaíochta áitiúil gearr. Ní dhéanann sé glaonna uathoibríocha chuig EaseAccess24 ach amháin trí chóid ghearrthaisce a chur leis agus, le linn Seiceála Sláinte, ag tástáil an bhfuil an cód sin infhaighte. Ní roinntear tuarascálacha tacaíochta ach amháin agat féin, de láimh."
+      },
+      "removeData": {
+        "q": "Conas a bhainim gach sonraí breiseáin?",
+        "a": "Coinnítear do chumraíocht nuair a dhíghníomhachtaíonn tú ionas gur féidir leat athghníomhú níos déanaí. Chun gach rud a bhaint, cumasaigh “Bain gach sonraí EaseAccess24” sula scriosann tú an breiseán, ansin scrios é ón scáileán Breiseáin."
+      }
+    }
+  },
+  "settings": {
+    "languageLabel": "Teanga",
+    "languageAria": "Teanga an Chomhéadain",
+    "dataTitle": "Sonraí & príobháideacht",
+    "removeDataLabel": "Bain gach sonraí EaseAccess24 nuair a scriosfar an breiseán",
+    "removeDataHelp": "Nuair a bheidh sé cumasaithe, bainfidh an scriosadh breiseáin freisin d’Eochair Ghearrthaisce, do shocruithe, agus do log gníomhaíochta. Fág air é chun do chumraíocht a choinneáil le haghaidh athshuiteála sa todhchaí. Ní dhéantar teagmháil le do chuid comhad téama riamh.",
+    "saved": "Sábháladh",
+    "saveError": "Níorbh fhéidir linn do shocruithe a shábháil. Seiceáil do nasc agus bain triail eile as.",
+    "loadError": "Níorbh fhéidir linn do shocruithe a luchtú. Athlódáil an leathanach agus bain triail eile as."
+  },
+  "footer": {
+    "tagline": "Ag déanamh an gréasáin infhaighte do gach duine.",
+    "madeBy": "Déanta ag EaseAccess24",
+    "platform": "Ardán EaseAccess24",
+    "docs": "Tacaíocht & doiciméadú",
+    "privacyLink": "Polasaí príobháideachta",
+    "reportIssueLink": "Tuairiscigh fadhb",
+    "copyright": "© {{year}} EaseAccess24"
+  }
+}

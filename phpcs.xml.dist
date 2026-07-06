@@ -1,0 +1,116 @@
+<?xml version="1.0"?>
+<ruleset name="EaseAccess24 Accessibility">
+	<description>Coding standards for the EaseAccess24 Accessibility WordPress plugin.</description>
+
+	<!--
+		With this file present, a bare `phpcs` (composer lint:php) auto-discovers
+		it, so the WordPress standards actually run. Before this ruleset existed,
+		bare phpcs fell back to the PEAR standard (the Phase 05 lint gap).
+	-->
+
+	<!-- What to scan. Everything else (built assets, deps, JS source) is skipped. -->
+	<file>easeaccess24-accessibility.php</file>
+	<file>uninstall.php</file>
+	<file>includes</file>
+	<file>tests/php</file>
+
+	<!-- Never scan generated, vendored, or non-PHP trees. -->
+	<exclude-pattern>*/vendor/*</exclude-pattern>
+	<exclude-pattern>*/node_modules/*</exclude-pattern>
+	<exclude-pattern>*/build/*</exclude-pattern>
+	<exclude-pattern>*/src/*</exclude-pattern>
+	<exclude-pattern>*/e2e/*</exclude-pattern>
+	<exclude-pattern>*/docker/*</exclude-pattern>
+
+	<!-- Only lint PHP. -->
+	<arg name="extensions" value="php"/>
+	<!-- Show sniff codes, use colors, and run in parallel. -->
+	<arg value="ps"/>
+	<arg name="colors"/>
+	<arg name="parallel" value="8"/>
+	<arg name="basepath" value="."/>
+
+	<!-- WordPress coding standards. -->
+	<rule ref="WordPress">
+		<!--
+			INTENTIONAL: this plugin uses dash-case `class-*.php` filenames with
+			PascalCase, namespaced classes (e.g. class-rest-controller.php holds
+			EaseAccess24\Accessibility\RestController). The WordPress.Files.FileName
+			sniff derives an expected filename from the class name and mis-flags
+			this convention (and the `test-*.php` files). Exclude it so the
+			class-filename false positive stops firing.
+		-->
+		<exclude name="WordPress.Files.FileName"/>
+	</rule>
+
+	<!--
+		The SDK loader prints the ONE intentional raw <script> tag the plugin is
+		allowed to emit (a single external, async loader in <head>) — it cannot use
+		wp_enqueue_script() without breaking the widget. Output is escaped; the
+		NonEnqueuedScript sniff is a false positive here only.
+	-->
+	<rule ref="WordPress.WP.EnqueuedResources.NonEnqueuedScript">
+		<exclude-pattern>includes/class-sdk-loader.php</exclude-pattern>
+	</rule>
+
+	<!-- Enforce our global prefix so nothing collides with other plugins. -->
+	<rule ref="WordPress.NamingConventions.PrefixAllGlobals">
+		<properties>
+			<property name="prefixes" type="array">
+				<element value="easeaccess24"/>
+				<element value="EASEACCESS24"/>
+				<element value="EaseAccess24\Accessibility"/>
+			</property>
+		</properties>
+	</rule>
+
+	<!-- Enforce the single text domain. -->
+	<rule ref="WordPress.WP.I18n">
+		<properties>
+			<property name="text_domain" type="array">
+				<element value="easeaccess24-accessibility"/>
+			</property>
+		</properties>
+	</rule>
+
+	<!-- Minimum supported WordPress version, for deprecation/availability sniffs. -->
+	<config name="minimum_wp_version" value="6.0"/>
+
+	<!-- PHP cross-version compatibility, floor PHP 7.4. -->
+	<config name="testVersion" value="7.4-"/>
+	<rule ref="PHPCompatibilityWP"/>
+
+	<!--
+		Test-suite relaxations, scoped to tests/php only:
+		- PrefixAllGlobals / ValidVariableName: WP_UnitTestCase idioms use
+		  non-plugin-prefixed class names and superglobals ($_GET) in tests.
+		- EnqueuedResources: test DATA (key-extraction fixtures, REST payloads)
+		  legitimately contains literal <script> snippet strings; they are inputs,
+		  not real script output.
+		- DocComment.MissingShort / ShortNotCapital: test docblocks are commonly
+		  just @covers annotations or terse fragments.
+	-->
+	<rule ref="WordPress.NamingConventions.PrefixAllGlobals">
+		<exclude-pattern>tests/php/*</exclude-pattern>
+	</rule>
+	<rule ref="WordPress.NamingConventions.ValidVariableName">
+		<exclude-pattern>tests/php/*</exclude-pattern>
+	</rule>
+	<rule ref="WordPress.WP.EnqueuedResources">
+		<exclude-pattern>tests/php/*</exclude-pattern>
+	</rule>
+	<rule ref="Generic.Commenting.DocComment.MissingShort">
+		<exclude-pattern>tests/php/*</exclude-pattern>
+	</rule>
+	<rule ref="Generic.Commenting.DocComment.ShortNotCapital">
+		<exclude-pattern>tests/php/*</exclude-pattern>
+	</rule>
+	<!--
+		Tests assert against real data-key strings such as the report's lowercase
+		'wordpress' key, which is not user-facing display text. The "spell
+		WordPress correctly" sniff is a false positive there.
+	-->
+	<rule ref="WordPress.WP.CapitalPDangit.MisspelledInText">
+		<exclude-pattern>tests/php/*</exclude-pattern>
+	</rule>
+</ruleset>

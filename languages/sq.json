@@ -1,0 +1,290 @@
+{
+  "status": {
+    "notConnected": "Nuk jeni të lidhur",
+    "healthy": "Lidhur · Në rregull",
+    "attention": "Lidhur · Kërkon vëmendje"
+  },
+  "common": {
+    "appName": "EaseAccess24 Accessibility",
+    "appNameShort": "EaseAccess24",
+    "saving": "Duke ruajtur…",
+    "cancel": "Anulo",
+    "retry": "Provoni përsëri",
+    "updateKey": "Përditëso çelësin"
+  },
+  "onboarding": {
+    "title": "Lidhni faqen tuaj me EaseAccess24",
+    "subtitle": "Ngjitni Çelësin tuaj të Uixhit (ose copëzën e plotë të skriptit) për të shtuar uixhin e aksesueshmërisë në këtë faqe.",
+    "emptyTitle": "Ende nuk keni një Çel të Uixhit?",
+    "emptyBody": "Krijoni organizatën tuaj, zgjidhni një plan dhe shtoni këtë domen në EaseAccess24. Do të merrni një Çel Uixhi për ta ngjitur këtu.",
+    "getKeyCta": "Merrni Çelësin tuaj të Uixhit",
+    "fieldLabel": "Çel Uixhi ose copëz skripti",
+    "helper": "Ngjitni vetëm çelësin (p.sh. ABC123) ose copëzën e plotë të skriptit — ne do të nxjerrim çelësin nga ajo.",
+    "placeholder": "ABC123 —ose— <script async src=\"https://widget.easeaccess24.com/sdk.js?key=ABC123\"></script>",
+    "whereLink": "Ku e gjej këtë?",
+    "connectCta": "Lidh & Verifiko",
+    "revealKey": "Zbuloni",
+    "hideKey": "Fshih",
+    "copyKey": "Kopjo",
+    "copied": "Kopjuar",
+    "errors": {
+      "empty": "Ngjitni së pari Çelësin tuaj të Uixhit ose copëzën e skriptit.",
+      "noKey": "Nuk arritëm të gjenim një Çel Uixhi në të. Ngjitni vetëm çelësin, ose copëzën e plotë të skriptit që e përmban atë.",
+      "network": "Nuk arritëm ta ruajmë çelësin tuaj. Kontrolloni lidhjen tuaj dhe provoni përsëri."
+    }
+  },
+  "stepper": {
+    "aria": "Progresi i vendosjes",
+    "paste": "Ngjit",
+    "validate": "Vërteto",
+    "healthCheck": "Kontrolli i Shëndetit",
+    "done": "U krye",
+    "state": {
+      "done": "e përfunduar",
+      "current": "hapja aktuale",
+      "upcoming": "e ardhshme"
+    }
+  },
+  "dashboard": {
+    "statusBadge": "Lidhur",
+    "title": "Lidhja",
+    "subtitle": "Çelësi juaj i Uixhit është ruajtur. Ekzekutoni një Kontroll Shëndetësore për të konfirmuar se uixhi ngarkohet dhe është i dukshëm në faqen tuaj.",
+    "keyLabel": "Çel Uixhi",
+    "domainLabel": "Domeni",
+    "lastCheckLabel": "Kontrolli i fundit i shëndetit",
+    "neverChecked": "Nuk është kontrolluar kurrë",
+    "healthNotRunYet": "Asnjë kontroll nuk është ekzekutuar ende"
+  },
+  "health": {
+    "heading": "Kontrolli i Shëndetit",
+    "intro": "Ky ekzekutohet në shfletuesin tuaj: ngarkon faqen tuaj dhe kontrollon nëse uixhi shfaqet në të vërtetë. Asgjë nuk i dërgohet EaseAccess24.",
+    "run": "Ekzekuto Kontrollin e Shëndetit",
+    "rerun": "Ekzekuto përsëri",
+    "running": "Duke ekzekutuar Kontrollin e Shëndetit…",
+    "resultsHeading": "Rezultati",
+    "checklistHeading": "Çfarë kontrolluam",
+    "advisoriesHeading": "Vlen gjithashtu të kontrollohet",
+    "timeoutTitle": "Nuk arritëm ta kryejmë kontrollin",
+    "timeoutBody": "Kontrolli nuk përfundoi në kohë. Kjo mund të ndodhë nëse faqja ngarkohej ngadalë ose një cilësim sigurie e bllokoi atë. Provo përsëri."
+  },
+  "checklist": {
+    "keySaved": "Çelësi i mini-veglet u ruajt",
+    "sdkTag": "Script-i i mini-veglet u shtua në faqen tuaj",
+    "sdkReachable": "Script-i i mini-veglet është i arritshëm",
+    "widgetVisible": "Mini-vegla shfaqet dhe është e dukshme",
+    "singleInstance": "Saktësisht një mini-vegël në faqe",
+    "status": {
+      "pass": "kaloi",
+      "fail": "dështoi",
+      "warn": "paralajmërim",
+      "info": "informacion",
+      "na": "nuk aplikohet"
+    }
+  },
+  "actions": {
+    "openDashboard": "Hap Dashboard-in e EaseAccess24",
+    "retry": "Rikryej kontrollin"
+  },
+  "diagnostics": {
+    "whyLabel": "Pse",
+    "fixLabel": "Si të rregullohet",
+    "OK": {
+      "title": "Mini-vegla juaj është live",
+      "why": "Ne ngarkuam faqen tuaj dhe mini-vegla e aksesueshmërisë u shfaq dhe ishte e dukshme.",
+      "fix": "Asgjë për të bërë — jeni gati."
+    },
+    "DOMAIN_NOT_ALLOWED": {
+      "title": "Fusha nuk lejohet / çelësi nuk është i autorizuar",
+      "why": "Script-i i mini-veglet u ngarkua, por raportoi se kjo fushë nuk është e autorizuar për Çelësin tuaj të Mini-veglet. E njëjta mesazh mbulon një çelës të gabuar dhe një fushë që nuk është shtuar ende.",
+      "fix": "Hapni Dashboard-in tuaj EaseAccess24, konfirmoni se kjo fushë ekzakte është shtuar nën organizatën tuaj, kontrolloni që Çelësi i Mini-veglet përputhet, pastaj ekzekutoni sërish kontrollin."
+    },
+    "SDK_UNREACHABLE": {
+      "title": "Script-i i mini-veglet nuk mund të ngarkohej",
+      "why": "Shfletuesi juaj nuk mundi të arrinte URL-në e script-it të mini-veglet. Kjo zakonisht është një problem rrjeti, CDN, ose cache, më tepër sesa një problem konfigurimi.",
+      "fix": "Kontrolloni rrjetin/CDN-in e faqes suaj, fshini çdo cache dhe ekzekutoni sërish kontrollin."
+    },
+    "WIDGET_NOT_INITIALIZED": {
+      "title": "Mini-vegla nuk u inicializua",
+      "why": "Script-i i mini-veglet është në vend, por nuk u shfaq asnjë mini-vegël e dukshme dhe nuk u raportua asnjë arsye specifike. Shkaqe të zakonshme: fusha nuk është shtuar ende, çelësi është i gabuar, ose një script u bllokua.",
+      "fix": "Konfirmoni këtë fushë dhe Çelësin e Mini-veglet në Dashboard-in tuaj EaseAccess24, sigurohuni që asgjë nuk po bllokon script-in, pastaj ekzekutoni sërish kontrollin."
+    },
+    "DUPLICATE_WIDGET": {
+      "title": "Mini-vegël e dyfishtë e zbuluar",
+      "why": "Më shumë se një mini-vegël po ngarkohet në faqe. Kjo zakonisht do të thotë se SDK-ja është shtuar dy herë — për shembull, si nga ky shtojcë ashtu edhe nga një fragment manual në temën tuaj.",
+      "fix": "Mbani vetëm një metodë. Nëse keni shtuar script-in në temën tuaj ose një shtojcë tjetër, hiqeni atë dhe lëreni këtë shtojcë të merret me të. Ne kurrë nuk heqim script-e për ju."
+    },
+    "POSSIBLE_DUPLICATE_WIDGET": {
+      "title": "Mini-vegël e mundshme e dyfishtë",
+      "why": "Ne gjetëm shenja të një script-i të dytë mini-veglet (për shembull, një etiketë script shtesë), por nuk mundëm të konfirmonim një mini-vegël të dytë të dukshme — cache mund ta errësojë këtë.",
+      "fix": "Sigurohuni që mini-vegla të jetë shtuar vetëm një herë. Nëse keni një fragment manual në temën tuaj, hiqeni atë dhe mbështetuni te ky shtojcë."
+    },
+    "OPTIMIZER_INTERFERENCE": {
+      "title": "Një shtojcë cache ose optimizimi mund të ndërhyjë",
+      "why": "Një Çelës Mini-veglet është ruajtur, por script-i i mini-veglet nuk ishte i pranishëm në faqe — një shtojcë cache/optimizimi mund ta ketë hequr ose ndryshuar.",
+      "fix": "Përjashtoni script-in e EaseAccess24 nga cache/optimizimi. Rekomandime të detajuara, sipas shtojcës, do të jenë së shpejti në seksionin e Kompatibilitetit."
+    },
+    "STAGING_DETECTED": {
+      "title": "Mjedisi i provës (staging) është zbuluar",
+      "why": "Kjo duket si një faqe prove (staging) ose zhvillimi. Mini-vegla shfaqet vetëm në fushat e autorizuara në EaseAccess24, kështu që mund të mos shfaqet këtu.",
+      "fix": "Kjo është e pritshme në provë (staging). Shtoni këtë fushë në Dashboard-in tuaj nëse dëshironi që mini-vegla të shfaqet këtu, ose testoni në fushën tuaj live."
+    },
+    "LOCALHOST_DETECTED": {
+      "title": "Mjedisi lokal është zbuluar",
+      "why": "Kjo faqe po funksionon në localhost. Mini-vegla shfaqet vetëm në fushat e autorizuara në EaseAccess24, kështu që nuk do të shfaqet lokalisht.",
+      "fix": "Kjo është e pritshme lokalisht. Testoni në fushën tuaj live, të autorizuar për të parë mini-veglen."
+    },
+    "KEY_INVALID": {
+      "title": "Çelësi i mini-veglet nuk u pranua",
+      "why": "Çelësi i Mini-veglet u refuzua.",
+      "fix": "Kontrolloni çelësin në Dashboard-in tuaj EaseAccess24 dhe ruajeni përsëri."
+    },
+    "SUBSCRIPTION_EXPIRED": {
+      "title": "Abonimi ka skaduar",
+      "why": "Abonimi për këtë Çelës Mini-veglet nuk është më aktiv.",
+      "fix": "Rinovoni planin tuaj në Dashboard-in EaseAccess24."
+    },
+    "ORG_DISABLED": {
+      "title": "Organizata është çaktivizuar",
+      "why": "Organizata për këtë Çelës Vegël është e çaktivizuar.",
+      "fix": "Kontaktoni mbështetjen e EaseAccess24 ose kontrolloni Dashboard-in tuaj."
+    }
+  },
+  "nav": {
+    "aria": "Seksionet EaseAccess24",
+    "connection": "Lidhje",
+    "compatibility": "Pajtueshmëri",
+    "activity": "Aktiviteti",
+    "support": "Mbështetje",
+    "help": "Ndihmë"
+  },
+  "compatibility": {
+    "title": "Pajtueshmëria e cache-it dhe optimizimit",
+    "intro": "Plugin-et e cache-it dhe optimizimit mund të shtyjnë, kombinojnë ose heqin skriptet — duke përfshirë vegël EaseAccess24. Ne shtojmë sugjerime që i kërkojnë atyre të lënë skriptin tonë rehat, por disa konfigurime ende kërkojnë një përjashtim manual. Ne kurrë nuk ndryshojmë cilësimet e një plugin-i tjetër për ju.",
+    "noneTitle": "Asnjë plugin i njohur cache ose optimizimi nuk është zbuluar",
+    "noneBody": "Nuk gjetëm asnjë nga plugin-et e cache-it/optimizimit që ne njohim. Nëse vegla ende nuk shfaqet, drejtoni një Kontroll Shëndeti te skeda Lidhja.",
+    "cloudflareCdnNote": "Shënim: Cloudflare që funksionon si CDN (Rocket Loader, Auto Minify në fund) nuk mund të zbulohet nga faqja juaj. Nëse përdorni Cloudflare, kontrolloni edhe ato cilësime.",
+    "detectedTitle": "Plugin-e të zbuluara",
+    "recommendationLabel": "Rekomandim",
+    "modifiedTitle": "Skripti i vegël mund të jetë duke u modifikuar",
+    "modifiedBody": "Një plugin cache/optimizimi është aktiv dhe Kontrolli juaj i fundit Shëndetësor zbuloi se skripti i vegël nuk ishte në faqe. Aplikoni përjashtimin më poshtë dhe drejtoni përsëri kontrollin.",
+    "plugins": {
+      "wp-rocket": {
+        "recommendation": "Në WP Rocket → File Optimization, përjashtoni “widget.easeaccess24.com/sdk.js” nga minimizimi i JavaScript, kombinimi dhe “Delay JavaScript execution”. WP Rocket gjithashtu respekton sugjerimin tonë data-no-minify."
+      },
+      "litespeed": {
+        "recommendation": "Në LiteSpeed Cache → Page Optimization → JS Settings, shtoni “widget.easeaccess24.com” te JS Excludes (dhe deferred/delayed excludes nëse janë aktivizuar)."
+      },
+      "autoptimize": {
+        "recommendation": "Në Autoptimize → JS, Images..., shtoni “easeaccess24” te “Exclude scripts from Autoptimize”. Autoptimize gjithashtu respekton sugjerimin tonë data-no-optimize."
+      },
+      "perfmatters": {
+        "recommendation": "Në Perfmatters → Assets, shtoni “easeaccess24” te përjashtimet për “Delay JavaScript” dhe çdo opsion të defer/minify të skripteve."
+      },
+      "asset-cleanup": {
+        "recommendation": "Në Asset CleanUp, sigurohuni që skripti EaseAccess24 të mos fshihet nga faqet tuaja dhe përjashtojeni nga çdo opsion JS minify/combine/defer."
+      },
+      "cloudflare": {
+        "recommendation": "Në Cloudflare, përjashtoni skriptin e vegël nga Rocket Loader (tag-u ynë tashmë vendos data-cfasync=\"false\") dhe nga Auto Minify/Mirage nëse janë aktivizuar për skriptet."
+      }
+    }
+  },
+  "eventLog": {
+    "title": "Regjistri i aktivitetit",
+    "intro": "Një histori e shkurtër e kontrolleve shëndetësore dhe ngjarjeve të plugin-eve. Ky regjistër qëndron në faqen tuaj dhe nuk dërgohet kurrë automatikisht askund.",
+    "empty": "Asnjë ngjarje ende nuk është regjistruar. Drejtoni një Kontroll Shëndeti te skeda Lidhja për të regjistruar një.",
+    "clear": "Fshi regjistrin",
+    "clearConfirm": "Fshi të gjitha ngjarjet e regjistruara?",
+    "confirmClear": "Po, fshi",
+    "cancel": "Anullo",
+    "cleared": "Regjistri i aktivitetit u fshi.",
+    "loadError": "Nuk arritëm të ngarkonim regjistrin e aktivitetit. Rilarkoni faqen dhe provoni përsëri.",
+    "loading": "Duke ngarkuar aktivitetin...",
+    "types": {
+      "health_check": "Kontroll Shëndeti",
+      "key_saved": "Çelësi Vegël u ruajt",
+      "key_updated": "Çelësi Vegël u përditësua",
+      "activated": "Plugin-i u aktivizua",
+      "deactivated": "Plugin-i u çaktivizua"
+    },
+    "relative": {
+      "justNow": "Tani",
+      "minutesAgo": "{{n}} minuta më parë",
+      "hoursAgo": "{{n}} orë më parë",
+      "daysAgo": "{{n}} ditë më parë"
+    }
+  },
+  "supportReport": {
+    "title": "Raport mbështetjeje",
+    "intro": "Gjeneroni një raport që mund ta ndani me mbështetjen e EaseAccess24. Ai përfshin mjedisin tuaj, statusin e lidhjes, plugin-et e cache-it të zbuluara dhe ngjarjet e fundit. Çelësi juaj Vegël është i maskuar dhe nuk përfshihen të dhëna personale.",
+    "privacyNote": "Asgjë nuk dërgohet automatikisht. Nuk ka asnjë server të përfshirë — ju kopjoni ose shkarkoni raportin më poshtë dhe e ndani vetë.",
+    "generate": "Gjeneroni raport",
+    "regenerate": "Rigjeneroni",
+    "generating": "Duke gjeneruar...",
+    "previewLabel": "Parapremja e raportit (saktësisht ajo që do të kopjohet ose shkarkohet)",
+    "copy": "Kopjo",
+    "copied": "Kopjuar",
+    "copyFailed": "Kopjimi nuk është i disponueshëm në këtë shfletues. Përdorni Shkarkim në vend të kësaj.",
+    "downloadTxt": "Shkarkoni .txt",
+    "downloadJson": "Shkarkoni .json",
+    "generateError": "Nuk mundëm ta gjenerojmë raportin. Rifreskoni faqen dhe provoni përsëri."
+  },
+  "pluginInfo": {
+    "title": "Informacion mbi shtojcën",
+    "version": "Versioni",
+    "wpCompat": "Përputhshmëria me WordPress",
+    "phpMin": "PHP minimum",
+    "testedUpTo": "Testuar deri në",
+    "supportStatus": "Statusi i mbështetjes",
+    "supportStatusActive": "Mbështetet aktivisht"
+  },
+  "faq": {
+    "title": "Ndihmë & Pyetjet më të shpeshta",
+    "intro": "Përgjigje për pyetjet e zakonshme rreth lidhjes dhe zgjidhjes së problemeve të widget-it.",
+    "learnMore": "Mësoni më shumë",
+    "items": {
+      "findKey": {
+        "q": "Ku e gjej çelësin tim të widget-it?",
+        "a": "Identifikohuni në app.easeaccess24.com, hapni seksionin Integrate dhe kopjoni Çelësin tuaj të Widget-it (ose fragmentin e plotë të skriptit). Futeni në skedën Connection — ne do të nxjerrim çelësin nga një fragment për ju."
+      },
+      "notShowing": {
+        "q": "Widget-i nuk po shfaqet — çfarë duhet të kontrolloj?",
+        "a": "Kryeni një Kontrollim Shëndetësor në skedën Connection. Ai ju tregon nëse skripti është shtuar, i arritshëm dhe nëse widget-i shfaqet në të vërtetë. Shkaqet më të zakonshme janë domeni që nuk është shtuar në dashboard-in tuaj, një çelës i gabuar, ose një plugin ruajtjeje që heq skriptin."
+      },
+      "cachePlugin": {
+        "q": "Unë përdor një plugin ruajtjeje ose optimizimi. A do të krijojë konflikt?",
+        "a": "Mund të krijojë. Tag-u ynë i skriptit kërkon nga plugin-et e zakonshme që ta anashkalojnë atë, por disa konfigurime ende kërkojnë një përjashtim manual. Kontrolloni skedën Compatibility për rekomandime për secilin plugin. Ne kurrë nuk ndryshojmë cilësimet e një plugin-i tjetër për ju."
+      },
+      "stagingLocalhost": {
+        "q": "A funksionon widget-i në staging ose localhost?",
+        "a": "Widget-i shfaqet vetëm në domenët e autorizuar për Çelësin tuaj të Widget-it, prandaj zakonisht nuk do të shfaqet në staging ose localhost. Kjo është e pritur dhe jo një gabim i plugin-it — testoni në domain-in tuaj aktual, të autorizuar."
+      },
+      "dataPrivacy": {
+        "q": "Çfarë të dhënash ruan ose dërgon ky plugin?",
+        "a": "Plugin-i ruan Çelësin tuaj të Widget-it dhe cilësimet në faqen tuaj, plus një regjistër të shkurtër të aktivitetit lokal. Ai nuk bën thirrje automatike drejt EaseAccess24 përtej shtimit të skriptit të widget-it dhe, gjatë një Kontrollimi Shëndetësor, testimit nëse ai skript është i arritshëm. Raportet e mbështetjes ndahen vetëm nga ju, manualisht."
+      },
+      "removeData": {
+        "q": "Si i fshij të gjitha të dhënat e plugin-it?",
+        "a": "Konfigurimi juaj ruhet kur çaktivizoni për të mundur të riaktivizoni më vonë. Për të fshirë gjithçka, aktivizoni \"Hiq të gjitha të dhënat e EaseAccess24\" përpara se të fshini plugin-in, pastaj fshijeni atë nga ekrani i Plugins."
+      }
+    }
+  },
+  "settings": {
+    "languageLabel": "Gjuha",
+    "languageAria": "Gjuha e ndërfaqes",
+    "dataTitle": "Të dhënat & privatësia",
+    "removeDataLabel": "Hiqni të gjitha të dhënat e EaseAccess24 kur plugin-i fshihet",
+    "removeDataHelp": "Kur aktivizohet, fshirja e plugin-it heq gjithashtu Çelësin tuaj të Widget-it, cilësimet dhe regjistrin e aktivitetit. Lëreni të fikur për të ruajtur konfigurimin tuaj për një instalim të ardhshëm. Skedarët tuaj të temës nuk preken kurrë.",
+    "saved": "Ruajtur",
+    "saveError": "Nuk mundëm t'i ruanim cilësimet tuaja. Kontrolloni lidhjen tuaj dhe provoni përsëri.",
+    "loadError": "Nuk mundëm t'i ngarkonim cilësimet tuaja. Rifreskoni faqen dhe provoni përsëri."
+  },
+  "footer": {
+    "tagline": "Duke e bërë ueb-in të aksesueshëm për të gjithë.",
+    "madeBy": "Bërë nga EaseAccess24",
+    "platform": "Platforma EaseAccess24",
+    "docs": "Mbështetje & dokumentacion",
+    "privacyLink": "Politika e privatësisë",
+    "reportIssueLink": "Raportoni një problem",
+    "copyright": "© {{year}} EaseAccess24"
+  }
+}

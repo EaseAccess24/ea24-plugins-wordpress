@@ -1,0 +1,290 @@
+{
+  "status": {
+    "notConnected": "Nincs kapcsolat",
+    "healthy": "Csatlakoztatva · Működik",
+    "attention": "Csatlakoztatva · Figyelmet igényel"
+  },
+  "common": {
+    "appName": "EaseAccess24 Akadálymentesítés",
+    "appNameShort": "EaseAccess24",
+    "saving": "Mentés…",
+    "cancel": "Mégse",
+    "retry": "Újrapróbálkozás",
+    "updateKey": "Kulcs frissítése"
+  },
+  "onboarding": {
+    "title": "Csatlakoztassa webhelyét az EaseAccess24-hez",
+    "subtitle": "Illessze be a Widget kulcsot (vagy a teljes script snippetet) a hozzáférhetőségi widget hozzáadásához ehhez a webhelyhez.",
+    "emptyTitle": "Még nincs Widget kulcsa?",
+    "emptyBody": "Hozzon létre egy szervezetet, válasszon egy csomagot, és adja hozzá ezt a domain-t az EaseAccess24-ben. Kapni fog egy Widget kulcsot, amit ide illeszthet be.",
+    "getKeyCta": "Szerezze meg a Widget kulcsát",
+    "fieldLabel": "Widget kulcs vagy script snippet",
+    "helper": "Illesszen be csak a kulcsot (például ABC123) vagy a teljes <script> snippetet – mi kinyerjük belőle a kulcsot.",
+    "placeholder": "ABC123 —vagy— <script async src=\"https://widget.easeaccess24.com/sdk.js?key=ABC123\"></script>",
+    "whereLink": "Hol találom ezt?",
+    "connectCta": "Csatlakozás és ellenőrzés",
+    "revealKey": "Mutat",
+    "hideKey": "Elrejt",
+    "copyKey": "Másolás",
+    "copied": "Másolva",
+    "errors": {
+      "empty": "Először illessze be a Widget kulcsot vagy a script snippetet.",
+      "noKey": "Ebben nem találtunk Widget kulcsot. Illesszen be csak a kulcsot, vagy a teljes script snippetet, ami tartalmazza azt.",
+      "network": "Nem tudtuk elmenteni a kulcsot. Ellenőrizze a kapcsolatot és próbálkozzon újra."
+    }
+  },
+  "stepper": {
+    "aria": "Beállítás folyamata",
+    "paste": "Beillesztés",
+    "validate": "Érvényesítés",
+    "healthCheck": "Állapotellenőrzés",
+    "done": "Kész",
+    "state": {
+      "done": "befejezve",
+      "current": "jelenlegi lépés",
+      "upcoming": "következő"
+    }
+  },
+  "dashboard": {
+    "statusBadge": "Csatlakoztatva",
+    "title": "Kapcsolat",
+    "subtitle": "A Widget kulcsa elmentve. Futtasson egy Állapotellenőrzést, hogy megbizonyosodjon arról, hogy a widget betöltődik és látható a webhelyén.",
+    "keyLabel": "Widget kulcs",
+    "domainLabel": "Domain",
+    "lastCheckLabel": "Utolsó állapotellenőrzés",
+    "neverChecked": "Még nem ellenőrizve",
+    "healthNotRunYet": "Még nem futott ellenőrzés"
+  },
+  "health": {
+    "heading": "Állapotellenőrzés",
+    "intro": "Ez az Ön böngészőjében fut: betölti a webhelyét és ellenőrzi, hogy a widget valóban megjelenik-e. Semmi sem kerül elküldésre az EaseAccess24-nek.",
+    "run": "Futtassa az Állapotellenőrzést",
+    "rerun": "Futtassa újra",
+    "running": "Állapotellenőrzés futtatása…",
+    "resultsHeading": "Eredmény",
+    "checklistHeading": "Mit ellenőriztünk",
+    "advisoriesHeading": "Érdemes ellenőrizni",
+    "timeoutTitle": "Nem tudtuk befejezni az ellenőrzést",
+    "timeoutBody": "Az ellenőrzés nem fejeződött be időben. Ez akkor fordulhat elő, ha az oldal betöltése lassú volt, vagy egy biztonsági beállítás blokkolta. Próbálja újra."
+  },
+  "checklist": {
+    "keySaved": "Widget kulcs mentve",
+    "sdkTag": "Widget szkript hozzáadva a webhelyéhez",
+    "sdkReachable": "A widget szkript elérhető",
+    "widgetVisible": "A widget megjelenik és látható",
+    "singleInstance": "Pontosan egy widget van az oldalon",
+    "status": {
+      "pass": "sikeres",
+      "fail": "sikertelen",
+      "warn": "figyelmeztetés",
+      "info": "információ",
+      "na": "nem alkalmazható"
+    }
+  },
+  "actions": {
+    "openDashboard": "Nyissa meg az EaseAccess24 irányítópultot",
+    "retry": "Futtassa újra az ellenőrzést"
+  },
+  "diagnostics": {
+    "whyLabel": "Miért",
+    "fixLabel": "Hogyan javítható",
+    "OK": {
+      "title": "A widgetje élőben működik",
+      "why": "Betöltöttük a webhelyét, és megjelent a hozzáférhetőségi widget, amely látható is.",
+      "fix": "Nincs teendő – minden rendben."
+    },
+    "DOMAIN_NOT_ALLOWED": {
+      "title": "Tartomány nem engedélyezett / kulcs nincs engedélyezve",
+      "why": "A widget szkript betöltődött, de jelezte, hogy ez a tartomány nincs engedélyezve a Widget kulcsához. Ugyanez az üzenet vonatkozik a helytelen kulcsra és egy még hozzá nem adott tartományra.",
+      "fix": "Nyissa meg az EaseAccess24 irányítópultot, győződjön meg arról, hogy ez a pontos tartomány szerepel a szervezeténél, ellenőrizze, hogy a Widget kulcsa megegyezik, majd futtassa újra az ellenőrzést."
+    },
+    "SDK_UNREACHABLE": {
+      "title": "A widget szkript nem volt betölthető",
+      "why": "A böngészője nem tudta elérni a widget szkript URL-jét. Ez általában hálózati, CDN- vagy gyorsítótárazási probléma, nem pedig konfigurációs probléma.",
+      "fix": "Ellenőrizze webhelye hálózatát/CDN-jét, törölje a gyorsítótárakat, és futtassa újra az ellenőrzést."
+    },
+    "WIDGET_NOT_INITIALIZED": {
+      "title": "A widget nem töltődött be",
+      "why": "A widget szkript a helyén van, de nem jelent meg látható widget, és nem jelentettek konkrét okot. Gyakori okok: a tartomány még nincs hozzáadva, a kulcs hibás, vagy egy szkript blokkolva lett.",
+      "fix": "Erősítse meg ezt a tartományt és a Widget kulcsát az EaseAccess24 irányítópulton, győződjön meg róla, hogy semmi sem blokkolja a szkriptet, majd futtassa újra az ellenőrzést."
+    },
+    "DUPLICATE_WIDGET": {
+      "title": "Duplikált widget észlelve",
+      "why": "Több mint egy widget töltődik be az oldalon. Ez általában azt jelenti, hogy az SDK kétszer lett hozzáadva – például, egyszer a bővítmény, másszor pedig a sablon manuális kódrészlete által.",
+      "fix": "Csak egy módszert tartson meg. Ha a szkriptet a sablonjához vagy egy másik bővítményhez adta hozzá, távolítsa el, és hagyja, hogy ez a bővítmény kezelje. Soha nem távolítunk el szkripteket az Ön helyett."
+    },
+    "POSSIBLE_DUPLICATE_WIDGET": {
+      "title": "Lehetséges duplikált widget",
+      "why": "Egy második widget szkriptre utaló jeleket találtunk (például egy extra szkript címkét), de nem tudtuk megerősíteni a második látható widgetet – ezt a gyorsítótárazás elhomályosíthatja.",
+      "fix": "Győződjön meg róla, hogy a widget csak egyszer van hozzáadva. Ha manuális kódrészlete van a sablonjában, távolítsa el, és használja ezt a bővítményt."
+    },
+    "OPTIMIZER_INTERFERENCE": {
+      "title": "Egy gyorsítótárazó vagy optimalizáló bővítmény zavarhat",
+      "why": "A Widget kulcs mentve lett, de a widget szkript nem volt jelen az oldalon – egy gyorsítótárazó/optimalizáló bővítmény eltávolíthatta vagy módosíthatta azt.",
+      "fix": "Zárja ki az EaseAccess24 szkriptet a gyorsítótárazásból/optimalizálásból. Az egyes bővítményekre vonatkozó részletes ajánlások hamarosan elérhetők lesznek a Kompatibilitási részben."
+    },
+    "STAGING_DETECTED": {
+      "title": "Tesztkörnyezet észlelve",
+      "why": "Ez egy teszt- vagy fejlesztői webhelynek tűnik. A widget csak az EaseAccess24-ben engedélyezett tartományokon jelenik meg, így itt előfordulhat, hogy nem látható.",
+      "fix": "Ez tesztkörnyezetben várható. Adja hozzá ezt a tartományt az Irányítópulton, ha szeretné, hogy a widget itt is megjelenjen, vagy tesztelje az élő tartományán."
+    },
+    "LOCALHOST_DETECTED": {
+      "title": "Helyi környezet észlelve",
+      "why": "Ez a webhely localhoston fut. A widget csak az EaseAccess24-ben engedélyezett tartományokon jelenik meg, így helyben nem fog látszódni.",
+      "fix": "Ez helyi környezetben várható. Tesztelje az élő, engedélyezett tartományán a widget megtekintéséhez."
+    },
+    "KEY_INVALID": {
+      "title": "Widget kulcs nem elfogadott",
+      "why": "A Widget kulcs el lett utasítva.",
+      "fix": "Ellenőrizze a kulcsot az EaseAccess24 irányítópulton, és mentse el újra."
+    },
+    "SUBSCRIPTION_EXPIRED": {
+      "title": "Előfizetés lejárt",
+      "why": "A Widget kulcs előfizetése már nem aktív.",
+      "fix": "Újítsa meg tervét az EaseAccess24 irányítópulton."
+    },
+    "ORG_DISABLED": {
+      "title": "Szervezet letiltva",
+      "why": "A Widget Keyhez tartozó szervezet le van tiltva.",
+      "fix": "Vedd fel a kapcsolatot az EaseAccess24 támogatásával, vagy ellenőrizd a Vezérlőpultot."
+    }
+  },
+  "nav": {
+    "aria": "EaseAccess24 szekciók",
+    "connection": "Kapcsolat",
+    "compatibility": "Kompatibilitás",
+    "activity": "Tevékenység",
+    "support": "Támogatás",
+    "help": "Súgó"
+  },
+  "compatibility": {
+    "title": "Gyorsítótár és optimalizálás kompatibilitás",
+    "intro": "A gyorsítótár és optimalizáló bővítmények késleltethetik, kombinálhatják vagy eltávolíthatják a szkripteket – beleértve az EaseAccess24 widgetet is. Tippeket adunk hozzá, amelyek arra kérik őket, hogy hagyják békén a szkriptünket, de egyes beállítások továbbra is manuális kizárást igényelnek. Soha nem módosítunk helyetted egy másik bővítmény beállításait.",
+    "noneTitle": "Nem észlelhető gyorsítótár vagy optimalizáló bővítmény",
+    "noneBody": "Nem találtunk az általunk ismert gyorsítótár/optimalizáló bővítmények közül. Ha a widget továbbra sem jelenik meg, futtasd az „Egészségügyi ellenőrzés” funkciót a Kapcsolat lapon.",
+    "cloudflareCdnNote": "Megjegyzés: A Cloudflare CDN-ként (Rocket Loader, automatikus minifikáció a peremen) futtatása nem észlelhető az oldaladról. Ha Cloudflare-t használsz, ellenőrizd ezeket a beállításokat is.",
+    "detectedTitle": "Észlelt bővítmények",
+    "recommendationLabel": "Ajánlás",
+    "modifiedTitle": "A widget szkriptje módosulhat",
+    "modifiedBody": "Egy gyorsítótár/optimalizáló bővítmény aktív, és az utolsó egészségügyi ellenőrzés során kiderült, hogy a widget szkriptje nem volt az oldalon. Alkalmazd az alábbi kizárást, és futtasd újra az ellenőrzést.",
+    "plugins": {
+      "wp-rocket": {
+        "recommendation": "A WP Rocket → Fájlok optimalizálása menüpontban zárd ki a „widget.easeaccess24.com/sdk.js” fájlt a JavaScript minifikációból, kombinálásból és a „JavaScript végrehajtásának késleltetése” funkcióból. A WP Rocket tiszteletben tartja az adat-no-minify tippet is."
+      },
+      "litespeed": {
+        "recommendation": "A LiteSpeed Cache → Oldal optimalizálása → JS beállítások menüpontban add hozzá a „widget.easeaccess24.com” címet a JS Kizárásokhoz (valamint a Késleltetett/Elhalasztott kizárásokhoz, ha engedélyezve vannak)."
+      },
+      "autoptimize": {
+        "recommendation": "Az Autoptimize → JS, képek… menüpontban add hozzá az „easeaccess24” kifejezést a „Szűrje ki a szkripteket az Autoptimize-ból” opcióhoz. Az Autoptimize tiszteletben tartja az adat-no-optimize tippet is."
+      },
+      "perfmatters": {
+        "recommendation": "A Perfmatters → Eszközök menüpontban add hozzá az „easeaccess24” kifejezést a „JavaScript késleltetése” és bármely szkript késleltetési/minifikációs opció kizárásaihoz."
+      },
+      "asset-cleanup": {
+        "recommendation": "Az Asset CleanUp (Eszköztisztítás) menüpontban győződj meg róla, hogy az EaseAccess24 szkript nem van-e letiltva az oldaladon, és zárd ki a JS minifikáció/kombinálás/késleltetés opciókból."
+      },
+      "cloudflare": {
+        "recommendation": "A Cloudflare-ben zárd ki a widget szkriptjét a Rocket Loaderből (a címkénk már beállítja az „data-cfasync=\\\"false\\\"” értéket) és az automatikus minifikációból/Mirage-ból, ha engedélyezve van a szkriptekhez."
+      }
+    }
+  },
+  "eventLog": {
+    "title": "Tevékenységnapló",
+    "intro": "Rövid előzmény az egészségügyi ellenőrzésekről és a bővítmények eseményeiről. Ez a napló az oldaladon marad, és soha nem kerül automatikusan elküldésre.",
+    "empty": "Még nincsenek események a naplóban. Futtass egy egészségügyi ellenőrzést a Kapcsolat lapon egy esemény rögzítéséhez.",
+    "clear": "Napló törlése",
+    "clearConfirm": "Biztosan törlöd az összes naplózott eseményt?",
+    "confirmClear": "Igen, törlés",
+    "cancel": "Mégse",
+    "cleared": "Tevékenységnapló törölve.",
+    "loadError": "Nem sikerült betölteni a tevékenységnaplót. Töltsd újra az oldalt, és próbáld meg újra.",
+    "loading": "Tevékenységek betöltése…",
+    "types": {
+      "health_check": "Egészségügyi ellenőrzés",
+      "key_saved": "Widget kulcs mentve",
+      "key_updated": "Widget kulcs frissítve",
+      "activated": "Bővítmény aktiválva",
+      "deactivated": "Bővítmény inaktiválva"
+    },
+    "relative": {
+      "justNow": "Épp most",
+      "minutesAgo": "{{n}} perce",
+      "hoursAgo": "{{n}} órája",
+      "daysAgo": "{{n}} napja"
+    }
+  },
+  "supportReport": {
+    "title": "Támogatási jelentés",
+    "intro": "Hozzon létre egy jelentést, amelyet megoszthat az EaseAccess24 támogatásával. Tartalmazza a környezetet, a kapcsolati állapotot, az észlelt gyorsítótár bővítményeket és a közelmúltbeli eseményeket. A Widget Key el van rejtve, és nem tartalmaz személyes adatokat.",
+    "privacyNote": "Semmi sem kerül automatikusan elküldésre. Nincs szerver bevonva – Ön másolja vagy tölti le az alábbi jelentést, és maga osztja meg.",
+    "generate": "Jelentés generálása",
+    "regenerate": "Újra generálása",
+    "generating": "Generálás…",
+    "previewLabel": "Jelentés előnézete (pontosan az, ami másolva vagy letöltve lesz)",
+    "copy": "Másolás",
+    "copied": "Másolva",
+    "copyFailed": "A másolás nem érhető el ebben a böngészőben. Használja helyette a Letöltés funkciót.",
+    "downloadTxt": "Letöltés .txt",
+    "downloadJson": "Letöltés .json",
+    "generateError": "Nem sikerült létrehozni a jelentést. Töltse újra az oldalt, és próbálkozzon újra."
+  },
+  "pluginInfo": {
+    "title": "Plugin információk",
+    "version": "Verzió",
+    "wpCompat": "WordPress kompatibilitás",
+    "phpMin": "PHP minimum",
+    "testedUpTo": "Tesztelve eddig:",
+    "supportStatus": "Támogatási státusz",
+    "supportStatusActive": "Aktívan támogatott"
+  },
+  "faq": {
+    "title": "Súgó és GYIK",
+    "intro": "Válaszok a widget csatlakoztatásával és hibaelhárításával kapcsolatos gyakori kérdésekre.",
+    "learnMore": "További információ",
+    "items": {
+      "findKey": {
+        "q": "Hol találom a widget kulcsomat?",
+        "a": "Jelentkezzen be a app.easeaccess24.com weboldalon, nyissa meg az Integrálás szekciót, és másolja ki a Widget kulcsot (vagy a teljes kódrészletet). Illessze be a Kapcsolat fülre – mi kihámozzuk a kulcsot a kódrészletből az Ön számára."
+      },
+      "notShowing": {
+        "q": "A widget nem jelenik meg – mit kellene ellenőriznem?",
+        "a": "Futtasson egy Állapotellenőrzést a Kapcsolat fülön. Ez megmutatja, hogy a szkript fel van-e adva, elérhető-e, és hogy a widget ténylegesen megjelenik-e. A leggyakoribb okok közé tartozik, hogy az Ön irányítópultján nincsenek hozzáadva a domainek, rossz kulcs lett megadva, vagy egy cache-elő plugin távolítja el a szkriptet."
+      },
+      "cachePlugin": {
+        "q": "Cache-elő vagy optimalizáló plugint használok. Ez ütközni fog?",
+        "a": "Előfordulhat. A szkript címkénk kéri a gyakori plugineket, hogy hagyják figyelmen kívül, de néhány beállítás még mindig manuális kizárást igényel. A Kompatibilitás fülön talál plugin-specifikus ajánlásokat. Mi soha nem módosítjuk más plugin beállításait az Ön számára."
+      },
+      "stagingLocalhost": {
+        "q": "Működik a widget a staging vagy a localhost környezetben?",
+        "a": "A widget csak az Ön Widget kulcsához engedélyezett domaineken jelenik meg, így általában nem fog megjelenni a staging vagy a localhost környezetben. Ez várható, és nem plugin hiba – tesztelje az Ön élő, engedélyezett domainjén."
+      },
+      "dataPrivacy": {
+        "q": "Milyen adatokat tárol vagy küld ez a plugin?",
+        "a": "A plugin tárolja az Ön Widget kulcsát és beállításait az Ön saját webhelyén, valamint egy rövid helyi tevékenységi naplót. Nem kezdeményez automatikus hívásokat a EaseAccess24 felé a widget szkript hozzáadásán túl, és az Állapotellenőrzés során sem teszteli, hogy a szkript elérhető-e. A támogatási jelentéseket csak Ön osztja meg, manuálisan."
+      },
+      "removeData": {
+        "q": "Hogyan távolíthatom el az összes plugin adatot?",
+        "a": "A konfigurációja megmarad inaktiváláskor, így később újraaktiválhatja. Minden eltávolításához engedélyezze a „Minden EaseAccess24 adat eltávolítása” opciót a plugin törlése előtt, majd törölje azt a bővítmények képernyőről."
+      }
+    }
+  },
+  "settings": {
+    "languageLabel": "Nyelv",
+    "languageAria": "Felület nyelve",
+    "dataTitle": "Adatok és adatvédelem",
+    "removeDataLabel": "Minden EaseAccess24 adat eltávolítása a plugin törlésekor",
+    "removeDataHelp": "Ha engedélyezve van, a plugin törlésekor eltávolítja a Widget kulcsot, a beállításokat és a tevékenységi naplót. Hagyja kikapcsolva, hogy megtartsa a konfigurációt egy későbbi újratelepítéshez. A sablonfájlokat soha nem érinti.",
+    "saved": "Mentve",
+    "saveError": "Nem sikerült menteni a beállításait. Ellenőrizze a kapcsolatot, és próbálkozzon újra.",
+    "loadError": "Nem sikerült betölteni a beállításait. Töltse újra az oldalt, és próbálkozzon újra."
+  },
+  "footer": {
+    "tagline": "Mindenki számára hozzáférhetővé tesszük az internetet.",
+    "madeBy": "Készítette: EaseAccess24",
+    "platform": "EaseAccess24 platform",
+    "docs": "Támogatás és dokumentáció",
+    "privacyLink": "Adatvédelmi irányelvek",
+    "reportIssueLink": "Hiba jelentése",
+    "copyright": "© {{year}} EaseAccess24"
+  }
+}

@@ -1,0 +1,52 @@
+# Files and directories excluded from the distributed WordPress.org ZIP.
+# Everything NOT listed here ships. Build output (build/) is generated before
+# packaging and must remain in the ZIP.
+
+# Version control / project meta
+/.git
+/.github
+/.gitignore
+/.gitattributes
+/.distignore
+/.editorconfig
+/.claude
+/SETUP-INSTRUCTIONS.txt
+
+# Local dev environment
+/.wp-env.json
+/.wp-env.override.json
+/docker
+/.wordpress-org
+
+# Source & tooling (compiled into build/ before shipping)
+/src
+/node_modules
+/vendor
+/tests
+/e2e
+/php
+
+# Config that only matters during development
+/package.json
+/package-lock.json
+/composer.json
+/composer.lock
+/postcss.config.js
+/tailwind.config.js
+/webpack.config.js
+/phpunit.xml.dist
+/phpcs.xml.dist
+/playwright.config.js
+/.eslintrc*
+/.prettierrc*
+/.phpunit.result.cache
+
+# Playwright e2e artifacts (generated during test runs)
+/artifacts
+/test-results
+/playwright-report
+
+# Logs & OS cruft
+*.log
+.DS_Store
+Thumbs.db

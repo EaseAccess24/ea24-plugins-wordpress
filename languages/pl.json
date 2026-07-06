@@ -1,0 +1,290 @@
+{
+  "status": {
+    "notConnected": "Nie połączono",
+    "healthy": "Połączono · Stan poprawny",
+    "attention": "Połączono · Wymaga uwagi"
+  },
+  "common": {
+    "appName": "EaseAccess24 Dostępność",
+    "appNameShort": "EaseAccess24",
+    "saving": "Zapisywanie…",
+    "cancel": "Anuluj",
+    "retry": "Ponów próbę",
+    "updateKey": "Zaktualizuj klucz"
+  },
+  "onboarding": {
+    "title": "Połącz swoją witrynę z EaseAccess24",
+    "subtitle": "Wklej swój klucz widżetu (lub cały fragment kodu skryptu), aby dodać widżet dostępności do tej witryny.",
+    "emptyTitle": "Nie masz jeszcze klucza widżetu?",
+    "emptyBody": "Utwórz swoją organizację, wybierz plan i dodaj tę domenę w EaseAccess24. Otrzymasz klucz widżetu do wklejenia tutaj.",
+    "getKeyCta": "Uzyskaj klucz widżetu",
+    "fieldLabel": "Klucz widżetu lub fragment skryptu",
+    "helper": "Wklej sam klucz (na przykład ABC123) lub cały fragment <script> — my wyodrębnimy klucz.",
+    "placeholder": "ABC123 — lub — <script async src=\"https://widget.easeaccess24.com/sdk.js?key=ABC123\"></script>",
+    "whereLink": "Gdzie to znaleźć?",
+    "connectCta": "Połącz i zweryfikuj",
+    "revealKey": "Pokaż",
+    "hideKey": "Ukryj",
+    "copyKey": "Kopiuj",
+    "copied": "Skopiowano",
+    "errors": {
+      "empty": "Najpierw wklej swój klucz widżetu lub fragment skryptu.",
+      "noKey": "Nie udało nam się znaleźć klucza widżetu. Wklej sam klucz lub cały fragment skryptu, który go zawiera.",
+      "network": "Nie udało nam się zapisać klucza. Sprawdź połączenie i spróbuj ponownie."
+    }
+  },
+  "stepper": {
+    "aria": "Postęp konfiguracji",
+    "paste": "Wklej",
+    "validate": "Weryfikuj",
+    "healthCheck": "Kontrola stanu",
+    "done": "Zakończono",
+    "state": {
+      "done": "zakończono",
+      "current": "aktualny krok",
+      "upcoming": "nadchodzący"
+    }
+  },
+  "dashboard": {
+    "statusBadge": "Połączono",
+    "title": "Połączenie",
+    "subtitle": "Twój klucz widżetu został zapisany. Uruchom kontrolę stanu, aby potwierdzić, że widżet jest ładowany i widoczny na Twojej witrynie.",
+    "keyLabel": "Klucz widżetu",
+    "domainLabel": "Domena",
+    "lastCheckLabel": "Ostatnia kontrola stanu",
+    "neverChecked": "Jeszcze nie sprawdzono",
+    "healthNotRunYet": "Nie uruchomiono jeszcze kontroli"
+  },
+  "health": {
+    "heading": "Kontrola stanu",
+    "intro": "To działa w Twojej przeglądarce: ładuje Twoją witrynę i sprawdza, czy widżet faktycznie się pojawia. Nic nie jest wysyłane do EaseAccess24.",
+    "run": "Uruchom kontrolę stanu",
+    "rerun": "Uruchom ponownie",
+    "running": "Trwa kontrola stanu…",
+    "resultsHeading": "Wynik",
+    "checklistHeading": "Co sprawdziliśmy",
+    "advisoriesHeading": "Warto również sprawdzić",
+    "timeoutTitle": "Nie udało się zakończyć sprawdzania",
+    "timeoutBody": "Sprawdzanie nie zakończyło się na czas. Może się tak zdarzyć, jeśli strona ładowała się wolno lub ustawienie bezpieczeństwa je zablokowało. Spróbuj ponownie."
+  },
+  "checklist": {
+    "keySaved": "Klucz widżetu został zapisany",
+    "sdkTag": "Skrypt widżetu dodany do Twojej witryny",
+    "sdkReachable": "Skrypt widżetu jest dostępny",
+    "widgetVisible": "Widżet jest widoczny",
+    "singleInstance": "Dokładnie jeden widżet na stronie",
+    "status": {
+      "pass": "zaliczone",
+      "fail": "niezaliczony",
+      "warn": "ostrzeżenie",
+      "info": "informacja",
+      "na": "nie dotyczy"
+    }
+  },
+  "actions": {
+    "openDashboard": "Otwórz panel EaseAccess24",
+    "retry": "Uruchom sprawdzanie ponownie"
+  },
+  "diagnostics": {
+    "whyLabel": "Dlaczego",
+    "fixLabel": "Jak naprawić",
+    "OK": {
+      "title": "Twój widżet jest aktywny",
+      "why": "Załadowaliśmy Twoją witrynę, a widżet dostępności pojawił się i jest widoczny.",
+      "fix": "Nie ma nic do zrobienia – wszystko jest gotowe."
+    },
+    "DOMAIN_NOT_ALLOWED": {
+      "title": "Domena nie jest dozwolona / klucz nieautoryzowany",
+      "why": "Skrypt widżetu został załadowany, ale zgłosił, że ta domena nie jest autoryzowana dla Twojego klucza widżetu. Ta sama wiadomość dotyczy nieprawidłowego klucza i domeny, która nie została jeszcze dodana.",
+      "fix": "Otwórz panel EaseAccess24, upewnij się, że ta dokładna domena jest dodana w Twojej organizacji, sprawdź, czy klucz widżetu pasuje, a następnie uruchom sprawdzanie ponownie."
+    },
+    "SDK_UNREACHABLE": {
+      "title": "Nie można było załadować skryptu widżetu",
+      "why": "Twoja przeglądarka nie mogła uzyskać dostępu do adresu URL skryptu widżetu. Jest to zazwyczaj problem z siecią, CDN lub pamięcią podręczną, a nie problem z konfiguracją.",
+      "fix": "Sprawdź sieć/CDN swojej witryny, wyczyść pamięć podręczną i uruchom sprawdzanie ponownie."
+    },
+    "WIDGET_NOT_INITIALIZED": {
+      "title": "Widżet nie został załadowany",
+      "why": "Skrypt widżetu jest na miejscu, ale nie pojawił się żaden widoczny widżet i nie podano żadnego konkretnego powodu. Typowe przyczyny: domena nie została jeszcze dodana, klucz jest nieprawidłowy lub skrypt został zablokowany.",
+      "fix": "Potwierdź tę domenę i klucz widżetu w panelu EaseAccess24, upewnij się, że nic nie blokuje skryptu, a następnie uruchom sprawdzanie ponownie."
+    },
+    "DUPLICATE_WIDGET": {
+      "title": "Wykryto zduplikowany widżet",
+      "why": "Na stronie ładuje się więcej niż jeden widżet. Zazwyczaj oznacza to, że SDK został dodany dwukrotnie – na przykład zarówno przez ten wtyczkę, jak i przez ręczny fragment w Twoim motywie.",
+      "fix": "Zachowaj tylko jedną metodę. Jeśli dodałeś skrypt do swojego motywu lub innej wtyczki, usuń go i pozwól tej wtyczce się nim zająć. Nigdy nie usuwamy skryptów za Ciebie."
+    },
+    "POSSIBLE_DUPLICATE_WIDGET": {
+      "title": "Możliwy zduplikowany widżet",
+      "why": "Znaleźliśmy oznaki drugiego skryptu widżetu (na przykład dodatkowy tag skryptu), ale nie mogliśmy potwierdzić drugiego widocznego widżetu – pamięć podręczna może to ukrywać.",
+      "fix": "Upewnij się, że widżet jest dodany tylko raz. Jeśli masz ręczny fragment w swoim motywie, usuń go i polegaj na tej wtyczce."
+    },
+    "OPTIMIZER_INTERFERENCE": {
+      "title": "Wtyczka do buforowania lub optymalizacji może zakłócać działanie",
+      "why": "Klucz widżetu jest zapisany, ale skrypt widżetu nie był obecny na stronie – wtyczka do buforowania/optymalizacji mogła go usunąć lub zmodyfikować.",
+      "fix": "Wyklucz skrypt EaseAccess24 z buforowania/optymalizacji. Szczegółowe zalecenia dla poszczególnych wtyczek wkrótce pojawią się w sekcji Kompatybilność."
+    },
+    "STAGING_DETECTED": {
+      "title": "Wykryto środowisko stagingowe",
+      "why": "Wygląda na to, że jest to witryna stagingowa lub deweloperska. Widżet renderuje się tylko w domenach autoryzowanych w EaseAccess24, więc może się tutaj nie pojawić.",
+      "fix": "Jest to oczekiwane na stagingu. Dodaj tę domenę w swoim panelu, jeśli chcesz, aby widżet się tutaj pojawił, lub przetestuj na swojej domenie produkcyjnej."
+    },
+    "LOCALHOST_DETECTED": {
+      "title": "Wykryto środowisko lokalne",
+      "why": "Ta witryna działa na localhost. Widżet renderuje się tylko w domenach autoryzowanych w EaseAccess24, więc nie pojawi się lokalnie.",
+      "fix": "Jest to oczekiwane lokalnie. Przetestuj na swojej aktywnej, autoryzowanej domenie, aby zobaczyć widżet."
+    },
+    "KEY_INVALID": {
+      "title": "Klucz widżetu nie został zaakceptowany",
+      "why": "Klucz widżetu został odrzucony.",
+      "fix": "Sprawdź klucz w panelu EaseAccess24 i zapisz go ponownie."
+    },
+    "SUBSCRIPTION_EXPIRED": {
+      "title": "Subskrypcja wygasła",
+      "why": "Subskrypcja dla tego klucza widżetu nie jest już aktywna.",
+      "fix": "Odnów swój plan w panelu EaseAccess24."
+    },
+    "ORG_DISABLED": {
+      "title": "Organizacja wyłączona",
+      "why": "Organizacja dla tego klucza widżetu jest wyłączona.",
+      "fix": "Skontaktuj się z pomocą techniczną EaseAccess24 lub sprawdź swój Panel główny."
+    }
+  },
+  "nav": {
+    "aria": "Sekcje EaseAccess24",
+    "connection": "Połączenie",
+    "compatibility": "Kompatybilność",
+    "activity": "Aktywność",
+    "support": "Pomoc techniczna",
+    "help": "Pomoc"
+  },
+  "compatibility": {
+    "title": "Kompatybilność pamięci podręcznej i optymalizacji",
+    "intro": "Wtyczki buforujące i optymalizujące mogą opóźniać, łączyć lub usuwać skrypty — w tym widżet EaseAccess24. Dodajemy wskazówki, które proszą je o pozostawienie naszego skryptu w spokoju, ale niektóre konfiguracje nadal wymagają ręcznego wykluczenia. Nigdy nie zmieniamy ustawień innej wtyczki za Ciebie.",
+    "noneTitle": "Nie wykryto znanych wtyczek buforujących lub optymalizujących",
+    "noneBody": "Nie znaleźliśmy żadnej z rozpoznawanych przez nas wtyczek buforujących/optymalizujących. Jeśli widżet nadal się nie wyświetla, uruchom Kontrolę stanu w zakładce Połączenie.",
+    "cloudflareCdnNote": "Uwaga: Cloudflare działający jako CDN (Rocket Loader, Auto Minify na brzegu) nie może być wykryty z Twojej strony. Jeśli korzystasz z Cloudflare, sprawdź również te ustawienia.",
+    "detectedTitle": "Wykryte wtyczki",
+    "recommendationLabel": "Rekomendacja",
+    "modifiedTitle": "Skrypt widżetu może być modyfikowany",
+    "modifiedBody": "Aktywna jest wtyczka buforująca/optymalizująca, a ostatnia Kontrola stanu wykazała, że skrypt widżetu nie znajdował się na stronie. Zastosuj poniższe wykluczenie i ponownie uruchom kontrolę.",
+    "plugins": {
+      "wp-rocket": {
+        "recommendation": "W sekcji WP Rocket → Optymalizacja plików, wyklucz „widget.easeaccess24.com/sdk.js” z minifikacji JavaScript, łączenia i „Opóźnienia wykonania JavaScript”. WP Rocket honoruje również naszą wskazówkę data-no-minify."
+      },
+      "litespeed": {
+        "recommendation": "W sekcji LiteSpeed Cache → Optymalizacja strony → Ustawienia JS, dodaj „widget.easeaccess24.com” do wykluczeń JS (oraz wykluczeń opóźnienia/zwłoki, jeśli są włączone)."
+      },
+      "autoptimize": {
+        "recommendation": "W sekcji Autoptimize → JS, Obrazy..., dodaj „easeaccess24” do „Wyklucz skrypty z Autoptimize”. Autoptimize honoruje również naszą wskazówkę data-no-optimize."
+      },
+      "perfmatters": {
+        "recommendation": "W sekcji Perfmatters → Zasoby, dodaj „easeaccess24” do wykluczeń dla „Opóźnienia JavaScript” i wszelkich opcji odraczania/minifikacji skryptów."
+      },
+      "asset-cleanup": {
+        "recommendation": "W sekcji Asset CleanUp upewnij się, że skrypt EaseAccess24 nie jest wyładowywany na Twoich stronach i wyklucz go z opcji minifikacji/łączenia/odraczania JS."
+      },
+      "cloudflare": {
+        "recommendation": "W Cloudflare wyklucz skrypt widżetu z Rocket Loader (nasz tag już ustawia data-cfasync=\"false\") oraz z Auto Minify/Mirage, jeśli są włączone dla skryptów."
+      }
+    }
+  },
+  "eventLog": {
+    "title": "Dziennik aktywności",
+    "intro": "Krótka historia kontroli stanu i zdarzeń wtyczek. Ten dziennik pozostaje na Twojej stronie i nigdy nie jest automatycznie wysyłany.",
+    "empty": "Nie zarejestrowano jeszcze żadnych zdarzeń. Uruchom Kontrolę stanu w zakładce Połączenie, aby zarejestrować jedno.",
+    "clear": "Wyczyść dziennik",
+    "clearConfirm": "Wyczyścić wszystkie zarejestrowane zdarzenia?",
+    "confirmClear": "Tak, wyczyść",
+    "cancel": "Anuluj",
+    "cleared": "Dziennik aktywności został wyczyszczony.",
+    "loadError": "Nie udało nam się załadować dziennika aktywności. Odśwież stronę i spróbuj ponownie.",
+    "loading": "Ładowanie aktywności…",
+    "types": {
+      "health_check": "Kontrola stanu",
+      "key_saved": "Klucz widżetu zapisany",
+      "key_updated": "Klucz widżetu zaktualizowany",
+      "activated": "Wtyczka aktywowana",
+      "deactivated": "Wtyczka dezaktywowana"
+    },
+    "relative": {
+      "justNow": "Przed chwilą",
+      "minutesAgo": " temu {{n}} minut",
+      "hoursAgo": " temu {{n}} godzin",
+      "daysAgo": " temu {{n}} dni"
+    }
+  },
+  "supportReport": {
+    "title": "Raport pomocy technicznej",
+    "intro": "Wygeneruj raport, który możesz udostępnić pomocy technicznej EaseAccess24. Zawiera on informacje o Twoim środowisku, statusie połączenia, wykrytych wtyczkach buforujących i ostatnich zdarzeniach. Twój klucz widżetu jest maskowany i nie zawiera żadnych danych osobowych.",
+    "privacyNote": "Nic nie jest wysyłane automatycznie. Nie ma serwera — poniższy raport kopiujesz lub pobierasz, a następnie udostępniasz samodzielnie.",
+    "generate": "Wygeneruj raport",
+    "regenerate": "Generuj ponownie",
+    "generating": "Generowanie…",
+    "previewLabel": "Podgląd raportu (dokładnie to, co zostanie skopiowane lub pobrane)",
+    "copy": "Kopiuj",
+    "copied": "Skopiowano",
+    "copyFailed": "Kopiowanie nie jest dostępne w tej przeglądarce. Użyj zamiast tego opcji Pobierz.",
+    "downloadTxt": "Pobierz .txt",
+    "downloadJson": "Pobierz .json",
+    "generateError": "Nie udało się wygenerować raportu. Odśwież stronę i spróbuj ponownie."
+  },
+  "pluginInfo": {
+    "title": "Informacje o wtyczce",
+    "version": "Wersja",
+    "wpCompat": "Kompatybilność z WordPress",
+    "phpMin": "Minimalna wersja PHP",
+    "testedUpTo": "Testowane do",
+    "supportStatus": "Status wsparcia",
+    "supportStatusActive": "Aktywnie wspierane"
+  },
+  "faq": {
+    "title": "Pomoc i FAQ",
+    "intro": "Odpowiedzi na często zadawane pytania dotyczące połączenia i rozwiązywania problemów z widżetem.",
+    "learnMore": "Dowiedz się więcej",
+    "items": {
+      "findKey": {
+        "q": "Gdzie znajdę mój klucz widżetu?",
+        "a": "Zaloguj się na app.easeaccess24.com, przejdź do sekcji Integracja i skopiuj swój klucz widżetu (lub cały fragment kodu). Wklej go w zakładce Połączenie — wyodrębnimy klucz z fragmentu kodu."
+      },
+      "notShowing": {
+        "q": "Widżet się nie wyświetla — co powinienem sprawdzić?",
+        "a": "Uruchom Kontrolę stanu w zakładce Połączenie. Poinformuje Cię ona, czy skrypt został dodany, czy jest dostępny i czy widżet faktycznie się pojawia. Najczęstsze przyczyny to brak dodania domeny w Twoim panelu, niewłaściwy klucz lub wtyczka buforująca usuwająca skrypt."
+      },
+      "cachePlugin": {
+        "q": "Używam wtyczki buforującej lub optymalizującej. Czy będzie ona powodować konflikty?",
+        "a": "Może. Nasz tag skryptu prosi popularne wtyczki o pominięcie go, ale niektóre konfiguracje nadal wymagają ręcznego wykluczenia. Sprawdź zakładkę Kompatybilność, aby uzyskać zalecenia dotyczące poszczególnych wtyczek. Nigdy nie zmieniamy ustawień innej wtyczki za Ciebie."
+      },
+      "stagingLocalhost": {
+        "q": "Czy widżet działa na stagingu lub localhost?",
+        "a": "Widżet jest renderowany tylko na domenach autoryzowanych dla Twojego klucza widżetu, więc zazwyczaj nie pojawia się na stagingu ani na localhost. Jest to oczekiwane i nie jest błędem wtyczki — testuj na swojej aktywnej, autoryzowanej domenie."
+      },
+      "dataPrivacy": {
+        "q": "Jakie dane przechowuje lub wysyła ta wtyczka?",
+        "a": "Wtyczka przechowuje Twój klucz widżetu i ustawienia na Twojej własnej stronie, a także krótki lokalny dziennik aktywności. Nie wykonuje ona automatycznych wywołań do EaseAccess24 poza dodaniem skryptu widżetu i, podczas Kontroli stanu, testowaniem dostępności tego skryptu. Raporty pomocy są udostępniane wyłącznie przez Ciebie, ręcznie."
+      },
+      "removeData": {
+        "q": "Jak usunąć wszystkie dane wtyczki?",
+        "a": "Twoja konfiguracja jest zachowywana po dezaktywacji, abyś mógł ją ponownie aktywować później. Aby usunąć wszystko, włącz opcję „Usuń wszystkie dane EaseAccess24” przed usunięciem wtyczki, a następnie usuń ją z ekranu Wtyczki."
+      }
+    }
+  },
+  "settings": {
+    "languageLabel": "Język",
+    "languageAria": "Język interfejsu",
+    "dataTitle": "Dane i prywatność",
+    "removeDataLabel": "Usuń wszystkie dane EaseAccess24 po usunięciu wtyczki",
+    "removeDataHelp": "Po włączeniu, usunięcie wtyczki usuwa również Twój klucz widżetu, ustawienia i dziennik aktywności. Pozostaw ją wyłączoną, aby zachować konfigurację do przyszłej ponownej instalacji. Pliki Twojego motywu nigdy nie są modyfikowane.",
+    "saved": "Zapisano",
+    "saveError": "Nie udało się zapisać Twoich ustawień. Sprawdź swoje połączenie i spróbuj ponownie.",
+    "loadError": "Nie udało się załadować Twoich ustawień. Odśwież stronę i spróbuj ponownie."
+  },
+  "footer": {
+    "tagline": "Tworzymy dostępną sieć dla wszystkich.",
+    "madeBy": "Stworzone przez EaseAccess24",
+    "platform": "Platforma EaseAccess24",
+    "docs": "Pomoc i dokumentacja",
+    "privacyLink": "Polityka prywatności",
+    "reportIssueLink": "Zgłoś problem",
+    "copyright": "© {{year}} EaseAccess24"
+  }
+}

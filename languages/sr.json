@@ -1,0 +1,290 @@
+{
+  "status": {
+    "notConnected": "Nije povezano",
+    "healthy": "Povezano · Zdravo",
+    "attention": "Povezano · Potrebna pažnja"
+  },
+  "common": {
+    "appName": "EaseAccess24 Pristupačnost",
+    "appNameShort": "EaseAccess24",
+    "saving": "Čuvanje…",
+    "cancel": "Otkaži",
+    "retry": "Pokušaj ponovo",
+    "updateKey": "Ažuriraj ključ"
+  },
+  "onboarding": {
+    "title": "Povežite svoj sajt sa EaseAccess24",
+    "subtitle": "Nalepite svoj ključ za vidžete (ili ceo isečak koda) da biste dodali vidžet za pristupačnost ovom sajtu.",
+    "emptyTitle": "Još nemate ključ za vidžete?",
+    "emptyBody": "Kreirajte svoju organizaciju, odaberite plan i dodajte ovaj domen u EaseAccess24. Dobićete ključ za vidžete koji ćete ovde nalepiti.",
+    "getKeyCta": "Nabavite svoj ključ za vidžete",
+    "fieldLabel": "Ključ za vidžete ili isečak koda",
+    "helper": "Nalepite samo ključ (na primer ABC123) ili ceo <script> isečak — mi ćemo izvući ključ iz njega.",
+    "placeholder": "ABC123  —ili—  <script async src=\"https://widget.easeaccess24.com/sdk.js?key=ABC123\"></script>",
+    "whereLink": "Gde ovo da pronađem?",
+    "connectCta": "Poveži & Proveri",
+    "revealKey": "Prikaži",
+    "hideKey": "Sakrij",
+    "copyKey": "Kopiraj",
+    "copied": "Kopirano",
+    "errors": {
+      "empty": "Prvo nalepite svoj ključ za vidžete ili isečak koda.",
+      "noKey": "Nismo mogli da pronađemo ključ za vidžete u tome. Nalepite samo ključ ili ceo isečak koda koji ga sadrži.",
+      "network": "Nismo uspeli da sačuvamo vaš ključ. Proverite svoju vezu i pokušajte ponovo."
+    }
+  },
+  "stepper": {
+    "aria": "Napredak podešavanja",
+    "paste": "Nalepi",
+    "validate": "Proveri",
+    "healthCheck": "Provera zdravlja",
+    "done": "Gotovo",
+    "state": {
+      "done": "završeno",
+      "current": "trenutni korak",
+      "upcoming": "predstojeći"
+    }
+  },
+  "dashboard": {
+    "statusBadge": "Povezano",
+    "title": "Povezivanje",
+    "subtitle": "Vaš ključ za vidžete je sačuvan. Pokrenite Proveru zdravlja da biste potvrdili da se vidžet učitava i da je vidljiv na vašem sajtu.",
+    "keyLabel": "Ključ za vidžete",
+    "domainLabel": "Domen",
+    "lastCheckLabel": "Poslednja provera zdravlja",
+    "neverChecked": "Još uvek nije provereno",
+    "healthNotRunYet": "Nije pokrenuta nijedna provera"
+  },
+  "health": {
+    "heading": "Provera zdravlja",
+    "intro": "Ovo se pokreće u vašem pretraživaču: učitava vaš sajt i proverava da li se vidžet zaista pojavljuje. Ništa se ne šalje na EaseAccess24.",
+    "run": "Pokreni Proveru zdravlja",
+    "rerun": "Pokreni ponovo",
+    "running": "Pokretanje Provere zdravlja…",
+    "resultsHeading": "Rezultat",
+    "checklistHeading": "Šta smo proverili",
+    "advisoriesHeading": "Takođe vredi proveriti",
+    "timeoutTitle": "Nismo mogli da završimo proveru",
+    "timeoutBody": "Provera nije završena na vreme. Ovo se može desiti ako je stranica sporo učitavana ili je bezbednosno podešavanje blokiralo proces. Pokušajte ponovo."
+  },
+  "checklist": {
+    "keySaved": "Kljuc za vidžet je sačuvan",
+    "sdkTag": "Skripta za vidžet je dodata na vašu veb lokaciju",
+    "sdkReachable": "Skripta za vidžet je dostupna",
+    "widgetVisible": "Vidžet se pojavljuje i vidljiv je",
+    "singleInstance": "Tačno jedan vidžet na stranici",
+    "status": {
+      "pass": "prošlo",
+      "fail": "nije uspelo",
+      "warn": "upozorenje",
+      "info": "informacija",
+      "na": "nije primenljivo"
+    }
+  },
+  "actions": {
+    "openDashboard": "Otvori EaseAccess24 Dashboard",
+    "retry": "Pokreni proveru ponovo"
+  },
+  "diagnostics": {
+    "whyLabel": "Zašto",
+    "fixLabel": "Kako popraviti",
+    "OK": {
+      "title": "Vaš vidžet je aktivan",
+      "why": "Učitana je vaša veb lokacija i vidžet za pristupačnost se pojavio i vidljiv je.",
+      "fix": "Nema šta da se radi - sve je spremno."
+    },
+    "DOMAIN_NOT_ALLOWED": {
+      "title": "Domen nije dozvoljen / ključ nije ovlašćen",
+      "why": "Skripta za vidžet je učitana, ali je prijavila da ovaj domen nije ovlašćen za vaš ključ vidžeta. Ista poruka pokriva i pogrešan ključ i domen koji još nije dodat.",
+      "fix": "Otvorite svoj EaseAccess24 Dashboard, potvrdite da je ovaj tačan domen dodat pod vašom organizacijom, proverite da li se ključ vidžeta podudara, a zatim ponovo pokrenite proveru."
+    },
+    "SDK_UNREACHABLE": {
+      "title": "Skripta za vidžet nije mogla da se učita",
+      "why": "Vaš pretraživač nije mogao da pristupi URL-u skripte za vidžet. Ovo je obično problem sa mrežom, CDN-om ili keširanjem, a ne problem sa konfiguracijom.",
+      "fix": "Proverite mrežu/CDN vaše veb lokacije, očistite sve keševe i ponovo pokrenite proveru."
+    },
+    "WIDGET_NOT_INITIALIZED": {
+      "title": "Vidžet se nije učitao",
+      "why": "Skripta za vidžet je na mestu, ali se nije pojavio vidljivi vidžet i nije prijavljen nijedan specifičan razlog. Uobičajeni uzroci: domen još nije dodat, ključ je pogrešan ili je skripta blokirana.",
+      "fix": "Potvrdite ovaj domen i ključ vidžeta u svom EaseAccess24 Dashboard-u, uverite se da ništa ne blokira skriptu, a zatim ponovo pokrenite proveru."
+    },
+    "DUPLICATE_WIDGET": {
+      "title": "Otkriven je duplikat vidžeta",
+      "why": "Više od jednog vidžeta se učitava na stranici. Ovo obično znači da je SDK dodan dvaput - na primer, kako ovim dodatkom, tako i ručnim isječkom u vašoj temi.",
+      "fix": "Zadržite samo jedan metod. Ako ste dodali skriptu svojoj temi ili drugom dodatku, uklonite je i dozvolite ovom dodatku da se njome bavi. Mi nikada ne uklanjamo skripte umesto vas."
+    },
+    "POSSIBLE_DUPLICATE_WIDGET": {
+      "title": "Mogući duplikat vidžeta",
+      "why": "Pronašli smo tragove druge skripte za vidžet (na primer, dodatni tag skripte), ali nismo mogli da potvrdimo drugi vidljivi vidžet - keširanje može to da sakrije.",
+      "fix": "Uverite se da je vidžet dodan samo jednom. Ako imate ručni isječak u svojoj temi, uklonite ga i oslonite se na ovaj dodatak."
+    },
+    "OPTIMIZER_INTERFERENCE": {
+      "title": "Dodatak za keširanje ili optimizaciju može ometati",
+      "why": "Sačuvan je ključ vidžeta, ali skripta za vidžet nije bila prisutna na stranici - dodatak za keširanje/optimizaciju ju je možda uklonio ili izmenio.",
+      "fix": "Isključite EaseAccess24 skriptu iz keširanja/optimizacije. Detaljne preporuke po dodatku uskoro će biti dostupne u odeljku Kompatibilnost."
+    },
+    "STAGING_DETECTED": {
+      "title": "Otkriveno je staging okruženje",
+      "why": "Ovo izgleda kao staging ili razvojna veb lokacija. Vidžet se renderuje samo na domenima ovlašćenim u EaseAccess24, tako da se možda neće pojaviti ovde.",
+      "fix": "Ovo je očekivano na staging okruženju. Dodajte ovaj domen u svoj Dashboard ako želite da se vidžet pojavi ovde, ili testirajte na svom aktivnom domenu."
+    },
+    "LOCALHOST_DETECTED": {
+      "title": "Otkriveno je lokalno okruženje",
+      "why": "Ova veb lokacija se pokreće na localhost-u. Vidžet se renderuje samo na domenima ovlašćenim u EaseAccess24, tako da se neće pojaviti lokalno.",
+      "fix": "Ovo je očekivano lokalno. Testirajte na svom aktivnom, ovlašćenom domenu da biste videli vidžet."
+    },
+    "KEY_INVALID": {
+      "title": "Kljuc za vidžet nije prihvaćen",
+      "why": "Kljuc za vidžet je odbijen.",
+      "fix": "Proverite ključ u svom EaseAccess24 Dashboard-u i sačuvajte ga ponovo."
+    },
+    "SUBSCRIPTION_EXPIRED": {
+      "title": "Pretplata je istekla",
+      "why": "Pretplata za ovaj ključ vidžeta više nije aktivna.",
+      "fix": "Obnovite svoj plan u EaseAccess24 Dashboard-u."
+    },
+    "ORG_DISABLED": {
+      "title": "Organizacija je onemogućena",
+      "why": "Organziacija za ovaj ključ vidžeta je onemogućena.",
+      "fix": "Kontaktirajte podršku EaseAccess24 ili proverite vašu kontrolnu tablu."
+    }
+  },
+  "nav": {
+    "aria": "Sekcije EaseAccess24",
+    "connection": "Konekcija",
+    "compatibility": "Kompatibilnost",
+    "activity": "Aktivnost",
+    "support": "Podrška",
+    "help": "Pomoć"
+  },
+  "compatibility": {
+    "title": "Kompatibilnost keširanja i optimizacije",
+    "intro": "Dodaci za keširanje i optimizaciju mogu odložiti, kombinovati ili ukloniti skripte — uključujući vidžet EaseAccess24. Dodajemo savete koji traže od njih da ostave našu skriptu na miru, ali neki sistemi i dalje zahtevaju ručno isključenje. Nikada ne menjamo postavke drugog dodatka za vas.",
+    "noneTitle": "Nisu detektovani poznati dodaci za keširanje ili optimizaciju",
+    "noneBody": "Nismo pronašli nijedan od dodataka za keširanje/optimizaciju koje prepoznajemo. Ako se vidžet i dalje ne pojavljuje, pokrenite proveru zdravlja na kartici Konekcija.",
+    "cloudflareCdnNote": "Napomena: Cloudflare koji radi kao CDN (Rocket Loader, Auto Minify na ivici) ne može se detektovati sa vaše lokacije. Ako koristite Cloudflare, proverite i ta podešavanja.",
+    "detectedTitle": "Detektovani dodaci",
+    "recommendationLabel": "Preporuka",
+    "modifiedTitle": "Skripta vidžeta se možda menja",
+    "modifiedBody": "Aktivan je dodatak za keširanje/optimizaciju i vaša poslednja provera zdravlja je utvrdila da skripta vidžeta nije bila na stranici. Primenite isključenje ispod i ponovo pokrenite proveru.",
+    "plugins": {
+      "wp-rocket": {
+        "recommendation": "U WP Rocket → Optimizacija datoteka, isključite „widget.easeaccess24.com/sdk.js“ iz minifikacije JavaScript-a, kombinovanja i „Odloži izvršavanje JavaScript-a“. WP Rocket takođe poštuje naš savet data-no-minify."
+      },
+      "litespeed": {
+        "recommendation": "U LiteSpeed Cache → Optimizacija stranice → JS podešavanja, dodajte „widget.easeaccess24.com“ u JS isključenja (i odložena/odložena isključenja ako su omogućena)."
+      },
+      "autoptimize": {
+        "recommendation": "U Autoptimize → JS, slike..., dodajte „easeaccess24“ u „Isključi skripte iz Autoptimize“. Autoptimize takođe poštuje naš savet data-no-optimize."
+      },
+      "perfmatters": {
+        "recommendation": "U Perfmatters → Imovina, dodajte „easeaccess24“ u isključenja za „Odloži JavaScript“ i bilo koje opcije za odlaganje/minifikaciju skripte."
+      },
+      "asset-cleanup": {
+        "recommendation": "U Asset CleanUp, proverite da li skripta EaseAccess24 nije otkazana na vašim stranicama i isključite je iz bilo kojih opcija minifikacije/kombinovanja/odlaganja JS-a."
+      },
+      "cloudflare": {
+        "recommendation": "U Cloudflare-u, isključite skriptu vidžeta iz Rocket Loader-a (naša oznaka već postavlja data-cfasync=\"false\") i iz Auto Minify/Mirage ako je omogućeno za skripte."
+      }
+    }
+  },
+  "eventLog": {
+    "title": "Dnevnik aktivnosti",
+    "intro": "Kratka istorija provera zdravlja i događaja dodataka. Ovaj dnevnik ostaje na vašem sajtu i nikada se automatski ne šalje nigde.",
+    "empty": "Još uvek nema zabeleženih događaja. Pokrenite proveru zdravlja na kartici Konekcija da biste zabeležili jedan.",
+    "clear": "Obriši dnevnik",
+    "clearConfirm": "Obrisati sve zabeležene događaje?",
+    "confirmClear": "Da, obriši",
+    "cancel": "Otkaži",
+    "cleared": "Dnevnik aktivnosti je obrisan.",
+    "loadError": "Nismo mogli da učitamo dnevnik aktivnosti. Ponovo učitajte stranicu i pokušajte ponovo.",
+    "loading": "Učitavanje aktivnosti...",
+    "types": {
+      "health_check": "Provera zdravlja",
+      "key_saved": "Ključ vidžeta sačuvan",
+      "key_updated": "Ključ vidžeta ažuriran",
+      "activated": "Dodatak aktiviran",
+      "deactivated": "Dodatak deaktiviran"
+    },
+    "relative": {
+      "justNow": "Upravo sada",
+      "minutesAgo": "{{n}} minuta ranije",
+      "hoursAgo": "{{n}} sati ranije",
+      "daysAgo": "{{n}} dana ranije"
+    }
+  },
+  "supportReport": {
+    "title": "Izveštaj podrške",
+    "intro": "Generišite izveštaj koji možete podeliti sa podrškom EaseAccess24. Uključuje vaše okruženje, status veze, detektovane dodatke za keširanje i nedavne događaje. Vaš ključ vidžeta je maskiran i ne uključuju se lični podaci.",
+    "privacyNote": "Ništa se ne šalje automatski. Nema uključenog servera — kopirate ili preuzimate izveštaj ispod i delite ga sami.",
+    "generate": "Generiši izveštaj",
+    "regenerate": "Ponovo generiši",
+    "generating": "Generisanje...",
+    "previewLabel": "Pregled izveštaja (tačno ono što će biti kopirano ili preuzeto)",
+    "copy": "Kopiraj",
+    "copied": "Kopirano",
+    "copyFailed": "Kopiranje nije dostupno u ovom pretraživaču. Umesto toga, koristite Preuzimanje.",
+    "downloadTxt": "Preuzmi .txt",
+    "downloadJson": "Preuzmi .json",
+    "generateError": "Nismo mogli da generišemo izveštaj. Ponovo učitajte stranicu i pokušajte ponovo."
+  },
+  "pluginInfo": {
+    "title": "Informacije o dodatku",
+    "version": "Verzija",
+    "wpCompat": "Kompatibilnost sa WordPressom",
+    "phpMin": "Minimalni PHP",
+    "testedUpTo": "Testirano do",
+    "supportStatus": "Status podrške",
+    "supportStatusActive": "Aktivno podržano"
+  },
+  "faq": {
+    "title": "Pomoć i ČPP",
+    "intro": "Odgovori na česta pitanja o povezivanju i rešavanju problema sa vidžetom.",
+    "learnMore": "Saznajte više",
+    "items": {
+      "findKey": {
+        "q": "Gde da pronađem svoj ključ vidžeta?",
+        "a": "Prijavite se na app.easeaccess24.com, otvorite odeljak \"Integracija\" i kopirajte svoj ključ vidžeta (ili ceo isječak koda). Nalepite ga na karticu \"Povezivanje\" - mi ćemo izvući ključ iz isječka za vas."
+      },
+      "notShowing": {
+        "q": "Vidžet se ne prikazuje — šta treba da proverim?",
+        "a": "Pokrenite \"Proveru zdravlja\" na kartici \"Povezivanje\". Ona vam govori da li je skripta dodata, dostupna i da li se vidžet zaista prikazuje. Najčešći uzroci su nedodavanje domena u vašu kontrolnu tablu, pogrešan ključ ili dodatak za keširanje koji uklanja skriptu."
+      },
+      "cachePlugin": {
+        "q": "Koristim dodatak za keširanje ili optimizaciju. Hoće li doći do sukoba?",
+        "a": "Može. Naša oznaka skripte traži od uobičajenih dodataka da je preskoče, ali nekim podešavanjima je i dalje potrebno ručno isključenje. Proverite karticu \"Kompatibilnost\" za preporuke po dodacima. Nikada ne menjamo podešavanja drugog dodatka za vas."
+      },
+      "stagingLocalhost": {
+        "q": "Da li vidžet radi na \"staging\" ili \"localhost\" okruženju?",
+        "a": "Vidžet se prikazuje samo na domenima ovlašćenim za vaš ključ vidžeta, tako da se obično neće pojaviti na \"staging\" ili \"localhost\" okruženju. Ovo je očekivano i nije greška dodatka — testirajte na svom aktivnom, ovlašćenom domenu."
+      },
+      "dataPrivacy": {
+        "q": "Koji podaci se ovim dodatkom skladište ili šalju?",
+        "a": "Dodatak skladišti vaš ključ vidžeta i podešavanja na vašem sajtu, plus kratak lokalni dnevnik aktivnosti. Ne vrši automatske pozive EaseAccess24 osim dodavanja skripte vidžeta i, tokom \"Provere zdravlja\", testiranja da li je ta skripta dostupna. Izveštaji za podršku samo su ikada podeljeni od vas, ručno."
+      },
+      "removeData": {
+        "q": "Kako da uklonim sve podatke dodatka?",
+        "a": "Vaša konfiguracija se zadržava kada ga deaktivirate kako biste mogli da ga ponovo aktivirate kasnije. Da biste uklonili sve, omogućite \"Ukloni sve EaseAccess24 podatke\" pre brisanja dodatka, a zatim ga izbrišite sa ekrana \"Dodaci\"."
+      }
+    }
+  },
+  "settings": {
+    "languageLabel": "Jezik",
+    "languageAria": "Jezik interfejsa",
+    "dataTitle": "Podaci i privatnost",
+    "removeDataLabel": "Ukloni sve EaseAccess24 podatke kada se dodatak izbriše",
+    "removeDataHelp": "Kada je omogućeno, brisanje dodatka takođe uklanja vaš ključ vidžeta, podešavanja i dnevnik aktivnosti. Ostavite isključeno da biste zadržali svoju konfiguraciju za buduću ponovnu instalaciju. Vaše teme se nikada ne diraju.",
+    "saved": "Sačuvano",
+    "saveError": "Nismo mogli da sačuvamo vaša podešavanja. Proverite svoju vezu i pokušajte ponovo.",
+    "loadError": "Nismo mogli da učitamo vaša podešavanja. Ponovo učitajte stranicu i pokušajte ponovo."
+  },
+  "footer": {
+    "tagline": "Činimo veb pristupačnim svima.",
+    "madeBy": "Kreirao EaseAccess24",
+    "platform": "EaseAccess24 platforma",
+    "docs": "Podrška i dokumentacija",
+    "privacyLink": "Politika privatnosti",
+    "reportIssueLink": "Prijavi problem",
+    "copyright": "© {{year}} EaseAccess24"
+  }
+}

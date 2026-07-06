@@ -1,0 +1,14 @@
+{
+	"$schema": "https://raw.githubusercontent.com/WordPress/gutenberg/trunk/schemas/json/wp-env.json",
+	"core": null,
+	"phpVersion": "7.4",
+	"mappings": {
+		"wp-content/plugins/easeaccess24-accessibility": "."
+	},
+	"config": {
+		"WP_DEBUG": true,
+		"WP_DEBUG_LOG": true,
+		"WP_DEBUG_DISPLAY": false,
+		"SCRIPT_DEBUG": true
+	}
+}

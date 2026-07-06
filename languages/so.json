@@ -1,0 +1,290 @@
+{
+  "status": {
+    "notConnected": "Kuma xirna",
+    "healthy": "Waa la xiray · Caafimaad qaba",
+    "attention": "Waa la xiray · U baahan fiiro gaar ah"
+  },
+  "common": {
+    "appName": "EaseAccess24 Dhaqdhaqaaqa",
+    "appNameShort": "EaseAccess24",
+    "saving": "Keydinta…",
+    "cancel": "Tago",
+    "retry": "Isku day mar kale",
+    "updateKey": "Cusbooneysii furaha"
+  },
+  "onboarding": {
+    "title": "Ku xir degelkaaga EaseAccess24",
+    "subtitle": "Ku dheji Furahaaga Widget (ama qoraalka oo dhamaystiran) si aad ugu darto widget-ka dhaqdhaqaaqa ee boggan.",
+    "emptyTitle": "Kuma haysatid Furaha Widget weli?",
+    "emptyBody": "Abuur ururkaaga, dooro qorshe, oo ku dar domainkan EaseAccess24. Waxaad heli doontaa Furaha Widget oo aad halkan ku dhejin doonto.",
+    "getKeyCta": "Hel Furahaaga Widget",
+    "fieldLabel": "Furaha Widget ama qoraalka qaybta",
+    "helper": "Ku dheji kaliya furaha (tusaale ahaan ABC123) ama qoraalka <script> oo dhan — waxaan ka soo saari doonaa furaha.",
+    "placeholder": "ABC123 —ama— <script async src=\"https://widget.easeaccess24.com/sdk.js?key=ABC123\"></script>",
+    "whereLink": "Halkee ayaan tan ka helaa?",
+    "connectCta": "Ku xir & Xaqiidi",
+    "revealKey": "Muuji",
+    "hideKey": "Qari",
+    "copyKey": "Koobi",
+    "copied": "Waa la koobiyay",
+    "errors": {
+      "empty": "Ku dheji Furaha Widget-kaaga ama qoraalka qaybta marka hore.",
+      "noKey": "Ma heli karnin Furaha Widget-kaas. Ku dheji furaha, ama qoraalka oo dhan ee ka kooban.",
+      "network": "Ma keydin karno furahaaga. Hubi isku xirkaaga oo isku day mar kale."
+    }
+  },
+  "stepper": {
+    "aria": "Horumarinta dejinta",
+    "paste": "Dheji",
+    "validate": "Xaqiidi",
+    "healthCheck": "Baadhitaanka Caafimaadka",
+    "done": "La dhamaystiray",
+    "state": {
+      "done": "la dhamaystiray",
+      "current": "tallaabada hadda jirta",
+      "upcoming": "soo socda"
+    }
+  },
+  "dashboard": {
+    "statusBadge": "Waa la xiray",
+    "title": "Xiriirka",
+    "subtitle": "Furahaaga Widget-ka waa la keydiyay. Samee Baadhitaan Caafimaad si aad u xaqiijiso in widget-ka uu soo shaqaynayo oo uu ka muuqdo boggaaga.",
+    "keyLabel": "Furaha Widget",
+    "domainLabel": "Domain",
+    "lastCheckLabel": "Baadhitaankii caafimaad ee ugu dambeeyay",
+    "neverChecked": "Ma la baadhin weli",
+    "healthNotRunYet": "Ma jirto baadhitaan la sameeyay weli"
+  },
+  "health": {
+    "heading": "Baadhitaanka Caafimaadka",
+    "intro": "Tani waxay ka shaqeysaa biraawsarkaaga: waxay soo raraysaa degelkaaga waxayna hubinaysaa in widget-ka uu dhab ahaantii soo muuqdo. Waxba laguma diro EaseAccess24.",
+    "run": "Samee Baadhitaanka Caafimaadka",
+    "rerun": "Mar kale samee",
+    "running": "Waa la wadaa Baadhitaanka Caafimaadka…",
+    "resultsHeading": "Natiijo",
+    "checklistHeading": "Waanu hubinay",
+    "advisoriesHeading": "Waxyaabo kale oo ay mudan tahay in la hubiyo",
+    "timeoutTitle": "Gali waayey dhammaystirka baaritaanka",
+    "timeoutBody": "Baaritaanku ma dhammaystirmin wakhtigii loo qabtay. Tani waxay dhici kartaa haddii boggu uu ku gaabiyay rari ama dejin amniga ay hor istaagtay. Isku day mar kale."
+  },
+  "checklist": {
+    "keySaved": "Furaha widget-ka waa la keydiyay",
+    "sdkTag": "Qoraalka widget-ka waxaa lagu daray degelkaaga",
+    "sdkReachable": "Qoraalka widget-ka waa la gaari karaa",
+    "widgetVisible": "Widget-ka ayaa soo muuqday oo la arki karo",
+    "singleInstance": "Hal widget oo kaliya oo ku yaal bogga",
+    "status": {
+      "pass": "lagu gudbay",
+      "fail": "guuldarraysatay",
+      "warn": "digniin",
+      "info": "macluumaad",
+      "na": "ma khusayso"
+    }
+  },
+  "actions": {
+    "openDashboard": "U fur dashboard-ka EaseAccess24",
+    "retry": "Mar kale samee baaritaanka"
+  },
+  "diagnostics": {
+    "whyLabel": "Maxay tahay sababta",
+    "fixLabel": "Sida loo hagaajiyo",
+    "OK": {
+      "title": "Widget-kaaga waa firfircoon yahay",
+      "why": "Waxaanu rarcay degelkaaga waxaana soo muuqday widget-ka la heli karo, waana la arki karaa.",
+      "fix": "Ma jirto wax la sameeyo — waad diyaar tahay."
+    },
+    "DOMAIN_NOT_ALLOWED": {
+      "title": "Domain-ka lama oggola / furaha lama ansixin",
+      "why": "Qoraalka widget-ka waa la rarcay laakiin wuxuu soo sheegay in domain-kan aan loo oggolayn Furahaaga Widget-ka. Fariinta isku mid ah waxay daboolaysaa furaha khaldan iyo domain aan weli lagu darin.",
+      "fix": "U fur dashboard-kaaga EaseAccess24, xaqiiji in domain-kan saxda ah lagu daray ururkaaga, hubi in Furaha Widget-ka uu cuskan yahay, ka dibna mar kale samee baaritaanka."
+    },
+    "SDK_UNREACHABLE": {
+      "title": "Qoraalka widget-ka lama rari karo",
+      "why": "Birawser-kaagu ma gaari karin URL-ka qoraalka widget-ka. Tani inta badan waa arrin shabakad, CDN, ama kaydin ah, ma aha dhibaato qaabayn.",
+      "fix": "Hubi shabakada/CDN-ka degelkaaga, nadiifi kayd kasta, ka dibna mar kale samee baaritaanka."
+    },
+    "WIDGET_NOT_INITIALIZED": {
+      "title": "Widget-ka ma rarin",
+      "why": "Qoraalka widget-ka waa la dhigay, laakiin ma soo muuqan widget la arki karo wax sabab gaar ahna lama soo sheegin. Sababaha caadiga ah: domain-ka weli lama darin, furaha waa khalad, ama qoraal la hor istaagay.",
+      "fix": "Xaqiiji domain-kan iyo Furaha Widget-ka ee dashboard-kaaga EaseAccess24, hubi in aan waxba hor istaagin qoraalka, ka dibna mar kale samee baaritaanka."
+    },
+    "DUPLICATE_WIDGET": {
+      "title": "Widget labalaab ah ayaa la helay",
+      "why": "In ka badan hal widget ayaa ku raran bogga. Tani waxay badanaa la macno tahay in SDK-ga laba jeer lagu daray — tusaale ahaan, labadaba plugin-kan iyo qoraal gacmeedka ee mawduucaaga.",
+      "fix": "Ku hay hal habraac oo kaliya. Haddii aad ku dartay qoraalka mawduucaaga ama plugin kale, ka saar oo u ogolow plugin-kan inuu maareeyo. Marna kama saarno qoraallada."
+    },
+    "POSSIBLE_DUPLICATE_WIDGET": {
+      "title": "Widget labalaab ah oo suurtagal ah",
+      "why": "Waxaan helnay calaamado qoraal widget labaad (tusaale ahaan, sumad qoraal dheeraad ah) laakiin ma xaqiijin karin widget la arki karo oo labaad — kaydinta ayaa taas qarxin karta.",
+      "fix": "Hubi in widget-ka lagu daray hal mar oo kaliya. Haddii aad ku leedahay qoraal gacmeed mawduucaaga, ka saar oo ku kalsoonoow plugin-kan."
+    },
+    "OPTIMIZER_INTERFERENCE": {
+      "title": "Plugin-ka kaydinta ama wax-isku-habaynta ayaa laga yaabaa inay faragasho sameyso",
+      "why": "Furaha Widget-ka waa la keydiyay, laakiin qoraalka widget-ka ma u jirin bogga — plugin-ka kaydinta/wax-isku-habaynta ayaa laga yaabaa inay saartay ama beddeshay.",
+      "fix": "Ka reeb qoraalka EaseAccess24 kaydinta/wax-isku-habaynta. Talobixin faahfaahsan, plugin-ka-ku-salaysan ayaa iman doonta qaybta Is-waafajinta."
+    },
+    "STAGING_DETECTED": {
+      "title": "Deegaanka staging-ka waa la ogaaday",
+      "why": "Tani waxay u egtahay degelka staging ama horumarinta. Widget-ka wuxuu kaliya soo bandhigaa domain-yada lagu ansixiyay EaseAccess24, markaa halkan ma muuqan karo.",
+      "fix": "Tani waa la filayaa in staging. Ku dar domain-kan dashboard-kaaga haddii aad rabto in widget-ka uu halkan ka muuqdo, ama ku tijaabi domain-kaaga firfircoon."
+    },
+    "LOCALHOST_DETECTED": {
+      "title": "Deegaanka maxalliga ah waa la ogaaday",
+      "why": "Degelkan wuxuu ka socdaa localhost. Widget-ka wuxuu kaliya soo bandhigaa domain-yada lagu ansixiyay EaseAccess24, markaa ma muuqan doono maxalli ahaan.",
+      "fix": "Tani waa la filayaa maxalli ahaan. Ku tijaabi domain-kaaga firfircoon ee ansixiyay si aad u aragto widget-ka."
+    },
+    "KEY_INVALID": {
+      "title": "Furaha widget-ka lama aqbalin",
+      "why": "Furaha Widget-ka waa la diiday.",
+      "fix": "Hubi furaha dashboard-kaaga EaseAccess24 oo mar kale keydi."
+    },
+    "SUBSCRIPTION_EXPIRED": {
+      "title": "Rikoodhka rukunka ayaa dhacay",
+      "why": "Rikoodhka rukunka ee Furaha Widget-ka maalin aan firfircoonayn.",
+      "fix": "Dib u cusboonaysii qorshahaaga dashboard-ka EaseAccess24."
+    },
+    "ORG_DISABLED": {
+      "title": "Ururka waa la hawlgabiyay",
+      "why": "Ururka furaha widget-ka waa la joojiyay.",
+      "fix": "La xiriir taageerada EaseAccess24 ama hubi Dashboard-kaaga."
+    }
+  },
+  "nav": {
+    "aria": "Qaybaha EaseAccess24",
+    "connection": "Xiriirka",
+    "compatibility": "Iswaafajin",
+    "activity": "Waxqabadka",
+    "support": "Taageerada",
+    "help": "Gargaar"
+  },
+  "compatibility": {
+    "title": "Iswaafajinta cache & hagaajinta",
+    "intro": "Plugins-ka kaydinta iyo hagaajinta waxay dib u dhigi, isku dari, ama ka saari karaan qoraallo — oo ay ku jiraan widget-ka EaseAccess24. Waxaan ku darnaa tilmaamo nagu codsanaya inay ka tagaan qoraalkeena, laakiin qaar ka mid ah dejimaha wali waxay u baahan yihiin ka reebid gacanta. Marna ma beddelno goobaha plugin-ka kale adiga.",
+    "noneTitle": "Ma helin wax plugins ah oo cache ama hagaajin ah oo la garanayo",
+    "noneBody": "Ma helin wax ka mid ah plugins-ka kaydinta/hagaajinta ee aan aqoonsannahay. Haddii widget-ku wali u muuqan, ku shaqee Baaritaanka Caafimaadka ee tabka Xiriirka.",
+    "cloudflareCdnNote": "Xusuusin: Cloudflare oo u shaqeynaya sidii CDN (Rocket Loader, Auto Minify meel fog) lama ogaan karo goobtaada. Haddii aad isticmaasho Cloudflare, hubi goobahaas sidoo kale.",
+    "detectedTitle": "Plugins-ka la helay",
+    "recommendationLabel": "Tavsiye",
+    "modifiedTitle": "Qoraalka widget-ka ayaa laga yaabaa inuu wax laga beddelo",
+    "modifiedBody": "Plugin kaydin/hagaajin ah ayaa firfircoon oo baaritaankii Caafimaadka ee ugu dambeeyay wuxuu ogaaday in qoraalka widget-ka uusan ku jirin bogga. Codso ka reebista hoose oo ku shaqee baaritaanka mar kale.",
+    "plugins": {
+      "wp-rocket": {
+        "recommendation": "Gudaha WP Rocket → Faylka Hagaajinta, ka reeb \"widget.easeaccess24.com/sdk.js\" ka imid yaraynta JavaScript-ka, isku darka, iyo \"Dib u dhigista fulinta JavaScript\". WP Rocket sidoo kale wuxuu tixgeliyaa tilmaanta data-no-minify-ka."
+      },
+      "litespeed": {
+        "recommendation": "Gudaha LiteSpeed Cache → Hagaajinta Bogga → JS Settings, ku dar \"widget.easeaccess24.com\" ka imid JS Excludes (iyo Dib u dhigista/Dib u dhigista ka reebida haddii la hawlgeliyo)."
+      },
+      "autoptimize": {
+        "recommendation": "Gudaha Autoptimize → JS, Sawirrada..., ku dar \"easeaccess24\" ka imid \"Ka reeb qoraallada Autoptimize\". Autoptimize sidoo kale wuxuu tixgeliyaa tilmaanta data-no-optimize-ka."
+      },
+      "perfmatters": {
+        "recommendation": "Gudaha Perfmatters → Assets, ku dar \"easeaccess24\" ka imid ka reebista \"Dib u dhig JavaScript\" iyo wax kasta oo qoraal dejin/yarayn ah."
+      },
+      "asset-cleanup": {
+        "recommendation": "Gudaha Asset CleanUp, hubi in qoraalka EaseAccess24 uusan ka saarin bogaggaaga, oo ka reeb isku darka/yaraynta/dib u dhigista."
+      },
+      "cloudflare": {
+        "recommendation": "Gudaha Cloudflare, ka reeb qoraalka widget-ka Rocket Loader (tag-kayagii hore wuxuu dhigay data-cfasync=\"false\") iyo Auto Minify/Mirage haddii la hawlgeliyo qoraallada."
+      }
+    }
+  },
+  "eventLog": {
+    "title": "Diiwaanka waxqabadka",
+    "intro": "Taariikh gaaban oo baaritaanno caafimaad iyo dhacdooyin plugin ah. Diiwaankan wuxuu ku jiraa goobtaada mana aha mid loo diro meelna si toos ah.",
+    "empty": "Wali ma jirto wax dhacdo ah oo la diiwaangeliyay. Ku shaqee Baaritaanka Caafimaadka ee tabka Xiriirka si aad mid u diwaangeliso.",
+    "clear": "Tirtir diiwaanka",
+    "clearConfirm": "Ma la tirtiraa dhammaan dhacdooyinka la diiwaangeliyay?",
+    "confirmClear": "Haa, tirtir",
+    "cancel": "Jooji",
+    "cleared": "Diiwaanka waxqabadka waa la tirtiray.",
+    "loadError": "Waan awoodi waynay inaan la soo saarno diiwaanka waxqabadka. Dib u cusbooneysii bogga oo isku day mar kale.",
+    "loading": "Qurxinta waxqabadka…",
+    "types": {
+      "health_check": "Baaritaanka Caafimaadka",
+      "key_saved": "Furaha Widget-ka waa la keydiyay",
+      "key_updated": "Furaha Widget-ka waa la cusboonaysiiyay",
+      "activated": "Plugin waa la hawlgeliyay",
+      "deactivated": "Plugin waa la demiyay"
+    },
+    "relative": {
+      "justNow": "Hadda",
+      "minutesAgo": "{{n}} daqiiqo ka hor",
+      "hoursAgo": "{{n}} saacadood ka hor",
+      "daysAgo": "{{n}} maalmood ka hor"
+    }
+  },
+  "supportReport": {
+    "title": "Warbixinta taageerada",
+    "intro": "Samee warbixin aad la wadaagi karto taageerada EaseAccess24. Waxay ku jirtaa deegaankaaga, xaalada xiriirka, plugins-ka kaydinta ee la helay, iyo dhacdooyinka dhawaan dhacay. Furaha Widget-kaaga waa la qarinayaa mana ku jiro xog shakhsi ah.",
+    "privacyNote": "Waxba si toos ah looma diro. Ma jirto server lug ku leh — warbixinta hoose ayaad nuqul ka dhiganeysaa ama soo dejinaysaa oo adigaa la wadaagaya.",
+    "generate": "Samee warbixin",
+    "regenerate": "Mar kale samee",
+    "generating": "Samaynta...",
+    "previewLabel": "Dib u eegista warbixinta (sida saxda ah waxa la nuqul ka dhigi doono ama la soo dejin doono)",
+    "copy": "Nuqul ka dhig",
+    "copied": "La soo guuriyay",
+    "copyFailed": "Kopiyayntu kuma shaqeyneyso biraawsarkaaga. Adeegso soo dejinta.",
+    "downloadTxt": "Soo dejin .txt",
+    "downloadJson": "Soo dejin .json",
+    "generateError": "Kama soo saari karno warbixinta. Dib u cusbooneysii bogga oo mar kale isku day."
+  },
+  "pluginInfo": {
+    "title": "Macluumaadka Plugin-ka",
+    "version": "Nooca",
+    "wpCompat": "Isku-dheelitirka WordPress",
+    "phpMin": "PHP ugu yar",
+    "testedUpTo": "La tijaabiyay ilaa",
+    "supportStatus": "Xaaladda taageerada",
+    "supportStatusActive": "Si firfircoon loo taageerayo"
+  },
+  "faq": {
+    "title": "Caawin & FAQ",
+    "intro": " Jawaabaha su'aalaha caadiga ah ee ku saabsan isku xirka iyo xallinta dhibaatada widget-ka.",
+    "learnMore": "Baro wax badan",
+    "items": {
+      "findKey": {
+        "q": "Aaway fureyga widget-kayga?",
+        "a": "Gasho app.easeaccess24.com, fur qaybta Isku-darka, oo koobi ka samee fureygaaga widget-ka (ama dhammaan qoraalka snippet-ka). Ku dheji tabka Xiriirka — waxaanu fure ka soo qaadi doonaa snippet-kaaga."
+      },
+      "notShowing": {
+        "q": "Widget-ku ma muuqdo — maxaan hubiyaa?",
+        "a": "Samee Hubinta Caafimaadka ee tabka Xiriirka. Waxay kuu sheegaysaa haddii qoraalka la soo daray, la gaari karo, iyo haddii widget-ka runtii la soo muujiyay. Sababaha ugu badan waa domain-ka oo aan lagu darin dashboard-kaaga, fure khaldan, ama plugin-ka kaydka ah ee wax ka jara qoraalka."
+      },
+      "cachePlugin": {
+        "q": "Waxaan isticmaalaa plugin kaydin ama wax u habayn ah. Ma isaga diidi doonaa?",
+        "a": "Wuu yeeli karaa. Qoraalka aanu isticmaalno waxa uu codsanayaa in plugins caadiga ah ay iska ilaaliyaan, laakiin qaar ka mid ah qaab-dhismeedyada weli waxay u baahan yihiin baxnaan gacanta ah. Eeg tabka Isku-dheelitirka ee talooyinka plugin-ka. Marna ma beddelno goobaha plugin-ka kale adiga."
+      },
+      "stagingLocalhost": {
+        "q": "Ma widget-ku wuxuu ka shaqeeyaa goobta staging ama localhost?",
+        "a": "Widget-ku wuxuu kaliya soo saaraa domains-ka loo oggolaaday fureygaaga widget-ka, markaa caadi ahaan ma muuqan doono goobta staging ama localhost. Tani waa wax la filayo mana aha qalad plugin ah — tijaabi domain-kaaga tooska ah, ee la oggolaaday."
+      },
+      "dataPrivacy": {
+        "q": "Maxay xogtan plugin-ku kaydiyaa ama u diraa?",
+        "a": "Plugin-ku wuxuu kaydiyaa fureygaaga widget-ka iyo goobahaaga goobtaada, oo ay weheliso diiwaanka dhaqdhaqaaqa maxaliga ah ee gaaban. Ma samaynayo wicitaanno toos ah EaseAccess24 marka laga reebo ku darista qoraalka widget-ka iyo, inta lagu jiro Hubinta Caafimaadka, tijaabinta in qoraalka la gaari karo. Warbixinnada taageerada kaliya waxa lagu wadaagaa adiga, si gacanta ah."
+      },
+      "removeData": {
+        "q": "Sideen uga saaraa dhammaan xogta plugin-ka?",
+        "a": "Habkaaga ayaa la ilaaliyaa marka aad damiso si aad dib ugu shidi karto goor dambe. Si aad wax walba uga saarto, daar “Ka saar dhammaan xogta EaseAccess24” ka hor intaadan plugin-ka tirtirin, ka dibna ka tirtir shaashadda Plugins-ka."
+      }
+    }
+  },
+  "settings": {
+    "languageLabel": "Luqadda",
+    "languageAria": "Luqadda interface-ka",
+    "dataTitle": "Xog & asturnaanta",
+    "removeDataLabel": "Ka saar dhammaan xogta EaseAccess24 marka plugin-ka la tirtiro",
+    "removeDataHelp": "Marka la furo, tirtirida plugin-ka waxay sidoo kale ka saari doontaa fureygaaga widget-ka, goobaha, iyo diiwaanka dhaqdhaqaaqa. Ha furnaan haddii aad rabto in habkaaga loo ilaaliyo dib-u-dhis mustaqbalka ah. Faylashaada mawduuca weligood lama taabanayo.",
+    "saved": "La keydiyay",
+    "saveError": "Kama keydin karno goobahaaga. Hubi isku xirkaaga oo mar kale isku day.",
+    "loadError": "Kama soo dejin karno goobahaaga. Dib u cusbooneysii bogga oo mar kale isku day."
+  },
+  "footer": {
+    "tagline": "Samaynta webka mid la heli karo qof walba.",
+    "madeBy": "Waxaa sameeyay EaseAccess24",
+    "platform": "EaseAccess24 platform",
+    "docs": "Taageerada & dukumentiyada",
+    "privacyLink": "Siyaasadda asturnaanta",
+    "reportIssueLink": "La wargeli dhibaatada",
+    "copyright": "© {{year}} EaseAccess24"
+  }
+}

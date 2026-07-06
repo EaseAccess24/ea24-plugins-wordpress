@@ -1,0 +1,290 @@
+{
+  "status": {
+    "notConnected": "Ikke forbundet",
+    "healthy": "Forbundet · Sund",
+    "attention": "Forbundet · Kræver opmærksomhed"
+  },
+  "common": {
+    "appName": "EaseAccess24 Tilgængelighed",
+    "appNameShort": "EaseAccess24",
+    "saving": "Gemmer…",
+    "cancel": "Annuller",
+    "retry": "Prøv igen",
+    "updateKey": "Opdater nøgle"
+  },
+  "onboarding": {
+    "title": "Forbind din side til EaseAccess24",
+    "subtitle": "Indsæt din Widget-nøgle (eller hele script-uddraget) for at tilføje tilgængelighedswidgetten til denne side.",
+    "emptyTitle": "Har du endnu ikke en Widget-nøgle?",
+    "emptyBody": "Opret din organisation, vælg en plan, og tilføj dette domæne i EaseAccess24. Du får en Widget-nøgle til at indsætte her.",
+    "getKeyCta": "Få din Widget-nøgle",
+    "fieldLabel": "Widget-nøgle eller script-uddrag",
+    "helper": "Indsæt kun nøglen (f.eks. ABC123) eller hele <script> uddraget — vi trækker nøglen ud af det.",
+    "placeholder": "ABC123  —eller—  <script async src=\"https://widget.easeaccess24.com/sdk.js?key=ABC123\"></script>",
+    "whereLink": "Hvor finder jeg denne?",
+    "connectCta": "Forbind & Verificer",
+    "revealKey": "Vis",
+    "hideKey": "Skjul",
+    "copyKey": "Kopiér",
+    "copied": "Kopieret",
+    "errors": {
+      "empty": "Indsæt først din Widget-nøgle eller script-uddrag.",
+      "noKey": "Vi kunne ikke finde en Widget-nøgle i det. Indsæt kun nøglen eller hele script-uddraget, der indeholder den.",
+      "network": "Vi kunne ikke gemme din nøgle. Tjek din forbindelse og prøv igen."
+    }
+  },
+  "stepper": {
+    "aria": "Opsætningsforløb",
+    "paste": "Indsæt",
+    "validate": "Valider",
+    "healthCheck": "Sundhedstjek",
+    "done": "Færdig",
+    "state": {
+      "done": "afsluttet",
+      "current": "nuværende trin",
+      "upcoming": "kommende"
+    }
+  },
+  "dashboard": {
+    "statusBadge": "Forbundet",
+    "title": "Forbindelse",
+    "subtitle": "Din Widget-nøgle er gemt. Kør et sundhedstjek for at bekræfte, at widgetten indlæses og er synlig på din side.",
+    "keyLabel": "Widget-nøgle",
+    "domainLabel": "Domæne",
+    "lastCheckLabel": "Sidste sundhedstjek",
+    "neverChecked": "Endnu ikke tjekket",
+    "healthNotRunYet": "Intet tjek kørt endnu"
+  },
+  "health": {
+    "heading": "Sundhedstjek",
+    "intro": "Dette kører i din browser: Det indlæser din side og tjekker, om widgetten rent faktisk vises. Intet sendes til EaseAccess24.",
+    "run": "Kør sundhedstjek",
+    "rerun": "Kør igen",
+    "running": "Kører sundhedstjek…",
+    "resultsHeading": "Resultat",
+    "checklistHeading": "Hvad vi tjekkede",
+    "advisoriesHeading": "Også værd at tjekke",
+    "timeoutTitle": "Vi kunne ikke fuldføre kontrollen",
+    "timeoutBody": "Kontrollen blev ikke færdig i tide. Dette kan ske, hvis siden var langsom om at indlæse, eller en sikkerhedsindstilling blokerede den. Prøv igen."
+  },
+  "checklist": {
+    "keySaved": "Widget-nøgle gemt",
+    "sdkTag": "Widget-script tilføjet til din side",
+    "sdkReachable": "Widget-script er tilgængeligt",
+    "widgetVisible": "Widget vises og er synlig",
+    "singleInstance": "Kun én widget på siden",
+    "status": {
+      "pass": "bestået",
+      "fail": "fejlet",
+      "warn": "advarsel",
+      "info": "info",
+      "na": "ikke relevant"
+    }
+  },
+  "actions": {
+    "openDashboard": "Åbn EaseAccess24 Dashboard",
+    "retry": "Kør kontrol igen"
+  },
+  "diagnostics": {
+    "whyLabel": "Hvorfor",
+    "fixLabel": "Sådan rettes det",
+    "OK": {
+      "title": "Din widget er live",
+      "why": "Vi indlæste din side, og tilgængelighedswidgeten dukkede op og er synlig.",
+      "fix": "Intet at gøre – du er klar."
+    },
+    "DOMAIN_NOT_ALLOWED": {
+      "title": "Domæne ikke tilladt / nøgle ikke autoriseret",
+      "why": "Widget-scriptet blev indlæst, men rapporterede, at dette domæne ikke er autoriseret for din Widget-nøgle. Den samme besked dækker en forkert nøgle og et domæne, der endnu ikke er tilføjet.",
+      "fix": "Åbn dit EaseAccess24 Dashboard, bekræft, at dette nøjagtige domæne er tilføjet under din organisation, tjek, at Widget-nøglen stemmer overens, og kør derefter kontrollen igen."
+    },
+    "SDK_UNREACHABLE": {
+      "title": "Widget-scriptet kunne ikke indlæses",
+      "why": "Din browser kunne ikke nå widget-scriptets URL. Dette er normalt et netværks-, CDN- eller cache-problem snarere end et konfigurationsproblem.",
+      "fix": "Tjek din sides netværk/CDN, ryd eventuel cache, og kør kontrollen igen."
+    },
+    "WIDGET_NOT_INITIALIZED": {
+      "title": "Widgetten blev ikke indlæst",
+      "why": "Widget-scriptet er på plads, men ingen synlig widget dukkede op, og ingen specifik årsag blev rapporteret. Almindelige årsager: domænet er endnu ikke tilføjet, nøglen er forkert, eller et script blev blokeret.",
+      "fix": "Bekræft dette domæne og Widget-nøglen i dit EaseAccess24 Dashboard, sørg for, at intet blokerer scriptet, og kør derefter kontrollen igen."
+    },
+    "DUPLICATE_WIDGET": {
+      "title": "Duplikeret widget fundet",
+      "why": "Mere end én widget indlæses på siden. Dette betyder normalt, at SDK'en er tilføjet to gange – f.eks. både af dette plugin og af et manuelt snippet i dit tema.",
+      "fix": "Behold kun én metode. Hvis du tilføjede scriptet til dit tema eller et andet plugin, skal du fjerne det og lade dette plugin håndtere det. Vi fjerner aldrig scripts for dig."
+    },
+    "POSSIBLE_DUPLICATE_WIDGET": {
+      "title": "Mulig duplikeret widget",
+      "why": "Vi fandt tegn på et andet widget-script (f.eks. et ekstra script-tag), men kunne ikke bekræfte en anden synlig widget – cache kan sløre dette.",
+      "fix": "Sørg for, at widgetten kun er tilføjet én gang. Hvis du har et manuelt snippet i dit tema, skal du fjerne det og stole på dette plugin."
+    },
+    "OPTIMIZER_INTERFERENCE": {
+      "title": "Et cache- eller optimeringsplugin kan forstyrre",
+      "why": "En Widget-nøgle er gemt, men widget-scriptet var ikke til stede på siden – et cache/optimeringsplugin kan have fjernet eller ændret det.",
+      "fix": "Ekskluder EaseAccess24-scriptet fra caching/optimering. Detaljerede anbefalinger pr. plugin kommer snart til Kompatibilitetssektionen."
+    },
+    "STAGING_DETECTED": {
+      "title": "Staging-miljø opdaget",
+      "why": "Dette ligner en staging- eller udviklingsside. Widgetten vises kun på domæner, der er autoriseret i EaseAccess24, så den vises muligvis ikke her.",
+      "fix": "Dette er forventet på staging. Tilføj dette domæne i dit Dashboard, hvis du ønsker, at widgetten skal vises her, eller test på dit live domæne."
+    },
+    "LOCALHOST_DETECTED": {
+      "title": "Lokalt miljø opdaget",
+      "why": "Denne side kører på localhost. Widgetten vises kun på domæner, der er autoriseret i EaseAccess24, så den vises ikke lokalt.",
+      "fix": "Dette er forventet lokalt. Test på dit live, autoriserede domæne for at se widgetten."
+    },
+    "KEY_INVALID": {
+      "title": "Widget-nøgle blev ikke accepteret",
+      "why": "Widget-nøglen blev afvist.",
+      "fix": "Tjek nøglen i dit EaseAccess24 Dashboard og gem den igen."
+    },
+    "SUBSCRIPTION_EXPIRED": {
+      "title": "Abonnement udløbet",
+      "why": "Abonnementet for denne Widget-nøgle er ikke længere aktivt.",
+      "fix": "Forny din plan i EaseAccess24 Dashboard."
+    },
+    "ORG_DISABLED": {
+      "title": "Organisation deaktiveret",
+      "why": "Organisationen for denne Widget Key er deaktiveret.",
+      "fix": "Kontakt EaseAccess24 support eller tjek dit Dashboard."
+    }
+  },
+  "nav": {
+    "aria": "EaseAccess24 sektioner",
+    "connection": "Forbindelse",
+    "compatibility": "Kompatibilitet",
+    "activity": "Aktivitet",
+    "support": "Support",
+    "help": "Hjælp"
+  },
+  "compatibility": {
+    "title": "Cache & optimeringskompatibilitet",
+    "intro": "Caching- og optimeringsplugins kan forsinke, kombinere eller fjerne scripts — inklusive EaseAccess24-widgetten. Vi tilføjer hints, der beder dem om at lade vores script være i fred, men nogle opsætninger kræver stadig en manuel undtagelse. Vi ændrer aldrig et andet plugins indstillinger for dig.",
+    "noneTitle": "Ingen kendte cache- eller optimeringsplugins registreret",
+    "noneBody": "Vi fandt ingen af de cache/optimeringsplugins, vi genkender. Hvis widgetten stadig ikke vises, skal du køre en Health Check på fanen Forbindelse.",
+    "cloudflareCdnNote": "Bemærk: Cloudflare, der kører som CDN (Rocket Loader, Auto Minify ved kanten), kan ikke registreres fra dit websted. Hvis du bruger Cloudflare, skal du også tjekke disse indstillinger.",
+    "detectedTitle": "Registrerede plugins",
+    "recommendationLabel": "Anbefaling",
+    "modifiedTitle": "Widgetscriptet kan blive modificeret",
+    "modifiedBody": "Et cache/optimeringsplugin er aktivt, og din sidste Health Check fandt ud af, at widgetscriptet ikke var på siden. Anvend undtagelsen nedenfor og kør kontrollen igen.",
+    "plugins": {
+      "wp-rocket": {
+        "recommendation": "I WP Rocket → File Optimization, udeluk “widget.easeaccess24.com/sdk.js” fra JavaScript-minificering, -kombination og “Delay JavaScript execution”. WP Rocket respekterer også vores data-no-minify hint."
+      },
+      "litespeed": {
+        "recommendation": "I LiteSpeed Cache → Page Optimization → JS Settings, tilføj “widget.easeaccess24.com” til JS Excludes (og Deferred/Delayed excludes, hvis aktiveret)."
+      },
+      "autoptimize": {
+        "recommendation": "I Autoptimize → JS, Images..., tilføj “easeaccess24” til “Exclude scripts from Autoptimize”. Autoptimize respekterer også vores data-no-optimize hint."
+      },
+      "perfmatters": {
+        "recommendation": "I Perfmatters → Assets, tilføj “easeaccess24” til undtagelserne for “Delay JavaScript” og eventuelle script-udskydnings-/minificeringsmuligheder."
+      },
+      "asset-cleanup": {
+        "recommendation": "I Asset CleanUp skal du sikre dig, at EaseAccess24-scriptet ikke fjernes fra dine sider, og udelukke det fra alle JS-minificerings-/kombinations-/udskydningsmuligheder."
+      },
+      "cloudflare": {
+        "recommendation": "I Cloudflare skal du udelukke widgetscriptet fra Rocket Loader (vores tag indstiller allerede data-cfasync=\"false\") og fra Auto Minify/Mirage, hvis aktiveret for scripts."
+      }
+    }
+  },
+  "eventLog": {
+    "title": "Aktivitetslog",
+    "intro": "En kort historik over Health Checks og plugin-begivenheder. Denne log forbliver på dit websted og sendes aldrig nogen steder automatisk.",
+    "empty": "Ingen begivenheder logget endnu. Kør en Health Check på fanen Forbindelse for at registrere en.",
+    "clear": "Ryd log",
+    "clearConfirm": "Ryd alle loggede begivenheder?",
+    "confirmClear": "Ja, ryd",
+    "cancel": "Annuller",
+    "cleared": "Aktivitetslog ryddet.",
+    "loadError": "Vi kunne ikke indlæse aktivitetsloggen. Genindlæs siden, og prøv igen.",
+    "loading": "Indlæser aktivitet…",
+    "types": {
+      "health_check": "Health Check",
+      "key_saved": "Widget Key gemt",
+      "key_updated": "Widget Key opdateret",
+      "activated": "Plugin aktiveret",
+      "deactivated": "Plugin deaktiveret"
+    },
+    "relative": {
+      "justNow": "Lige nu",
+      "minutesAgo": "{{n}} minutter siden",
+      "hoursAgo": "{{n}} timer siden",
+      "daysAgo": "{{n}} dage siden"
+    }
+  },
+  "supportReport": {
+    "title": "Supportrapport",
+    "intro": "Generer en rapport, du kan dele med EaseAccess24 support. Den inkluderer dit miljø, forbindelsesstatus, registrerede cache-plugins og seneste begivenheder. Din Widget Key er maskeret, og personlige data er ikke inkluderet.",
+    "privacyNote": "Intet sendes automatisk. Der er ingen server involveret — du kopierer eller downloader rapporten nedenfor og deler den selv.",
+    "generate": "Generer rapport",
+    "regenerate": "Genopret",
+    "generating": "Genererer…",
+    "previewLabel": "Rapport-preview (præcis hvad der bliver kopieret eller downloadet)",
+    "copy": "Kopier",
+    "copied": "Kopieret",
+    "copyFailed": "Kopiering er ikke tilgængelig i denne browser. Brug Download i stedet.",
+    "downloadTxt": "Download .txt",
+    "downloadJson": "Download .json",
+    "generateError": "Vi kunne ikke generere rapporten. Genindlæs siden og prøv igen."
+  },
+  "pluginInfo": {
+    "title": "Plugininformation",
+    "version": "Version",
+    "wpCompat": "WordPress-kompatibilitet",
+    "phpMin": "PHP minimum",
+    "testedUpTo": "Testet op til",
+    "supportStatus": "Supportstatus",
+    "supportStatusActive": "Aktivt understøttet"
+  },
+  "faq": {
+    "title": "Hjælp & Ofte stillede spørgsmål",
+    "intro": "Svar på almindelige spørgsmål om tilslutning og fejlfinding af widgetten.",
+    "learnMore": "Læs mere",
+    "items": {
+      "findKey": {
+        "q": "Hvor finder jeg min Widget Nøgle?",
+        "a": "Log ind på app.easeaccess24.com, åbn sektionen Integrer, og kopier din Widget Nøgle (eller hele script-udsnittet). Indsæt det i fanen Forbindelse — vi udtrækker nøglen fra et udsnit for dig."
+      },
+      "notShowing": {
+        "q": "Widgetten vises ikke — hvad skal jeg tjekke?",
+        "a": "Kør en Sundhedstjek i fanen Forbindelse. Den fortæller dig, om scriptet er tilføjet, tilgængeligt, og om widgetten rent faktisk vises. De mest almindelige årsager er, at domænet ikke er tilføjet på dit dashboard, en forkert nøgle, eller et cache-plugin der fjerner scriptet."
+      },
+      "cachePlugin": {
+        "q": "Jeg bruger et cache- eller optimeringsplugin. Vil det skabe konflikter?",
+        "a": "Det kan det. Vores script-tag beder almindelige plugins om at springe det over, men nogle opsætninger kræver stadig en manuel udelukkelse. Tjek fanen Kompatibilitet for anbefalinger pr. plugin. Vi ændrer aldrig et andet plugins indstillinger for dig."
+      },
+      "stagingLocalhost": {
+        "q": "Virker widgetten på staging eller localhost?",
+        "a": "Widgetten vises kun på domæner, der er godkendt til din Widget Nøgle, så den vil normalt ikke vises på staging eller localhost. Dette er forventet og ikke en plugin-fejl — test på dit live, godkendte domæne."
+      },
+      "dataPrivacy": {
+        "q": "Hvilke data gemmer eller sender dette plugin?",
+        "a": "Plugin'et gemmer din Widget Nøgle og indstillinger på din egen hjemmeside, plus en kort lokal aktivitetslog. Det foretager ingen automatiske kald til EaseAccess24 ud over at tilføje widget-scriptet og, under en Sundhedstjek, teste om scriptet er tilgængeligt. Supportrapporter deles kun af dig, manuelt."
+      },
+      "removeData": {
+        "q": "Hvordan fjerner jeg alle plugin-data?",
+        "a": "Din konfiguration bevares, når du deaktiverer, så du kan genaktivere senere. For at fjerne alt, aktiver \"Fjern alle EaseAccess24-data\", før du sletter plugin'et, og slet det derefter fra Plugins-skærmen."
+      }
+    }
+  },
+  "settings": {
+    "languageLabel": "Sprog",
+    "languageAria": "Brugerfladesprog",
+    "dataTitle": "Data & privatliv",
+    "removeDataLabel": "Fjern alle EaseAccess24-data, når plugin'et slettes",
+    "removeDataHelp": "Når aktiveret, fjerner sletning af plugin'et også din Widget Nøgle, indstillinger og aktivitetslog. Lad det være deaktiveret for at beholde din konfiguration til en fremtidig geninstallation. Dine tema-filer bliver aldrig rørt.",
+    "saved": "Gemt",
+    "saveError": "Vi kunne ikke gemme dine indstillinger. Tjek din forbindelse og prøv igen.",
+    "loadError": "Vi kunne ikke indlæse dine indstillinger. Genindlæs siden og prøv igen."
+  },
+  "footer": {
+    "tagline": "Gør nettet tilgængeligt for alle.",
+    "madeBy": "Lavet af EaseAccess24",
+    "platform": "EaseAccess24 platform",
+    "docs": "Support & dokumentation",
+    "privacyLink": "Privatlivspolitik",
+    "reportIssueLink": "Rapportér et problem",
+    "copyright": "© {{year}} EaseAccess24"
+  }
+}

@@ -1,0 +1,61 @@
+name: Deploy to WordPress.org
+
+# Fires on a semantic version tag (e.g. v0.1.0). Builds production assets, then
+# publishes to the WordPress.org SVN repo via the official 10up action, honoring
+# .distignore. Requires SVN_USERNAME / SVN_PASSWORD repository secrets and an
+# approved WordPress.org plugin slug.
+on:
+    push:
+        tags:
+            - 'v*'
+
+jobs:
+    deploy:
+        name: Build & deploy
+        runs-on: ubuntu-latest
+        steps:
+            - uses: actions/checkout@v4
+
+            # Guard: the pushed tag must match the plugin's declared version, so we
+            # never ship a v0.2.0 tag with a 0.1.0 readme/header.
+            - name: Verify tag matches plugin version
+              run: |
+                  TAG="${GITHUB_REF_NAME#v}"
+                  STABLE="$(grep -i '^Stable tag:' readme.txt | head -1 | sed -E 's/^[Ss]table tag:[[:space:]]*//' | tr -d '[:space:]')"
+                  HEADER="$(grep -i 'Version:' easeaccess24-accessibility.php | head -1 | sed -E 's/.*Version:[[:space:]]*//' | tr -d '[:space:]')"
+                  echo "tag=$TAG stable_tag=$STABLE header=$HEADER"
+                  if [ "$TAG" != "$STABLE" ] || [ "$TAG" != "$HEADER" ]; then
+                    echo "::error::Tag ($TAG) must match readme Stable tag ($STABLE) and plugin header Version ($HEADER)."
+                    exit 1
+                  fi
+
+            - name: Set up Node
+              uses: actions/setup-node@v4
+              with:
+                  node-version: 18
+                  cache: npm
+
+            - name: Install npm dependencies
+              run: npm ci
+
+            # Runtime uses the plugin's own autoloader, so no Composer/vendor is needed
+            # in the shipped ZIP (vendor/ is dist-ignored). Only the built JS/CSS ship.
+            - name: Build production assets
+              run: npm run build
+
+            - name: WordPress.org deploy
+              id: deploy
+              uses: 10up/action-wordpress-plugin-deploy@stable
+              with:
+                  generate-zip: true
+              env:
+                  SVN_USERNAME: ${{ secrets.SVN_USERNAME }}
+                  SVN_PASSWORD: ${{ secrets.SVN_PASSWORD }}
+                  SLUG: easeaccess24-accessibility
+
+            # Attach the clean, distignore-respecting ZIP to the GitHub Release.
+            - name: Attach ZIP to GitHub Release
+              if: ${{ steps.deploy.outputs.zip-path != '' }}
+              uses: softprops/action-gh-release@v2
+              with:
+                  files: ${{ steps.deploy.outputs.zip-path }}

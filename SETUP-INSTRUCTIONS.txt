@@ -1,0 +1,32 @@
+SETUP INSTRUCTIONS
+==================
+
+Rename this folder from "claude-config" to ".claude" before starting your
+Claude Code session.
+
+  mv claude-config .claude
+
+The folder is shipped as "claude-config" so it stays visible in file explorers
+on all operating systems. Claude Code looks for a ".claude" directory, so the
+rename is required before use.
+
+WHAT'S INSIDE
+-------------
+  README-FOR-CLAUDE.md      Master project summary. Read first.
+  context/                  One concern per file. Background for every session.
+  prompts/                  One file per build phase. Paste the relevant one
+                            into a fresh Claude Code session, in order.
+
+HOW TO USE
+----------
+1. Rename the folder to .claude (see above).
+2. Start each build phase in a FRESH Claude Code session.
+3. Use plan mode first. Paste the PRIMARY STARTING PROMPT (provided separately)
+   for phase 01. For later phases, paste the matching prompts/NN-*.md file.
+4. Let Claude Code read the context files and produce a PLAN. Do not let it
+   write code until the plan is reviewed and approved.
+5. Between phases, start a new session and run /compact to keep context lean.
+
+DEFAULT MODEL
+-------------
+  claude-sonnet-4-6  (switch to a stronger model only if stuck after two tries)

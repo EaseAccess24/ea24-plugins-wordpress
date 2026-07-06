@@ -1,0 +1,31 @@
+# Mirror of .distignore for `git archive` exports. Keeps generated ZIPs free of
+# dev-only files if a release is ever cut with `git archive` instead of the
+# WordPress.org deploy action.
+
+/.git               export-ignore
+/.github            export-ignore
+/.gitignore         export-ignore
+/.gitattributes     export-ignore
+/.distignore        export-ignore
+/.editorconfig      export-ignore
+/.claude            export-ignore
+/SETUP-INSTRUCTIONS.txt export-ignore
+/.wp-env.json       export-ignore
+/docker             export-ignore
+/.wordpress-org     export-ignore
+/src                export-ignore
+/tests              export-ignore
+/e2e                export-ignore
+/php                export-ignore
+/package.json       export-ignore
+/package-lock.json  export-ignore
+/composer.json      export-ignore
+/composer.lock      export-ignore
+/postcss.config.js  export-ignore
+/tailwind.config.js export-ignore
+/phpunit.xml.dist   export-ignore
+/phpcs.xml.dist     export-ignore
+/playwright.config.js export-ignore
+
+# Normalize line endings
+* text=auto eol=lf

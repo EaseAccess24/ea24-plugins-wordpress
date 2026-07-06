@@ -1,0 +1,290 @@
+{
+  "status": {
+    "notConnected": "Pole ühendatud",
+    "healthy": "Ühendatud · Töökorras",
+    "attention": "Ühendatud · Vajab tähelepanu"
+  },
+  "common": {
+    "appName": "EaseAccess24 Ligipääsetavus",
+    "appNameShort": "EaseAccess24",
+    "saving": "Salvestan…",
+    "cancel": "Tühista",
+    "retry": "Proovi uuesti",
+    "updateKey": "Värskenda võtit"
+  },
+  "onboarding": {
+    "title": "Ühendage oma sait EaseAccess24-ga",
+    "subtitle": "Kleepige oma videti võti (või kogu skriptilõik), et lisada ligipääsetavuse vidin sellele saidile.",
+    "emptyTitle": "Kas teil pole veel videti võtit?",
+    "emptyBody": "Looge oma organisatsioon, valige plaan ja lisage see domeen EaseAccess24-sse. Saate videti võtme, mille saate siia kleepida.",
+    "getKeyCta": "Hankige oma videti võti",
+    "fieldLabel": "Videti võti või skriptilõik",
+    "helper": "Kleepige ainult võti (näiteks ABC123) või kogu <script> snippeti — me võtame võtme sellest välja.",
+    "placeholder": "ABC123 — või — <script async src=\"https://widget.easeaccess24.com/sdk.js?key=ABC123\"></script>",
+    "whereLink": "Kust ma selle leian?",
+    "connectCta": "Ühenda ja kinnita",
+    "revealKey": "Paljasta",
+    "hideKey": "Peida",
+    "copyKey": "Kopeeri",
+    "copied": "Kopeeritud",
+    "errors": {
+      "empty": "Palun kleepige kõigepealt oma videti võti või skriptilõik.",
+      "noKey": "Me ei leidnud sellest videti võtit. Kleepige ainult võti või kogu skriptilõik, mis seda sisaldab.",
+      "network": "Me ei saanud teie võtit salvestada. Kontrollige oma ühendust ja proovige uuesti."
+    }
+  },
+  "stepper": {
+    "aria": "Seadistamise edenemine",
+    "paste": "Kleepige",
+    "validate": "Valideeri",
+    "healthCheck": "Tervisekontroll",
+    "done": "Valmis",
+    "state": {
+      "done": "lõpetatud",
+      "current": "praegune samm",
+      "upcoming": "tulekul"
+    }
+  },
+  "dashboard": {
+    "statusBadge": "Ühendatud",
+    "title": "Ühendus",
+    "subtitle": "Teie videti võti on salvestatud. Käivitage tervisekontroll, et kinnitada, et vidin laaditakse ja see on teie saidil nähtav.",
+    "keyLabel": "Videti võti",
+    "domainLabel": "Domeen",
+    "lastCheckLabel": "Viimane tervisekontroll",
+    "neverChecked": "Pole veel kontrollitud",
+    "healthNotRunYet": "Kontrolli pole veel tehtud"
+  },
+  "health": {
+    "heading": "Tervisekontroll",
+    "intro": "See töötab teie brauseris: see laadib teie saidi ja kontrollib, kas vidin ilmub tegelikult. Mitte midagi ei saadeta EaseAccess24-le.",
+    "run": "Käivitage tervisekontroll",
+    "rerun": "Käivitage uuesti",
+    "running": "Tervisekontrolli käivitamine…",
+    "resultsHeading": "Tulemus",
+    "checklistHeading": "Mida me kontrollisime",
+    "advisoriesHeading": "Samuti tasub kontrollida",
+    "timeoutTitle": "Tõrge teate täitmisel",
+    "timeoutBody": "Teade ei lõppenud õigeaegselt. See võib juhtuda, kui lehe laadimine oli aeglane või turvaseade blokeeris selle. Proovige uuesti."
+  },
+  "checklist": {
+    "keySaved": "Vidina võti salvestatud",
+    "sdkTag": "Vidina skript lisatud teie saidile",
+    "sdkReachable": "Vidina skript on ligipääsetav",
+    "widgetVisible": "Vidin ilmub ja on nähtav",
+    "singleInstance": "Täpselt üks vidin lehel",
+    "status": {
+      "pass": "läbis",
+      "fail": "ebaõnnestus",
+      "warn": "hoiatus",
+      "info": "info",
+      "na": "ei ole kohaldatav"
+    }
+  },
+  "actions": {
+    "openDashboard": "Ava EaseAccess24 juhtpaneel",
+    "retry": "Käivita kontroll uuesti"
+  },
+  "diagnostics": {
+    "whyLabel": "Miks",
+    "fixLabel": "Kuidas parandada",
+    "OK": {
+      "title": "Teie vidin on aktiivne",
+      "why": "Laadisime teie saidi ja ligipääsetavuse vidin ilmus ja oli nähtav.",
+      "fix": "Pole midagi teha – olete valmis."
+    },
+    "DOMAIN_NOT_ALLOWED": {
+      "title": "Domeen pole lubatud / võti pole volitatud",
+      "why": "Vidina skript laaditi, kuid teatas, et see domeen pole teie vidina võtme jaoks volitatud. Sama sõnum hõlmab ka valet võtit ja domeeni, mida pole veel lisatud.",
+      "fix": "Avage oma EaseAccess24 juhtpaneel, kinnitage, et see täpne domeen on teie organisatsiooni all lisatud, kontrollige, et vidina võti ühtib, seejärel käivitage kontroll uuesti."
+    },
+    "SDK_UNREACHABLE": {
+      "title": "Vidina skripti ei saanud laadida",
+      "why": "Teie brauser ei saanud vidina skripti URL-ile ligi. See on tavaliselt võrgu-, CDN- või vahemäluga seotud probleem, mitte konfiguratsiooniprobleem.",
+      "fix": "Kontrollige oma saidi võrku/CDN-i, tühjendage kõik vahemälud ja käivitage kontroll uuesti."
+    },
+    "WIDGET_NOT_INITIALIZED": {
+      "title": "Vidin ei laadinud",
+      "why": "Vidina skript on olemas, kuid nähtavat vidinat ei ilmunud ja konkreetset põhjust ei teatatud. Levinud põhjused: domeeni pole veel lisatud, võti on vale või skript blokeeriti.",
+      "fix": "Kinnitage see domeen ja vidina võti oma EaseAccess24 juhtpaneelil, veenduge, et miski skripti ei blokeeri, seejärel käivitage kontroll uuesti."
+    },
+    "DUPLICATE_WIDGET": {
+      "title": "Tuvastatud duplikaatvidin",
+      "why": "Lehel laadib rohkem kui üks vidin. See tähendab tavaliselt seda, et SDK on lisatud kaks korda – näiteks nii selle pistikprogrammi kui ka teema käsitsi koodirea abil.",
+      "fix": "Kasutage ainult ühte meetodit. Kui lisasite skripti oma teemasse või mõnda muusse pistikprogrammi, eemaldage see ja laske sellel pistikprogrammil seda hallata. Me ei eemalda kunagi skripte teie eest."
+    },
+    "POSSIBLE_DUPLICATE_WIDGET": {
+      "title": "Võimalik duplikaatvidin",
+      "why": "Leidsime teise vidina skripti jälgi (näiteks täiendav skriptisilt), kuid ei suutnud teist nähtavat vidinat kinnitada – vahemälu võib seda varjata.",
+      "fix": "Veenduge, et vidin on lisatud ainult üks kord. Kui teil on teemas käsitsi koodirida, eemaldage see ja usaldage seda pistikprogrammi."
+    },
+    "OPTIMIZER_INTERFERENCE": {
+      "title": "Vahemälu või optimeerimise pistikprogramm võib segada",
+      "why": "Vidina võti on salvestatud, kuid vidina skripti lehel polnud – vahemälu/optimeerimise pistikprogramm võis selle eemaldada või muuta.",
+      "fix": "Vabastage EaseAccess24 skript vahemälust/optimeerimisest. Üksikasjalikud juhised iga pistikprogrammi kohta ilmuvad peagi jaotises Ühilduvus."
+    },
+    "STAGING_DETECTED": {
+      "title": "Lavastuskeskkond tuvastatud",
+      "why": "See näeb välja nagu lavastus- või arendussait. Vidin kuvatakse ainult EaseAccess24-s volitatud domeenidel, seega ei pruugi see siin ilmuda.",
+      "fix": "See on lavastuses ootuspärane. Lisage see domeen oma juhtpaneelile, kui soovite, et vidin siin ilmuks, või testige oma aktiivsel domeenil."
+    },
+    "LOCALHOST_DETECTED": {
+      "title": "Kohalik keskkond tuvastatud",
+      "why": "See sait töötab kohapeal. Vidin kuvatakse ainult EaseAccess24-s volitatud domeenidel, seega see kohapeal ei ilmu.",
+      "fix": "See on kohapeal ootuspärane. Testige oma aktiivsel, volitatud domeenil, et vidinat näha."
+    },
+    "KEY_INVALID": {
+      "title": "Vidina võtit ei aktsepteeritud",
+      "why": "Vidina võti lükati tagasi.",
+      "fix": "Kontrollige võtit oma EaseAccess24 juhtpaneelil ja salvestage see uuesti."
+    },
+    "SUBSCRIPTION_EXPIRED": {
+      "title": "Tellimus aegunud",
+      "why": "Selle vidina võtme tellimus ei ole enam aktiivne.",
+      "fix": "Uuendage oma plaani EaseAccess24 juhtpaneelil."
+    },
+    "ORG_DISABLED": {
+      "title": "Organisatsioon keelatud",
+      "why": "Selle Widget Key'i organisatsioon on keelatud.",
+      "fix": "Võtke ühendust EaseAccess24 toe või oma juhtpaneeliga."
+    }
+  },
+  "nav": {
+    "aria": "EaseAccess24 jaotised",
+    "connection": "Ühendus",
+    "compatibility": "Ühilduvus",
+    "activity": "Tegevus",
+    "support": "Tugi",
+    "help": "Abi"
+  },
+  "compatibility": {
+    "title": "Vahemälu ja optimeerimise ühilduvus",
+    "intro": "Vahemälu ja optimeerimise pistikprogrammid võivad edasi lükata, ühendada või eemaldada skripte – sealhulgas EaseAccess24 vidina. Lisame vihjeid, mis paluvad neil meie skripti puutumata jätta, kuid mõned seadistused vajavad siiski käsitsi välistamist. Me ei muuda kunagi teise pistikprogrammi sätteid teie eest.",
+    "noneTitle": "Tuvastatud vahemälu- või optimeerimisrivistusi pole tuvastatud",
+    "noneBody": "Me ei leidnud ühtegi meiepoolt äratuntavat vahemälu/optimeerimisrivistust. Kui vidin ikka ei ilmu, käivitage ühenduse vahekaardil tervisekontroll.",
+    "cloudflareCdnNote": "Märkus: Cloudflare'i CDN-na töötamist (Rocket Loader, Auto Minify serval) ei saa teie saidilt tuvastada. Kui kasutate Cloudflare'i, kontrollige ka neid sätteid.",
+    "detectedTitle": "Tuvastatud pistikprogrammid",
+    "recommendationLabel": "Soovitus",
+    "modifiedTitle": "Vidina skripti võidakse muuta",
+    "modifiedBody": "Vahemälu/optimeerimise pistikprogramm on aktiivne ja teie viimane tervisekontroll tuvastas, et vidina skripti lehel polnud. Rakendage allolev välistamine ja käivitage kontroll uuesti.",
+    "plugins": {
+      "wp-rocket": {
+        "recommendation": "WP Rocketi menüüs → Faili optimeerimine, välistage „widget.easeaccess24.com/sdk.js“ JavaScripti minifikatsioonist, kombineerimisest ja „JavaScripti täitmise edasi lükkamisest“. WP Rocket austab ka meie andmesilti „data-no-minify“."
+      },
+      "litespeed": {
+        "recommendation": "LiteSpeed Cache → Page Optimization → JS Settings, lisage „widget.easeaccess24.com“ välistatavate JS-ide hulka (ja ka edasilükatud/viivitatud välistuste hulka, kui need on lubatud)."
+      },
+      "autoptimize": {
+        "recommendation": "Autoptimize → JS, Images... menüüs lisage „easeaccess24“ välistuste hulka „Exclude scripts from Autoptimize“. Autoptimize austab ka meie „data-no-optimize“ vihjet."
+      },
+      "perfmatters": {
+        "recommendation": "Perfmatters → Assets menüüs lisage „easeaccess24“ välistuste hulka „Delay JavaScript“ ja kõikide skriptide edasilükkamise/minifikatsiooni valikud."
+      },
+      "asset-cleanup": {
+        "recommendation": "Asset CleanUp'i menüüs veenduge, et EaseAccess24 skripti ei eemaldata teie lehtedelt ja välistage see kõikidest JS minifikatsiooni/kombineerimise/edasi lükkamise valikutest."
+      },
+      "cloudflare": {
+        "recommendation": "Cloudflare'i menüüs välistage vidina skript Rocket Loader'ist (meie silt juba seab „data-cfasync=\"false\"“) ja Auto Minify/Mirage'ist, kui see on lubatud skriptide jaoks."
+      }
+    }
+  },
+  "eventLog": {
+    "title": "Tegevuste logi",
+    "intro": "Lühike ülevaade tervisekontrollidest ja pistikprogrammide sündmustest. See logi jääb teie saidile ja seda ei saadeta kunagi automaatselt kuhugi.",
+    "empty": "Ühtegi sündmust pole veel logitud. Käivitage tervisekontroll ühenduse vahekaardil, et üks kirja panna.",
+    "clear": "Tühjenda logi",
+    "clearConfirm": "Tühjendada kõik logitud sündmused?",
+    "confirmClear": "Jah, tühjenda",
+    "cancel": "Tühista",
+    "cleared": "Tegevuste logi on tühjendatud.",
+    "loadError": "Me ei saanud tegevuste logi laadida. Laadige leht uuesti ja proovige uuesti.",
+    "loading": "Tegevusi laaditakse...",
+    "types": {
+      "health_check": "Tervisekontroll",
+      "key_saved": "Widget Key salvestatud",
+      "key_updated": "Widget Key värskendatud",
+      "activated": "Pistikprogramm aktiveeritud",
+      "deactivated": "Pistikprogramm deaktiveeritud"
+    },
+    "relative": {
+      "justNow": "Just nüüd",
+      "minutesAgo": "{{n}} minutit tagasi",
+      "hoursAgo": "{{n}} tundi tagasi",
+      "daysAgo": "{{n}} päeva tagasi"
+    }
+  },
+  "supportReport": {
+    "title": "Tugiteade",
+    "intro": "Genereerige aruanne, mida saate EaseAccess24 toega jagada. See sisaldab teie keskkonda, ühenduse olekut, tuvastatud vahemälu pistikprogramme ja hiljutisi sündmusi. Teie Widget Key on maskeeritud ja isiklikke andmeid ei sisaldu.",
+    "privacyNote": "Midagi ei saadeta automaatselt. Serverit ei kasutata – kopeerite või laadite aruande allpool alla ja jagate seda ise.",
+    "generate": "Genereeri aruanne",
+    "regenerate": "Uuesti genereeri",
+    "generating": "Genereerimine...",
+    "previewLabel": "Aruande eelvaade (täpselt see, mida kopeeritakse või alla laaditakse)",
+    "copy": "Kopeeri",
+    "copied": "Kopeeritud",
+    "copyFailed": "Kopeerimine pole selles brauseris saadaval. Kasutage allalaadimist.",
+    "downloadTxt": "Laadi alla .txt",
+    "downloadJson": "Laadi alla .json",
+    "generateError": "Raporti loomine ebaõnnestus. Laadige leht uuesti ja proovige uuesti."
+  },
+  "pluginInfo": {
+    "title": "Pistiku teave",
+    "version": "Versioon",
+    "wpCompat": "WordPressi ühilduvus",
+    "phpMin": "PHP minimaalne",
+    "testedUpTo": "Testitud kuni",
+    "supportStatus": "Tugi staatus",
+    "supportStatusActive": "Aktiivselt toetatud"
+  },
+  "faq": {
+    "title": "Abi ja KKK",
+    "intro": "Vastused levinud küsimustele vidina ühendamise ja tõrkeotsingu kohta.",
+    "learnMore": "Lugege lisateavet",
+    "items": {
+      "findKey": {
+        "q": "Kust leida oma vidina võtit?",
+        "a": "Logige sisse aadressil app.easeaccess24.com, avage jaotis „Integrate“ ja kopeerige oma vidina võti (või kogu skriptilõik). Kleepige see jaotisse „Connection“ – me eraldame võtme skriptilõigust."
+      },
+      "notShowing": {
+        "q": "Vidina ei kuvata – mida peaksin kontrollima?",
+        "a": "Käivitage jaotises „Connection“ seisukontroll („Health Check“). See näitab teile, kas skript on lisatud, kas see on ligipääsetav ja kas vidin kuvatakse. Kõige levinumad põhjused on see, et domeeni pole teie juhtpaneelis lisatud, vale võti või vahemälu pistikprogramm eemaldab skripti."
+      },
+      "cachePlugin": {
+        "q": "Kasutan vahemälu või optimeerimise pistikprogrammi. Kas see tekitab konflikte?",
+        "a": "See võib juhtuda. Meie skriptimärgend palub levinud pistikprogrammidel seda vahele jätta, kuid mõned seadistused vajavad siiski käsitsi välistamist. Vaadake jaotist „Compatibility“ konkreetsete pistikprogrammide soovituste jaoks. Me ei muuda kunagi teise pistikprogrammi sätteid teie eest."
+      },
+      "stagingLocalhost": {
+        "q": "Kas vidina töötab lavastuse või localhosti keskkonnas?",
+        "a": "Vidina kuvatakse ainult teie vidina võtme jaoks volitatud domeenidel, seega ei kuvata seda tavaliselt lavastuse või localhosti keskkonnas. See on ootuspärane ja mitte pistikprogrammi viga – testige oma aktiivsel, volitatud domeenil."
+      },
+      "dataPrivacy": {
+        "q": "Milliseid andmeid see pistikprogramm salvestab või saadab?",
+        "a": "Pistikprogramm salvestab teie vidina võtme ja sätted teie enda saidil, lisaks lühikese kohaliku tegevuslogi. See ei tee automaatseid päringuid EaseAccess24-i poole peale vidina skripti lisamise ja seisukontrolli ajal selle skripti ligipääsetavuse testimise. Tugiaruanded jagatakse teiega ainult käsitsi."
+      },
+      "removeData": {
+        "q": "Kuidas eemaldada kõik pistikprogrammi andmed?",
+        "a": "Teie konfiguratsioon säilitatakse deaktiveerimisel, et saaksite hiljem uuesti aktiveerida. Kõikide andmete eemaldamiseks lubage enne pistikprogrammi kustutamist valik „Remove all EaseAccess24 data“ ja seejärel kustutage see pistikprogrammide ekraanilt."
+      }
+    }
+  },
+  "settings": {
+    "languageLabel": "Keel",
+    "languageAria": "Liidese keel",
+    "dataTitle": "Andmed ja privaatsus",
+    "removeDataLabel": "Eemaldage kõik EaseAccess24 andmed pistikprogrammi kustutamisel",
+    "removeDataHelp": "Kui see on lubatud, kustutab pistikprogrammi kustutamine ka teie vidina võtme, sätted ja tegevuslogi. Jätke see välja lülitatuks, et säilitada oma konfiguratsioon tulevaseks uuesti installimiseks. Teie teemafaile ei puudutata kunagi.",
+    "saved": "Salvestatud",
+    "saveError": "Sätete salvestamine ebaõnnestus. Kontrollige oma ühendust ja proovige uuesti.",
+    "loadError": "Sätete laadimine ebaõnnestus. Laadige leht uuesti ja proovige uuesti."
+  },
+  "footer": {
+    "tagline": "Teeme veebist kõigile kättesaadava.",
+    "madeBy": "Valmistanud EaseAccess24",
+    "platform": "EaseAccess24 platvorm",
+    "docs": "Tugi ja dokumentatsioon",
+    "privacyLink": "Privaatsuspoliitika",
+    "reportIssueLink": "Teavitage probleemist",
+    "copyright": "© {{year}} EaseAccess24"
+  }
+}

@@ -1,0 +1,290 @@
+{
+	"status": {
+		"notConnected": "Not connected",
+		"healthy": "Connected · Healthy",
+		"attention": "Connected · Needs attention"
+	},
+	"common": {
+		"appName": "EaseAccess24 Accessibility",
+		"appNameShort": "EaseAccess24",
+		"saving": "Saving…",
+		"cancel": "Cancel",
+		"retry": "Retry",
+		"updateKey": "Update key"
+	},
+	"onboarding": {
+		"title": "Connect your site to EaseAccess24",
+		"subtitle": "Paste your Widget Key (or the full script snippet) to add the accessibility widget to this site.",
+		"emptyTitle": "Don’t have a Widget Key yet?",
+		"emptyBody": "Create your organization, choose a plan, and add this domain in EaseAccess24. You’ll get a Widget Key to paste here.",
+		"getKeyCta": "Get your Widget Key",
+		"fieldLabel": "Widget Key or script snippet",
+		"helper": "Paste just the key (for example ABC123) or the entire <script> snippet — we’ll pull the key out of it.",
+		"placeholder": "ABC123  —or—  <script async src=\"https://widget.easeaccess24.com/sdk.js?key=ABC123\"></script>",
+		"whereLink": "Where do I find this?",
+		"connectCta": "Connect & Verify",
+		"revealKey": "Reveal",
+		"hideKey": "Hide",
+		"copyKey": "Copy",
+		"copied": "Copied",
+		"errors": {
+			"empty": "Paste your Widget Key or script snippet first.",
+			"noKey": "We couldn’t find a Widget Key in that. Paste just the key, or the full script snippet that contains it.",
+			"network": "We couldn’t save your key. Check your connection and try again."
+		}
+	},
+	"stepper": {
+		"aria": "Setup progress",
+		"paste": "Paste",
+		"validate": "Validate",
+		"healthCheck": "Health Check",
+		"done": "Done",
+		"state": {
+			"done": "completed",
+			"current": "current step",
+			"upcoming": "upcoming"
+		}
+	},
+	"dashboard": {
+		"statusBadge": "Connected",
+		"title": "Connection",
+		"subtitle": "Your Widget Key is saved. Run a Health Check to confirm the widget loads and is visible on your site.",
+		"keyLabel": "Widget Key",
+		"domainLabel": "Domain",
+		"lastCheckLabel": "Last health check",
+		"neverChecked": "Not checked yet",
+		"healthNotRunYet": "No check run yet"
+	},
+	"health": {
+		"heading": "Health Check",
+		"intro": "This runs in your browser: it loads your site and checks whether the widget actually appears. Nothing is sent to EaseAccess24.",
+		"run": "Run Health Check",
+		"rerun": "Run again",
+		"running": "Running Health Check…",
+		"resultsHeading": "Result",
+		"checklistHeading": "What we checked",
+		"advisoriesHeading": "Also worth checking",
+		"timeoutTitle": "We couldn’t complete the check",
+		"timeoutBody": "The check didn’t finish in time. This can happen if the page was slow to load or a security setting blocked it. Try again."
+	},
+	"checklist": {
+		"keySaved": "Widget Key saved",
+		"sdkTag": "Widget script added to your site",
+		"sdkReachable": "Widget script is reachable",
+		"widgetVisible": "Widget appears and is visible",
+		"singleInstance": "Exactly one widget on the page",
+		"status": {
+			"pass": "passed",
+			"fail": "failed",
+			"warn": "warning",
+			"info": "info",
+			"na": "not applicable"
+		}
+	},
+	"actions": {
+		"openDashboard": "Open EaseAccess24 Dashboard",
+		"retry": "Run check again"
+	},
+	"diagnostics": {
+		"whyLabel": "Why",
+		"fixLabel": "How to fix",
+		"OK": {
+			"title": "Your widget is live",
+			"why": "We loaded your site and the accessibility widget appeared and is visible.",
+			"fix": "Nothing to do — you’re all set."
+		},
+		"DOMAIN_NOT_ALLOWED": {
+			"title": "Domain not allowed / key not authorized",
+			"why": "The widget script loaded but reported that this domain isn’t authorized for your Widget Key. The same message covers a wrong key and a domain that hasn’t been added yet.",
+			"fix": "Open your EaseAccess24 Dashboard, confirm this exact domain is added under your organization, check the Widget Key matches, then run the check again."
+		},
+		"SDK_UNREACHABLE": {
+			"title": "The widget script couldn’t be loaded",
+			"why": "Your browser couldn’t reach the widget script URL. This is usually a network, CDN, or caching issue rather than a configuration problem.",
+			"fix": "Check your site’s network/CDN, clear any caches, and run the check again."
+		},
+		"WIDGET_NOT_INITIALIZED": {
+			"title": "The widget didn’t load",
+			"why": "The widget script is in place, but no visible widget appeared and no specific reason was reported. Common causes: the domain isn’t added yet, the key is wrong, or a script was blocked.",
+			"fix": "Confirm this domain and Widget Key in your EaseAccess24 Dashboard, make sure nothing is blocking the script, then run the check again."
+		},
+		"DUPLICATE_WIDGET": {
+			"title": "Duplicate widget detected",
+			"why": "More than one widget is loading on the page. This usually means the SDK is added twice — for example, both by this plugin and by a manual snippet in your theme.",
+			"fix": "Keep only one method. If you added the script to your theme or another plugin, remove it and let this plugin handle it. We never remove scripts for you."
+		},
+		"POSSIBLE_DUPLICATE_WIDGET": {
+			"title": "Possible duplicate widget",
+			"why": "We found signs of a second widget script (for example, an extra script tag) but couldn’t confirm a second visible widget — caching can obscure this.",
+			"fix": "Make sure the widget is added only once. If you have a manual snippet in your theme, remove it and rely on this plugin."
+		},
+		"OPTIMIZER_INTERFERENCE": {
+			"title": "A caching or optimization plugin may be interfering",
+			"why": "A Widget Key is saved, but the widget script wasn’t present on the page — a caching/optimization plugin may have removed or altered it.",
+			"fix": "Exclude the EaseAccess24 script from caching/optimization. Detailed, per-plugin recommendations are coming to the Compatibility section."
+		},
+		"STAGING_DETECTED": {
+			"title": "Staging environment detected",
+			"why": "This looks like a staging or development site. The widget only renders on domains authorized in EaseAccess24, so it may not appear here.",
+			"fix": "This is expected on staging. Add this domain in your Dashboard if you want the widget to appear here, or test on your live domain."
+		},
+		"LOCALHOST_DETECTED": {
+			"title": "Local environment detected",
+			"why": "This site is running on localhost. The widget only renders on domains authorized in EaseAccess24, so it won’t appear locally.",
+			"fix": "This is expected locally. Test on your live, authorized domain to see the widget."
+		},
+		"KEY_INVALID": {
+			"title": "Widget Key not accepted",
+			"why": "The Widget Key was rejected.",
+			"fix": "Check the key in your EaseAccess24 Dashboard and save it again."
+		},
+		"SUBSCRIPTION_EXPIRED": {
+			"title": "Subscription expired",
+			"why": "The subscription for this Widget Key is no longer active.",
+			"fix": "Renew your plan in the EaseAccess24 Dashboard."
+		},
+		"ORG_DISABLED": {
+			"title": "Organization disabled",
+			"why": "The organization for this Widget Key is disabled.",
+			"fix": "Contact EaseAccess24 support or check your Dashboard."
+		}
+	},
+	"nav": {
+		"aria": "EaseAccess24 sections",
+		"connection": "Connection",
+		"compatibility": "Compatibility",
+		"activity": "Activity",
+		"support": "Support",
+		"help": "Help"
+	},
+	"compatibility": {
+		"title": "Cache & optimization compatibility",
+		"intro": "Caching and optimization plugins can defer, combine, or strip scripts — including the EaseAccess24 widget. We add hints that ask them to leave our script alone, but some setups still need a manual exclusion. We never change another plugin’s settings for you.",
+		"noneTitle": "No known cache or optimization plugins detected",
+		"noneBody": "We didn’t find any of the caching/optimization plugins we recognize. If the widget still doesn’t appear, run a Health Check on the Connection tab.",
+		"cloudflareCdnNote": "Note: Cloudflare running as a CDN (Rocket Loader, Auto Minify at the edge) can’t be detected from your site. If you use Cloudflare, check those settings too.",
+		"detectedTitle": "Detected plugins",
+		"recommendationLabel": "Recommendation",
+		"modifiedTitle": "The widget script may be getting modified",
+		"modifiedBody": "A cache/optimization plugin is active and your last Health Check found the widget script wasn’t on the page. Apply the exclusion below and run the check again.",
+		"plugins": {
+			"wp-rocket": {
+				"recommendation": "In WP Rocket → File Optimization, exclude “widget.easeaccess24.com/sdk.js” from JavaScript minification, combination, and “Delay JavaScript execution”. WP Rocket also honors our data-no-minify hint."
+			},
+			"litespeed": {
+				"recommendation": "In LiteSpeed Cache → Page Optimization → JS Settings, add “widget.easeaccess24.com” to the JS Excludes (and Deferred/Delayed excludes if enabled)."
+			},
+			"autoptimize": {
+				"recommendation": "In Autoptimize → JS, Images..., add “easeaccess24” to “Exclude scripts from Autoptimize”. Autoptimize also honors our data-no-optimize hint."
+			},
+			"perfmatters": {
+				"recommendation": "In Perfmatters → Assets, add “easeaccess24” to the exclusions for “Delay JavaScript” and any script defer/minify options."
+			},
+			"asset-cleanup": {
+				"recommendation": "In Asset CleanUp, make sure the EaseAccess24 script is not unloaded on your pages, and exclude it from any JS minify/combine/defer options."
+			},
+			"cloudflare": {
+				"recommendation": "In Cloudflare, exclude the widget script from Rocket Loader (our tag already sets data-cfasync=\"false\") and from Auto Minify/Mirage if enabled for scripts."
+			}
+		}
+	},
+	"eventLog": {
+		"title": "Activity log",
+		"intro": "A short history of health checks and plugin events. This log stays on your site and is never sent anywhere automatically.",
+		"empty": "No events logged yet. Run a Health Check on the Connection tab to record one.",
+		"clear": "Clear log",
+		"clearConfirm": "Clear all logged events?",
+		"confirmClear": "Yes, clear",
+		"cancel": "Cancel",
+		"cleared": "Activity log cleared.",
+		"loadError": "We couldn’t load the activity log. Reload the page and try again.",
+		"loading": "Loading activity…",
+		"types": {
+			"health_check": "Health Check",
+			"key_saved": "Widget Key saved",
+			"key_updated": "Widget Key updated",
+			"activated": "Plugin activated",
+			"deactivated": "Plugin deactivated"
+		},
+		"relative": {
+			"justNow": "Just now",
+			"minutesAgo": "{{n}} minutes ago",
+			"hoursAgo": "{{n}} hours ago",
+			"daysAgo": "{{n}} days ago"
+		}
+	},
+	"supportReport": {
+		"title": "Support report",
+		"intro": "Generate a report you can share with EaseAccess24 support. It includes your environment, connection status, detected cache plugins, and recent events. Your Widget Key is masked and no personal data is included.",
+		"privacyNote": "Nothing is sent automatically. There’s no server involved — you copy or download the report below and share it yourself.",
+		"generate": "Generate report",
+		"regenerate": "Regenerate",
+		"generating": "Generating…",
+		"previewLabel": "Report preview (exactly what will be copied or downloaded)",
+		"copy": "Copy",
+		"copied": "Copied",
+		"copyFailed": "Copy isn’t available in this browser. Use Download instead.",
+		"downloadTxt": "Download .txt",
+		"downloadJson": "Download .json",
+		"generateError": "We couldn’t generate the report. Reload the page and try again."
+	},
+	"pluginInfo": {
+		"title": "Plugin information",
+		"version": "Version",
+		"wpCompat": "WordPress compatibility",
+		"phpMin": "PHP minimum",
+		"testedUpTo": "Tested up to",
+		"supportStatus": "Support status",
+		"supportStatusActive": "Actively supported"
+	},
+	"faq": {
+		"title": "Help & FAQ",
+		"intro": "Answers to common questions about connecting and troubleshooting the widget.",
+		"learnMore": "Learn more",
+		"items": {
+			"findKey": {
+				"q": "Where do I find my Widget Key?",
+				"a": "Sign in at app.easeaccess24.com, open the Integrate section, and copy your Widget Key (or the full script snippet). Paste it into the Connection tab — we’ll pull the key out of a snippet for you."
+			},
+			"notShowing": {
+				"q": "The widget isn’t showing — what should I check?",
+				"a": "Run a Health Check on the Connection tab. It tells you whether the script is added, reachable, and whether the widget actually appears. The most common causes are the domain not being added in your dashboard, a wrong key, or a caching plugin stripping the script."
+			},
+			"cachePlugin": {
+				"q": "I use a caching or optimization plugin. Will it conflict?",
+				"a": "It can. Our script tag asks common plugins to skip it, but some setups still need a manual exclusion. Check the Compatibility tab for per-plugin recommendations. We never change another plugin’s settings for you."
+			},
+			"stagingLocalhost": {
+				"q": "Does the widget work on staging or localhost?",
+				"a": "The widget only renders on domains authorized for your Widget Key, so it usually won’t appear on staging or localhost. This is expected and not a plugin error — test on your live, authorized domain."
+			},
+			"dataPrivacy": {
+				"q": "What data does this plugin store or send?",
+				"a": "The plugin stores your Widget Key and settings on your own site, plus a short local activity log. It makes no automatic calls to EaseAccess24 beyond adding the widget script and, during a Health Check, testing whether that script is reachable. Support reports are only ever shared by you, manually."
+			},
+			"removeData": {
+				"q": "How do I remove all plugin data?",
+				"a": "Your configuration is kept when you deactivate so you can reactivate later. To remove everything, enable “Remove all EaseAccess24 data” before deleting the plugin, then delete it from the Plugins screen."
+			}
+		}
+	},
+	"settings": {
+		"languageLabel": "Language",
+		"languageAria": "Interface language",
+		"dataTitle": "Data & privacy",
+		"removeDataLabel": "Remove all EaseAccess24 data when the plugin is deleted",
+		"removeDataHelp": "When enabled, deleting the plugin also removes your Widget Key, settings, and activity log. Leave it off to keep your configuration for a future reinstall. Your theme files are never touched.",
+		"saved": "Saved",
+		"saveError": "We couldn’t save your settings. Check your connection and try again.",
+		"loadError": "We couldn’t load your settings. Reload the page and try again."
+	},
+	"footer": {
+		"tagline": "Making the web accessible for everyone.",
+		"madeBy": "Made by EaseAccess24",
+		"platform": "EaseAccess24 platform",
+		"docs": "Support & docs",
+		"privacyLink": "Privacy policy",
+		"reportIssueLink": "Report an issue",
+		"copyright": "© {{year}} EaseAccess24"
+	}
+}

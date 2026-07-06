@@ -1,0 +1,265 @@
+{
+  "generatedAt": "2026-07-06T14:00:23.659Z",
+  "sourceLanguage": "en",
+  "sourceKeyCount": 192,
+  "model": "gemini-2.5-flash-lite",
+  "format": "flat",
+  "languages": {
+    "cs": {
+      "status": "done",
+      "keyCount": 192,
+      "missingPaths": [],
+      "warnings": [
+        "3 strings echoed source verbatim — review."
+      ]
+    },
+    "bg": {
+      "status": "done",
+      "keyCount": 192,
+      "missingPaths": [],
+      "warnings": [
+        "2 strings echoed source verbatim — review."
+      ]
+    },
+    "ca": {
+      "status": "done",
+      "keyCount": 192,
+      "missingPaths": [],
+      "warnings": [
+        "2 strings echoed source verbatim — review."
+      ]
+    },
+    "ar": {
+      "status": "done",
+      "keyCount": 192,
+      "missingPaths": [],
+      "warnings": [
+        "2 strings echoed source verbatim — review."
+      ]
+    },
+    "da": {
+      "status": "done",
+      "keyCount": 192,
+      "missingPaths": [],
+      "warnings": [
+        "10 strings echoed source verbatim — review."
+      ]
+    },
+    "de": {
+      "status": "done",
+      "keyCount": 192,
+      "missingPaths": [],
+      "warnings": [
+        "6 strings echoed source verbatim — review."
+      ]
+    },
+    "el": {
+      "status": "done",
+      "keyCount": 192,
+      "missingPaths": [],
+      "warnings": [
+        "2 strings echoed source verbatim — review."
+      ]
+    },
+    "es": {
+      "status": "done",
+      "keyCount": 192,
+      "missingPaths": [],
+      "warnings": [
+        "43 strings echoed source verbatim — review."
+      ]
+    },
+    "et": {
+      "status": "done",
+      "keyCount": 192,
+      "missingPaths": [],
+      "warnings": [
+        "3 strings echoed source verbatim — review."
+      ]
+    },
+    "fa": {
+      "status": "done",
+      "keyCount": 192,
+      "missingPaths": [],
+      "warnings": [
+        "3 strings echoed source verbatim — review."
+      ]
+    },
+    "fr": {
+      "status": "done",
+      "keyCount": 192,
+      "missingPaths": [],
+      "warnings": [
+        "5 strings echoed source verbatim — review."
+      ]
+    },
+    "fi": {
+      "status": "done",
+      "keyCount": 192,
+      "missingPaths": [],
+      "warnings": [
+        "3 strings echoed source verbatim — review."
+      ]
+    },
+    "hr": {
+      "status": "done",
+      "keyCount": 192,
+      "missingPaths": [],
+      "warnings": [
+        "2 strings echoed source verbatim — review."
+      ]
+    },
+    "ga": {
+      "status": "done",
+      "keyCount": 192,
+      "missingPaths": [],
+      "warnings": [
+        "52 strings echoed source verbatim — review."
+      ]
+    },
+    "hu": {
+      "status": "done",
+      "keyCount": 192,
+      "missingPaths": [],
+      "warnings": [
+        "5 strings echoed source verbatim — review."
+      ]
+    },
+    "it": {
+      "status": "done",
+      "keyCount": 192,
+      "missingPaths": [],
+      "warnings": [
+        "2 strings echoed source verbatim — review."
+      ]
+    },
+    "lt": {
+      "status": "done",
+      "keyCount": 192,
+      "missingPaths": [],
+      "warnings": [
+        "2 strings echoed source verbatim — review."
+      ]
+    },
+    "is": {
+      "status": "done",
+      "keyCount": 192,
+      "missingPaths": [],
+      "warnings": [
+        "43 strings echoed source verbatim — review."
+      ]
+    },
+    "lv": {
+      "status": "done",
+      "keyCount": 192,
+      "missingPaths": [],
+      "warnings": [
+        "51 strings echoed source verbatim — review."
+      ]
+    },
+    "mk": {
+      "status": "done",
+      "keyCount": 192,
+      "missingPaths": [],
+      "warnings": [
+        "2 strings echoed source verbatim — review."
+      ]
+    },
+    "nl": {
+      "status": "done",
+      "keyCount": 192,
+      "missingPaths": [],
+      "warnings": [
+        "6 strings echoed source verbatim — review."
+      ]
+    },
+    "nb": {
+      "status": "done",
+      "keyCount": 192,
+      "missingPaths": [],
+      "warnings": [
+        "4 strings echoed source verbatim — review."
+      ]
+    },
+    "mt": {
+      "status": "done",
+      "keyCount": 192,
+      "missingPaths": [],
+      "warnings": [
+        "5 strings echoed source verbatim — review."
+      ]
+    },
+    "pl": {
+      "status": "done",
+      "keyCount": 192,
+      "missingPaths": [],
+      "warnings": [
+        "2 strings echoed source verbatim — review."
+      ]
+    },
+    "ro": {
+      "status": "done",
+      "keyCount": 192,
+      "missingPaths": [],
+      "warnings": [
+        "2 strings echoed source verbatim — review."
+      ]
+    },
+    "sk": {
+      "status": "done",
+      "keyCount": 192,
+      "missingPaths": [],
+      "warnings": [
+        "43 strings echoed source verbatim — review."
+      ]
+    },
+    "pt": {
+      "status": "done",
+      "keyCount": 192,
+      "missingPaths": [],
+      "warnings": [
+        "5 strings echoed source verbatim — review."
+      ]
+    },
+    "sl": {
+      "status": "done",
+      "keyCount": 192,
+      "missingPaths": [],
+      "warnings": [
+        "2 strings echoed source verbatim — review."
+      ]
+    },
+    "sr": {
+      "status": "done",
+      "keyCount": 192,
+      "missingPaths": [],
+      "warnings": [
+        "2 strings echoed source verbatim — review."
+      ]
+    },
+    "sq": {
+      "status": "done",
+      "keyCount": 192,
+      "missingPaths": [],
+      "warnings": [
+        "4 strings echoed source verbatim — review."
+      ]
+    },
+    "so": {
+      "status": "done",
+      "keyCount": 192,
+      "missingPaths": [],
+      "warnings": [
+        "4 strings echoed source verbatim — review."
+      ]
+    },
+    "sv": {
+      "status": "done",
+      "keyCount": 192,
+      "missingPaths": [],
+      "warnings": [
+        "5 strings echoed source verbatim — review."
+      ]
+    }
+  }
+}

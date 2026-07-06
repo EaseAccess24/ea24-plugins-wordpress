@@ -1,0 +1,290 @@
+{
+  "status": {
+    "notConnected": "Nu este conectat",
+    "healthy": "Conectat · Sănătos",
+    "attention": "Conectat · Necesită atenție"
+  },
+  "common": {
+    "appName": "EaseAccess24 Accesibilitate",
+    "appNameShort": "EaseAccess24",
+    "saving": "Se salvează…",
+    "cancel": "Anulare",
+    "retry": "Reîncercați",
+    "updateKey": "Actualizare cheie"
+  },
+  "onboarding": {
+    "title": "Conectați site-ul dvs. la EaseAccess24",
+    "subtitle": "Inserați cheia widgetului (sau întregul fragment de script) pentru a adăuga widgetul de accesibilitate pe acest site.",
+    "emptyTitle": "Încă nu aveți o cheie de widget?",
+    "emptyBody": "Creați-vă organizația, alegeți un plan și adăugați acest domeniu în EaseAccess24. Veți primi o cheie de widget pe care să o inserați aici.",
+    "getKeyCta": "Obțineți cheia widgetului",
+    "fieldLabel": "Cheie widget sau fragment de script",
+    "helper": "Inserați doar cheia (de exemplu, ABC123) sau întregul fragment <script> — vom extrage cheia din el.",
+    "placeholder": "ABC123 — sau — <script async src=\"https://widget.easeaccess24.com/sdk.js?key=ABC123\"></script>",
+    "whereLink": "Unde găsesc asta?",
+    "connectCta": "Conectare și verificare",
+    "revealKey": "Afișați",
+    "hideKey": "Ascundeți",
+    "copyKey": "Copiați",
+    "copied": "Copiat",
+    "errors": {
+      "empty": "Inserați mai întâi cheia widgetului sau fragmentul de script.",
+      "noKey": "Nu am putut găsi o cheie de widget în aceasta. Inserați doar cheia sau întregul fragment de script care o conține.",
+      "network": "Nu am putut salva cheia. Verificați conexiunea și încercați din nou."
+    }
+  },
+  "stepper": {
+    "aria": "Progresul configurării",
+    "paste": "Inserare",
+    "validate": "Validare",
+    "healthCheck": "Verificare stare",
+    "done": "Finalizat",
+    "state": {
+      "done": "completat",
+      "current": "pas curent",
+      "upcoming": "următor"
+    }
+  },
+  "dashboard": {
+    "statusBadge": "Conectat",
+    "title": "Conexiune",
+    "subtitle": "Cheia widgetului dvs. este salvată. Rulați o verificare a stării pentru a confirma că widgetul se încarcă și este vizibil pe site-ul dvs.",
+    "keyLabel": "Cheie widget",
+    "domainLabel": "Domeniu",
+    "lastCheckLabel": "Ultima verificare a stării",
+    "neverChecked": "Nu a fost verificat încă",
+    "healthNotRunYet": "Nicio verificare nu a fost rulată încă"
+  },
+  "health": {
+    "heading": "Verificare stare",
+    "intro": "Aceasta rulează în browserul dvs.: încarcă site-ul dvs. și verifică dacă widgetul apare efectiv. Nimic nu este trimis către EaseAccess24.",
+    "run": "Rulați Verificarea stării",
+    "rerun": "Rulați din nou",
+    "running": "Se rulează Verificarea stării…",
+    "resultsHeading": "Rezultat",
+    "checklistHeading": "Ce am verificat",
+    "advisoriesHeading": "Merită verificat și",
+    "timeoutTitle": "Nu am putut finaliza verificarea",
+    "timeoutBody": "Verificarea nu s-a finalizat la timp. Acest lucru se poate întâmpla dacă pagina a durat mult să se încarce sau o setare de securitate a blocat-o. Încercați din nou."
+  },
+  "checklist": {
+    "keySaved": "Cheia widgetului a fost salvată",
+    "sdkTag": "Scriptul widgetului a fost adăugat pe site-ul dvs.",
+    "sdkReachable": "Scriptul widgetului este accesibil",
+    "widgetVisible": "Widgetul apare și este vizibil",
+    "singleInstance": "Exact un widget pe pagină",
+    "status": {
+      "pass": "trecut",
+      "fail": "eșuat",
+      "warn": "avertisment",
+      "info": "informații",
+      "na": "nu se aplică"
+    }
+  },
+  "actions": {
+    "openDashboard": "Deschideți panoul de control EaseAccess24",
+    "retry": "Rulați din nou verificarea"
+  },
+  "diagnostics": {
+    "whyLabel": "De ce",
+    "fixLabel": "Cum să remediați",
+    "OK": {
+      "title": "Widgetul dvs. este activ",
+      "why": "Am încărcat site-ul dvs. și widgetul de accesibilitate a apărut și este vizibil.",
+      "fix": "Nu este nimic de făcut — sunteți pregătit."
+    },
+    "DOMAIN_NOT_ALLOWED": {
+      "title": "Domeniu nepermis / Cheie neautorizată",
+      "why": "Scriptul widgetului s-a încărcat, dar a raportat că acest domeniu nu este autorizat pentru cheia dvs. de widget. Același mesaj acoperă o cheie greșită și un domeniu care nu a fost încă adăugat.",
+      "fix": "Deschideți panoul de control EaseAccess24, confirmați că acest domeniu exact este adăugat în organizația dvs., verificați dacă cheia widgetului corespunde, apoi rulați din nou verificarea."
+    },
+    "SDK_UNREACHABLE": {
+      "title": "Scriptul widgetului nu a putut fi încărcat",
+      "why": "Browserul dvs. nu a putut accesa URL-ul scriptului widgetului. Aceasta este de obicei o problemă de rețea, CDN sau de caching, mai degrabă decât o problemă de configurare.",
+      "fix": "Verificați rețeaua/CDN-ul site-ului dvs., ștergeți orice cache și rulați din nou verificarea."
+    },
+    "WIDGET_NOT_INITIALIZED": {
+      "title": "Widgetul nu s-a încărcat",
+      "why": "Scriptul widgetului este la locul lui, dar nu a apărut niciun widget vizibil și niciun motiv specific nu a fost raportat. Cauze comune: domeniul nu a fost încă adăugat, cheia este greșită sau un script a fost blocat.",
+      "fix": "Confirmați acest domeniu și cheia widgetului în panoul de control EaseAccess24, asigurați-vă că nimic nu blochează scriptul, apoi rulați din nou verificarea."
+    },
+    "DUPLICATE_WIDGET": {
+      "title": "Widget duplicat detectat",
+      "why": "Se încarcă mai mult de un widget pe pagină. Acest lucru înseamnă, de obicei, că SDK-ul este adăugat de două ori — de exemplu, atât de acest plugin, cât și de un fragment manual din tema dvs.",
+      "fix": "Păstrați o singură metodă. Dacă ați adăugat scriptul la tema dvs. sau la un alt plugin, eliminați-l și lăsați acest plugin să se ocupe de asta. Nu eliminăm niciodată scripturi pentru dvs."
+    },
+    "POSSIBLE_DUPLICATE_WIDGET": {
+      "title": "Posibil widget duplicat",
+      "why": "Am găsit semne ale unui al doilea script de widget (de exemplu, o etichetă de script suplimentară), dar nu am putut confirma un al doilea widget vizibil — cache-ul poate ascunde acest lucru.",
+      "fix": "Asigurați-vă că widgetul este adăugat o singură dată. Dacă aveți un fragment manual în tema dvs., eliminați-l și bazați-vă pe acest plugin."
+    },
+    "OPTIMIZER_INTERFERENCE": {
+      "title": "Un plugin de caching sau optimizare poate interfera",
+      "why": "O cheie de widget este salvată, dar scriptul widgetului nu era prezent pe pagină — un plugin de caching/optimizare l-ar fi putut elimina sau modifica.",
+      "fix": "Excludeti scriptul EaseAccess24 din caching/optimizare. Recomandări detaliate, per plugin, vor fi disponibile în secțiunea Compatibilitate."
+    },
+    "STAGING_DETECTED": {
+      "title": "Mediu de staging detectat",
+      "why": "Acesta pare a fi un site de staging sau de dezvoltare. Widgetul se redă doar pe domeniile autorizate în EaseAccess24, deci s-ar putea să nu apară aici.",
+      "fix": "Acest lucru este de așteptat în mediul de staging. Adăugați acest domeniu în panoul de control dacă doriți ca widgetul să apară aici sau testați pe domeniul dvs. principal."
+    },
+    "LOCALHOST_DETECTED": {
+      "title": "Mediu local detectat",
+      "why": "Acest site rulează pe localhost. Widgetul se redă doar pe domeniile autorizate în EaseAccess24, deci nu va apărea local.",
+      "fix": "Acest lucru este de așteptat local. Testați pe domeniul dvs. principal, autorizat, pentru a vedea widgetul."
+    },
+    "KEY_INVALID": {
+      "title": "Cheie widget neacceptată",
+      "why": "Cheia widgetului a fost respinsă.",
+      "fix": "Verificați cheia în panoul de control EaseAccess24 și salvați-o din nou."
+    },
+    "SUBSCRIPTION_EXPIRED": {
+      "title": "Abonament expirat",
+      "why": "Abonamentul pentru această cheie de widget nu mai este activ.",
+      "fix": "Reînnoiți planul în panoul de control EaseAccess24."
+    },
+    "ORG_DISABLED": {
+      "title": "Organizație dezactivată",
+      "why": "Organizația pentru această cheie de widget este dezactivată.",
+      "fix": "Contactați suportul EaseAccess24 sau verificați tabloul de bord."
+    }
+  },
+  "nav": {
+    "aria": "Secțiuni EaseAccess24",
+    "connection": "Conexiune",
+    "compatibility": "Compatibilitate",
+    "activity": "Activitate",
+    "support": "Suport",
+    "help": "Ajutor"
+  },
+  "compatibility": {
+    "title": "Compatibilitate cache și optimizare",
+    "intro": "Pluginurile de caching și optimizare pot amâna, combina sau elimina scripturi — inclusiv widgetul EaseAccess24. Adăugăm indicii care le solicită să lase scriptul nostru în pace, dar unele configurații necesită în continuare o excludere manuală. Nu modificăm niciodată setările altui plugin în locul dumneavoastră.",
+    "noneTitle": "Nu au fost detectate pluginuri de cache sau de optimizare cunoscute",
+    "noneBody": "Nu am găsit niciunul dintre pluginurile de caching/optimizare pe care le recunoaștem. Dacă widgetul tot nu apare, rulați o verificare a stării de funcționare (Health Check) din fila Conexiune.",
+    "cloudflareCdnNote": "Notă: Cloudflare, rulat ca CDN (Rocket Loader, Auto Minify la nivel de edge), nu poate fi detectat de pe site-ul dumneavoastră. Dacă utilizați Cloudflare, verificați și acele setări.",
+    "detectedTitle": "Pluginuri detectate",
+    "recommendationLabel": "Recomandare",
+    "modifiedTitle": "Scriptul widgetului ar putea fi modificat",
+    "modifiedBody": "Un plugin de cache/optimizare este activ și ultima dumneavoastră verificare a stării de funcționare a constatat că scriptul widgetului nu era pe pagină. Aplicați excluderea de mai jos și rulați din nou verificarea.",
+    "plugins": {
+      "wp-rocket": {
+        "recommendation": "În WP Rocket → File Optimization, excludeți „widget.easeaccess24.com/sdk.js” din minificarea JavaScript, combinarea și „Delay JavaScript execution”. WP Rocket respectă, de asemenea, indiciul nostru data-no-minify."
+      },
+      "litespeed": {
+        "recommendation": "În LiteSpeed Cache → Page Optimization → JS Settings, adăugați „widget.easeaccess24.com” la JS Excludes (și la excluderile Deferred/Delayed, dacă sunt activate)."
+      },
+      "autoptimize": {
+        "recommendation": "În Autoptimize → JS, Images..., adăugați „easeaccess24” la „Exclude scripts from Autoptimize”. Autoptimize respectă, de asemenea, indiciul nostru data-no-optimize."
+      },
+      "perfmatters": {
+        "recommendation": "În Perfmatters → Assets, adăugați „easeaccess24” la excluderile pentru „Delay JavaScript” și orice opțiuni de amânare/minificare a scripturilor."
+      },
+      "asset-cleanup": {
+        "recommendation": "În Asset CleanUp, asigurați-vă că scriptul EaseAccess24 nu este dezactivat pe paginile dumneavoastră și excludeți-l din orice opțiuni de minificare/combinare/amânare JS."
+      },
+      "cloudflare": {
+        "recommendation": "În Cloudflare, excludeți scriptul widgetului din Rocket Loader (tag-ul nostru deja setează data-cfasync=\"false\") și din Auto Minify/Mirage, dacă sunt activate pentru scripturi."
+      }
+    }
+  },
+  "eventLog": {
+    "title": "Jurnal de activitate",
+    "intro": "Un scurt istoric al verificărilor stării de funcționare și al evenimentelor legate de pluginuri. Acest jurnal rămâne pe site-ul dumneavoastră și nu este trimis nicăieri automat.",
+    "empty": "Încă nu există evenimente înregistrate. Rulați o verificare a stării de funcționare din fila Conexiune pentru a înregistra unul.",
+    "clear": "Ștergeți jurnalul",
+    "clearConfirm": "Ștergeți toate evenimentele înregistrate?",
+    "confirmClear": "Da, ștergeți",
+    "cancel": "Anulați",
+    "cleared": "Jurnalul de activitate a fost șters.",
+    "loadError": "Nu am putut încărca jurnalul de activitate. Reîncărcați pagina și încercați din nou.",
+    "loading": "Se încarcă activitatea…",
+    "types": {
+      "health_check": "Verificare stare de funcționare",
+      "key_saved": "Cheie widget salvată",
+      "key_updated": "Cheie widget actualizată",
+      "activated": "Plugin activat",
+      "deactivated": "Plugin dezactivat"
+    },
+    "relative": {
+      "justNow": "Chiar acum",
+      "minutesAgo": "acum {{n}} minute",
+      "hoursAgo": "acum {{n}} ore",
+      "daysAgo": "acum {{n}} zile"
+    }
+  },
+  "supportReport": {
+    "title": "Raport de suport",
+    "intro": "Generați un raport pe care îl puteți partaja cu suportul EaseAccess24. Acesta include mediul dumneavoastră, starea conexiunii, pluginurile de cache detectate și evenimentele recente. Cheia dumneavoastră de widget este mascată și nu sunt incluse date personale.",
+    "privacyNote": "Nimic nu este trimis automat. Nu există nicio implicare a serverului — copiați sau descărcați raportul de mai jos și îl partajați singur.",
+    "generate": "Generați raport",
+    "regenerate": "Regenerați",
+    "generating": "Se generează…",
+    "previewLabel": "Previzualizare raport (exact ceea ce va fi copiat sau descărcat)",
+    "copy": "Copiați",
+    "copied": "Copiat",
+    "copyFailed": "Copierea nu este disponibilă în acest browser. Utilizați Descărcare în schimb.",
+    "downloadTxt": "Descărcare .txt",
+    "downloadJson": "Descărcare .json",
+    "generateError": "Nu am putut genera raportul. Reîncărcați pagina și încercați din nou."
+  },
+  "pluginInfo": {
+    "title": "Informații despre plugin",
+    "version": "Versiune",
+    "wpCompat": "Compatibilitate WordPress",
+    "phpMin": "PHP minim",
+    "testedUpTo": "Testat până la",
+    "supportStatus": "Stare suport",
+    "supportStatusActive": "Suport activ"
+  },
+  "faq": {
+    "title": "Ajutor și Întrebări frecvente",
+    "intro": "Răspunsuri la întrebări comune despre conectarea și depanarea widgetului.",
+    "learnMore": "Aflați mai multe",
+    "items": {
+      "findKey": {
+        "q": "Unde găsesc cheia widgetului meu?",
+        "a": "Conectați-vă la app.easeaccess24.com, deschideți secțiunea Integrare și copiați cheia widgetului (sau întregul fragment de cod). Introduceți-l în fila Conexiune – vom extrage cheia din fragmentul de cod pentru dvs."
+      },
+      "notShowing": {
+        "q": "Widgetul nu se afișează — ce ar trebui să verific?",
+        "a": "Rulați o Verificare a Stării în fila Conexiune. Aceasta vă spune dacă scriptul este adăugat, accesibil și dacă widgetul apare efectiv. Cele mai frecvente cauze sunt domeniul neadăugat în tabloul de bord, o cheie greșită sau un plugin de cache care elimină scriptul."
+      },
+      "cachePlugin": {
+        "q": "Folosesc un plugin de cache sau de optimizare. Va intra în conflict?",
+        "a": "Poate. Tag-ul nostru de script solicită pluginurilor comune să-l ocolească, dar unele configurații necesită totuși o excludere manuală. Verificați fila Compatibilitate pentru recomandări per plugin. Nu modificăm niciodată setările altui plugin pentru dvs."
+      },
+      "stagingLocalhost": {
+        "q": "Widgetul funcționează pe staging sau localhost?",
+        "a": "Widgetul este redat numai pe domeniile autorizate pentru cheia dvs. de widget, deci de obicei nu va apărea pe staging sau localhost. Acest lucru este normal și nu o eroare a pluginului — testați pe domeniul dvs. activ, autorizat."
+      },
+      "dataPrivacy": {
+        "q": "Ce date stochează sau trimite acest plugin?",
+        "a": "Pluginul stochează cheia widgetului și setările pe propriul site, plus un jurnal scurt de activitate locală. Nu efectuează apeluri automate către EaseAccess24, în afară de adăugarea scriptului widgetului și, în timpul unei Verificări a Stării, testarea accesibilității scriptului. Rapoartele de suport sunt partajate doar de dvs., manual."
+      },
+      "removeData": {
+        "q": "Cum elimin toate datele pluginului?",
+        "a": "Configurația dvs. este păstrată la dezactivare, astfel încât să o puteți reactiva ulterior. Pentru a elimina totul, activați „Eliminați toate datele EaseAccess24” înainte de a șterge pluginul, apoi ștergeți-l din ecranul Pluginuri."
+      }
+    }
+  },
+  "settings": {
+    "languageLabel": "Limbă",
+    "languageAria": "Limba interfeței",
+    "dataTitle": "Date și confidențialitate",
+    "removeDataLabel": "Eliminați toate datele EaseAccess24 la ștergerea pluginului",
+    "removeDataHelp": "Când este activată, ștergerea pluginului elimină și cheia widgetului, setările și jurnalul de activitate. Lăsați-o dezactivată pentru a păstra configurația pentru o reinstalare viitoare. Fișierele temei dvs. nu sunt atinse niciodată.",
+    "saved": "Salvat",
+    "saveError": "Nu am putut salva setările. Verificați conexiunea și încercați din nou.",
+    "loadError": "Nu am putut încărca setările. Reîncărcați pagina și încercați din nou."
+  },
+  "footer": {
+    "tagline": "Facem web-ul accesibil tuturor.",
+    "madeBy": "Creat de EaseAccess24",
+    "platform": "Platforma EaseAccess24",
+    "docs": "Suport și documentație",
+    "privacyLink": "Politica de confidențialitate",
+    "reportIssueLink": "Raportați o problemă",
+    "copyright": "© {{year}} EaseAccess24"
+  }
+}

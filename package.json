@@ -1,0 +1,48 @@
+{
+	"name": "easeaccess24-accessibility",
+	"version": "0.1.0",
+	"description": "Official WordPress plugin that connects a WordPress site to the EaseAccess24 accessibility platform.",
+	"author": "EaseAccess24",
+	"license": "GPL-2.0-or-later",
+	"private": true,
+	"keywords": [
+		"wordpress",
+		"plugin",
+		"accessibility",
+		"easeaccess24"
+	],
+	"engines": {
+		"node": ">=18"
+	},
+	"scripts": {
+		"start": "wp-scripts start",
+		"build": "wp-scripts build",
+		"lint:js": "wp-scripts lint-js",
+		"lint:css": "wp-scripts lint-style",
+		"format": "wp-scripts format",
+		"makepot": "wp-env run cli --env-cwd=wp-content/plugins/easeaccess24-accessibility wp i18n make-pot . languages/easeaccess24-accessibility.pot --domain=easeaccess24-accessibility --exclude=build,node_modules,vendor,src,tests,e2e,docker",
+		"test:js": "wp-scripts test-unit-js",
+		"test:e2e": "playwright test",
+		"test:e2e:install": "playwright install chromium",
+		"env": "wp-env",
+		"env:start": "wp-env start",
+		"env:stop": "wp-env stop",
+		"env:clean": "wp-env clean all",
+		"lint:php": "wp-env run cli --env-cwd=wp-content/plugins/easeaccess24-accessibility composer lint:php",
+		"test:php": "wp-env run tests-cli --env-cwd=wp-content/plugins/easeaccess24-accessibility composer test:php"
+	},
+	"devDependencies": {
+		"@playwright/test": "^1.61.1",
+		"@wordpress/e2e-test-utils-playwright": "^1.50.0",
+		"@wordpress/env": "^10.7.0",
+		"@wordpress/scripts": "^30.0.0",
+		"autoprefixer": "^10.4.19",
+		"postcss": "^8.4.38",
+		"tailwindcss": "^3.4.4"
+	},
+	"dependencies": {
+		"@wordpress/element": "^6.7.0",
+		"@wordpress/i18n": "^5.7.0",
+		"i18next": "^23.16.8"
+	}
+}
