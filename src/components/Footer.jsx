@@ -62,18 +62,17 @@ export default function Footer() {
 						{ t( 'footer.platform' ) }
 					</a>
 					<a
-						href={ PLATFORM_URL }
+						href="https://www.easeaccess24.com/contact-us/"
 						target="_blank"
 						rel="noopener noreferrer"
 						className="ea24-text-ea24-brand hover:ea24-underline"
 					>
 						{ t( 'footer.docs' ) }
 					</a>
-					{ /* Placeholder URLs — no dedicated Privacy Policy or
-					     issue-tracker page exists yet; point at the platform
-					     URL until a real destination is supplied. */ }
+					{ /* Privacy Policy and issue-reporting (contact) links on
+					     easeaccess24.com. */ }
 					<a
-						href={ PLATFORM_URL }
+						href="https://www.easeaccess24.com/privacy-policy/"
 						target="_blank"
 						rel="noopener noreferrer"
 						className="ea24-text-ea24-brand hover:ea24-underline"
@@ -81,7 +80,7 @@ export default function Footer() {
 						{ t( 'footer.privacyLink' ) }
 					</a>
 					<a
-						href={ PLATFORM_URL }
+						href="https://www.easeaccess24.com/contact-us/"
 						target="_blank"
 						rel="noopener noreferrer"
 						className="ea24-text-ea24-brand hover:ea24-underline"
