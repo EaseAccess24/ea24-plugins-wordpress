@@ -59,8 +59,25 @@ exactly two ways:
 
 The plugin makes no other remote calls and transmits no data on its own.
 
-* EaseAccess24 website and terms: https://easeaccess24.com/
-* Privacy information: https://easeaccess24.com/privacy/
+* EaseAccess24 website: https://easeaccess24.com/
+* Terms of Use: https://www.easeaccess24.com/terms-conditions/
+* Privacy information: https://www.easeaccess24.com/privacy-policy/
+
+== Development ==
+
+This plugin is open source. The shipped package contains the compiled assets in
+`build/`; the full, human-readable source (the React admin app under `src/` and
+the build configuration) lives in the public repository:
+
+* Source code: https://github.com/EaseAccess24/ea24-plugins-wordpress
+
+The admin interface is built with @wordpress/scripts (webpack/Babel). To build
+from source:
+
+1. Install dependencies: `npm install`
+2. Build the assets: `npm run build`
+
+This regenerates the `build/` directory that ships in the plugin.
 
 == Installation ==
 
@@ -111,3 +128,8 @@ platform.
 * Internationalization (English and Swedish at launch).
 * Lifecycle handling: staging/localhost detection, and opt-in data removal on
   uninstall.
+
+== Upgrade Notice ==
+
+= 0.1.0 =
+Initial release of EaseAccess24 Accessibility.
