@@ -3,9 +3,8 @@
  *
  * Each entry is a custom animated disclosure (a real <button aria-expanded>
  * trigger + an associated panel), replacing native <details>/<summary> so the
- * expand/collapse can be smoothly height-animated. The entry list (ids +
- * optional external doc links) lives in src/faq/entries.js; the copy lives in
- * i18n under faq.items.<id>.
+ * expand/collapse can be smoothly height-animated. The entry list (ids) lives
+ * in src/faq/entries.js; the copy lives in i18n under faq.items.<id>.
  */
 import { useState } from '@wordpress/element';
 import { t } from '../i18n';
@@ -38,7 +37,7 @@ export default function Faq() {
  * items can be open at once, matching the previous native <details> behavior.
  *
  * @param {Object} props
- * @param {Object} props.entry FAQ entry ({ id, learnMoreUrl }).
+ * @param {Object} props.entry FAQ entry ({ id }).
  */
 function FaqItem( { entry } ) {
 	const [ open, setOpen ] = useState( false );
@@ -80,17 +79,6 @@ function FaqItem( { entry } ) {
 						<p className="ea24-text-sm ea24-leading-relaxed ea24-text-[#3a3e4d]">
 							{ t( `faq.items.${ entry.id }.a` ) }
 						</p>
-						{ entry.learnMoreUrl && (
-							<a
-								href={ entry.learnMoreUrl }
-								target="_blank"
-								rel="noopener noreferrer"
-								tabIndex={ open ? 0 : -1 }
-								className="ea24-mt-3 ea24-inline-block ea24-rounded ea24-text-sm ea24-font-semibold ea24-text-ea24-accent hover:ea24-underline"
-							>
-								{ t( 'faq.learnMore' ) }
-							</a>
-						) }
 					</div>
 				</div>
 			</div>

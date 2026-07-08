@@ -28,7 +28,7 @@ export default function Footer() {
 
 	return (
 		<footer className="ea24-mt-8 ea24-rounded-card ea24-bg-white ea24-px-6 ea24-py-[18px] ea24-text-sm ea24-text-ea24-muted ea24-shadow-card">
-			<div className="ea24-mb-3 ea24-border-b ea24-border-solid ea24-border-ea24-divider ea24-pb-3">
+			<div className="ea24-mb-3">
 				<p className="ea24-text-ea24-muted">
 					{ t( 'footer.tagline' ) }
 				</p>
