@@ -7,7 +7,7 @@
  * new logic and no PHP change. All copy goes through `t()`.
  */
 import { t } from '../i18n';
-import iconLogo from '../assets/EA24_Icon_Logo.png';
+import iconLogo from '../assets/logo-eye.svg?url';
 
 const PLATFORM_URL = 'https://app.easeaccess24.com';
 

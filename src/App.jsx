@@ -18,7 +18,7 @@ import { t, i18next, dirFor } from './i18n';
 import LanguageSwitcher from './components/LanguageSwitcher';
 import StatusPill from './components/StatusPill';
 import Footer from './components/Footer';
-import iconLogo from './assets/EA24_Icon_Logo.png';
+import iconLogo from './assets/logo-eye.svg?url';
 import Onboarding from './screens/Onboarding';
 import Compatibility from './screens/Compatibility';
 import Activity from './screens/Activity';
