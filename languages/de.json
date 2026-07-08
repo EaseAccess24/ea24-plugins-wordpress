@@ -1,7 +1,7 @@
 {
   "status": {
     "notConnected": "Nicht verbunden",
-    "healthy": "Verbunden · Gesund",
+    "healthy": "Verbunden · OK",
     "attention": "Verbunden · Benötigt Aufmerksamkeit"
   },
   "common": {
@@ -9,15 +9,14 @@
     "appNameShort": "EaseAccess24",
     "saving": "Speichere…",
     "cancel": "Abbrechen",
-    "retry": "Erneut versuchen",
     "updateKey": "Schlüssel aktualisieren"
   },
   "onboarding": {
     "title": "Verbinden Sie Ihre Website mit EaseAccess24",
     "subtitle": "Fügen Sie Ihren Widget-Schlüssel (oder den vollständigen Skript-Schnipsel) ein, um das Barrierefreiheits-Widget zu dieser Website hinzuzufügen.",
     "emptyTitle": "Haben Sie noch keinen Widget-Schlüssel?",
-    "emptyBody": "Erstellen Sie Ihre Organisation, wählen Sie einen Plan und fügen Sie diese Domain in EaseAccess24 hinzu. Sie erhalten einen Widget-Schlüssel, den Sie hier einfügen können.",
-    "getKeyCta": "Widget-Schlüssel abrufen",
+    "emptyBody": "Erstellen Sie Ihre Organisation, wählen Sie einen Plan und fügen Sie diese Domain in EaseAccess24 hinzu. Sie erhalten dann einen Widget-Schlüssel zum Einfügen hier.",
+    "getKeyCta": "Widget-Schlüssel erhalten",
     "fieldLabel": "Widget-Schlüssel oder Skript-Schnipsel",
     "helper": "Fügen Sie nur den Schlüssel ein (z. B. ABC123) oder den gesamten <script>-Schnipsel – wir extrahieren den Schlüssel daraus.",
     "placeholder": "ABC123 — oder — <script async src=\"https://widget.easeaccess24.com/sdk.js?key=ABC123\"></script>",
@@ -29,7 +28,7 @@
     "copied": "Kopiert",
     "errors": {
       "empty": "Fügen Sie zuerst Ihren Widget-Schlüssel oder Skript-Schnipsel ein.",
-      "noKey": "Wir konnten keinen Widget-Schlüssel darin finden. Fügen Sie nur den Schlüssel oder den vollständigen Skript-Schnipsel, der ihn enthält, ein.",
+      "noKey": "Wir konnten keinen Widget-Schlüssel darin finden. Fügen Sie nur den Schlüssel oder den vollständigen Skript-Schnipsel ein, der ihn enthält.",
       "network": "Wir konnten Ihren Schlüssel nicht speichern. Überprüfen Sie Ihre Verbindung und versuchen Sie es erneut."
     }
   },
@@ -38,7 +37,7 @@
     "paste": "Einfügen",
     "validate": "Validieren",
     "healthCheck": "Gesundheitsprüfung",
-    "done": "Erledigt",
+    "done": "Fertig",
     "state": {
       "done": "abgeschlossen",
       "current": "aktueller Schritt",
@@ -48,22 +47,21 @@
   "dashboard": {
     "statusBadge": "Verbunden",
     "title": "Verbindung",
-    "subtitle": "Ihr Widget-Schlüssel wurde gespeichert. Führen Sie eine Gesundheitsprüfung durch, um zu bestätigen, dass das Widget geladen wird und auf Ihrer Website sichtbar ist.",
+    "subtitle": "Ihr Widget-Schlüssel ist gespeichert. Führen Sie eine Gesundheitsprüfung durch, um zu bestätigen, dass das Widget geladen wird und auf Ihrer Website sichtbar ist.",
     "keyLabel": "Widget-Schlüssel",
     "domainLabel": "Domain",
     "lastCheckLabel": "Letzte Gesundheitsprüfung",
     "neverChecked": "Noch nicht geprüft",
-    "healthNotRunYet": "Noch keine Prüfung durchgeführt"
+    "healthNotRunYet": "Keine Prüfung durchgeführt"
   },
   "health": {
     "heading": "Gesundheitsprüfung",
-    "intro": "Dies wird in Ihrem Browser ausgeführt: Es wird Ihre Website geladen und überprüft, ob das Widget tatsächlich angezeigt wird. Es werden keine Daten an EaseAccess24 gesendet.",
+    "intro": "Diese Prüfung läuft in Ihrem Browser: Sie lädt Ihre Website und prüft, ob das Widget tatsächlich angezeigt wird. Es werden keine Daten an EaseAccess24 gesendet.",
     "run": "Gesundheitsprüfung ausführen",
-    "rerun": "Erneut ausführen",
     "running": "Gesundheitsprüfung wird ausgeführt…",
     "resultsHeading": "Ergebnis",
-    "checklistHeading": "Was wir überprüft haben",
-    "advisoriesHeading": "Auch eine Überprüfung wert",
+    "checklistHeading": "Was wir geprüft haben",
+    "advisoriesHeading": "Ebenfalls prüfenswert",
     "timeoutTitle": "Wir konnten die Prüfung nicht abschließen",
     "timeoutBody": "Die Prüfung wurde nicht rechtzeitig abgeschlossen. Dies kann passieren, wenn die Seite langsam geladen wurde oder eine Sicherheitseinstellung sie blockiert hat. Versuchen Sie es erneut."
   },
@@ -71,14 +69,14 @@
     "keySaved": "Widget-Schlüssel gespeichert",
     "sdkTag": "Widget-Skript zu Ihrer Website hinzugefügt",
     "sdkReachable": "Widget-Skript ist erreichbar",
-    "widgetVisible": "Widget erscheint und ist sichtbar",
+    "widgetVisible": "Widget wird angezeigt und ist sichtbar",
     "singleInstance": "Genau ein Widget auf der Seite",
     "status": {
       "pass": "bestanden",
       "fail": "fehlgeschlagen",
       "warn": "Warnung",
       "info": "Info",
-      "na": "nicht zutreffend"
+      "na": "nicht anwendbar"
     }
   },
   "actions": {
@@ -87,51 +85,51 @@
   },
   "diagnostics": {
     "whyLabel": "Warum",
-    "fixLabel": "So beheben Sie es",
+    "fixLabel": "So beheben Sie das Problem",
     "OK": {
       "title": "Ihr Widget ist live",
-      "why": "Wir haben Ihre Website geladen und das Barrierefreiheits-Widget erschien und ist sichtbar.",
+      "why": "Wir haben Ihre Website geladen und das Accessibility-Widget wurde angezeigt und ist sichtbar.",
       "fix": "Nichts zu tun – Sie sind bereit."
     },
     "DOMAIN_NOT_ALLOWED": {
       "title": "Domain nicht erlaubt / Schlüssel nicht autorisiert",
-      "why": "Das Widget-Skript wurde geladen, meldete aber, dass diese Domain für Ihren Widget-Schlüssel nicht autorisiert ist. Dieselbe Meldung deckt einen falschen Schlüssel und eine Domäne ab, die noch nicht hinzugefügt wurde.",
+      "why": "Das Widget-Skript wurde geladen, meldete jedoch, dass diese Domain für Ihren Widget-Schlüssel nicht autorisiert ist. Dieselbe Meldung deckt auch einen falschen Schlüssel und eine Domain ab, die noch nicht hinzugefügt wurde.",
       "fix": "Öffnen Sie Ihr EaseAccess24 Dashboard, bestätigen Sie, dass diese genaue Domain unter Ihrer Organisation hinzugefügt wurde, überprüfen Sie, ob der Widget-Schlüssel übereinstimmt, und führen Sie dann die Prüfung erneut aus."
     },
     "SDK_UNREACHABLE": {
       "title": "Das Widget-Skript konnte nicht geladen werden",
       "why": "Ihr Browser konnte die URL des Widget-Skripts nicht erreichen. Dies ist normalerweise ein Netzwerk-, CDN- oder Caching-Problem und kein Konfigurationsproblem.",
-      "fix": "Überprüfen Sie das Netzwerk/CDN Ihrer Website, löschen Sie alle Caches und führen Sie die Prüfung erneut aus."
+      "fix": "Überprüfen Sie das Netzwerk/CDN Ihrer Website, leeren Sie alle Caches und führen Sie die Prüfung erneut aus."
     },
     "WIDGET_NOT_INITIALIZED": {
       "title": "Das Widget wurde nicht geladen",
-      "why": "Das Widget-Skript ist vorhanden, aber kein sichtbares Widget erschien und es wurde kein spezifischer Grund gemeldet. Häufige Ursachen: die Domain wurde noch nicht hinzugefügt, der Schlüssel ist falsch oder ein Skript wurde blockiert.",
-      "fix": "Bestätigen Sie diese Domain und diesen Widget-Schlüssel in Ihrem EaseAccess24 Dashboard, stellen Sie sicher, dass nichts das Skript blockiert, und führen Sie dann die Prüfung erneut aus."
+      "why": "Das Widget-Skript ist vorhanden, aber kein sichtbares Widget wurde angezeigt und es wurde kein spezifischer Grund gemeldet. Häufige Ursachen: Die Domain wurde noch nicht hinzugefügt, der Schlüssel ist falsch oder ein Skript wurde blockiert.",
+      "fix": "Bestätigen Sie diese Domain und den Widget-Schlüssel in Ihrem EaseAccess24 Dashboard, stellen Sie sicher, dass nichts das Skript blockiert, und führen Sie dann die Prüfung erneut aus."
     },
     "DUPLICATE_WIDGET": {
-      "title": "Dupliziertes Widget erkannt",
-      "why": "Mehr als ein Widget wird auf der Seite geladen. Dies bedeutet normalerweise, dass das SDK zweimal hinzugefügt wurde – zum Beispiel sowohl durch dieses Plugin als auch durch einen manuellen Ausschnitt in Ihrem Theme.",
-      "fix": "Behalten Sie nur eine Methode bei. Wenn Sie das Skript zu Ihrem Theme oder einem anderen Plugin hinzugefügt haben, entfernen Sie es und lassen Sie dieses Plugin die Arbeit erledigen. Wir entfernen niemals Skripte für Sie."
+      "title": "Doppeltes Widget erkannt",
+      "why": "Mehr als ein Widget wird auf der Seite geladen. Dies bedeutet normalerweise, dass das SDK zweimal hinzugefügt wurde – zum Beispiel sowohl durch dieses Plugin als auch durch einen manuellen Snippet in Ihrem Theme.",
+      "fix": "Behalten Sie nur eine Methode bei. Wenn Sie das Skript zu Ihrem Theme oder einem anderen Plugin hinzugefügt haben, entfernen Sie es und lassen Sie dieses Plugin die Arbeit erledigen. Wir entfernen Skripte niemals für Sie."
     },
     "POSSIBLE_DUPLICATE_WIDGET": {
       "title": "Möglicherweise doppeltes Widget",
       "why": "Wir haben Anzeichen für ein zweites Widget-Skript gefunden (z. B. ein zusätzliches Skript-Tag), konnten aber kein zweites sichtbares Widget bestätigen – Caching kann dies verschleiern.",
-      "fix": "Stellen Sie sicher, dass das Widget nur einmal hinzugefügt wird. Wenn Sie einen manuellen Ausschnitt in Ihrem Theme haben, entfernen Sie ihn und verlassen Sie sich auf dieses Plugin."
+      "fix": "Stellen Sie sicher, dass das Widget nur einmal hinzugefügt wird. Wenn Sie einen manuellen Snippet in Ihrem Theme haben, entfernen Sie ihn und verlassen Sie sich auf dieses Plugin."
     },
     "OPTIMIZER_INTERFERENCE": {
-      "title": "Ein Caching- oder Optimierungs-Plugin könnte stören",
-      "why": "Ein Widget-Schlüssel wurde gespeichert, aber das Widget-Skript war nicht auf der Seite vorhanden – ein Caching-/Optimierungs-Plugin hat es möglicherweise entfernt oder geändert.",
-      "fix": "Schließen Sie das EaseAccess24-Skript vom Caching/Optimierung aus. Detaillierte Empfehlungen pro Plugin werden dem Abschnitt Kompatibilität hinzugefügt."
+      "title": "Ein Caching- oder Optimierungsplugin stört möglicherweise",
+      "why": "Ein Widget-Schlüssel ist gespeichert, aber das Widget-Skript war nicht auf der Seite vorhanden – ein Caching-/Optimierungsplugin hat es möglicherweise entfernt oder geändert.",
+      "fix": "Schließen Sie das EaseAccess24-Skript von Caching/Optimierung aus. Detaillierte Empfehlungen pro Plugin werden bald im Bereich Kompatibilität verfügbar sein."
     },
     "STAGING_DETECTED": {
       "title": "Staging-Umgebung erkannt",
-      "why": "Dies sieht wie eine Staging- oder Entwicklungsumgebung aus. Das Widget wird nur auf autorisierten Domains in EaseAccess24 gerendert, daher wird es hier möglicherweise nicht angezeigt.",
-      "fix": "Dies ist lokal zu erwarten. Fügen Sie diese Domain in Ihrem Dashboard hinzu, wenn Sie möchten, dass das Widget hier angezeigt wird, oder testen Sie auf Ihrer Live-Domain."
+      "why": "Dies sieht aus wie eine Staging- oder Entwicklungsumgebung. Das Widget wird nur auf Domains gerendert, die in EaseAccess24 autorisiert sind, daher wird es hier möglicherweise nicht angezeigt.",
+      "fix": "Dies ist lokal zu erwarten. Fügen Sie diese Domain in Ihrem Dashboard hinzu, wenn das Widget hier angezeigt werden soll, oder testen Sie es auf Ihrer Live-Domain."
     },
     "LOCALHOST_DETECTED": {
       "title": "Lokale Umgebung erkannt",
-      "why": "Diese Website wird lokal ausgeführt. Das Widget wird nur auf autorisierten Domains in EaseAccess24 gerendert, daher wird es lokal nicht angezeigt.",
-      "fix": "Dies ist lokal zu erwarten. Testen Sie auf Ihrer Live-Domain, um das Widget zu sehen."
+      "why": "Diese Website läuft lokal. Das Widget wird nur auf Domains gerendert, die in EaseAccess24 autorisiert sind, daher wird es lokal nicht angezeigt.",
+      "fix": "Dies ist lokal zu erwarten. Testen Sie auf Ihrer Live-Domain, die autorisiert ist, um das Widget zu sehen."
     },
     "KEY_INVALID": {
       "title": "Widget-Schlüssel nicht akzeptiert",
@@ -158,30 +156,30 @@
     "help": "Hilfe"
   },
   "compatibility": {
-    "title": "Kompatibilität von Cache und Optimierung",
-    "intro": "Caching- und Optimierungs-Plugins können Skripte verzögern, kombinieren oder entfernen – einschließlich des EaseAccess24-Widgets. Wir fügen Hinweise hinzu, die sie bitten, unser Skript in Ruhe zu lassen, aber einige Setups erfordern immer noch eine manuelle Ausnahme. Wir ändern niemals die Einstellungen eines anderen Plugins für Sie.",
+    "title": "Kompatibilität von Cache & Optimierung",
+    "intro": "Caching- und Optimierungs-Plugins können Skripte verzögern, kombinieren oder entfernen – einschließlich des EaseAccess24-Widgets. Wir fügen Hinweise hinzu, die sie bitten, unser Skript in Ruhe zu lassen, aber einige Setups erfordern immer noch einen manuellen Ausschluss. Wir ändern niemals die Einstellungen eines anderen Plugins für Sie.",
     "noneTitle": "Keine bekannten Cache- oder Optimierungs-Plugins erkannt",
-    "noneBody": "Wir haben keine der Caching-/Optimierungs-Plugins gefunden, die wir kennen. Wenn das Widget immer noch nicht angezeigt wird, führen Sie einen Health Check auf der Registerkarte „Verbindung“ aus.",
-    "cloudflareCdnNote": "Hinweis: Cloudflare, das als CDN (Rocket Loader, Auto Minify am Edge) läuft, kann von Ihrer Website aus nicht erkannt werden. Wenn Sie Cloudflare verwenden, überprüfen Sie auch diese Einstellungen.",
+    "noneBody": "Wir haben keine der von uns erkannten Caching-/Optimierungs-Plugins gefunden. Wenn das Widget immer noch nicht angezeigt wird, führen Sie einen Health Check auf dem Tab \"Verbindung\" durch.",
+    "cloudflareCdnNote": "Hinweis: Cloudflare, das als CDN läuft (Rocket Loader, Auto Minify am Edge), kann nicht von Ihrer Website aus erkannt werden. Wenn Sie Cloudflare verwenden, überprüfen Sie auch diese Einstellungen.",
     "detectedTitle": "Erkannte Plugins",
     "recommendationLabel": "Empfehlung",
-    "modifiedTitle": "Das Widget-Skript wird möglicherweise geändert",
-    "modifiedBody": "Ein Cache/Optimierungs-Plugin ist aktiv und Ihr letzter Health Check hat ergeben, dass das Widget-Skript nicht auf der Seite war. Wenden Sie die folgende Ausnahme an und führen Sie die Prüfung erneut durch.",
+    "modifiedTitle": "Das Widget-Skript wird möglicherweise modifiziert",
+    "modifiedBody": "Ein Cache/Optimierungs-Plugin ist aktiv und Ihr letzter Health Check hat ergeben, dass das Widget-Skript nicht auf der Seite vorhanden war. Wenden Sie den unten stehenden Ausschluss an und führen Sie die Prüfung erneut durch.",
     "plugins": {
       "wp-rocket": {
-        "recommendation": "Schließen Sie in WP Rocket → DateisOptimierung „widget.easeaccess24.com/sdk.js“ von der JavaScript-Minifizierung, -Kombination und der „JavaScript-Ausführungsverzögerung“ aus. WP Rocket beachtet auch unseren data-no-minify-Hinweis."
+        "recommendation": "In WP Rocket → File Optimization schließen Sie „widget.easeaccess24.com/sdk.js“ von der JavaScript-Minimierung, -Kombination und „Delay JavaScript execution“ aus. WP Rocket beachtet auch unseren data-no-minify-Hinweis."
       },
       "litespeed": {
-        "recommendation": "Fügen Sie in LiteSpeed Cache → Page Optimization → JS Settings „widget.easeaccess24.com“ zu den JS Excludes hinzu (und zu den Deferred/Delayed Excludes, falls aktiviert)."
+        "recommendation": "Fügen Sie in LiteSpeed Cache → Page Optimization → JS Settings „widget.easeaccess24.com“ zu den JS-Ausschlüssen (und ggf. Deferred/Delayed Excludes, falls aktiviert) hinzu."
       },
       "autoptimize": {
-        "recommendation": "Fügen Sie in Autoptimize → JS, Images... „easeaccess24“ zu den „Skripte von Autoptimize ausschließen“ hinzu. Autoptimize beachtet auch unseren data-no-optimize-Hinweis."
+        "recommendation": "Fügen Sie in Autoptimize → JS, Images... „easeaccess24“ zu „Exclude scripts from Autoptimize“ hinzu. Autoptimize beachtet auch unseren data-no-optimize-Hinweis."
       },
       "perfmatters": {
-        "recommendation": "Fügen Sie in Perfmatters → Assets „easeaccess24“ zu den Ausschlüssen für „JavaScript verzögern“ und allen Skript-Defer/Minify-Optionen hinzu."
+        "recommendation": "Fügen Sie in Perfmatters → Assets „easeaccess24“ zu den Ausschlüssen für „Delay JavaScript“ und alle Optionen zur Skriptverzögerung/Minimierung hinzu."
       },
       "asset-cleanup": {
-        "recommendation": "Stellen Sie in Asset CleanUp sicher, dass das EaseAccess24-Skript auf Ihren Seiten nicht entladen wird, und schließen Sie es von allen JS-Minify/Combine/Defer-Optionen aus."
+        "recommendation": "Stellen Sie in Asset CleanUp sicher, dass das EaseAccess24-Skript auf Ihren Seiten nicht entladen wird, und schließen Sie es von allen Optionen zur JS-Minimierung/Kombination/Verzögerung aus."
       },
       "cloudflare": {
         "recommendation": "Schließen Sie in Cloudflare das Widget-Skript von Rocket Loader (unser Tag setzt bereits data-cfasync=\"false\") und von Auto Minify/Mirage aus, falls für Skripte aktiviert."
@@ -191,14 +189,14 @@
   "eventLog": {
     "title": "Aktivitätsprotokoll",
     "intro": "Eine kurze Historie von Health Checks und Plugin-Ereignissen. Dieses Protokoll verbleibt auf Ihrer Website und wird niemals automatisch irgendwohin gesendet.",
-    "empty": "Noch keine Ereignisse protokolliert. Führen Sie einen Health Check auf der Registerkarte „Verbindung“ aus, um einen zu protokollieren.",
+    "empty": "Noch keine Ereignisse protokolliert. Führen Sie einen Health Check auf dem Tab \"Verbindung\" durch, um einen zu protokollieren.",
     "clear": "Protokoll löschen",
     "clearConfirm": "Alle protokollierten Ereignisse löschen?",
     "confirmClear": "Ja, löschen",
     "cancel": "Abbrechen",
     "cleared": "Aktivitätsprotokoll gelöscht.",
     "loadError": "Wir konnten das Aktivitätsprotokoll nicht laden. Laden Sie die Seite neu und versuchen Sie es erneut.",
-    "loading": "Lade Aktivität…",
+    "loading": "Aktivität wird geladen…",
     "types": {
       "health_check": "Health Check",
       "key_saved": "Widget-Schlüssel gespeichert",
@@ -215,74 +213,73 @@
   },
   "supportReport": {
     "title": "Support-Bericht",
-    "intro": "Generieren Sie einen Bericht, den Sie mit dem EaseAccess24-Support teilen können. Er enthält Ihre Umgebung, den Verbindungsstatus, erkannte Cache-Plugins und aktuelle Ereignisse. Ihr Widget-Schlüssel ist maskiert und es sind keine persönlichen Daten enthalten.",
+    "intro": "Erstellen Sie einen Bericht, den Sie mit dem EaseAccess24-Support teilen können. Er enthält Ihre Umgebung, den Verbindungsstatus, erkannte Cache-Plugins und kürzliche Ereignisse. Ihr Widget-Schlüssel ist maskiert und es sind keine persönlichen Daten enthalten.",
     "privacyNote": "Es wird nichts automatisch gesendet. Es ist kein Server beteiligt – Sie kopieren oder laden den Bericht unten herunter und teilen ihn selbst.",
     "generate": "Bericht generieren",
-    "regenerate": "Neu generieren",
-    "generating": "Generiere…",
+    "regenerate": "Erneut generieren",
+    "generating": "Wird generiert…",
     "previewLabel": "Berichtsvorschau (genau das, was kopiert oder heruntergeladen wird)",
     "copy": "Kopieren",
     "copied": "Kopiert",
-    "copyFailed": "Kopieren ist in diesem Browser nicht verfügbar. Verwenden Sie stattdessen „Herunterladen“.",
-    "downloadTxt": "Als .txt herunterladen",
-    "downloadJson": "Als .json herunterladen",
-    "generateError": "Der Bericht konnte nicht generiert werden. Laden Sie die Seite neu und versuchen Sie es erneut."
+    "copyFailed": "Kopieren ist in diesem Browser nicht verfügbar. Verwenden Sie stattdessen Download.",
+    "downloadTxt": "Download .txt",
+    "downloadJson": "Download .json",
+    "generateError": "Wir konnten den Bericht nicht generieren. Laden Sie die Seite neu und versuchen Sie es erneut."
   },
   "pluginInfo": {
     "title": "Plugin-Informationen",
     "version": "Version",
     "wpCompat": "WordPress-Kompatibilität",
-    "phpMin": "PHP-Minimum",
+    "phpMin": "PHP Minimum",
     "testedUpTo": "Getestet bis",
     "supportStatus": "Support-Status",
     "supportStatusActive": "Aktiv unterstützt"
   },
   "faq": {
     "title": "Hilfe & FAQ",
-    "intro": "Antworten auf häufig gestellte Fragen zur Verbindung und Fehlerbehebung des Widgets.",
+    "intro": "Antworten auf häufige Fragen zur Verbindung und Fehlerbehebung des Widgets.",
     "learnMore": "Mehr erfahren",
     "items": {
       "findKey": {
         "q": "Wo finde ich meinen Widget-Schlüssel?",
-        "a": "Melden Sie sich bei app.easeaccess24.com an, öffnen Sie den Abschnitt „Integrieren“ und kopieren Sie Ihren Widget-Schlüssel (oder den vollständigen Skript-Snippet). Fügen Sie ihn in den Tab „Verbindung“ ein – wir extrahieren den Schlüssel aus einem Snippet für Sie."
+        "a": "Melden Sie sich bei app.easeaccess24.com an, öffnen Sie den Abschnitt „Integrieren“ und kopieren Sie Ihren Widget-Schlüssel (oder den vollständigen Skript-Schnipsel). Fügen Sie ihn in den Tab „Verbindung“ ein – wir extrahieren den Schlüssel aus einem Schnipsel für Sie."
       },
       "notShowing": {
-        "q": "Das Widget wird nicht angezeigt – was sollte ich überprüfen?",
-        "a": "Führen Sie eine Integritätsprüfung im Tab „Verbindung“ durch. Sie zeigt Ihnen, ob das Skript hinzugefügt wurde, erreichbar ist und ob das Widget tatsächlich angezeigt wird. Die häufigsten Ursachen sind, dass die Domain nicht in Ihrem Dashboard hinzugefügt wurde, ein falscher Schlüssel oder ein Caching-Plugin, das das Skript entfernt."
+        "q": "Das Widget wird nicht angezeigt – was soll ich überprüfen?",
+        "a": "Führen Sie einen „Health Check“ auf dem Tab „Verbindung“ aus. Dieser teilt Ihnen mit, ob das Skript hinzugefügt und erreichbar ist und ob das Widget tatsächlich erscheint. Die häufigsten Ursachen sind, dass die Domain nicht in Ihrem Dashboard hinzugefügt wurde, ein falscher Schlüssel oder ein Caching-Plugin, das das Skript entfernt."
       },
       "cachePlugin": {
-        "q": "Ich verwende ein Caching- oder Optimierungs-Plugin. Wird es Konflikte geben?",
-        "a": "Das kann sein. Unser Skript-Tag fordert gängige Plugins auf, es zu überspringen, aber einige Setups erfordern dennoch eine manuelle Ausnahme. Überprüfen Sie den Tab „Kompatibilität“ für Empfehlungen pro Plugin. Wir ändern niemals die Einstellungen eines anderen Plugins für Sie."
+        "q": "Ich benutze ein Caching- oder Optimierungs-Plugin. Wird es Konflikte geben?",
+        "a": "Das kann passieren. Unser Skript-Tag bittet gängige Plugins, es zu überspringen, aber einige Setups erfordern immer noch einen manuellen Ausschluss. Überprüfen Sie den Tab „Kompatibilität“ für Empfehlungen pro Plugin. Wir ändern niemals die Einstellungen eines anderen Plugins für Sie."
       },
       "stagingLocalhost": {
         "q": "Funktioniert das Widget auf Staging oder localhost?",
-        "a": "Das Widget wird nur auf Domains gerendert, die für Ihren Widget-Schlüssel autorisiert sind. Daher wird es normalerweise nicht auf Staging oder localhost angezeigt. Dies ist erwartet und kein Plugin-Fehler – testen Sie auf Ihrer live geschalteten, autorisierten Domain."
+        "a": "Das Widget wird nur auf Domains gerendert, die für Ihren Widget-Schlüssel autorisiert sind. Daher erscheint es normalerweise nicht auf Staging oder localhost. Dies ist zu erwarten und kein Plugin-Fehler – testen Sie es auf Ihrer live geschalteten, autorisierten Domain."
       },
       "dataPrivacy": {
         "q": "Welche Daten speichert oder sendet dieses Plugin?",
-        "a": "Das Plugin speichert Ihren Widget-Schlüssel und Ihre Einstellungen auf Ihrer eigenen Website sowie ein kurzes lokales Aktivitätsprotokoll. Es tätigt keine automatischen Aufrufe an EaseAccess24, außer dem Hinzufügen des Widget-Skripts und dem Testen, ob dieses Skript erreichbar ist, während einer Integritätsprüfung. Support-Berichte werden nur von Ihnen manuell geteilt."
+        "a": "Das Plugin speichert Ihren Widget-Schlüssel und Ihre Einstellungen auf Ihrer eigenen Website sowie ein kurzes lokales Aktivitätsprotokoll. Es werden keine automatischen Anrufe an EaseAccess24 getätigt, außer dem Hinzufügen des Widget-Skripts und dem Testen der Erreichbarkeit dieses Skripts während eines „Health Check“. Support-Berichte werden nur von Ihnen manuell geteilt."
       },
       "removeData": {
         "q": "Wie entferne ich alle Plugin-Daten?",
-        "a": "Ihre Konfiguration bleibt bei der Deaktivierung erhalten, damit Sie sie später wieder aktivieren können. Um alles zu entfernen, aktivieren Sie „Alle EaseAccess24-Daten entfernen“, bevor Sie das Plugin löschen, und löschen Sie es dann von der Plugins-Seite."
+        "a": "Ihre Konfiguration wird beim Deaktivieren beibehalten, damit Sie sie später wieder aktivieren können. Um alles zu entfernen, aktivieren Sie „Alle EaseAccess24-Daten entfernen“, bevor Sie das Plugin löschen, und löschen Sie es dann auf dem Bildschirm Plugins."
       }
     }
   },
   "settings": {
     "languageLabel": "Sprache",
-    "languageAria": "Oberflächensprache",
     "dataTitle": "Daten & Datenschutz",
     "removeDataLabel": "Alle EaseAccess24-Daten beim Löschen des Plugins entfernen",
-    "removeDataHelp": "Wenn aktiviert, werden beim Löschen des Plugins auch Ihr Widget-Schlüssel, Ihre Einstellungen und das Aktivitätsprotokoll entfernt. Lassen Sie es deaktiviert, um Ihre Konfiguration für eine zukünftige Neuinstallation beizubehalten. Ihre Theme-Dateien werden niemals berührt.",
+    "removeDataHelp": "Wenn aktiviert, werden beim Löschen des Plugins auch Ihr Widget-Schlüssel, Ihre Einstellungen und das Aktivitätsprotokoll entfernt. Lassen Sie diese Option deaktiviert, um Ihre Konfiguration für eine zukünftige Neuinstallation beizubehalten. Ihre Theme-Dateien werden niemals berührt.",
     "saved": "Gespeichert",
-    "saveError": "Ihre Einstellungen konnten nicht gespeichert werden. Überprüfen Sie Ihre Verbindung und versuchen Sie es erneut.",
-    "loadError": "Ihre Einstellungen konnten nicht geladen werden. Laden Sie die Seite neu und versuchen Sie es erneut."
+    "saveError": "Wir konnten Ihre Einstellungen nicht speichern. Überprüfen Sie Ihre Verbindung und versuchen Sie es erneut.",
+    "loadError": "Wir konnten Ihre Einstellungen nicht laden. Laden Sie die Seite neu und versuchen Sie es erneut."
   },
   "footer": {
-    "tagline": "Damit das Web für alle zugänglich ist.",
-    "madeBy": "Erstellt von EaseAccess24",
-    "platform": "EaseAccess24 Plattform",
-    "docs": "Support & Dokumentation",
+    "tagline": "Wir helfen, Ihre Website zugänglicher zu machen.",
+    "madeBy": "Hergestellt von EaseAccess24",
+    "platform": "EaseAccess24-Plattform",
+    "docs": "Support",
     "privacyLink": "Datenschutzrichtlinie",
     "reportIssueLink": "Problem melden",
     "copyright": "© {{year}} EaseAccess24"

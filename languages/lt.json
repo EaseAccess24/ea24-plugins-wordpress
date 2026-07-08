@@ -1,78 +1,76 @@
 {
   "status": {
     "notConnected": "Neprisijungta",
-    "healthy": "Prijungta · Veikia tinkamai",
-    "attention": "Prijungta · Reikia dėmesio"
+    "healthy": "Prisijungta · Sveika",
+    "attention": "Prisijungta · Reikia dėmesio"
   },
   "common": {
     "appName": "EaseAccess24 Prieinamumas",
     "appNameShort": "EaseAccess24",
     "saving": "Įrašoma…",
     "cancel": "Atšaukti",
-    "retry": "Bandykite dar kartą",
     "updateKey": "Atnaujinti raktą"
   },
   "onboarding": {
-    "title": "Prijunkite savo svetainę prie EaseAccess24",
-    "subtitle": "Įklijuokite savo valdiklio raktą (arba visą scenarijaus fragmentą), kad pridėtumėte prieinamumo valdiklį prie šios svetainės.",
+    "title": "Sujunkite savo svetainę su EaseAccess24",
+    "subtitle": "Įklijuokite savo valdiklio raktą (arba visą scenarijaus ištrauką), kad pridėtumėte prieinamumo valdiklį prie šios svetainės.",
     "emptyTitle": "Dar neturite valdiklio rakto?",
-    "emptyBody": "Sukurkite savo organizaciją, pasirinkite planą ir pridėkite šią domeną EaseAccess24. Gausite valdiklio raktą, kurį galėsite čia įklijuoti.",
+    "emptyBody": "Sukurkite savo organizaciją, pasirinkite planą ir pridėkite šį domeną EaseAccess24. Gausite valdiklio raktą, kurį čia įklijuosite.",
     "getKeyCta": "Gauti valdiklio raktą",
-    "fieldLabel": "Valdiklio raktas arba scenarijaus fragmentas",
-    "helper": "Įklijuokite tik raktą (pavyzdžiui, ABC123) arba visą <script> scenarijaus fragmentą – mes ištrauksime raktą iš jo.",
+    "fieldLabel": "Valdiklio raktas arba scenarijaus ištrauka",
+    "helper": "Įklijuokite tik raktą (pvz., ABC123) arba visą „<script>“ ištrauką – mes iš jos išgausime raktą.",
     "placeholder": "ABC123 — arba — <script async src=\"https://widget.easeaccess24.com/sdk.js?key=ABC123\"></script>",
-    "whereLink": "Kur rasti šį?",
-    "connectCta": "Prijungti ir patvirtinti",
+    "whereLink": "Kur tai rasti?",
+    "connectCta": "Sujungti ir patvirtinti",
     "revealKey": "Rodyti",
     "hideKey": "Slėpti",
     "copyKey": "Kopijuoti",
     "copied": "Nukopijuota",
     "errors": {
-      "empty": "Pirmiausia įklijuokite savo valdiklio raktą arba scenarijaus fragmentą.",
-      "noKey": "Mes neradome valdiklio rakto. Įklijuokite tik raktą arba visą scenarijaus fragmentą, kuriame jis yra.",
-      "network": "Mes negalėjome išsaugoti jūsų rakto. Patikrinkite savo ryšį ir bandykite dar kartą."
+      "empty": "Pirmiausia įklijuokite valdiklio raktą arba scenarijaus ištrauką.",
+      "noKey": "Mes neradome valdiklio rakto. Įklijuokite tik raktą arba visą scenarijaus ištrauką, kurioje jis yra.",
+      "network": "Mes negalėjome išsaugoti jūsų rakto. Patikrinkite ryšį ir bandykite dar kartą."
     }
   },
   "stepper": {
     "aria": "Sąrankos eiga",
     "paste": "Įklijuoti",
-    "validate": "Tikrinti",
+    "validate": "Patvirtinti",
     "healthCheck": "Būklės patikrinimas",
     "done": "Atlikta",
     "state": {
-      "done": "baigta",
+      "done": "baigtas",
       "current": "dabartinis žingsnis",
       "upcoming": "būsimas"
     }
   },
   "dashboard": {
-    "statusBadge": "Prijungta",
-    "title": "Prijungimas",
-    "subtitle": "Jūsų valdiklio raktas yra išsaugotas. Paleiskite būklės patikrinimą, kad įsitikintumėte, jog valdiklis įkeltas ir matomas jūsų svetainėje.",
+    "statusBadge": "Prisijungta",
+    "title": "Ryšys",
+    "subtitle": "Jūsų valdiklio raktas išsaugotas. Paleiskite būklės patikrinimą, kad įsitikintumėte, jog valdiklis įkeliamas ir matomas jūsų svetainėje.",
     "keyLabel": "Valdiklio raktas",
     "domainLabel": "Domenas",
     "lastCheckLabel": "Paskutinis būklės patikrinimas",
     "neverChecked": "Dar nepatikrinta",
-    "healthNotRunYet": "Dar nebuvo paleista patikra"
+    "healthNotRunYet": "Dar nebuvo paleista"
   },
   "health": {
     "heading": "Būklės patikrinimas",
-    "intro": "Tai veikia jūsų naršyklėje: ji įkelia jūsų svetainę ir patikrina, ar valdiklis iš tikrųjų pasirodo. Nieko nesiunčiama į EaseAccess24.",
+    "intro": "Tai vyksta jūsų naršyklėje: ji įkelia jūsų svetainę ir patikrina, ar valdiklis iš tikrųjų rodomas. Niekas nėra siunčiama į EaseAccess24.",
     "run": "Paleisti būklės patikrinimą",
-    "rerun": "Paleisti dar kartą",
-    "running": "Vykdomas būklės patikrinimas…",
+    "running": "Būklės patikrinimas vyksta…",
     "resultsHeading": "Rezultatas",
-    "checklistHeading": "Ką patikrinome",
+    "checklistHeading": "Ką mes patikrinome",
     "advisoriesHeading": "Taip pat verta patikrinti",
-    "timeoutTitle": "Nepavyko atlikti patikrinimo",
-    "timeoutBody": "Patikrinimas laiku nebaigtas. Taip gali nutikti, jei puslapis ilgai kraunamas arba jį užblokavo saugos nuostata. Pabandykite dar kartą."
+    "timeoutTitle": "Mes negalėjome užbaigti patikrinimo",
+    "timeoutBody": "Patikrinimas nebuvo baigtas laiku. Taip gali nutikti, jei puslapis ilgai kraunamas arba saugos nustatymas jį užblokavo. Bandykite dar kartą."
   },
   "checklist": {
-    "keySaved": "Valdiklio raktas išsaugotas",
-    "sdkTag": "Valdiklio scenarijus pridėtas prie jūsų svetainės",
-    "sdkReachable": "Valdiklio scenarijus pasiekiamas",
-    "widgetVisible": "Valdiklis rodomas ir yra matomas",
-    "singleInstance": "Tik vienas valdiklis puslapyje",
+    "keySaved": "Vali widget išsaugotas",
+    "sdkTag": "Widget skriptas pridėtas prie jūsų svetainės",
+    "sdkReachable": "Widget skriptas pasiekiamas",
+    "widgetVisible": "Widget pasirodo ir yra matomas",
+    "singleInstance": "Tik vienas widget puslapyje",
     "status": {
       "pass": "pavyko",
       "fail": "nepavyko",
@@ -89,64 +87,64 @@
     "whyLabel": "Kodėl",
     "fixLabel": "Kaip pataisyti",
     "OK": {
-      "title": "Jūsų valdiklis veikia",
-      "why": "Įkėlėme jūsų svetainę ir pasiekiamumo valdiklis pasirodė bei yra matomas.",
+      "title": "Jūsų widget veikia",
+      "why": "Mes įkėlėme jūsų svetainę ir pasiekiamumo widget pasirodė ir yra matomas.",
       "fix": "Nereikia nieko daryti – viskas paruošta."
     },
     "DOMAIN_NOT_ALLOWED": {
-      "title": "Domenas neleidžiamas / raktas neautorizuotas",
-      "why": "Valdiklio scenarijus buvo įkeltas, bet pranešė, kad šis domenas nėra autorizuotas jūsų Valdiklio raktui. Ta pati žinutė taikoma neteisingam raktui ir dar nepridėtam domenui.",
-      "fix": "Atidarykite savo EaseAccess24 informacijos suvestinę, patvirtinkite, kad šis tikslus domenas yra pridėtas jūsų organizacijoje, patikrinkite, ar Valdiklio raktas sutampa, tada vėl paleiskite patikrinimą."
+      "title": "Draudžiamas domenas / Neteisėtas raktas",
+      "why": "Widget skriptas buvo įkeltas, bet pranešė, kad šis domenas nėra įgaliotas jūsų Widget raktui. Tas pats pranešimas taikomas neteisingam raktui ir dar nepridėtam domenui.",
+      "fix": "Atidarykite savo EaseAccess24 informacijos suvestinę, patvirtinkite, kad šis tikslus domenas yra pridėtas jūsų organizacijoje, patikrinkite, ar Widget raktas atitinka, tada vėl paleiskite patikrinimą."
     },
     "SDK_UNREACHABLE": {
-      "title": "Valdiklio scenarijus negalėjo būti įkeltas",
-      "why": "Jūsų naršyklė negalėjo pasiekti valdiklio scenarijaus URL. Paprastai tai yra tinklo, CDN ar talpyklos problema, o ne konfigūracijos problema.",
+      "title": "Nepavyko įkelti widget skripto",
+      "why": "Jūsų naršyklė negalėjo pasiekti widget skripto URL. Paprastai tai yra tinklo, CDN ar talpyklos problema, o ne konfigūracijos problema.",
       "fix": "Patikrinkite savo svetainės tinklą/CDN, išvalykite visas talpyklas ir vėl paleiskite patikrinimą."
     },
     "WIDGET_NOT_INITIALIZED": {
-      "title": "Valdiklis nebuvo įkeltas",
-      "why": "Valdiklio scenarijus yra vietoje, bet nepasirodė joks matomas valdiklis ir nebuvo pranešta apie konkrečią priežastį. Dažnos priežastys: domenas dar nepridėtas, raktas neteisingas arba scenarijus buvo užblokuotas.",
-      "fix": "Patvirtinkite šį domeną ir Valdiklio raktą savo EaseAccess24 informacijos suvestinėje, įsitikinkite, kad niekas neužblokuoja scenarijaus, tada vėl paleiskite patikrinimą."
+      "title": "Widget nebuvo inicijuotas",
+      "why": "Widget skriptas yra vietoje, bet nepasirodė joks matomas widget ir nebuvo pranešta apie jokią konkrečią priežastį. Dažnos priežastys: domenas dar nepridėtas, raktas neteisingas arba skriptas buvo blokuojamas.",
+      "fix": "Patvirtinkite šį domeną ir Widget raktą savo EaseAccess24 informacijos suvestinėje, įsitikinkite, kad niekas neužblokuoja skripto, tada vėl paleiskite patikrinimą."
     },
     "DUPLICATE_WIDGET": {
-      "title": "Aptiktas dubliuotas valdiklis",
-      "why": "Puslapyje įkeliama daugiau nei vienas valdiklis. Tai paprastai reiškia, kad SDK įtrauktas du kartus – pavyzdžiui, tiek per šį papildinį, tiek per rankinį kodą jūsų temoje.",
-      "fix": "Pasirinkite tik vieną metodą. Jei scenarijų pridėjote prie savo temos ar kito papildinio, pašalinkite jį ir leiskite tvarkyti šiam papildiniui. Mes niekada neatliekame scenarijų pašalinimo už jus."
+      "title": "Aptiktas dubliuotas widget",
+      "why": "Puslapyje įkeliamas daugiau nei vienas widget. Paprastai tai reiškia, kad SDK pridėtas du kartus – pavyzdžiui, vieną kartą per šį papildinį, o kitą kartą per rankinį fragmentą jūsų temoje.",
+      "fix": "Pasirinkite tik vieną metodą. Jei skriptą pridėjote prie temos ar kito papildinio, pašalinkite jį ir leiskite šiam papildiniui jį tvarkyti. Mes niekada nepašaliname skriptų už jus."
     },
     "POSSIBLE_DUPLICATE_WIDGET": {
-      "title": "Galimai dubliuotas valdiklis",
-      "why": "Radome ženklų, kad yra antras valdiklio scenarijus (pvz., papildomas scenarijaus žymuo), bet negalėjome patvirtinti antro matomo valdiklio – talpykla gali tai nuslėpti.",
-      "fix": "Įsitikinkite, kad valdiklis pridėtas tik kartą. Jei savo temoje turite rankinį kodą, pašalinkite jį ir pasikliaukite šiuo papildiniu."
+      "title": "Galimas dubliuotas widget",
+      "why": "Radome antrinio widget skripto požymių (pavyzdžiui, papildomo skripto žymės), bet negalėjome patvirtinti antrojo matomo widget – talpykla gali tai nuslėpti.",
+      "fix": "Įsitikinkite, kad widget pridėtas tik vieną kartą. Jei turite rankinį fragmentą savo temoje, pašalinkite jį ir pasikliaukite šiuo papildiniu."
     },
     "OPTIMIZER_INTERFERENCE": {
-      "title": "Talpyklos arba optimizavimo papildinys gali trukdyti",
-      "why": "Valdiklio raktas yra išsaugotas, bet valdiklio scenarijaus puslapyje nebuvo – talpyklos/optimizavimo papildinys galėjo jį pašalinti arba pakeisti.",
-      "fix": "Išskirkite EaseAccess24 scenarijų iš talpyklos/optimizavimo. Išsamios rekomendacijos kiekvienam papildiniui bus pateiktos Suderinamumo skiltyje."
+      "title": "Gali trikdyti talpyklos ar optimizavimo papildinys",
+      "why": "Widget raktas yra išsaugotas, bet widget skriptas nebuvo puslapyje – talpyklos/optimizavimo papildinys galėjo jį pašalinti arba pakeisti.",
+      "fix": "Išskirkite EaseAccess24 skriptą iš talpyklos/optimizavimo. Detalios, specifinės kiekvienam papildiniui rekomendacijos netrukus bus pateiktos Suderinamumo skiltyje."
     },
     "STAGING_DETECTED": {
-      "title": "Aptikta scenos aplinka",
-      "why": "Tai atrodo kaip scenos arba kūrimo svetainė. Valdiklis rodomas tik domenams, autorizuotiems EaseAccess24, todėl čia gali ir nepasirodyti.",
-      "fix": "Tai tikėtina scenos aplinkoje. Pridėkite šį domeną savo informacijos suvestinėje, jei norite, kad valdiklis čia pasirodytų, arba testuokite savo tiesioginiame domene."
+      "title": "Aptikta laikinoji aplinka",
+      "why": "Tai atrodo kaip laikinoji ar kūrimo svetainė. Widget rodomas tik domenams, įgaliotiems EaseAccess24, todėl čia jis gali ir nepasirodyti.",
+      "fix": "Tai tikimasi laikinojoje aplinkoje. Pridėkite šį domeną savo informacijos suvestinėje, jei norite, kad widget čia pasirodytų, arba testuokite savo tiesioginiame domene."
     },
     "LOCALHOST_DETECTED": {
       "title": "Aptikta vietinė aplinka",
-      "why": "Ši svetainė veikia vietiniu pagrindiniu kompiuteriu. Valdiklis rodomas tik domenams, autorizuotiems EaseAccess24, todėl vietiniu pagrindiniu kompiuteriu jis nepasirodys.",
-      "fix": "Tai tikėtina vietinėje aplinkoje. Testuokite savo tiesioginiame, autorizuotame domene, kad pamatytumėte valdiklį."
+      "why": "Ši svetainė veikia vietiniame kompiuteryje. Widget rodomas tik domenams, įgaliotiems EaseAccess24, todėl vietiniame kompiuteryje jis nepasirodys.",
+      "fix": "Tai tikimasi vietiniame kompiuteryje. Norėdami pamatyti widget, testuokite savo tiesioginiame, įgaliotame domene."
     },
     "KEY_INVALID": {
-      "title": "Valdiklio raktas nepriimtas",
-      "why": "Valdiklio raktas buvo atmestas.",
+      "title": "Widget raktas nepriimtas",
+      "why": "Widget raktas buvo atmestas.",
       "fix": "Patikrinkite raktą savo EaseAccess24 informacijos suvestinėje ir vėl jį išsaugokite."
     },
     "SUBSCRIPTION_EXPIRED": {
-      "title": "Abonementas pasibaigęs",
-      "why": "Šio Valdiklio rakto abonementas nebėra aktyvus.",
+      "title": "Prenumerata baigėsi",
+      "why": "Šio Widget rakto prenumerata nebegalioja.",
       "fix": "Atnaujinkite savo planą EaseAccess24 informacijos suvestinėje."
     },
     "ORG_DISABLED": {
       "title": "Organizacija išjungta",
-      "why": "Šio valdiklio rakto organizacija yra išjungta.",
-      "fix": "Susisiekite su EaseAccess24 palaikymo komanda arba patikrinkite savo informacijos suvestinę."
+      "why": "Šio Widget rakto organizacija yra išjungta.",
+      "fix": "Susisiekite su EaseAccess24 pagalba arba patikrinkite savo informacijos suvestinę."
     }
   },
   "nav": {
@@ -159,29 +157,29 @@
   },
   "compatibility": {
     "title": "Talpyklos ir optimizavimo suderinamumas",
-    "intro": "Talpyklos ir optimizavimo papildiniai gali atidėti, sujungti arba pašalinti scenarijus – įskaitant EaseAccess24 valdiklį. Mes pridedame užuominas, prašančias jų palikti mūsų scenarijų ramybėje, tačiau kai kurioms sąrankoms vis tiek reikia rankinio išskyrimo. Mes niekada nepakeisime kito papildinio nustatymų už jus.",
-    "noneTitle": "Nerasta žinomų talpyklos ar optimizavimo papildinių",
-    "noneBody": "Mes neradome jokių talpyklos/optimizavimo papildinių, kuriuos atpažįstame. Jei valdiklis vis tiek nepasirodo, paleiskite ryšio skirtuko būsenos patikrinimą.",
-    "cloudflareCdnNote": "Pastaba: „Cloudflare“, veikiantis kaip CDN („Rocket Loader“, automatinis minimalizavimas krašte), negali būti aptiktas jūsų svetainėje. Jei naudojate „Cloudflare“, patikrinkite ir tuos nustatymus.",
+    "intro": "Talpyklos ir optimizavimo papildiniai gali atidėti, sujungti arba pašalinti scenarijus – įskaitant EaseAccess24 valdiklį. Dedame užuominas, kurios prašo jų nejudinti mūsų scenarijaus, tačiau kai kuriems nustatymams vis tiek reikalinga rankinė išimtis. Mes niekada nekeičiame kito papildinio nustatymų už jus.",
+    "noneTitle": "Nenustatyti žinomi talpyklos ar optimizavimo papildiniai",
+    "noneBody": "Nerandame jokių mums pažįstamų talpyklos/optimizavimo papildinių. Jei valdiklis vis tiek nerodomas, paleiskite ryšio skirtuko būsenos patikrinimą.",
+    "cloudflareCdnNote": "Pastaba: Cloudflare, veikiantis kaip CDN (Rocket Loader, Auto Minify krašte), negali būti aptiktas jūsų svetainėje. Jei naudojate Cloudflare, patikrinkite ir tuos nustatymus.",
     "detectedTitle": "Aptikti papildiniai",
     "recommendationLabel": "Rekomendacija",
-    "modifiedTitle": "Valdiklio scenarijus gali būti modifikuojamas",
-    "modifiedBody": "Veikia talpyklos/optimizavimo papildinys, o jūsų paskutinis būsenos patikrinimas nustatė, kad valdiklio scenarijaus nebuvo puslapyje. Taikykite toliau pateiktą išimtį ir dar kartą paleiskite patikrinimą.",
+    "modifiedTitle": "Valdiklio scenarijus gali būti keičiamas",
+    "modifiedBody": "Aktyvus talpyklos/optimizavimo papildinys, o paskutinis jūsų būsenos patikrinimas parodė, kad valdiklio scenarijaus puslapyje nebuvo. Taikykite toliau pateiktą išimtį ir paleiskite patikrinimą iš naujo.",
     "plugins": {
       "wp-rocket": {
-        "recommendation": "WP Rocket → File Optimization, išskirkite „widget.easeaccess24.com/sdk.js“ iš JavaScript minimalizavimo, kombinavimo ir „Delay JavaScript execution“. WP Rocket taip pat paiso mūsų „data-no-minify“ užuominos."
+        "recommendation": "WP Rocket → File Optimization skiltyje „widget.easeaccess24.com/sdk.js“ išimkite iš JavaScript minifikacijos, sujungimo ir „Delay JavaScript execution“ (JavaScript vykdymo atidėjimo). WP Rocket taip pat atsižvelgia į mūsų „data-no-minify“ užuominą."
       },
       "litespeed": {
-        "recommendation": "LiteSpeed Cache → Page Optimization → JS Settings, pridėkite „widget.easeaccess24.com“ prie JS Excludes (ir Excluded/Delayed excludes, jei įjungta)."
+        "recommendation": "LiteSpeed Cache → Page Optimization → JS Settings skiltyje pridėkite „widget.easeaccess24.com“ prie JS Excludes (ir Deferred/Delayed excludes, jei įjungta)."
       },
       "autoptimize": {
-        "recommendation": "Autoptimize → JS, Images..., pridėkite „easeaccess24“ prie „Exclude scripts from Autoptimize“. Autoptimize taip pat paiso mūsų „data-no-optimize“ užuominos."
+        "recommendation": "Autoptimize → JS, Images... skiltyje pridėkite „easeaccess24“ prie „Exclude scripts from Autoptimize“ (išskirti scenarijus iš Autoptimize). Autoptimize taip pat atsižvelgia į mūsų „data-no-optimize“ užuominą."
       },
       "perfmatters": {
-        "recommendation": "Perfmatters → Assets, pridėkite „easeaccess24“ prie „Delay JavaScript“ ir visų scenarijų atidėjimo/minimalizavimo parinkčių išimčių."
+        "recommendation": "Perfmatters → Assets skiltyje pridėkite „easeaccess24“ prie „Delay JavaScript“ ir bet kokių scenarijų atidėjimo/minifikacijos parinkčių išimčių."
       },
       "asset-cleanup": {
-        "recommendation": "Asset CleanUp, įsitikinkite, kad EaseAccess24 scenarijus nėra išjungtas jūsų puslapiuose, ir išskirkite jį iš visų JS minimalizavimo/kombinavimo/atidėjimo parinkčių."
+        "recommendation": "Asset CleanUp, įsitikinkite, kad EaseAccess24 scenarijus nėra išjungtas jūsų puslapiuose, ir išskirkite jį iš visų JS minifikacijos/jungimo/atidėjimo parinkčių."
       },
       "cloudflare": {
         "recommendation": "Cloudflare, išskirkite valdiklio scenarijų iš Rocket Loader (mūsų žyma jau nustato data-cfasync=\"false\") ir iš Auto Minify/Mirage, jei įjungta scenarijams."
@@ -190,51 +188,51 @@
   },
   "eventLog": {
     "title": "Veiklos žurnalas",
-    "intro": "Trumpa būsenos patikrinimų ir papildinių įvykių istorija. Šis žurnalas lieka jūsų svetainėje ir niekada nėra automatiškai siunčiamas niekur.",
-    "empty": "Dar neįrašytų įvykių. Paleiskite būsenos patikrinimą ryšio skirtuke, kad įrašytumėte vieną.",
+    "intro": "Trumpa būsenos patikrinimų ir papildinių įvykių istorija. Šis žurnalas lieka jūsų svetainėje ir niekada nėra automatiškai siunčiamas. Jūs turite jį pats nukopijuoti arba atsisiųsti ir pasidalinti.",
+    "empty": "Dar nėra įrašytų įvykių. Paleiskite būsenos patikrinimą ryšio skirtuke, kad įrašytumėte vieną.",
     "clear": "Išvalyti žurnalą",
-    "clearConfirm": "Išvalyti visus įrašytus įvykius?",
+    "clearConfirm": "Išvalyti visus žurnale esančius įvykius?",
     "confirmClear": "Taip, išvalyti",
     "cancel": "Atšaukti",
     "cleared": "Veiklos žurnalas išvalytas.",
-    "loadError": "Nepavyko įkelti veiklos žurnalo. Įkelkite puslapį iš naujo ir bandykite dar kartą.",
-    "loading": "Įkeliamas veikimas…",
+    "loadError": "Nepavyko įkelti veiklos žurnalo. Atnaujinkite puslapį ir bandykite dar kartą.",
+    "loading": "Įkeliama veikla…",
     "types": {
       "health_check": "Būsenos patikrinimas",
       "key_saved": "Valdiklio raktas išsaugotas",
       "key_updated": "Valdiklio raktas atnaujintas",
-      "activated": "Papildinys suaktyvintas",
+      "activated": "Papildinys aktyvuotas",
       "deactivated": "Papildinys deaktyvuotas"
     },
     "relative": {
       "justNow": "Ką tik",
-      "minutesAgo": "{{n}} minučių atgal",
-      "hoursAgo": "{{n}} valandų atgal",
-      "daysAgo": "{{n}} dienų atgal"
+      "minutesAgo": "{{n}} minučių / min. atgal",
+      "hoursAgo": "{{n}} valandų / val. atgal",
+      "daysAgo": "{{n}} dienų / d. atgal"
     }
   },
   "supportReport": {
     "title": "Pagalbos ataskaita",
-    "intro": "Sukurkite ataskaitą, kurią galėsite bendrinti su EaseAccess24 palaikymo komanda. Ji apima jūsų aplinką, ryšio būseną, aptiktus talpyklos papildinius ir naujausius įvykius. Jūsų valdiklio raktas yra užmaskuotas ir jokie asmeniniai duomenys neįtraukiami.",
-    "privacyNote": "Nieko nesiunčiama automatiškai. Nėra serverio – jūs nukopijuojate arba atsisiunčiate ataskaitą žemiau ir dalinatės ja patys.",
+    "intro": "Sukurkite ataskaitą, kurią galėsite bendrinti su EaseAccess24 pagalba. Joje bus jūsų aplinka, ryšio būsena, aptikti talpyklos papildiniai ir naujausi įvykiai. Jūsų valdiklio raktas bus užmaskuotas, o asmeniniai duomenys nebus įtraukti.",
+    "privacyNote": "Nieko nesiunčiama automatiškai. Nėra jokio serverio – jūs nukopijuojate arba atsisiunčiate žemiau pateiktą ataskaitą ir dalinatės ja patys.",
     "generate": "Generuoti ataskaitą",
     "regenerate": "Generuoti iš naujo",
     "generating": "Generuojama…",
-    "previewLabel": "Ataskaitos peržiūra (tiksliai tai, kas bus nukopijuota arba atsisiųsta)",
+    "previewLabel": "Ataskaitos peržiūra (tiksliai tai, kas bus nukopijuota ar atsisiųsta)",
     "copy": "Kopijuoti",
     "copied": "Nukopijuota",
-    "copyFailed": "Šioje naršyklėje kopijavimas neprieinamas. Vietoj to naudokite Atsisiųsti.",
+    "copyFailed": "Kopijavimas šiame naršyklėje nepasiekiamas. Vietoj to naudokite Atsisiuntimą.",
     "downloadTxt": "Atsisiųsti .txt",
     "downloadJson": "Atsisiųsti .json",
     "generateError": "Nepavyko sugeneruoti ataskaitos. Įkelkite puslapį iš naujo ir bandykite dar kartą."
   },
   "pluginInfo": {
-    "title": "Informacija apie papildinį",
+    "title": "Papildinio informacija",
     "version": "Versija",
     "wpCompat": "WordPress suderinamumas",
-    "phpMin": "PHP minimumas",
+    "phpMin": "Minimalus PHP",
     "testedUpTo": "Testuota iki",
-    "supportStatus": "Palaikymo būsena",
+    "supportStatus": "Palaikymo statusas",
     "supportStatusActive": "Aktyviai palaikomas"
   },
   "faq": {
@@ -244,45 +242,44 @@
     "items": {
       "findKey": {
         "q": "Kur rasti mano valdiklio raktą?",
-        "a": "Prisijunkite adresu app.easeaccess24.com, atidarykite skiltį „Integruoti“ ir nukopijuokite savo valdiklio raktą (arba visą scenarijaus ištrauką). Įklijuokite jį į skirtuką „Ryšys“ – mes ištrauksime raktą iš ištraukos."
+        "a": "Prisijunkite adresu app.easeaccess24.com, atidarykite skiltį „Integrate“ (Integruoti) ir nukopijuokite savo valdiklio raktą (arba visą kodo išpjovą). Įklijuokite jį į skirtuką „Connection“ (Prijungimas) – mes ištrauksime raktą iš išpjovos."
       },
       "notShowing": {
         "q": "Valdiklis nerodomas – ką turėčiau patikrinti?",
-        "a": "Paleiskite sveikatos patikrinimą skirtuke „Ryšys“. Tai parodo, ar scenarijus pridėtas, pasiekiamas ir ar valdiklis iš tikrųjų rodomas. Dažniausios priežastys yra ta, kad domenas nepridėtas jūsų informacijos suvestinėje, neteisingas raktas arba talpyklos papildinys pašalina scenarijų."
+        "a": "Skirtuke „Connection“ (Prijungimas) paleiskite „Health Check“ (Sveikatos patikrinimą). Jis parodys, ar pridėtas scenarijus, ar jis pasiekiamas ir ar valdiklis iš tikrųjų rodomas. Dažniausios priežastys yra tai, kad domenas nepridėtas jūsų informacijos lentoje, neteisingas raktas arba talpinimo papildinys pašalino scenarijų."
       },
       "cachePlugin": {
-        "q": "Naudoju talpyklos arba optimizavimo papildinį. Ar tai sukels konfliktą?",
-        "a": "Gali. Mūsų scenarijaus žyma prašo įprastų papildinių ją praleisti, tačiau kai kuriems nustatymams vis tiek reikia rankinio išjungimo. Patikrinkite skirtuką „Suderinamumas“, kad gautumėte rekomendacijų pagal papildinį. Mes niekada nekeičiame kito papildinio nustatymų už jus."
+        "q": "Naudoju talpinimo arba optimizavimo papildinį. Ar jis kels konfliktą?",
+        "a": "Gali. Mūsų scenarijaus žyma prašo bendrų papildinių jos praleisti, tačiau kai kurioms sąrankoms vis tiek reikia rankinio išskyrimo. Žr. skirtuką „Compatibility“ (Suderinamumas) rekomendacijoms pagal papildinius. Mes niekada nepakeisime kito papildinio nustatymų už jus."
       },
       "stagingLocalhost": {
-        "q": "Ar valdiklis veikia „staging“ aplinkoje ar „localhost“?",
-        "a": "Valdiklis rodomas tik domenams, kuriems suteiktas leidimas jūsų valdiklio raktui, todėl paprastai jis nebus rodomas „staging“ aplinkoje ar „localhost“. Tai yra numatyta ir ne papildinio klaida – testuokite savo tiesioginiame, įgaliotame domene."
+        "q": "Ar valdiklis veikia su scenarijumi arba vietiniame kompiuteryje?",
+        "a": "Valdiklis rodomas tik domenams, autorizuotiems jūsų valdiklio raktui, todėl paprastai jis nebus rodomas su scenarijumi arba vietiniame kompiuteryje. Tai yra numatyta ir ne papildinio klaida – testuokite savo tiesioginiame, autorizuotame domene."
       },
       "dataPrivacy": {
         "q": "Kokius duomenis šis papildinys saugo ar siunčia?",
-        "a": "Papildinys saugo jūsų valdiklio raktą ir nustatymus jūsų pačioje svetainėje, be to, trumpą vietinį veiklos žurnalą. Jis neatlieka automatinių iškvietimų į EaseAccess24, be valdiklio scenarijaus pridėjimo ir, atliekant sveikatos patikrinimą, tikrindamas, ar tas scenarijus pasiekiamas. Jūs patys rankiniu būdu bendrinate palaikymo ataskaitas."
+        "a": "Papildinys saugo jūsų valdiklio raktą ir nustatymus jūsų pačioje svetainėje, taip pat trumpą vietinį veiklos žurnalą. Jis neatlieka automatinių kvietimų į EaseAccess24, išskyrus valdiklio scenarijaus pridėjimą ir, per „Health Check“ (Sveikatos patikrinimą), testavimą, ar tas scenarijus pasiekiamas. Palaikymo ataskaitos dalijamos tik jums, rankiniu būdu."
       },
       "removeData": {
         "q": "Kaip pašalinti visus papildinio duomenis?",
-        "a": "Jūsų konfigūracija išsaugoma išjungus, kad galėtumėte vėliau vėl įjungti. Norėdami pašalinti viską, įjunkite „Pašalinti visus EaseAccess24 duomenis“ prieš ištrindami papildinį, tada ištrinkite jį iš papildinių ekrano."
+        "a": "Jūsų konfigūracija išsaugoma išjungus, kad galėtumėte vėliau vėl įjungti. Norėdami pašalinti viską, įjunkite „Remove all EaseAccess24 data“ (Pašalinti visus EaseAccess24 duomenis) prieš ištrindami papildinį, tada ištrinkite jį iš „Plugins“ (Papildiniai) ekrano."
       }
     }
   },
   "settings": {
     "languageLabel": "Kalba",
-    "languageAria": "Sąsajos kalba",
     "dataTitle": "Duomenys ir privatumas",
-    "removeDataLabel": "Pašalinti visus EaseAccess24 duomenis, kai papildinys ištrinamas",
-    "removeDataHelp": "Kai įjungta, ištrynus papildinį taip pat bus pašalintas jūsų valdiklio raktas, nustatymai ir veiklos žurnalas. Palikite tai išjungta, kad išsaugotumėte savo konfigūraciją būsimam pakartotiniam įdiegimui. Jūsų temos failai niekada neliečiami.",
+    "removeDataLabel": "Pašalinti visus EaseAccess24 duomenis ištrynus papildinį",
+    "removeDataHelp": "Kai įjungta, ištrynus papildinį taip pat pašalinamas jūsų valdiklio raktas, nustatymai ir veiklos žurnalas. Palikite išjungta, kad išsaugotumėte savo konfigūraciją būsimam pakartotiniam įdiegimui. Jūsų temos failai niekada nėra liečiami.",
     "saved": "Išsaugota",
-    "saveError": "Nepavyko išsaugoti jūsų nustatymų. Patikrinkite ryšį ir bandykite dar kartą.",
+    "saveError": "Nepavyko išsaugoti jūsų nustatymų. Patikrinkite savo ryšį ir bandykite dar kartą.",
     "loadError": "Nepavyko įkelti jūsų nustatymų. Įkelkite puslapį iš naujo ir bandykite dar kartą."
   },
   "footer": {
-    "tagline": "Siekdami, kad internetas būtų prieinamas visiems.",
+    "tagline": "Padeda padaryti jūsų svetainę prieinamesnę.",
     "madeBy": "Pagaminta EaseAccess24",
     "platform": "EaseAccess24 platforma",
-    "docs": "Pagalba ir dokumentacija",
+    "docs": "Pagalba",
     "privacyLink": "Privatumo politika",
     "reportIssueLink": "Pranešti apie problemą",
     "copyright": "© {{year}} EaseAccess24"

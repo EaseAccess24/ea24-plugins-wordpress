@@ -9,7 +9,6 @@
 		"appNameShort": "EaseAccess24",
 		"saving": "Saving…",
 		"cancel": "Cancel",
-		"retry": "Retry",
 		"updateKey": "Update key"
 	},
 	"onboarding": {
@@ -59,7 +58,6 @@
 		"heading": "Health Check",
 		"intro": "This runs in your browser: it loads your site and checks whether the widget actually appears. Nothing is sent to EaseAccess24.",
 		"run": "Run Health Check",
-		"rerun": "Run again",
 		"running": "Running Health Check…",
 		"resultsHeading": "Result",
 		"checklistHeading": "What we checked",
@@ -270,7 +268,6 @@
 	},
 	"settings": {
 		"languageLabel": "Language",
-		"languageAria": "Interface language",
 		"dataTitle": "Data & privacy",
 		"removeDataLabel": "Remove all EaseAccess24 data when the plugin is deleted",
 		"removeDataHelp": "When enabled, deleting the plugin also removes your Widget Key, settings, and activity log. Leave it off to keep your configuration for a future reinstall. Your theme files are never touched.",

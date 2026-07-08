@@ -5,76 +5,74 @@
     "attention": "Tengt · Þarf athygli"
   },
   "common": {
-    "appName": "EaseAccess24 aðgengi",
+    "appName": "EaseAccess24 Aðgengi",
     "appNameShort": "EaseAccess24",
     "saving": "Vistun…",
     "cancel": "Hætta við",
-    "retry": "Reyna aftur",
     "updateKey": "Uppfæra lykil"
   },
   "onboarding": {
     "title": "Tengdu vefinn þinn við EaseAccess24",
-    "subtitle": "Límdu inn Widget lykilinn þinn (eða allt skriftu-brotið) til að bæta aðgengis-veggjunni við þennan vef.",
-    "emptyTitle": "Ertu ekki með Widget lykil ennþá?",
-    "emptyBody": "Búðu til stofnunina þína, veldu áætlun og bættu þessu léni við í EaseAccess24. Þú færð Widget lykil til að líma hér inn.",
-    "getKeyCta": "Fáðu Widget lykilinn þinn",
-    "fieldLabel": "Widget lykill eða skriftu-brot",
-    "helper": "Límdu bara lykilinn (til dæmis ABC123) eða alla <script> skriftuna — við munum draga lykilinn úr henni.",
-    "placeholder": "ABC123 —eða— <script async src=\"https://widget.easeaccess24.com/sdk.js?key=ABC123\"></script>",
+    "subtitle": "Límdu aðgangslykil (eða allt skriftiútbúnað) til að bæta aðgangsveitanum við þennan vef.",
+    "emptyTitle": "Ertu ekki með aðgangslykil ennþá?",
+    "emptyBody": "Búðu til samtök þín, veldu áætlun og bættu þessari slóð við í EaseAccess24. Þú færð aðgangslykil til að líma hér.",
+    "getKeyCta": "Fáðu aðgangslykilinn þinn",
+    "fieldLabel": "Aðgangslykill eða skriftiútbúnaður",
+    "helper": "Límdu aðeins lykilinn (t.d. ABC123) eða allt <script> skriftið — við munum draga lykilinn úr því.",
+    "placeholder": "ABC123 — eða — <script async src=\"https://widget.easeaccess24.com/sdk.js?key=ABC123\"></script>",
     "whereLink": "Hvar finn ég þetta?",
-    "connectCta": "Tengja & Staðfesta",
+    "connectCta": "Tengja og Staðfesta",
     "revealKey": "Sýna",
     "hideKey": "Fela",
     "copyKey": "Afrita",
     "copied": "Afritað",
     "errors": {
-      "empty": "Límdu fyrst inn Widget lykilinn þinn eða skriftu-brotið.",
-      "noKey": "Við fundum ekki Widget lykil í því. Límdu bara lykilinn, eða alla skriftu-brotið sem inniheldur hann.",
+      "empty": "Límdu aðgangslykilinn eða skriftiútbúnaðinn fyrst.",
+      "noKey": "Við fundum engan aðgangslykil í því. Límdu aðeins lykilinn, eða allt skriftiútbúnaðinn sem inniheldur hann.",
       "network": "Við gátum ekki vistað lykilinn þinn. Athugaðu tenginguna þína og reyndu aftur."
     }
   },
   "stepper": {
-    "aria": "Uppsetningarferli",
-    "paste": "Líma inn",
+    "aria": "Staða uppsetningar",
+    "paste": "Líma",
     "validate": "Staðfesta",
-    "healthCheck": "Heilsu-athugun",
+    "healthCheck": "Heilsufarskoðun",
     "done": "Lokið",
     "state": {
       "done": "lokið",
       "current": "núverandi skref",
-      "upcoming": "komandi"
+      "upcoming": "næstu skref"
     }
   },
   "dashboard": {
     "statusBadge": "Tengt",
     "title": "Tenging",
-    "subtitle": "Widget lykillinn þinn er vistaður. Gerðu Heilsu-athugun til að staðfesta að veggjan hlaðist og sé sýnileg á vefnum þínum.",
-    "keyLabel": "Widget lykill",
+    "subtitle": "Aðgangslykillinn þinn er vistaður. Keyrðu heilsufarskoðun til að staðfesta að veitan hlaðist og sjáist á vefnum þínum.",
+    "keyLabel": "Aðgangslykill",
     "domainLabel": "Lén",
-    "lastCheckLabel": "Síðasta heilsu-athugun",
-    "neverChecked": "Ekki athugað ennþá",
-    "healthNotRunYet": "Engin athugun gerð ennþá"
+    "lastCheckLabel": "Síðasta heilsufarskoðun",
+    "neverChecked": "Ekki hefur verið athugað ennþá",
+    "healthNotRunYet": "Engin skoðun hefur verið gerð ennþá"
   },
   "health": {
-    "heading": "Heilsu-athugun",
-    "intro": "Þetta keyrir í vafranum þínum: það hleður vefinn þinn og athugar hvort veggjan birtist raunverulega. Engu er sent til EaseAccess24.",
-    "run": "Gerðu Heilsu-athugun",
-    "rerun": "Gerðu aftur",
-    "running": "Keyri Heilsu-athugun…",
+    "heading": "Heilsufarskoðun",
+    "intro": "Þetta keyrir í vafranum þínum: það hleður vefinn þinn og athugar hvort veitan birtist raunverulega. Engu er sent til EaseAccess24.",
+    "run": "Keyra heilsufarskoðun",
+    "running": "Keyri heilsufarskoðun…",
     "resultsHeading": "Niðurstaða",
-    "checklistHeading": "Hvað við athuguðum",
+    "checklistHeading": "Það sem við athuguðum",
     "advisoriesHeading": "Einnig þess virði að athuga",
-    "timeoutTitle": "Við náðum ekki að klára athugunina",
-    "timeoutBody": "Athugunin kláraðist ekki í tæka tíð. Þetta getur gerst ef síðan var hæg að hlaða eða ef öryggisstillingar lokuðu á hana. Reyndu aftur."
+    "timeoutTitle": "Við gátum ekki lokið skoðuninni",
+    "timeoutBody": "Skoðunin kláraðist ekki í tæka tíð. Þetta getur gerst ef síðan var hæg að hlaða eða öryggisstilling lokaði henni. Reyndu aftur."
   },
   "checklist": {
-    "keySaved": "Vagga lykill vistuð",
-    "sdkTag": "Vagga forskrift bætt við vefinn þinn",
-    "sdkReachable": "Vagga forskrift er aðgengileg",
-    "widgetVisible": "Vagga birtist og er sýnileg",
-    "singleInstance": "Nákvæmlega ein vagga á síðunni",
+    "keySaved": "Veflykil hefur verið vistaður",
+    "sdkTag": "Vefstýrið hefur verið bætt við vefinn þinn",
+    "sdkReachable": "Vefstýrið er aðgengilegt",
+    "widgetVisible": "Vefstýring birtist og er sýnileg",
+    "singleInstance": "Aðeins ein vefstýring á síðunni",
     "status": {
-      "pass": "tókst",
+      "pass": "staðist",
       "fail": "mistókst",
       "warn": "viðvörun",
       "info": "upplýsingar",
@@ -82,75 +80,75 @@
     }
   },
   "actions": {
-    "openDashboard": "Opna EaseAccess24 mælaborð",
-    "retry": "Endurtaka athugun"
+    "openDashboard": "Opna EaseAccess24 stjórnborð",
+    "retry": "Endurræsa athugun"
   },
   "diagnostics": {
-    "whyLabel": "Hvers vegna",
+    "whyLabel": "Af hverju",
     "fixLabel": "Hvernig á að laga",
     "OK": {
-      "title": "Vaggan þín er virk",
-      "why": "Við hönluðum vefinn þinn og aðgengisvaggann birtist og var sýnilegur.",
-      "fix": "Ekkert að gera — þú ert klár."
+      "title": "Vefstýringin þín er í beinni útsendingu",
+      "why": "Við hlaðið inn síðuna þína og aðgengisvefstýringin birtist og er sýnileg.",
+      "fix": "Ekkert að gera – þú ert klár."
     },
     "DOMAIN_NOT_ALLOWED": {
-      "title": "Lén ekki leyfilegt / lykill ekki heimilaður",
-      "why": "Vagga forskriftin hlaðaðist en tilkynnti að þetta lén væri ekki heimilað fyrir vagga lykilinn þinn. Sama skilaboð ná yfir rangann lykil og lén sem hefur ekki verið bætt við ennþá.",
-      "fix": "Opnaðu EaseAccess24 mælaborðið þitt, staðfestu að þetta nákvæma lén sé bætt við undir samtökum þínum, athugaðu að vagga lykillinn passi, keyrðu síðan athugunina aftur."
+      "title": "Lén ekki leyft / Lykill ekki heimilaður",
+      "why": "Vefstýrið var hlaðið inn en tilkynnti að þetta lén sé ekki heimilt fyrir veflykil þinn. Sama skilaboð ná yfir rangan lykil og lén sem hefur ekki verið bætt við ennþá.",
+      "fix": "Opnaðu EaseAccess24 stjórnborðið þitt, staðfestu að þetta nákvæma lén sé bætt við undir stofnun þinni, athugaðu að veflykillinn passi, og keyrðu svo athugunina aftur."
     },
     "SDK_UNREACHABLE": {
-      "title": "Ekki var hægt að hlaða vagga forskriftina",
-      "why": "Vafri þinn gat ekki náð í vagga forskriftar URL. Þetta er venjulega net-, CDN- eða skyndiminni vandamál frekar en stillingarvandamál.",
-      "fix": "Athugaðu net/CDN vefsíðunnar þinnar, hreinsaðu skyndiminni og keyrðu athugunina aftur."
+      "title": "Vefstýrið gat ekki verið hlaðið inn",
+      "why": "Vafri þinn gat ekki náð í vefstýrið. Þetta er venjulega nettengingar-, CDN- eða skyndiminni-vandamál frekar en stillingarvandamál.",
+      "fix": "Athugaðu nettengingu/CDN á vefnum þínum, hreinsaðu allar skyndiminni og keyrðu athugunina aftur."
     },
     "WIDGET_NOT_INITIALIZED": {
-      "title": "Vaggan hlaðaðist ekki",
-      "why": "Vagga forskriftin er á sínum stað, en engin sýnileg vagga birtist og engin sérstök ástæða var tilkynnt. Algengar orsakir: lénið er ekki enn bætt við, lykillinn er rangur, eða forskrift var lokuð.",
-      "fix": "Staðfestu þetta lén og vagga lykil í EaseAccess24 mælaborðinu þínu, vertu viss um að ekkert sé að loka forskriftinni, keyrðu síðan athugunina aftur."
+      "title": "Vefstýringin hlaðnaðist ekki",
+      "why": "Vefstýrið er til staðar, en engin sýnileg vefstýring birtist og engin sérstök ástæða var tilkynnt. Algengar ástæður: lénið er ekki bætt við ennþá, lykillinn er rangur eða skrift var lokað.",
+      "fix": "Staðfestu þetta lén og veflykil í EaseAccess24 stjórnborðinu þínu, vertu viss um að ekkert sé að loka skriftinu, og keyrðu svo athugunina aftur."
     },
     "DUPLICATE_WIDGET": {
-      "title": "Tvöföld vagga greind",
-      "why": "Fleiri en ein vagga hlaðast á síðunni. Þetta þýðir venjulega að SDK er bætt við tvisvar — til dæmis, bæði af þessari viðbót og af handvirkri forskrift í þema þínu.",
-      "fix": "Haltu aðeins eina aðferð. Ef þú bættir forskriftinni við þemað þitt eða aðra viðbót, fjarlægðu hana og leyfðu þessari viðbót að sjá um það. Við fjarlægjum aldrei forskriftir fyrir þig."
+      "title": "Tvöföld vefstýring greind",
+      "why": "Fleiri en ein vefstýring er hlaðin inn á síðuna. Þetta þýðir venjulega að SDK er bætt við tvisvar – til dæmis, bæði af þessari viðbót og af handvirkri úrklippu í þema þínu.",
+      "fix": "Haltu aðeins einni aðferð. Ef þú bættir skriftinu við þemað þitt eða aðra viðbót, fjarlægðu það og láttu þessa viðbót sjá um það. Við fjarlægjum aldrei skrift fyrir þig."
     },
     "POSSIBLE_DUPLICATE_WIDGET": {
-      "title": "Möguleg tvöföld vagga",
-      "why": "Við fundum merki um aðra vagga forskrift (til dæmis, auka forskriftarmerki) en gátum ekki staðfest aðra sýnilega vagga — skyndiminni getur dulið þetta.",
-      "fix": "Gakktu úr skugga um að vaggan sé aðeins bætt við einu sinni. Ef þú ert með handvirka forskrift í þema þínu, fjarlægðu hana og treystu á þessa viðbót."
+      "title": "Möguleg tvöföld vefstýring",
+      "why": "Við fundum merki um annað vefstýringarskrift (til dæmis, auka skrift-merki) en gat ekki staðfest annað sýnilegt vefstýring – skyndiminni getur dulið þetta.",
+      "fix": "Gakktu úr skugga um að vefstýringin sé aðeins bætt við einu sinni. Ef þú hefur handvirka úrklippu í þema þínu, fjarlægðu hana og treystu á þessa viðbót."
     },
     "OPTIMIZER_INTERFERENCE": {
-      "title": "Skyndiminni eða hagræðingarviðbót gæti haft áhrif",
-      "why": "Vagga lykill er vistaður, en vagga forskriftin var ekki til staðar á síðunni — skyndiminni/hagræðingarviðbót gæti hafa fjarlægt eða breytt henni.",
-      "fix": "Undanskildu EaseAccess24 forskriftina frá skyndiminni/hagræðingu. Nákvæmar, viðbótar-sérstakar tilmæli eru væntanleg í samhæfniskaflanum."
+      "title": "Vefstýring frá skyndiminni eða hagræðingarviðbót gæti haft áhrif",
+      "why": "Veflykill er vistaður, en vefstýringarskrift var ekki til staðar á síðunni – skyndiminni/hagræðingarviðbót gæti hafa fjarlægt eða breytt því.",
+      "fix": "Undanþiggðu EaseAccess24 skriftið frá skyndiminni/hagræðingu. Nákvæmar, sérsniðnar leiðbeiningar fyrir hverja viðbót eru væntanlegar í eindrægnishlutanum."
     },
     "STAGING_DETECTED": {
-      "title": "Prófunarumhverfi greint",
-      "why": "Þetta lítur út eins og prófunar- eða þróunarsíða. Vaggan birtist aðeins á lénum sem eru heimiluð í EaseAccess24, svo hún birtist kannski ekki hér.",
-      "fix": "Þetta er væntanlegt á prófunarsvæði. Bættu þessu léni við í mælaborðinu þínu ef þú vilt að vaggan birtist hér, eða prófaðu á lifandi léni þínu."
+      "title": "Vettvangsumhverfi greint",
+      "why": "Þetta lítur út eins og vettvangur eða þróunarsíða. Vefstýringin birtist aðeins á leyfilegum lénum í EaseAccess24, svo hún birtist kannski ekki hér.",
+      "fix": "Þetta er væntanlegt á vettvangi. Bættu við þessu léni í stjórnborðinu þínu ef þú vilt að vefstýringin birtist hér, eða prófaðu á lifandi léninu þínu."
     },
     "LOCALHOST_DETECTED": {
-      "title": "Staðbundin umhverfi greint",
-      "why": "Þessi síða keyrir á localhost. Vaggan birtist aðeins á lénum sem eru heimiluð í EaseAccess24, svo hún birtist ekki staðbundið.",
-      "fix": "Þetta er væntanlegt staðbundið. Prófaðu á lifandi, heimiluðu léni þínu til að sjá vaggann."
+      "title": "Staðbundið umhverfi greint",
+      "why": "Þessi síða keyrir á localhost. Vefstýringin birtist aðeins á leyfilegum lénum í EaseAccess24, svo hún birtist ekki staðbundið.",
+      "fix": "Þetta er væntanlegt staðbundið. Prófaðu á lifandi, leyfilegu léninu þínu til að sjá vefstýringuna."
     },
     "KEY_INVALID": {
-      "title": "Vagga lykill ekki samþykktur",
-      "why": "Vagga lykillinn var hafnað.",
-      "fix": "Athugaðu lykilinn í EaseAccess24 mælaborðinu þínu og vistaðu hann aftur."
+      "title": "Veflykill samþykktur ekki",
+      "why": "Veflykillinn var hafnað.",
+      "fix": "Athugaðu lykilinn í EaseAccess24 stjórnborðinu þínu og vistaðu hann aftur."
     },
     "SUBSCRIPTION_EXPIRED": {
-      "title": "Áskrift runnin út",
-      "why": "Áskriftin fyrir þennan vagga lykil er ekki lengur virk.",
-      "fix": "Endurnýjaðu áætlun þína í EaseAccess24 mælaborðinu."
+      "title": "Áskrift rennur út",
+      "why": "Áskrift fyrir þennan veflykil er ekki lengur virk.",
+      "fix": "Endurnýjaðu áætlun þína í EaseAccess24 stjórnborðinu."
     },
     "ORG_DISABLED": {
-      "title": "Samtök óvirk",
-      "why": "Válastillingar fyrir þennan reynitakki eru óvirkar.",
-      "fix": "Hafðu samband við EaseAccess24 þjónustuver eða skoðaðu mælaborð þitt."
+      "title": "Stofnun óvirk",
+      "why": "Stofnunin fyrir þennan veflykil er óvirk.",
+      "fix": "Hafðu samband við EaseAccess24 þjónustuver eða athugaðu stjórnborðið þitt."
     }
   },
   "nav": {
-    "aria": "EaseAccess24 hlutar",
+    "aria": "EaseAccess24 köflum",
     "connection": "Tenging",
     "compatibility": "Samhæfni",
     "activity": "Virkni",
@@ -159,50 +157,50 @@
   },
   "compatibility": {
     "title": "Samhæfni við skyndiminni og hagræðingu",
-    "intro": "Skyndiminni og hagræðingar viðbætur geta frestað, sameinað eða fjarlægt skriftur — þar á meðal EaseAccess24 reynitakkann. Við bætum við vísbendingum sem biðja þær um að láta skriftu okkar í friði, en sumar uppsetningar þurfa enn handvirka útilokun. Við breytum aldrei stillingum annarrar viðbótar fyrir þig.",
-    "noneTitle": "Engar þekktar skyndiminni- eða hagræðingarviðbætur greindar",
-    "noneBody": "Við fundum engar af skyndiminni/hagræðingarviðbótunum sem við þekkjum. Ef reynitakkinn birtist samt ekki, keyrðu heilsumat á Tengingarflipanum.",
-    "cloudflareCdnNote": "Athugið: Cloudflare sem CDN (Rocket Loader, Auto Minify á jaðri) er ekki hægt að greina frá síðunni þinni. Ef þú notar Cloudflare, athugaðu þær stillingar líka.",
+    "intro": "Viðbætur fyrir skyndiminni og hagræðingu geta seinkað, sameinað eða fjarlægt skriptur — þar með talið EaseAccess24 widgetið. Við bætum við vísbendingum sem biðja þær um að láta skriptuna okkar í friði, en sumar uppsetningar þurfa samt handvirka útilokun. Við breytum aldrei stillingum annarra viðbóta fyrir þig.",
+    "noneTitle": "Engar þekktar viðbætur fyrir skyndiminni eða hagræðingu greindar",
+    "noneBody": "Við fundum engar af þeim viðbótum fyrir skyndiminni/hagræðingu sem við þekkjum. Ef widgetið birtist samt ekki, keyrðu tengingarpróf á Tíbingur flipanum.",
+    "cloudflareCdnNote": "Athugið: Cloudflare sem CDN (Rocket Loader, Auto Minify á jaðrinum) er ekki hægt að greina frá síðunni þinni. Ef þú notar Cloudflare, athugaðu þær stillingar líka.",
     "detectedTitle": "Greindar viðbætur",
     "recommendationLabel": "Ráðlegging",
-    "modifiedTitle": "Reitnarskriftan gæti verið breytt",
-    "modifiedBody": "Skyndiminni/hagræðingarviðbót er virk og síðasta heilsumat þitt komst að því að reynitakkarskriftan var ekki á síðunni. Settu útilokunina hér að neðan og keyrðu athugunina aftur.",
+    "modifiedTitle": "Skripta fyrir widget gæti verið að breytast",
+    "modifiedBody": "Viðbót fyrir skyndiminni/hagræðingu er virk og síðasta tengingarprófið þitt komst að því að skripta fyrir widget var ekki á síðunni. Notaðu útilokunina hér að neðan og keyrðu prófið aftur.",
     "plugins": {
       "wp-rocket": {
-        "recommendation": "Í WP Rocket → File Optimization, útilokaðu „widget.easeaccess24.com/sdk.js“ frá JavaScript minification, combination, og „Delay JavaScript execution“. WP Rocket virðir líka data-no-minify vísbendinguna okkar."
+        "recommendation": "Í WP Rocket → File Optimization, útilokaðu „widget.easeaccess24.com/sdk.js“ frá JavaScript minification, combination, og „Delay JavaScript execution“. WP Rocket virðir einnig vísbendinguna okkar data-no-minify."
       },
       "litespeed": {
-        "recommendation": "Í LiteSpeed Cache → Page Optimization → JS Settings, bættu „widget.easeaccess24.com“ við JS Excludes (og Deferred/Delayed excludes ef virkt)."
+        "recommendation": "Í LiteSpeed Cache → Page Optimization → JS Settings, bættu „widget.easeaccess24.com“ við JS Excludes (og Deferred/Delayed excludes ef það er virkt)."
       },
       "autoptimize": {
-        "recommendation": "Í Autoptimize → JS, Images..., bættu „easeaccess24“ við „Exclude scripts from Autoptimize“. Autoptimize virðir líka data-no-optimize vísbendinguna okkar."
+        "recommendation": "Í Autoptimize → JS, Images..., bættu „easeaccess24“ við „Exclude scripts from Autoptimize“. Autoptimize virðir einnig vísbendinguna okkar data-no-optimize."
       },
       "perfmatters": {
-        "recommendation": "Í Perfmatters → Assets, bættu „easeaccess24“ við útilokanirnar fyrir „Delay JavaScript“ og allar stillingar fyrir skriftufrestun/minification."
+        "recommendation": "Í Perfmatters → Assets, bættu „easeaccess24“ við útilokanirnar fyrir „Delay JavaScript“ og allar stillingar fyrir script defer/minify."
       },
       "asset-cleanup": {
-        "recommendation": "Í Asset CleanUp, vertu viss um að EaseAccess24 skriftan sé ekki afhleidd á síðunum þínum og útilokaðu hana frá öllum JS minification/combine/defer valkostum."
+        "recommendation": "Í Asset CleanUp, vertu viss um að EaseAccess24 skriptan sé ekki fjarlægð af síðum þínum, og útilokaðu hana frá öllum JS minify/combine/defer valkostum."
       },
       "cloudflare": {
-        "recommendation": "Í Cloudflare, útilokaðu reynitakkarskriftuna frá Rocket Loader (merkið okkar setur nú þegar data-cfasync=\"false\") og frá Auto Minify/Mirage ef virkt fyrir skriftur."
+        "recommendation": "Í Cloudflare, útilokaðu widget skriptuna frá Rocket Loader (merkið okkar setur data-cfasync=\"false\") og frá Auto Minify/Mirage ef það er virkt fyrir skriptur."
       }
     }
   },
   "eventLog": {
     "title": "Virkniskrá",
-    "intro": "Stutt saga af heilsumötum og viðbótaviðburðum. Þessi skrá er áfram á síðunni þinni og er aldrei send neitt sjálfkrafa.",
-    "empty": "Engir atburðir hafa verið skráðir ennþá. Keyrðu heilsumat á Tengingarflipanum til að taka upp einn.",
+    "intro": "Stutt saga af tengingarprófum og atburðum viðbóta. Þessi skrá er áfram á síðunni þinni og er aldrei send neitt sjálfkrafa.",
+    "empty": "Engir atburðir skráðir enn. Keyrðu tengingarpróf á Tíbingur flipanum til að skrá einn.",
     "clear": "Hreinsa skrá",
     "clearConfirm": "Hreinsa alla skráða atburði?",
     "confirmClear": "Já, hreinsa",
     "cancel": "Hætta við",
-    "cleared": "Virkniskrá hreinsuð.",
-    "loadError": "Við gátum ekki hlaðið virkniskrána. Hladdu síðuna aftur og reyndu aftur.",
+    "cleared": "Virkni skráin hefur verið hreinsuð.",
+    "loadError": "Við gátum ekki hlaðið virkniskrána. Hlaða síðuna aftur og reyndu aftur.",
     "loading": "Hleður virkni…",
     "types": {
-      "health_check": "Heilsumat",
-      "key_saved": "Reynitakki vistaður",
-      "key_updated": "Reynitakki uppfærður",
+      "health_check": "Tengingarpróf",
+      "key_saved": "Veflykill vistaður",
+      "key_updated": "Veflykill uppfærður",
       "activated": "Viðbót virkjuð",
       "deactivated": "Viðbót óvirkjuð"
     },
@@ -215,76 +213,75 @@
   },
   "supportReport": {
     "title": "Stuðningsskýrsla",
-    "intro": "Búðu til skýrslu sem þú getur deilt með EaseAccess24 stuðningi. Hún inniheldur umhverfisupplýsingar þínar, tengingarstöðu, greindar skyndiminni viðbætur og nýlega atburði. Reynitakki þinn er hulinn og engin persónuleg gögn eru innifalin.",
-    "privacyNote": "Engu er sent sjálfkrafa. Enginn netþjónn er þátttakandi — þú afritar eða hleður niður skýrslunni hér að neðan og deilir henni sjálfur.",
+    "intro": "Búðu til skýrslu sem þú getur deilt með EaseAccess24 stuðningi. Hún inniheldur umhverfi þitt, tengingarstöðu, greindar skyndiminni viðbætur og nýlega atburði. Veflykill þinn er hulinn og engin persónuleg gögn eru innifalin.",
+    "privacyNote": "Ekkert er sent sjálfkrafa. Enginn netþjónn er notaður — þú afritar eða hleður niður skýrslunni hér að neðan og deilir henni sjálfur.",
     "generate": "Búa til skýrslu",
-    "regenerate": "Búa til aftur",
+    "regenerate": "Endurnýja",
     "generating": "Bý til…",
     "previewLabel": "Forskoðun skýrslu (nákvæmlega það sem verður afritað eða hlaðið niður)",
     "copy": "Afrita",
-    "copied": "Copied",
-    "copyFailed": "Copy isn’t available in this browser. Use Download instead.",
-    "downloadTxt": "Download .txt",
-    "downloadJson": "Download .json",
-    "generateError": "We couldn’t generate the report. Reload the page and try again."
+    "copied": "Afritað",
+    "copyFailed": "Afritun er ekki í boði í þessum vafra. Notaðu Niðurhal í staðinn.",
+    "downloadTxt": "Sækja .txt",
+    "downloadJson": "Sækja .json",
+    "generateError": "Við gátum ekki búið til skýrsluna. Hladdu síðuna aftur og reyndu aftur."
   },
   "pluginInfo": {
-    "title": "Plugin information",
-    "version": "Version",
-    "wpCompat": "WordPress compatibility",
-    "phpMin": "PHP minimum",
-    "testedUpTo": "Tested up to",
-    "supportStatus": "Support status",
-    "supportStatusActive": "Actively supported"
+    "title": "Upplýsingar um viðbót",
+    "version": "Útgáfa",
+    "wpCompat": "WordPress samhæfni",
+    "phpMin": "Lágmarks PHP útgáfa",
+    "testedUpTo": "Prófað upp að",
+    "supportStatus": "Stuðningsstaða",
+    "supportStatusActive": "Virkur stuðningur"
   },
   "faq": {
-    "title": "Help & FAQ",
-    "intro": "Answers to common questions about connecting and troubleshooting the widget.",
-    "learnMore": "Learn more",
+    "title": "Hjálp og algengar spurningar",
+    "intro": "Svar við algengum spurningum um tengingu og bilanaleit viðbótarinnar.",
+    "learnMore": "Læra meira",
     "items": {
       "findKey": {
-        "q": "Where do I find my Widget Key?",
-        "a": "Sign in at app.easeaccess24.com, open the Integrate section, and copy your Widget Key (or the full script snippet). Paste it into the Connection tab — we’ll pull the key out of a snippet for you."
+        "q": "Hvar finn ég viðbarlykilinn minn?",
+        "a": "Skráðu þig inn á app.easeaccess24.com, opnaðu Hnitasvæðið og afritaðu viðbarlykilinn þinn (eða allt skriftarsniðið). Límaðu það inn á Tengingar flipann - við munum draga lykilinn úr skriftarsniðinu fyrir þig."
       },
       "notShowing": {
-        "q": "The widget isn’t showing — what should I check?",
-        "a": "Run a Health Check on the Connection tab. It tells you whether the script is added, reachable, and whether the widget actually appears. The most common causes are the domain not being added in your dashboard, a wrong key, or a caching plugin stripping the script."
+        "q": "Viðbótin birtist ekki - hvað ætti ég að athuga?",
+        "a": "Keyrðu Heilsubót á Tengingar flipanum. Hún segir þér hvort skriftin sé bætt við, aðgengileg og hvort viðbótin birtist raunverulega. Algengustu orsakirnar eru að lénið er ekki bætt við á mælaborðinu þínu, rangur lykill, eða skyndiminni viðbót sem fjarlægir skriftina."
       },
       "cachePlugin": {
-        "q": "I use a caching or optimization plugin. Will it conflict?",
-        "a": "It can. Our script tag asks common plugins to skip it, but some setups still need a manual exclusion. Check the Compatibility tab for per-plugin recommendations. We never change another plugin’s settings for you."
+        "q": "Ég nota skyndiminni eða hagræðingarviðbót. Mun hún koma í veg fyrir virkni?",
+        "a": "Hún getur það. Skriftarmerkið okkar biður algengar viðbætur um að sleppa því, en sum uppsetningar þurfa samt handvirka útilokun. Athugaðu Samhæfni flipann fyrir ráðleggingar um einstakar viðbætur. Við breytum aldrei stillingum annarrar viðbótar fyrir þig."
       },
       "stagingLocalhost": {
-        "q": "Does the widget work on staging or localhost?",
-        "a": "The widget only renders on domains authorized for your Widget Key, so it usually won’t appear on staging or localhost. This is expected and not a plugin error — test on your live, authorized domain."
+        "q": "Virkar viðbótin á tilraunasvæði eða localhost?",
+        "a": "Viðbótin birtist aðeins á lénum sem eru leyfð fyrir viðbarlykilinn þinn, svo hún birtist venjulega ekki á tilraunasvæði eða localhost. Þetta er væntanlegt og ekki villa í viðbótinni - prófaðu á leyfðu, lifandi léninu þínu."
       },
       "dataPrivacy": {
-        "q": "What data does this plugin store or send?",
-        "a": "The plugin stores your Widget Key and settings on your own site, plus a short local activity log. It makes no automatic calls to EaseAccess24 beyond adding the widget script and, during a Health Check, testing whether that script is reachable. Support reports are only ever shared by you, manually."
+        "q": "Hvaða gögn geymir eða sendir þessi viðbót?",
+        "a": "Viðbótin geymir viðbarlykilinn þinn og stillingar á eigin vefsíðu, auk stuttan staðbundinn virkniloka. Hún gerir engar sjálfvirkar kalla til EaseAccess24 fyrir utan að bæta við viðbótar skriftinni og, við Heilsubót, prófa hvort skriftin sé aðgengileg. Stuðningsskýrslur eru aðeins deilt af þér, handvirkt."
       },
       "removeData": {
-        "q": "How do I remove all plugin data?",
-        "a": "Your configuration is kept when you deactivate so you can reactivate later. To remove everything, enable “Remove all EaseAccess24 data” before deleting the plugin, then delete it from the Plugins screen."
+        "q": "Hvernig fjarlægi ég öll gögn viðbótarinnar?",
+        "a": "Uppsetning þín er haldið þegar þú afvirkjar svo þú getir endurvirkjað síðar. Til að fjarlægja allt, virkjaðu „Fjarlægja öll EaseAccess24 gögn“ áður en þú eyðir viðbótinni, og eyðu henni síðan af Viðbætur skjánum."
       }
     }
   },
   "settings": {
-    "languageLabel": "Language",
-    "languageAria": "Interface language",
-    "dataTitle": "Data & privacy",
-    "removeDataLabel": "Remove all EaseAccess24 data when the plugin is deleted",
-    "removeDataHelp": "When enabled, deleting the plugin also removes your Widget Key, settings, and activity log. Leave it off to keep your configuration for a future reinstall. Your theme files are never touched.",
-    "saved": "Saved",
-    "saveError": "We couldn’t save your settings. Check your connection and try again.",
-    "loadError": "We couldn’t load your settings. Reload the page and try again."
+    "languageLabel": "Tungumál",
+    "dataTitle": "Gögn og persónuvernd",
+    "removeDataLabel": "Fjarlægja öll EaseAccess24 gögn þegar viðbótinni er eytt",
+    "removeDataHelp": "Þegar virkt er, mun eyðing viðbótarinnar einnig fjarlægja viðbarlykilinn þinn, stillingar og virkniloka. Láttu það vera óvirkt til að halda uppsetningu þinni fyrir framtíðar enduruppsetningu. Þemaskrár þínar eru aldrei snertar.",
+    "saved": "Vistað",
+    "saveError": "Við gátum ekki vistað stillingar þínar. Athugaðu tenginguna þína og reyndu aftur.",
+    "loadError": "Við gátum ekki hlaðið stillingar þínar. Hladdu síðuna aftur og reyndu aftur."
   },
   "footer": {
-    "tagline": "Making the web accessible for everyone.",
-    "madeBy": "Made by EaseAccess24",
-    "platform": "EaseAccess24 platform",
-    "docs": "Support & docs",
-    "privacyLink": "Privacy policy",
-    "reportIssueLink": "Report an issue",
+    "tagline": "Hjálpum til við að gera vefsíðuna þína aðgengilegri.",
+    "madeBy": "Búið til af EaseAccess24",
+    "platform": "EaseAccess24 vettvangur",
+    "docs": "Stuðningur",
+    "privacyLink": "Persónuverndarstefna",
+    "reportIssueLink": "Tilkyntu vandamál",
     "copyright": "© {{year}} EaseAccess24"
   }
 }

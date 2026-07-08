@@ -5,39 +5,38 @@
     "attention": "Konness · Jeħtieġ attenzjoni"
   },
   "common": {
-    "appName": "EaseAccess24 Accessibility",
+    "appName": "EaseAccess24 Aċċessibbiltà",
     "appNameShort": "EaseAccess24",
-    "saving": "Ħażna…",
+    "saving": "Qed issalva…",
     "cancel": "Ikkanċella",
-    "retry": "Erġa’ ipprova",
     "updateKey": "Aġġorna ċ-ċavetta"
   },
   "onboarding": {
     "title": "Qabbad is-sit tiegħek ma’ EaseAccess24",
-    "subtitle": "Ikkopja ċ-ċavetta tal-Widget tiegħek (jew is-snippet kollu tal-iskritt) biex iżżid il-widget tal-aċċessibbiltà fuq dan is-sit.",
-    "emptyTitle": "M’għandekx Widget Key għadha?",
-    "emptyBody": "Oħloq l-organizzazzjoni tiegħek, agħżel pjan, u żid dan id-dominju f’EaseAccess24. Inti tirċievi Widget Key biex tikkopja hawn.",
-    "getKeyCta": "Ikseb il-Widget Key tiegħek",
-    "fieldLabel": "Widget Key jew snippet tal-iskritt",
-    "helper": "Ikkopja biss iċ-ċavetta (pereżempju ABC123) jew l-iskritt <script> sħiħ — aħna nġibu ċ-ċavetta minnha.",
+    "subtitle": "Pejstja ċ-Ċavetta tal-Widget tiegħek (jew il-`<script>` snippet kollu) biex iżżid il-widget tal-aċċessibbiltà ma’ dan is-sit.",
+    "emptyTitle": "Għad m’għandekx Widget Key?",
+    "emptyBody": "Oħloq l-organizzazzjoni tiegħek, agħżel pjan, u żid dan id-dominju f’ EaseAccess24. Ikollok Widget Key biex tippejstja hawn.",
+    "getKeyCta": "Ikseb Widget Key tiegħek",
+    "fieldLabel": "Widget Key jew script snippet",
+    "helper": "Pejstja biss iċ-ċavetta (eżempju ABC123) jew is-`<script>` snippet kollu — aħna nġibu ċ-ċavetta minnha.",
     "placeholder": "ABC123 —jew— <script async src=\"https://widget.easeaccess24.com/sdk.js?key=ABC123\"></script>",
     "whereLink": "Fejn insib dan?",
     "connectCta": "Qabbad & Ivverifika",
     "revealKey": "Uri",
     "hideKey": "Aħbi",
     "copyKey": "Kopja",
-    "copied": "Ikkuppjat",
+    "copied": "Miġbur",
     "errors": {
-      "empty": "Ikkopja l-Widget Key jew is-snippet tal-iskritt l-ewwel.",
-      "noKey": "Ma stajniex insibu Widget Key f’dak. Ikkopja biss iċ-ċavetta, jew l-iskritt sħiħ li jkun fiha.",
-      "network": "Ma stajniex niffrankaw iċ-ċavetta tiegħek. Iċċekkja l-konnessjoni tiegħek u erġa’ ipprova."
+      "empty": "Pejstja l-Widget Key jew is-script snippet tiegħek l-ewwel.",
+      "noKey": "Ma stajniex insibu Widget Key f’dak. Pejstja biss iċ-ċavetta, jew is-script snippet kollu li fih.",
+      "network": "Ma stajniex insalvaw iċ-ċavetta tiegħek. Iċċekkja l-konnessjoni tiegħek u erġa’ pprova."
     }
   },
   "stepper": {
-    "aria": "Progress tas-setup",
-    "paste": "Kopja",
+    "aria": "Progress tat-twaqqif",
+    "paste": "Pejstja",
     "validate": "Ivvalida",
-    "healthCheck": "Kontroll tas-saħħa",
+    "healthCheck": "Health Check",
     "done": "Magħmul",
     "state": {
       "done": "tlestiet",
@@ -48,31 +47,30 @@
   "dashboard": {
     "statusBadge": "Konness",
     "title": "Konnessjoni",
-    "subtitle": "Iċ-ċavetta tal-Widget tiegħek hija maħżuna. Mexxi Kontroll tas-saħħa biex tikkonferma li l-widget jitgħabba u jidher fuq is-sit tiegħek.",
+    "subtitle": "Il-Widget Key tiegħek hija salvata. Mexxi Health Check biex tikkonferma li l-widget jitgħabba u huwa viżibbli fuq is-sit tiegħek.",
     "keyLabel": "Widget Key",
     "domainLabel": "Dominju",
-    "lastCheckLabel": "L-aħħar kontroll tas-saħħa",
-    "neverChecked": "Qatt ma ġie kkontrollat",
-    "healthNotRunYet": "L-ebda kontroll ma twettaq għadu"
+    "lastCheckLabel": "Aħħar health check",
+    "neverChecked": "Għadu mhux iċċekkjat",
+    "healthNotRunYet": "Għadu ma sar ebda check"
   },
   "health": {
-    "heading": "Kontroll tas-saħħa",
-    "intro": "Dan jaħdem fil-browser tiegħek: jgħabbi s-sit tiegħek u jiċċekkja jekk il-widget jidhirx. Xejn mhu qed jintbagħat lil EaseAccess24.",
-    "run": "Mexxi Kontroll tas-saħħa",
-    "rerun": "Mexxi mill-ġdid",
-    "running": "Mexxi Kontroll tas-saħħa…",
+    "heading": "Health Check",
+    "intro": "Dan jaħdem fil-browser tiegħek: jitgħabba s-sit tiegħek u jittestja jekk il-widget fil-fatt jidhirx. Xejn mhu qed jintbagħat lil EaseAccess24.",
+    "run": "Mexxi Health Check",
+    "running": "Qed isir Health Check…",
     "resultsHeading": "Riżultat",
     "checklistHeading": "Dak li ċċekkjajna",
     "advisoriesHeading": "Ta’ min jiċċekkja wkoll",
-    "timeoutTitle": "Ma stajniexuklaqqgħad-diskiy",
-    "timeoutBody": "Id-diskiy ma spiċċax fil-ħin. Dan jista' jiġri jekk il-paġna kienet bil-mod biex titgħabba jew jekk xi setting ta' sigurtà imblokkaha. Ipprova għal darb'oħra."
+    "timeoutTitle": "Ma stajniex inlestu ċ-check",
+    "timeoutBody": "Iċ-check ma lesta fl-iskadenza. Dan jista’ jiġri jekk il-paġna kienet bil-mod biex titgħabba jew jekk xi setting ta’ sigurtà ixxekkilhom. Erġa’ pprova."
   },
   "checklist": {
-    "keySaved": "Ċavetta tal-Widget salvata",
+    "keySaved": "Dħul taċ-Ċavetta tal-Widget salvat",
     "sdkTag": "Skritt tal-Widget miżjud mas-sit tiegħek",
-    "sdkReachable": "L-iskritt tal-Widget jista' jintlaħaq",
-    "widgetVisible": "Il-Widget jidher u huwa viżibbli",
-    "singleInstance": "Eżattament widget wieħed fil-paġna",
+    "sdkReachable": "Skritt tal-Widget huwa aċċessibbli",
+    "widgetVisible": "Widget jidher u huwa viżibbli",
+    "singleInstance": "Eżattament widget wieħed fuq il-paġna",
     "status": {
       "pass": "għadda",
       "fail": "falliet",
@@ -83,74 +81,74 @@
   },
   "actions": {
     "openDashboard": "Iftaħ id-Dashboard ta' EaseAccess24",
-    "retry": "Erġa' agħmel id-diskiy"
+    "retry": "Erġa' agħmel il-kontroll"
   },
   "diagnostics": {
     "whyLabel": "Għaliex",
     "fixLabel": "Kif tirranġa",
     "OK": {
-      "title": "Il-widget tiegħek qed jaħdem",
-      "why": "Aħna tgħabbajna s-sit tiegħek u l-widget tal-aċċessibbiltà deher u kien viżibbli.",
-      "fix": "M'hemmx x'tagħmel — lest."
+      "title": "Il-widget tiegħek huwa live",
+      "why": "Aħna tgħabbajna s-sit tiegħek u l-widget tal-aċċessibilità deher u huwa viżibbli.",
+      "fix": "M'hemm xejn xi jsir — kollox f'ordni."
     },
     "DOMAIN_NOT_ALLOWED": {
       "title": "Dominju mhux permess / ċavetta mhux awtorizzata",
-      "why": "L-iskritt tal-widget tgħabba iżda rrapporta li dan id-dominju mhuwiex awtorizzat għaċ-Ċavetta tal-Widget tiegħek. L-istess messaġġ ikopri ċavetta ħażina u dominju li għadu ma ġiex miżjud.",
-      "fix": "Iftaħ id-Dashboard ta' EaseAccess24 tiegħek, ikkonferma li dan id-dominju eżatt huwa miżjud taħt l-organizzazzjoni tiegħek, iċċekkja li ċ-Ċavetta tal-Widget taqbel, imbagħad agħmel id-diskiy mill-ġdid."
+      "why": "L-iskritt tal-widget tella' iżda rrapporta li dan id-dominju mhuwiex awtorizzat għaċ-Ċavetta tal-Widget tiegħek. L-istess messaġġ ikopri ċavetta ħażina u dominju li għadu ma ġiex miżjud.",
+      "fix": "Iftaħ id-Dashboard ta' EaseAccess24 tiegħek, ikkonferma li dan id-dominju eżatt huwa miżjud taħt l-organizzazzjoni tiegħek, iċċekkja li ċ-Ċavetta tal-Widget taqbel, imbagħad erġa' agħmel il-kontroll."
     },
     "SDK_UNREACHABLE": {
-      "title": "L-iskritt tal-widget ma setax jiġi mgħobbi",
+      "title": "L-iskritt tal-widget ma setax jitgħabba",
       "why": "Il-browser tiegħek ma setax jilħaq l-URL tal-iskritt tal-widget. Dan ġeneralment huwa problema ta' netwerk, CDN, jew caching aktar milli problema ta' konfigurazzjoni.",
-      "fix": "Iċċekkja n-netwerk/CDN tas-sit tiegħek, ħassar xi cache, u agħmel id-diskiy mill-ġdid."
+      "fix": "Iċċekkja n-netwerk/CDN tas-sit tiegħek, ħassar kwalunkwe cache, u erġa' agħmel il-kontroll."
     },
     "WIDGET_NOT_INITIALIZED": {
-      "title": "Il-widget ma tgħabbiex",
-      "why": "L-iskritt tal-widget huwa f'postu, iżda l-ebda widget viżibbli ma deher u l-ebda raġuni speċifika ma ġiet irrapportata. Kawżi komuni: id-dominju għadu mhux miżjud, iċ-ċavetta hija ħażina, jew skritt ġie mblukkat.",
-      "fix": "Ikkonferma dan id-dominju u ċ-Ċavetta tal-Widget fid-Dashboard ta' EaseAccess24 tiegħek, kun żgur li xejn mhu qed jimblokka l-iskritt, imbagħad agħmel id-diskiy mill-ġdid."
+      "title": "Il-widget ma tella'x",
+      "why": "L-iskritt tal-widget jinsab fil-post, iżda ma deher l-ebda widget viżibbli u ma ġie rrappurtat l-ebda raġuni speċifika. Kawżi komuni: id-dominju għadu ma ġiex miżjud, iċ-ċavetta hija ħażina, jew skritt ġie mblukkat.",
+      "fix": "Ikkonferma dan id-dominju u ċ-Ċavetta tal-Widget fid-Dashboard ta' EaseAccess24 tiegħek, kun żgur li xejn qed jimblokka l-iskritt, imbagħad erġa' agħmel il-kontroll."
     },
     "DUPLICATE_WIDGET": {
-      "title": "Widget duplikat instab",
-      "why": "Aktar minn widget wieħed qed jitgħabba fuq il-paġna. Dan ġeneralment ifisser li s-SDK ġie miżjud darbtejn — pereżempju, kemm minn dan il-plugin kif ukoll permezz ta' snippet manwali fil-mudell tiegħek.",
-      "fix": "Żomm metodu wieħed biss. Jekk żidt l-iskritt mal-mudell tiegħek jew ma' plugin ieħor, neħħih u ħalli dan il-plugin jieħu ħsieb dan. Aħna qatt ma nneħħu skritts għalik."
+      "title": "Widget duplikat misjub",
+      "why": "Aktar minn widget wieħed qed jitgħabba fuq il-paġna. Dan ġeneralment ifisser li l-SDK ġie miżjud darbtejn — pereżempju, kemm minn dan il-plugin kif ukoll permezz ta' snippet manwali fil-theme tiegħek.",
+      "fix": "Żomm metodu wieħed biss. Jekk żidt l-iskritt mal-theme tiegħek jew ma' plugin ieħor, neħħih u ħalli dan il-plugin jieħu ħsiebu. Aħna qatt ma nneħħu skritts għalik."
     },
     "POSSIBLE_DUPLICATE_WIDGET": {
       "title": "Possibbiltà ta' widget duplikat",
-      "why": "Sibna sinjali ta' skritt ta' widget ieħor (pereżempju, tag ta' skritt addizzjonali) iżda ma stajniex nikkonfermaw widget viżibbli ieħor — il-caching jista' jgħatti dan.",
-      "fix": "Kun żgur li l-widget huwa miżjud darba biss. Jekk għandek snippet manwali fil-mudell tiegħek, neħħih u appoġġja ruħek fuq dan il-plugin."
+      "why": "Sibna sinjali ta' skritt tal-widget ieħor (pereżempju, tag tal-iskritt żejjed) iżda ma stajniex nikkonfermaw widget viżibbli ieħor — il-caching jista' jiskurja dan.",
+      "fix": "Kun żgur li l-widget huwa miżjud darba biss. Jekk għandek snippet manwali fil-theme tiegħek, neħħih u ftahdek fuq dan il-plugin."
     },
     "OPTIMIZER_INTERFERENCE": {
-      "title": "Plugin ta' caching jew ottimizzazzjoni jista' jkun qed jindaħal",
-      "why": "Ċavetta tal-Widget hija ssejvjata, iżda l-iskritt tal-widget ma kienx preżenti fuq il-paġna — plugin ta' caching/ottimizzazzjoni seta' neħħieha jew biddilha.",
-      "fix": "Escludi l-iskritt ta' EaseAccess24 mill-caching/ottimizzazzjoni. Rakkomandazzjonijiet dettaljati, għal kull plugin, qed ġejjin fit-taqsima tal-Kompatibbiltà."
+      "title": "Plugin tal-caching jew tal-ottimizzazzjoni jista' jkun qed jindaħal",
+      "why": "Ċavetta tal-Widget hija salvata, iżda l-iskritt tal-widget ma kienx preżenti fuq il-paġna — plugin tal-caching/ottimizzazzjoni seta' neħħieh jew biddlu.",
+      "fix": "Escludi l-iskritt EaseAccess24 mill-caching/ottimizzazzjoni. Rakkomandazzjonijiet dettaljati, għal kull plugin, qed jiġu għas-sezzjoni tal-Kompatibbiltà."
     },
     "STAGING_DETECTED": {
-      "title": "Ambjent ta' staging instab",
-      "why": "Dan jidher bħala sit ta' staging jew żvilupp. Il-widget juri biss fuq dominji awtorizzati f'EaseAccess24, allura jista' ma jidhirx hawn.",
-      "fix": "Dan huwa mistenni fuq staging. Żid dan id-dominju fid-Dashboard tiegħek jekk trid li l-widget jidher hawn, jew ittestja fuq id-dominju dirett tiegħek."
+      "title": "Ambjent ta' staging misjub",
+      "why": "Dan jidher bħala sit ta' staging jew żvilupp. Il-widget juri biss fuq dominji awtorizzati f'EaseAccess24, għalhekk jista' ma jidhirx hawn.",
+      "fix": "Dan huwa mistenni fuq staging. Żid dan id-dominju fid-Dashboard tiegħek jekk trid li l-widget jidher hawn, jew ittestja fuq id-dominju live tiegħek."
     },
     "LOCALHOST_DETECTED": {
-      "title": "Ambjent lokali instab",
-      "why": "Dan is-sit qed jaħdem fuq localhost. Il-widget juri biss fuq dominji awtorizzati f'EaseAccess24, allura mhux se jidher lokalment.",
-      "fix": "Dan huwa mistenni lokalment. Ittestja fuq id-dominju dirett u awtorizzat tiegħek biex tara l-widget."
+      "title": "Ambjent lokali misjub",
+      "why": "Dan is-sit qed jaħdem fuq localhost. Il-widget juri biss fuq dominji awtorizzati f'EaseAccess24, għalhekk ma jidhirx lokalment.",
+      "fix": "Dan huwa mistenni lokalment. Ittestja fuq id-dominju live u awtorizzat tiegħek biex tara l-widget."
     },
     "KEY_INVALID": {
       "title": "Ċavetta tal-Widget mhux aċċettata",
-      "why": "Iċ-Ċavetta tal-Widget ġiet irrifjutata.",
-      "fix": "Iċċekkja ċ-ċavetta fid-Dashboard ta' EaseAccess24 tiegħek u ssalvaha mill-ġdid."
+      "why": "Iċ-Ċavetta tal-Widget ġiet miċħuda.",
+      "fix": "Iċċekkja ċ-ċavetta fid-Dashboard ta' EaseAccess24 tiegħek u erġa' saveha."
     },
     "SUBSCRIPTION_EXPIRED": {
       "title": "Abbonament skada",
-      "why": "L-abbonament għal din iċ-Ċavetta tal-Widget m'għadux attiv.",
-      "fix": "Ġedded il-pjan tiegħek fid-Dashboard ta' EaseAccess24."
+      "why": "L-abbonament għal din iċ-Ċavetta tal-Widget mhuwiex attiv aktar.",
+      "fix": "Innova l-pjan tiegħek fid-Dashboard ta' EaseAccess24."
     },
     "ORG_DISABLED": {
       "title": "Organizzazzjoni diżattivata",
-      "why": "L-organizzazzjoni għal dan iċ-ċavetta tal-widget hija diżattivata.",
+      "why": "L-organizzazzjoni għal din iċ-Ċavetta tal-Widget hija diżattivata.",
       "fix": "Ikkuntattja l-appoġġ ta' EaseAccess24 jew iċċekkja d-Dashboard tiegħek."
     }
   },
   "nav": {
-    "aria": "Sezzjonijiet ta' EaseAccess24",
+    "aria": "Taqsijiet ta' EaseAccess24",
     "connection": "Konnessjoni",
     "compatibility": "Kompatibbiltà",
     "activity": "Attività",
@@ -159,55 +157,55 @@
   },
   "compatibility": {
     "title": "Kompatibbiltà tal-cache u l-ottimizzazzjoni",
-    "intro": "Il-plugins tal-caching u l-ottimizzazzjoni jistgħu jipposponu, jikkombinaw jew iħassru skripts — inkluż il-widget ta' EaseAccess24. Aħna nżidu ħjiel li jitolbuhom iħallu l-iskritt tagħna waħdu, imma xi setups xorta jeħtieġu esklużjoni manwali. Qatt ma nbiddlu s-settings ta' plugin ieħor għalik.",
-    "noneTitle": "Ebda plugin ta' cache jew ottimizzazzjoni magħrufa skoperta",
-    "noneBody": "Ma sibna l-ebda mill-plugins tal-caching/ottimizzazzjoni li nagħrfu. Jekk il-widget xorta ma jidhirx, mexxi Health Check fit-tab tal-Connection.",
-    "cloudflareCdnNote": "Nota: Cloudflare li jaħdem bħala CDN (Rocket Loader, Auto Minify fil-marġini) ma jistax jiġi skopert mis-sit tiegħek. Jekk tuża Cloudflare, iċċekkja wkoll dawk is-settings.",
-    "detectedTitle": "Plugins skoperti",
+    "intro": "Il-plugins tal-caching u l-ottimizzazzjoni jistgħu jiddeferixxu, jgħaqqdu, jew ineħħu skripts — inkluż il-widget ta' EaseAccess24. Aħna nżidu ħjiel li jitlobhom biex iħallu l-iskritt tagħna waħdu, iżda xi setups għadhom jeħtieġu esklużjoni manwali. Qatt ma nbiddlu s-settings ta' plugin ieħor għalik.",
+    "noneTitle": "Ma ġewx identifikati plugins magħrufa tal-cache jew tal-ottimizzazzjoni",
+    "noneBody": "Ma sibniex xi wieħed mill-plugins tal-caching/ottimizzazzjoni li nagħrfu. Jekk il-widget għadu ma jidhirx, agħmel Health Check fit-tab tal-Konnessjoni.",
+    "cloudflareCdnNote": "Nota: Cloudflare li jaħdem bħala CDN (Rocket Loader, Auto Minify fil-periferija) ma jistax jiġi identifikat mis-sit tiegħek. Jekk tuża Cloudflare, iċċekkja wkoll dawk is-settings.",
+    "detectedTitle": "Plugins identifikati",
     "recommendationLabel": "Rakkomandazzjoni",
-    "modifiedTitle": "L-iskritt tal-widget jista' jkun qed jiġi modifikat",
-    "modifiedBody": "Plugin ta' cache/ottimizzazzjoni huwa attiv u l-aħħar Health Check tiegħek sab li l-iskritt tal-widget ma kienx fuq il-paġna. Applika l-esklużjoni hawn taħt u mexxi l-kontroll mill-ġdid.",
+    "modifiedTitle": "L-iskritt tal-widget jista' qed jiġi modifikat",
+    "modifiedBody": "Plugin tal-cache/ottimizzazzjoni huwa attiv u l-aħħar Health Check tiegħek sab li l-iskritt tal-widget ma kienx fil-paġna. Applika l-esklużjoni hawn taħt u agħmel il-kontroll mill-ġdid.",
     "plugins": {
       "wp-rocket": {
-        "recommendation": "Fi WP Rocket → File Optimization, teskludi “widget.easeaccess24.com/sdk.js” mill-minifikazzjoni tal-JavaScript, kombinazzjoni, u “Delay JavaScript execution”. WP Rocket ukoll jonora l-ħjiel tagħna data-no-minify."
+        "recommendation": "Fi WP Rocket → File Optimization, teskludi “widget.easeaccess24.com/sdk.js” mill-minifikazzjoni tal-JavaScript, kombinazzjoni, u “Delay JavaScript execution”. WP Rocket jirrispetta wkoll il-ħjiel tagħna data-no-minify."
       },
       "litespeed": {
-        "recommendation": "Fi LiteSpeed Cache → Page Optimization → JS Settings, żid “widget.easeaccess24.com” mal-JS Excludes (u excludes deferred/delayed jekk attivati)."
+        "recommendation": "Fil-LiteSpeed Cache → Page Optimization → JS Settings, żid “widget.easeaccess24.com” ma’ JS Excludes (u excludesDeferred/Delayed jekk ikunu attivati)."
       },
       "autoptimize": {
-        "recommendation": "F'Autoptimize → JS, Images..., żid “easeaccess24” ma' “Exclude scripts from Autoptimize”. Autoptimize ukoll jonora l-ħjiel tagħna data-no-optimize."
+        "recommendation": "F'Autoptimize → JS, Images..., żid “easeaccess24” ma’ “Exclude scripts from Autoptimize”. Autoptimize jirrispetta wkoll il-ħjiel tagħna data-no-optimize."
       },
       "perfmatters": {
-        "recommendation": "Fi Perfmatters → Assets, żid “easeaccess24” mal-esklużjonijiet għal “Delay JavaScript” u kwalunkwe għażliet ta' script defer/minify."
+        "recommendation": "F'Perfmatters → Assets, żid “easeaccess24” ma’ l-esklużjonijiet għal “Delay JavaScript” u kwalunkwe għażliet ta’ script defer/minify."
       },
       "asset-cleanup": {
-        "recommendation": "F'Asset CleanUp, kun żgur li l-iskritt ta' EaseAccess24 mhux qed jiġi mċaħħad mill-paġni tiegħek, u teskludih minn kwalunkwe għażliet ta' JS minify/combine/defer."
+        "recommendation": "Fl-Asset CleanUp, kun żgur li l-iskritt EaseAccess24 ma jitgħabbiex mill-paġni tiegħek, u teskludih minn kwalunkwe għażliet ta’ JS minify/combine/defer."
       },
       "cloudflare": {
-        "recommendation": "Fi Cloudflare, teskludi l-iskritt tal-widget minn Rocket Loader (it-tag tagħna diġà jistabbilixxi data-cfasync=\"false\") u minn Auto Minify/Mirage jekk attivati għal skripts."
+        "recommendation": "F'Cloudflare, teskludi l-iskritt tal-widget minn Rocket Loader (it-tikketta tagħna diġà tissettja data-cfasync=\"false\") u minn Auto Minify/Mirage jekk ikunu attivati għal skripts."
       }
     }
   },
   "eventLog": {
     "title": "Reġistru tal-attività",
-    "intro": "Storja qasira ta' health checks u avvenimenti tal-plugin. Dan ir-reġistru jibqa' fuq is-sit tiegħek u qatt ma jintbagħat imkien awtomatikament.",
-    "empty": "L-ebda avvenimenti rreġistrati għadha. Mexxi Health Check fit-tab tal-Connection biex tirreġistra waħda.",
-    "clear": "Ċara r-reġistru",
-    "clearConfirm": "Ċara l-avvenimenti kollha rreġistrati?",
-    "confirmClear": "Iva, ċara",
+    "intro": "Storja qasira ta' health checks u avvenimenti tal-plugins. Dan ir-reġistru jibqa' fuq is-sit tiegħek u qatt ma jintbagħat imkien awtomatikament.",
+    "empty": "Għadhom ma ġew irreġistrati l-ebda avvenimenti. Agħmel Health Check fit-tab tal-Konnessjoni biex tirreġistra wieħed.",
+    "clear": "Iċċara r-reġistru",
+    "clearConfirm": "Iċċara l-avvenimenti kollha rreġistrati?",
+    "confirmClear": "Iva, iċċara",
     "cancel": "Ikkanċella",
-    "cleared": "Ir-reġistru tal-attività ġie ċċarat.",
-    "loadError": "Ma stajniex ngħabbbu r-reġistru tal-attività. Erġa' għabbi l-paġna u erġa' pprova.",
+    "cleared": "Reġistru tal-attività ċċarat.",
+    "loadError": "Ma stajniex ngħabbaw ir-reġistru tal-attività. Erġa' għab l-paġna u erġa' pprova.",
     "loading": "Qed jitgħabba l-attività...",
     "types": {
       "health_check": "Health Check",
-      "key_saved": "Widget Key salvata",
-      "key_updated": "Widget Key aġġornata",
+      "key_saved": "Widget Key salvat",
+      "key_updated": "Widget Key aġġornat",
       "activated": "Plugin attivat",
       "deactivated": "Plugin diżattivat"
     },
     "relative": {
-      "justNow": "Issa stess",
+      "justNow": "Just now",
       "minutesAgo": "{{n}} minuti ilu",
       "hoursAgo": "{{n}} sigħat ilu",
       "daysAgo": "{{n}} jiem ilu"
@@ -215,15 +213,15 @@
   },
   "supportReport": {
     "title": "Rapport ta' appoġġ",
-    "intro": "Iġġenera rapport li tista' taqsam ma' l-appoġġ ta' EaseAccess24. Jinkludi l-ambjent tiegħek, status tal-konnessjoni, plugins tal-cache skoperti, u avvenimenti reċenti. Il-Widget Key tiegħek hija moħbija u l-ebda data personali mhu inkluż.",
-    "privacyNote": "Xejn mhu jintbagħat awtomatikament. M'hemm l-ebda server involut — tikkopja jew tniżżel ir-rapport hawn taħt u taqsmu int stess.",
-    "generate": "Iġġenera rapport",
-    "regenerate": "Ġġenera mill-ġdid",
-    "generating": "Qed jiġġenera...",
-    "previewLabel": "Preview tar-rapport (eżatt dak li se jiġi kopjat jew imniżżel)",
+    "intro": "Ġenera rapport li tista' taqsam ma' l-appoġġ ta' EaseAccess24. Jinkludi l-ambjent tiegħek, status tal-konnessjoni, plugins tal-cache identifikati, u avvenimenti reċenti. Il-Widget Key tiegħek hija moħbija u ma jinkludix data personali.",
+    "privacyNote": "Xejn ma jintbagħat awtomatikament. M'hemm l-ebda server involut — tikkopja jew tniżżel ir-rapport hawn taħt u taqsamha lilek innifsek.",
+    "generate": "Ġenera rapport",
+    "regenerate": "Ġenera mill-ġdid",
+    "generating": "Qed jiġi ġenerat...",
+    "previewLabel": "Preview tar-rapport (eżattament dak li se jiġi kopjat jew imniżżel)",
     "copy": "Kopja",
-    "copied": "Ikklikkjat",
-    "copyFailed": "Il-kopja mhijiex disponibbli f'dan il-browser. Uża Niżżel minflok.",
+    "copied": "Kopjat",
+    "copyFailed": "Il-kopja mhix disponibbli f'dan il-browser. Uża Download minflok.",
     "downloadTxt": "Niżżel .txt",
     "downloadJson": "Niżżel .json",
     "generateError": "Ma stajniex niġġeneraw ir-rapport. Erġa' għabbi l-paġna u erġa' pprova."
@@ -233,7 +231,7 @@
     "version": "Verżjoni",
     "wpCompat": "Kompatibbiltà WordPress",
     "phpMin": "PHP minimu",
-    "testedUpTo": "Ittestjat sa",
+    "testedUpTo": "Testjat sa",
     "supportStatus": "Status ta' appoġġ",
     "supportStatusActive": "Appoġġjat b'mod attiv"
   },
@@ -244,47 +242,46 @@
     "items": {
       "findKey": {
         "q": "Fejn insib iċ-Ċavetta tal-Widget tiegħi?",
-        "a": "Idħol fuq app.easeaccess24.com, iftaħ it-taqsima Integra, u kkupra ċ-Ċavetta tal-Widget tiegħek (jew il-snippet sħiħ tal-iskritt). Poġġiha fit-tab tal-Konnessjoni — aħna nġibu ċ-ċavetta mill-snippet għalik."
+        "a": "Idħol fuq app.easeaccess24.com, iftaħ it-taqsima Integra, u kopja ċ-Ċavetta tal-Widget tiegħek (jew il-snippet sħiħ tal-iskritt). Poġġih fit-tab Konnessjoni — aħna nġibu ċ-ċavetta minn snippet għalik."
       },
       "notShowing": {
-        "q": "Il-widget mhux qed jidher — x'għandi niċċekkja?",
-        "a": "Agħmel Kontroll tas-Saħħa fit-tab tal-Konnessjoni. Dan jgħidlek jekk l-iskritt huwiex miżjud, aċċessibbli, u jekk il-widget huwiex attwalment muri. L-aktar kawżi komuni huma li d-dominju ma jkunx miżjud fid-dashboard tiegħek, ċavetta ħażina, jew plugin tal-caching li jneħħi l-iskritt."
+        "q": "Il-widget mhux qed jintwera — x'għandi niċċekkja?",
+        "a": "Mexxi Health Check fuq it-tab Konnessjoni. Dan jgħidlek jekk l-iskritt huwiex miżjud, aċċessibbli, u jekk il-widget fil-fatt jidherx. L-iktar kawżi komuni huma li d-dominju ma jkunx miżjud fid-dashboard tiegħek, ċavetta ħażina, jew plugin tal-cache li jneħħi l-iskritt."
       },
       "cachePlugin": {
-        "q": "Nuża plugin tal-caching jew ottimizzazzjoni. Se jikkunflitta?",
-        "a": "Jista'. It-tag tal-iskritt tagħna jitlob lil plugins komuni biex jaqbduh, iżda xi arranġamenti għadhom jeħtieġu esklużjoni manwali. Iċċekkja t-tab tal-Kompatibbiltà għal rakkomandazzjonijiet per-plugin. Qatt ma nbiddlu s-settings ta' plugin ieħor għalik."
+        "q": "Nuża plugin tal-cache jew ottimizzazzjoni. Se jkun hemm kunflitt?",
+        "a": "Jista'. It-tag tal-iskritt tagħna jitlob plugins komuni biex jaqbżuh, imma xi setups xorta jeħtieġu esklużjoni manwali. Iċċekkja t-tab Kompatibbiltà għal rakkomandazzjonijiet għal kull plugin. Qatt ma nbiddlu s-settings ta' plugin ieħor għalik."
       },
       "stagingLocalhost": {
         "q": "Il-widget jaħdem fuq staging jew localhost?",
-        "a": "Il-widget juru biss fuq id-dominji awtorizzati għaċ-Ċavetta tal-Widget tiegħek, għalhekk normalment mhux se jidher fuq staging jew localhost. Dan huwa mistenni u mhux żball tal-plugin — ittestja fuq id-dominju awtorizzat tiegħek."
+        "a": "Il-widget jirrendi biss fuq dominji awtorizzati għaċ-Ċavetta tal-Widget tiegħek, allura normalment mhux se jidher fuq staging jew localhost. Dan huwa mistenni u mhux żball tal-plugin — ittestja fuq id-dominju dirett u awtorizzat tiegħek."
       },
       "dataPrivacy": {
-        "q": "X'dejta dan il-plugin jaħżen jew jibgħat?",
-        "a": "Il-plugin jaħżen iċ-Ċavetta tal-Widget tiegħek u s-settings fuq is-sit tiegħek, flimkien ma' reġistru ta' attività lokali qasir. Ma jagħmel l-ebda sejħa awtomatika lil EaseAccess24 barra milli jżid l-iskritt tal-widget u, waqt Kontroll tas-Saħħa, jittestja jekk dak l-iskritt huwiex aċċessibbli. Ir-rapporti ta' appoġġ dejjem jiġu kondiviżi minnek, manwalment."
+        "q": "X'dejta jaħżen jew jibgħat dan il-plugin?",
+        "a": "Il-plugin jaħżen iċ-Ċavetta tal-Widget tiegħek u s-settings fuq il-websajt tiegħek stess, flimkien ma' log ta' attività lokali qasir. Ma jagħmel l-ebda sejħa awtomatika lil EaseAccess24 apparti milli jżid l-iskritt tal-widget u, waqt Health Check, jittestja jekk dak l-iskritt huwiex aċċessibbli. Ir-rapporti ta' support qatt ma jiġu kondiviżi minnek, manwalment."
       },
       "removeData": {
-        "q": "Kif tneħħi d-dejta kollha tal-plugin?",
-        "a": "Il-konfigurazzjoni tiegħek tinżamm meta tiddiattivaw sabiex tkun tista' terġa' tattiva aktar tard. Biex tneħħi kollox, ippermetti \"Neħħi d-dejta kollha ta' EaseAccess24\" qabel tħassar il-plugin, imbagħad ħassarha mill-iskrin tal-Plugins."
+        "q": "Kif inneħħi d-dejta kollha tal-plugin?",
+        "a": "Il-konfigurazzjoni tiegħek tinżamm meta tiddiattiva sabiex tkun tista' tattiva mill-ġdid aktar tard. Biex tneħħi kollox, ippermetti \"Neħħi d-dejta kollha ta' EaseAccess24\" qabel ma tħassar il-plugin, imbagħad ħassarha mill-iskrin tal-Plugins."
       }
     }
   },
   "settings": {
     "languageLabel": "Lingwa",
-    "languageAria": "Lingwa tal-interface",
     "dataTitle": "Dejta u privatezza",
-    "removeDataLabel": "Neħħi d-dejta kollha ta' EaseAccess24 meta jitħassar il-plugin",
-    "removeDataHelp": "Meta attivat, it-tħassir tal-plugin iħassar ukoll iċ-Ċavetta tal-Widget tiegħek, is-settings, u r-reġistru tal-attività. Ħallih mitfi biex iżżomm il-konfigurazzjoni tiegħek għal installazzjoni mill-ġdid fil-futur. Il-fajls tat-tema tiegħek qatt ma jiġu mmissjati.",
-    "saved": "Salvat",
+    "removeDataLabel": "Neħħi d-dejta kollha ta' EaseAccess24 meta l-plugin jitħassar",
+    "removeDataHelp": "Meta jiġi attivat, it-tħassir tal-plugin iħassar ukoll iċ-Ċavetta tal-Widget tiegħek, is-settings, u l-log tal-attività. Ħallih mitfi biex iżżomm il-konfigurazzjoni tiegħek għal installazzjoni mill-ġdid futura. Il-fajls tat-tema tiegħek qatt ma jintmissu.",
+    "saved": "Salvjat",
     "saveError": "Ma stajniex niffrankaw is-settings tiegħek. Iċċekkja l-konnessjoni tiegħek u erġa' pprova.",
-    "loadError": "Ma stajniex nilladja s-settings tiegħek. Erġa' għabbi l-paġna u erġa' pprova."
+    "loadError": "Ma stajniex ngħabbru s-settings tiegħek. Erġa' għabbi l-paġna u erġa' pprova."
   },
   "footer": {
-    "tagline": "Nagħmlu l-web aċċessibbli għal kulħadd.",
+    "tagline": "Ngħinu biex il-websajt tiegħek tkun aktar aċċessibbli.",
     "madeBy": "Magħmul minn EaseAccess24",
     "platform": "Pjattaforma EaseAccess24",
-    "docs": "Appoġġ u dokumentazzjoni",
+    "docs": "Appoġġ",
     "privacyLink": "Politika tal-privatezza",
-    "reportIssueLink": "Rapport tal-problema",
+    "reportIssueLink": "Rapport ta' problema",
     "copyright": "© {{year}} EaseAccess24"
   }
 }

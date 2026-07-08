@@ -9,18 +9,17 @@
     "appNameShort": "EaseAccess24",
     "saving": "Tallennetaan…",
     "cancel": "Peruuta",
-    "retry": "Yritä uudelleen",
     "updateKey": "Päivitä avain"
   },
   "onboarding": {
-    "title": "Yhdistä sivustosi EaseAccess24:ään",
-    "subtitle": "Liitä Widget-avaimesi (tai koko skriptipätkä) lisätäksesi esteettömyyswidgetin tälle sivustolle.",
-    "emptyTitle": "Eikö sinulla ole vielä Widget-avainta?",
-    "emptyBody": "Luo organisaatiosi, valitse sopimus ja lisää tämä verkkotunnus EaseAccess24:ään. Saat Widget-avaimen, jonka voit liittää tähän.",
-    "getKeyCta": "Hanki Widget-avaimesi",
-    "fieldLabel": "Widget-avain tai skriptipätkä",
-    "helper": "Liitä vain avain (esimerkiksi ABC123) tai koko <script>-pätkä — haemme avaimen siitä.",
-    "placeholder": "ABC123 —tai— <script async src=\"https://widget.easeaccess24.com/sdk.js?key=ABC123\"></script>",
+    "title": "Yhdistä sivustosi EaseAccess24-palveluun",
+    "subtitle": "Liitä Widget-avain (tai koko skriptinpätkä) lisätäksesi esteettömyyswidgetin tälle sivustolle.",
+    "emptyTitle": "Ei vielä Widget-avainta?",
+    "emptyBody": "Luo organisaatiosi, valitse sopimus ja lisää tämä verkkotunnus EaseAccess24-palveluun. Saat Widget-avaimen, jonka voit liittää tähän.",
+    "getKeyCta": "Hanki Widget-avain",
+    "fieldLabel": "Widget-avain tai skriptinpätkä",
+    "helper": "Liitä pelkkä avain (esimerkiksi ABC123) tai koko <script>-pätkä – poimimme avaimen siitä.",
+    "placeholder": "ABC123 — tai — <script async src=\"https://widget.easeaccess24.com/sdk.js?key=ABC123\"></script>",
     "whereLink": "Mistä löydän tämän?",
     "connectCta": "Yhdistä ja vahvista",
     "revealKey": "Näytä",
@@ -28,13 +27,13 @@
     "copyKey": "Kopioi",
     "copied": "Kopioitu",
     "errors": {
-      "empty": "Liitä ensin Widget-avaimesi tai skriptipätkä.",
-      "noKey": "Emme löytäneet Widget-avainta tuosta. Liitä vain avain tai koko skriptipätkä, joka sisältää sen.",
+      "empty": "Liitä ensin Widget-avaimesi tai skriptinpätkäsi.",
+      "noKey": "Emme löytäneet Widget-avainta tästä. Liitä pelkkä avain tai koko skriptinpätkä, joka sisältää sen.",
       "network": "Emme voineet tallentaa avaintasi. Tarkista yhteytesi ja yritä uudelleen."
     }
   },
   "stepper": {
-    "aria": "Asetusten edistyminen",
+    "aria": "Asennuksen eteneminen",
     "paste": "Liitä",
     "validate": "Vahvista",
     "healthCheck": "Terveystarkistus",
@@ -48,24 +47,23 @@
   "dashboard": {
     "statusBadge": "Yhdistetty",
     "title": "Yhteys",
-    "subtitle": "Widget-avaimesi on tallennettu. Suorita terveystarkistus varmistaaksesi, että widget latautuu ja näkyy sivustollasi.",
+    "subtitle": "Widget-avaimesi on tallennettu. Suorita Terveystarkistus varmistaaksesi, että widget latautuu ja näkyy sivustollasi.",
     "keyLabel": "Widget-avain",
     "domainLabel": "Verkkotunnus",
     "lastCheckLabel": "Viimeisin terveystarkistus",
     "neverChecked": "Ei tarkistettu vielä",
-    "healthNotRunYet": "Ei suoritettuja tarkistuksia"
+    "healthNotRunYet": "Ei tarkistusta suoritettu vielä"
   },
   "health": {
     "heading": "Terveystarkistus",
-    "intro": "Tämä suoritetaan selaimessasi: se lataa sivustosi ja tarkistaa, ilmestyykö widget todella. Mitään ei lähetetä EaseAccess24:ään.",
-    "run": "Suorita terveystarkistus",
-    "rerun": "Suorita uudelleen",
-    "running": "Suoritetaan terveystarkistusta…",
+    "intro": "Tämä suoritetaan selaimessasi: se lataa sivustosi ja tarkistaa, ilmestyykö widget todella. Mitään ei lähetetä EaseAccess24-palveluun.",
+    "run": "Suorita Terveystarkistus",
+    "running": "Suoritetaan Terveystarkistusta…",
     "resultsHeading": "Tulos",
     "checklistHeading": "Mitä tarkistimme",
     "advisoriesHeading": "Myös tarkistamisen arvoista",
-    "timeoutTitle": "Tarkistusta ei voitu suorittaa",
-    "timeoutBody": "Tarkistus ei valmistunut ajoissa. Tämä voi johtua siitä, että sivu latautui hitaasti tai jokin suojausasetus esti sen. Yritä uudelleen."
+    "timeoutTitle": "Emme voineet suorittaa tarkistusta",
+    "timeoutBody": "Tarkistus ei valmistunut ajoissa. Tämä voi tapahtua, jos sivun latautuminen oli hidasta tai suojausasetus esti sen. Yritä uudelleen."
   },
   "checklist": {
     "keySaved": "Widget-avain tallennettu",
@@ -87,56 +85,56 @@
   },
   "diagnostics": {
     "whyLabel": "Miksi",
-    "fixLabel": "Kuinka korjata",
+    "fixLabel": "Miten korjata",
     "OK": {
       "title": "Widgetisi on toiminnassa",
-      "why": "Ladasimme sivustosi ja saavutettavuuswidget ilmestyi ja on näkyvissä.",
-      "fix": "Ei tarvitse tehdä mitään – olet valmis."
+      "why": "Lataimme sivustosi, ja saavutettavuuswidget ilmestyi ja on näkyvissä.",
+      "fix": "Ei tarvitse tehdä mitään – kaikki on valmista."
     },
     "DOMAIN_NOT_ALLOWED": {
-      "title": "Verkkotunnusta ei sallita / avainta ei ole valtuutettu",
-      "why": "Widget-skripti latautui, mutta ilmoitti, että tätä verkkotunnusta ei ole valtuutettu Widget-avaimellesi. Sama viesti kattaa väärän avaimen ja verkkotunnuksen, jota ei ole vielä lisätty.",
+      "title": "Verkkotunnus ei sallittu / avain ei valtuutettu",
+      "why": "Widget-skripti ladattiin, mutta se ilmoitti, että tämä verkkotunnus ei ole valtuutettu Widget-avaimellesi. Sama viesti kattaa virheellisen avaimen ja verkkotunnuksen, jota ei ole vielä lisätty.",
       "fix": "Avaa EaseAccess24-hallintapaneelisi, varmista, että tämä tarkka verkkotunnus on lisätty organisaatioosi, tarkista, että Widget-avain vastaa, ja suorita tarkistus uudelleen."
     },
     "SDK_UNREACHABLE": {
       "title": "Widget-skriptiä ei voitu ladata",
-      "why": "Selaimesi ei pystynyt saavuttamaan widget-skriptin URL-osoitetta. Tämä johtuu yleensä verkko-, CDN- tai välimuistiongelmasta eikä määritysongelmasta.",
-      "fix": "Tarkista sivustosi verkko/CDN, tyhjennä mahdolliset välimuistit ja suorita tarkistus uudelleen."
+      "why": "Selaimesi ei pystynyt lataamaan widget-skriptin URL-osoitetta. Tämä on yleensä verkko-, CDN- tai välimuistiongelma eikä määritysongelma.",
+      "fix": "Tarkista sivustosi verkko/CDN, tyhjennä kaikki välimuistit ja suorita tarkistus uudelleen."
     },
     "WIDGET_NOT_INITIALIZED": {
       "title": "Widgetiä ei ladattu",
-      "why": "Widget-skripti on paikallaan, mutta näkyvää widgetiä ei ilmestynyt eikä mitään erityistä syytä ilmoitettu. Yleisiä syitä: verkkotunnusta ei ole vielä lisätty, avain on väärä tai skripti estettiin.",
-      "fix": "Varmista tämä verkkotunnus ja Widget-avain EaseAccess24-hallintapaneelissasi, varmista, että mikään ei estä skriptiä, ja suorita sitten tarkistus uudelleen."
+      "why": "Widget-skripti on paikallaan, mutta näkyvää widgetiä ei ilmestynyt eikä erityistä syytä ilmoitettu. Yleisiä syitä: verkkotunnusta ei ole vielä lisätty, avain on virheellinen tai skripti estettiin.",
+      "fix": "Varmista tämä verkkotunnus ja Widget-avain EaseAccess24-hallintapaneelissasi, varmista, ettei mikään estä skriptiä, ja suorita tarkistus uudelleen."
     },
     "DUPLICATE_WIDGET": {
-      "title": "Useampi kuin yksi widget havaittu",
-      "why": "Sivulla latautuu useampi kuin yksi widget. Tämä tarkoittaa yleensä sitä, että SDK on lisätty kahdesti – esimerkiksi sekä tämän laajennuksen että teeman manuaalisen koodinpätkän kautta.",
+      "title": "Kaksoiskappale widgetiä havaittu",
+      "why": "Sivulla latautuu useampi kuin yksi widget. Tämä tarkoittaa yleensä sitä, että SDK on lisätty kahdesti – esimerkiksi sekä tällä laajennuksella että manuaalisella pätkällä teemassasi.",
       "fix": "Säilytä vain yksi tapa. Jos lisäsit skriptin teemaasi tai toiseen laajennukseen, poista se ja anna tämän laajennuksen hoitaa se. Emme koskaan poista skriptejä puolestasi."
     },
     "POSSIBLE_DUPLICATE_WIDGET": {
-      "title": "Mahdollisesti useampi kuin yksi widget",
-      "why": "Havaitsimme merkkejä toisesta widget-skriptistä (esimerkiksi ylimääräinen skriptitunniste), mutta emme pystyneet vahvistamaan toista näkyvää widgetiä – välimuisti voi peittää tämän.",
-      "fix": "Varmista, että widget lisätään vain kerran. Jos sinulla on manuaalinen koodinpätkä teemassasi, poista se ja luota tähän laajennukseen."
+      "title": "Mahdollinen kaksoiskappale widgetiä",
+      "why": "Löysimme merkkejä toisesta widget-skriptistä (esimerkiksi ylimääräinen skriptitunniste), mutta emme pystyneet vahvistamaan toista näkyvää widgetiä – välimuisti voi hämärtää tätä.",
+      "fix": "Varmista, että widget lisätään vain kerran. Jos sinulla on manuaalinen pätkä teemassasi, poista se ja luota tähän laajennukseen."
     },
     "OPTIMIZER_INTERFERENCE": {
       "title": "Välimuisti- tai optimointilaajennus saattaa häiritä",
-      "why": "Widget-avain on tallennettu, mutta widget-skriptiä ei ollut sivulla – välimuisti-/optimointilaajennus saattaa olla poistanut tai muuttanut sitä.",
-      "fix": "Poissulje EaseAccess24-skripti välimuistista/optimoinnista. Tarkemmat, laajennuskohtaiset suositukset tulevat yhteensopivuusosioon."
+      "why": "Widget-avain on tallennettu, mutta widget-skriptiä ei ollut sivulla – välimuisti-/optimointilaajennus on saattanut poistaa tai muokata sitä.",
+      "fix": "Sulje EaseAccess24-skripti välimuistin/optimoinnin ulkopuolelle. Yksityiskohtaiset, laajennuskohtaiset suositukset tulevat yhteensopivuusosioon."
     },
     "STAGING_DETECTED": {
-      "title": "Staging-ympäristö havaittu",
-      "why": "Tämä näyttää staging- tai kehityssivustolta. Widget renderöityy vain EaseAccess24:ssä valtuutetuilla verkkotunnuksilla, joten se ei välttämättä ilmesty tähän.",
-      "fix": "Tämä on odotettavissa stagingissa. Lisää tämä verkkotunnus hallintapaneeliisi, jos haluat widgetin ilmestyvän tänne, tai testaa live-verkkotunnuksellasi."
+      "title": "Kehitysympäristö havaittu",
+      "why": "Tämä näyttää kehitys- tai testauspaikalta. Widgetiä näytetään vain EaseAccess24:ssä valtuutetuilla verkkotunnuksilla, joten sitä ei välttämättä näy täällä.",
+      "fix": "Tämä on odotettua kehitysympäristössä. Lisää tämä verkkotunnus hallintapaneeliisi, jos haluat widgetin näkyvän täällä, tai testaa live-verkkotunnuksellasi."
     },
     "LOCALHOST_DETECTED": {
       "title": "Paikallinen ympäristö havaittu",
-      "why": "Tämä sivusto toimii localhostissa. Widget renderöityy vain EaseAccess24:ssä valtuutetuilla verkkotunnuksilla, joten se ei ilmesty paikallisesti.",
-      "fix": "Tämä on odotettavissa paikallisesti. Testaa live-ympäristössä ja valtuutetulla verkkotunnuksella nähdäksesi widgetin."
+      "why": "Tämä sivusto toimii paikallisesti. Widgetiä näytetään vain EaseAccess24:ssä valtuutetuilla verkkotunnuksilla, joten sitä ei näy paikallisesti.",
+      "fix": "Tämä on odotettua paikallisesti. Testaa live-ympäristössä olevalla valtuutetulla verkkotunnuksella nähdäksesi widgetin."
     },
     "KEY_INVALID": {
       "title": "Widget-avainta ei hyväksytty",
       "why": "Widget-avain hylättiin.",
-      "fix": "Tarkista avain EaseAccess24-hallintapaneelistasi ja tallenna se uudelleen."
+      "fix": "Tarkista avain EaseAccess24-hallintapaneelissasi ja tallenna se uudelleen."
     },
     "SUBSCRIPTION_EXPIRED": {
       "title": "Tilaus vanhentunut",
@@ -145,62 +143,62 @@
     },
     "ORG_DISABLED": {
       "title": "Organisaatio poistettu käytöstä",
-      "why": "Tämän widgetin avaimen organisaatio on poistettu käytöstä.",
-      "fix": "Ota yhteyttä EaseAccess24-tukeen tai tarkista ohjausnäkymäsi."
+      "why": "Tämän Widget-avaimen organisaatio on poistettu käytöstä.",
+      "fix": "Ota yhteyttä EaseAccess24-tukeen tai tarkista hallintapaneelisi."
     }
   },
   "nav": {
     "aria": "EaseAccess24-osiot",
     "connection": "Yhteys",
     "compatibility": "Yhteensopivuus",
-    "activity": "Toiminta",
+    "activity": "Aktiivisuus",
     "support": "Tuki",
     "help": "Ohje"
   },
   "compatibility": {
-    "title": "Välimuisti ja optimointi – yhteensopivuus",
-    "intro": "Välimuisti- ja optimointilaajennukset voivat viivästyttää, yhdistää tai poistaa komentosarjoja – myös EaseAccess24-widgetin. Lisäämme vihjeitä, jotka pyytävät niitä jättämään komentosarjamme rauhaan, mutta jotkin asetukset vaativat silti manuaalisen poissulkemisen. Emme koskaan muuta toisen laajennuksen asetuksia puolestasi.",
+    "title": "Välimuistin ja optimoinnin yhteensopivuus",
+    "intro": "Välimuisti- ja optimointilaajennukset voivat viivästyttää, yhdistää tai poistaa skriptejä — mukaan lukien EaseAccess24-widgetin. Lisäämme vihjeitä, jotka pyytävät niitä jättämään skriptimme rauhaan, mutta jotkin asennukset vaativat silti manuaalisen poissulkemisen. Emme koskaan muuta toisen laajennuksen asetuksia puolestasi.",
     "noneTitle": "Ei tunnistettuja välimuisti- tai optimointilaajennuksia",
-    "noneBody": "Emme löytäneet mitään tunnistamistamme välimuisti-/optimointilaajennuksista. Jos widget ei vieläkään ilmesty, suorita yhteysvälilehdellä terveystarkistus.",
-    "cloudflareCdnNote": "Huomautus: Cloudflare, joka toimii CDN:nä (Rocket Loader, Auto Minify reunalla), ei voida tunnistaa sivustoltasi. Jos käytät Cloudflarea, tarkista myös kyseiset asetukset.",
+    "noneBody": "Emme löytäneet yhtään tunnistamaamme välimuisti-/optimointilaajennusta. Jos widget ei vieläkään ilmesty, suorita yhteystietojen tarkistus Yhteys-välilehdellä.",
+    "cloudflareCdnNote": "Huomautus: Cloudflare CDN:nä (Rocket Loader, Auto Minify reunalla) ei voida havaita sivustoltasi. Jos käytät Cloudflarea, tarkista myös kyseiset asetukset.",
     "detectedTitle": "Tunnistetut laajennukset",
     "recommendationLabel": "Suositus",
-    "modifiedTitle": "Widget-komentosarja saattaa muuttua",
-    "modifiedBody": "Välimuisti-/optimointilaajennus on aktiivinen ja viimeisin terveystarkistuksesi havaitsi, että widget-komentosarja ei ollut sivulla. Käytä alla olevaa poissulkemista ja suorita tarkistus uudelleen.",
+    "modifiedTitle": "Widget-skripti saattaa olla muokattu",
+    "modifiedBody": "Välimuisti-/optimointilaajennus on aktiivinen ja viimeisin Yhteystietojen tarkistus havaitsi, että widget-skriptiä ei ollut sivulla. Ota alla oleva poissulkeminen käyttöön ja suorita tarkistus uudelleen.",
     "plugins": {
       "wp-rocket": {
-        "recommendation": "WP Rocket → Tiedosto-optimointi -kohdassa poissulje “widget.easeaccess24.com/sdk.js” JavaScriptin pienentämisestä, yhdistämisestä ja “JavaScriptin suorittamisen viivästyttäminen” -asetuksista. WP Rocket noudattaa myös data-no-minify -vihjettämme."
+        "recommendation": "Valitse WP Rocket → Tiedosto-optimointi, poissulje “widget.easeaccess24.com/sdk.js” JavaScriptin pienennyksestä, yhdistämisestä ja “JavaScriptin suorittamisen viivästys” -asetuksista. WP Rocket noudattaa myös data-no-minify -vihjettämme."
       },
       "litespeed": {
-        "recommendation": "LiteSpeed Cache → Sivun optimointi → JS-asetukset -kohdassa lisää “widget.easeaccess24.com” JS-poissulkemisiin (sekä Viivästetyt/Lykkätyt poissulkemiset, jos käytössä)."
+        "recommendation": "Valitse LiteSpeed Cache → Sivun optimointi → JS-asetukset, lisää “widget.easeaccess24.com” JS-poissulkemisiin (ja Viivästetyt/Lykkätyt poissulkemiset, jos käytössä)."
       },
       "autoptimize": {
-        "recommendation": "Autoptimize → JS, Kuvat... -kohdassa lisää “easeaccess24” -kohtaan “Poissulje komentosarjat Autopimoinnista”. Autoptimize noudattaa myös data-no-optimize -vihjettämme."
+        "recommendation": "Valitse Autoptimize → JS, Kuvat..., lisää “easeaccess24” kohtaan “Poissulje skriptit Autoptimizesta”. Autoptimize noudattaa myös data-no-optimize -vihjettämme."
       },
       "perfmatters": {
-        "recommendation": "Perfmatters → Resurssit -kohdassa lisää “easeaccess24” poissulkemisiin “JavaScriptin viivästyttäminen” ja muihin komentosarjan lykkäys/pienennys -asetuksiin."
+        "recommendation": "Valitse Perfmatters → Resurssit, lisää “easeaccess24” poissulkemisiin kohdille “JavaScriptin viivästys” ja kaikille skriptien lykkäys-/pienennysvaihtoehdoille."
       },
       "asset-cleanup": {
-        "recommendation": "Asset CleanUp -laajennuksessa varmista, että EaseAccess24-komentosarjaa ei poisteta käytöstä sivuiltasi ja poissulje se kaikista JS-pienennys/yhdistys/lykkäys -asetuksista."
+        "recommendation": "Varmista Asset CleanUpissa, että EaseAccess24-skriptiä ei poisteta käytöstä sivuilta ja poissulje se kaikista JS:n pienennyksistä/yhdistämisistä/lykkäyksistä."
       },
       "cloudflare": {
-        "recommendation": "Cloudflare-asetuksissa poissulje widget-komentosarja Rocket Loaderista (tagimme asettaa jo data-cfasync=\"false\") ja Auto Minify/Mirage -asetuksista, jos ne ovat käytössä komentosarjoille."
+        "recommendation": "Valitse Cloudflare, poissulje widget-skripti Rocket Loaderista (tagimme asettaa jo data-cfasync=\"false\") ja Auto Minify/Miragesta, jos ne ovat käytössä skripteille."
       }
     }
   },
   "eventLog": {
-    "title": "Toimintaloki",
-    "intro": "Lyhyt historia terveystarkistuksista ja laajennustapahtumista. Tämä loki säilyy sivustollasi eikä sitä lähetetä automaattisesti mihinkään.",
-    "empty": "Ei vielä tapahtumia. Suorita yhteysvälilehdellä terveystarkistus tallentaaksesi sen.",
+    "title": "Aktiivisuusloki",
+    "intro": "Lyhyt historia yhteystarkistuksista ja laajennustapahtumista. Tämä loki pysyy sivustollasi eikä sitä lähetetä koskaan automaattisesti mihinkään.",
+    "empty": "Ei vielä tapahtumia kirjattuna. Suorita yhteystarkistus Yhteys-välilehdellä tallentaaksesi yhden.",
     "clear": "Tyhjennä loki",
     "clearConfirm": "Tyhjennä kaikki kirjatut tapahtumat?",
     "confirmClear": "Kyllä, tyhjennä",
     "cancel": "Peruuta",
-    "cleared": "Toimintaloki tyhjennetty.",
-    "loadError": "Emme voineet ladata toimintalokia. Lataa sivu uudelleen ja yritä uudelleen.",
-    "loading": "Ladataan toimintoja…",
+    "cleared": "Aktiivisuusloki tyhjennetty.",
+    "loadError": "Emme voineet ladata aktiivisuuslokia. Lataa sivu uudelleen ja yritä uudelleen.",
+    "loading": "Ladataan aktiivisuutta…",
     "types": {
-      "health_check": "Terveystarkistus",
+      "health_check": "Yhteystarkistus",
       "key_saved": "Widget-avain tallennettu",
       "key_updated": "Widget-avain päivitetty",
       "activated": "Laajennus aktivoitu",
@@ -215,15 +213,15 @@
   },
   "supportReport": {
     "title": "Tukiraportti",
-    "intro": "Luo raportti, jonka voit jakaa EaseAccess24-tuen kanssa. Se sisältää ympäristösi, yhteystilanteen, tunnistetut välimuistilaajennukset ja viimeisimmät tapahtumat. Widget-avaimesi on peitetty eikä henkilökohtaisia tietoja sisällytetä.",
-    "privacyNote": "Mitään ei lähetetä automaattisesti. Palvelinta ei ole mukana – kopioi tai lataa alla oleva raportti ja jaa se itse.",
+    "intro": "Luo raportti, jonka voit jakaa EaseAccess24-tuen kanssa. Se sisältää ympäristösi, yhteystilanteen, tunnistetut välimuistilaajennukset ja viimeaikaiset tapahtumat. Widget-avaimesi on peitetty, eikä henkilökohtaisia tietoja sisälly.",
+    "privacyNote": "Mitään ei lähetetä automaattisesti. Palvelinta ei ole mukana — kopioit tai lataat alla olevan raportin ja jaat sen itse.",
     "generate": "Luo raportti",
     "regenerate": "Luo uudelleen",
     "generating": "Luodaan…",
-    "previewLabel": "Raportin esikatselu (tarkalleen se, mikä kopioidaan tai ladataan)",
+    "previewLabel": "Raportin esikatselu (täsmälleen se, mitä kopioidaan tai ladataan)",
     "copy": "Kopioi",
     "copied": "Kopioitu",
-    "copyFailed": "Tätä toimintoa ei voi käyttää tässä selaimessa. Käytä sen sijaan lataamista.",
+    "copyFailed": "Kopiointi ei ole käytettävissä tässä selaimessa. Käytä sen sijaan Lataa.",
     "downloadTxt": "Lataa .txt",
     "downloadJson": "Lataa .json",
     "generateError": "Raporttia ei voitu luoda. Lataa sivu uudelleen ja yritä uudelleen."
@@ -232,57 +230,56 @@
     "title": "Lisäosan tiedot",
     "version": "Versio",
     "wpCompat": "WordPress-yhteensopivuus",
-    "phpMin": "PHP-versio vähintään",
+    "phpMin": "PHP-vähimmäisvaatimus",
     "testedUpTo": "Testattu versioon asti",
     "supportStatus": "Tukitila",
     "supportStatusActive": "Aktiivisesti tuettu"
   },
   "faq": {
-    "title": "Ohje & UKK",
+    "title": "Ohjeet ja usein kysytyt kysymykset",
     "intro": "Vastauksia yleisiin kysymyksiin widgetin yhdistämisestä ja vianmäärityksestä.",
     "learnMore": "Lue lisää",
     "items": {
       "findKey": {
         "q": "Mistä löydän widget-avaimeni?",
-        "a": "Kirjaudu sisään osoitteessa app.easeaccess24.com, avaa Integrointi-osio ja kopioi widget-avaimesi (tai koko skriptinpätkä). Liitä se Yhteys-välilehdelle – poimimme avaimen skriptinpätkästä puolestasi."
+        "a": "Kirjaudu sisään osoitteessa app.easeaccess24.com, avaa Integrointi-osio ja kopioi widget-avaimesi (tai koko skriptipätkä). Liitä se Yhteys-välilehdelle – me poimimme avaimen skriptipätkästä puolestasi."
       },
       "notShowing": {
         "q": "Widget ei näy – mitä minun pitäisi tarkistaa?",
-        "a": "Suorita kuntotarkistus Yhteys-välilehdellä. Se kertoo, onko skripti lisätty, saavutettavissa ja ilmestyykö widget todella. Yleisimpiä syitä ovat se, että verkkotunnusta ei ole lisätty kojelautaasi, väärä avain tai välimuistia käyttävä lisäosa poistaa skriptin."
+        "a": "Suorita kuntotarkistus Yhteys-välilehdellä. Se kertoo, onko skripti lisätty, tavoitettavissa ja näkyykö widget todella. Yleisimmät syyt ovat verkkotunnuksen puuttuminen kojelaudastasi, väärä avain tai välimuistiin tallentava lisäosa, joka poistaa skriptin."
       },
       "cachePlugin": {
-        "q": "Käytän välimuisti- tai optimointilisäosaa. Aiheuttaako se ristiriitoja?",
-        "a": "Se voi aiheuttaa. Skriptitagimme pyytää yleisiä lisäosia ohittamaan sen, mutta joissakin asennuksissa tarvitaan silti manuaalinen poissulkeminen. Tarkista lisäosakohtaiset suositukset Yhteensopivuus-välilehdeltä. Emme koskaan muuta toisen lisäosan asetuksia puolestasi."
+        "q": "Käytän välimuistiin tallentavaa tai optimointilisäosaa. Onko se ristiriidassa?",
+        "a": "Se voi olla. Skriptimme tunniste pyytää yleisiä lisäosia ohittamaan sen, mutta joissakin asennuksissa tarvitaan silti manuaalista poissulkemista. Tarkista Yhteensopivuus-välilehdeltä lisäosakohtaiset suositukset. Emme koskaan muuta toisen lisäosan asetuksia puolestasi."
       },
       "stagingLocalhost": {
-        "q": "Toimiiko widget väliaikaispalvelimella tai localhostissa?",
-        "a": "Widget näkyy vain verkkotunnuksissa, jotka on valtuutettu widget-avaimellesi, joten se ei yleensä ilmesty väliaikaispalvelimelle tai localhostiin. Tämä on odotettua eikä lisäosan virhe – testaa valtuutetulla, live-verkkotunnuksellasi."
+        "q": "Toimiiko widget väliaikaisessa tai paikallisessa ympäristössä?",
+        "a": "Widget renderöityy vain verkkotunnuksissa, jotka on valtuutettu widget-avaimellesi, joten se ei yleensä näy väliaikaisessa tai paikallisessa ympäristössä. Tämä on odotettua eikä lisäosan virhe – testaa valtuutetulla, live-verkkotunnuksellasi."
       },
       "dataPrivacy": {
         "q": "Mitä tietoja tämä lisäosa tallentaa tai lähettää?",
-        "a": "Lisäosa tallentaa widget-avaimesi ja asetuksesi omalle sivustollesi sekä lyhyen paikallisen aktiivisuuslokitiedoston. Se ei tee automaattisia kutsuja EaseAccess24:lle widget-skriptin lisäämisen lisäksi ja kuntotarkistuksen aikana testatakseen, onko skripti saavutettavissa. Tukiraportit jaetaan aina vain sinun toimestasi, manuaalisesti."
+        "a": "Lisäosa tallentaa widget-avaimesi ja asetukset omalle sivustollesi sekä lyhyen paikallisen aktiivisuuslokitiedon. Se ei tee automaattisia kutsuja EaseAccess24:lle muuten kuin lisäämällä widget-skriptin ja suorittamalla kuntotarkistuksen aikana testin sen tavoitettavuudesta. Tukiraportit jaetaan aina vain sinun toimestasi, manuaalisesti."
       },
       "removeData": {
         "q": "Kuinka poistan kaikki lisäosan tiedot?",
-        "a": "Määrityksesi säilytetään, kun poistat käytöstä, jotta voit aktivoida sen uudelleen myöhemmin. Poista kaikki tiedot valitsemalla \"Poista kaikki EaseAccess24-tiedot\" ennen lisäosan poistamista ja poista se sitten Lisäosat-näytöstä."
+        "a": "Määrityksesi säilytetään, kun poistat lisäosan käytöstä, jotta voit aktivoida sen uudelleen myöhemmin. Poistaaksesi kaiken, ota käyttöön ”Poista kaikki EaseAccess24-tiedot” ennen lisäosan poistamista ja poista se sitten Lisäosat-näytöstä."
       }
     }
   },
   "settings": {
     "languageLabel": "Kieli",
-    "languageAria": "Käyttöliittymän kieli",
-    "dataTitle": "Tiedot ja tietosuoja",
-    "removeDataLabel": "Poista kaikki EaseAccess24-tiedot lisäosan poistettaessa",
-    "removeDataHelp": "Kun tämä on käytössä, lisäosan poistaminen poistaa myös widget-avaimesi, asetuksesi ja aktiivisuuslokisi. Jätä tämä pois päältä, jos haluat säilyttää määrityksesi myöhempää uudelleenasennusta varten. Teematiedostojasi ei koskaan kosketa.",
+    "dataTitle": "Tiedot ja yksityisyys",
+    "removeDataLabel": "Poista kaikki EaseAccess24-tiedot lisäosan poistamisen yhteydessä",
+    "removeDataHelp": "Kun tämä on käytössä, lisäosan poistaminen poistaa myös widget-avaimesi, asetuksesi ja aktiivisuuslokisi. Jätä tämä pois käytöstä, jos haluat säilyttää määrityksesi myöhempää uudelleenasennusta varten. Teematiedostojasi ei koskaan kosketa.",
     "saved": "Tallennettu",
     "saveError": "Asetuksia ei voitu tallentaa. Tarkista yhteytesi ja yritä uudelleen.",
     "loadError": "Asetuksia ei voitu ladata. Lataa sivu uudelleen ja yritä uudelleen."
   },
   "footer": {
-    "tagline": "Verkon saavutettavuus kaikille.",
+    "tagline": "Autamme tekemään sivustostasi saavutettavamman.",
     "madeBy": "Valmistaja EaseAccess24",
     "platform": "EaseAccess24-alusta",
-    "docs": "Tuki ja dokumentaatio",
+    "docs": "Tuki",
     "privacyLink": "Tietosuojakäytäntö",
     "reportIssueLink": "Ilmoita ongelmasta",
     "copyright": "© {{year}} EaseAccess24"

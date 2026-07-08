@@ -2,39 +2,38 @@
   "status": {
     "notConnected": "Ni povezano",
     "healthy": "Povezano · Zdravo",
-    "attention": "Povezano · Potrebna pozornost"
+    "attention": "Povezano · Potreben pregled"
   },
   "common": {
-    "appName": "EaseAccess24 dostopnost",
+    "appName": "EaseAccess24 Dostopnost",
     "appNameShort": "EaseAccess24",
-    "saving": "Hranjenje…",
+    "saving": "Shranjevanje…",
     "cancel": "Prekliči",
-    "retry": "Ponovno poskusi",
     "updateKey": "Posodobi ključ"
   },
   "onboarding": {
     "title": "Povežite svoje spletno mesto z EaseAccess24",
-    "subtitle": "Prilepite svoj ključ pripomočka (ali celoten izrezek skripta), da dodate pripomoček za dostopnost temu spletnemu mestu.",
+    "subtitle": "Prilepite svoj ključ pripomočka (ali celoten izrezek skripte), da dodate pripomoček za dostopnost temu spletnemu mestu.",
     "emptyTitle": "Še nimate ključa pripomočka?",
-    "emptyBody": "Ustvarite svojo organizacijo, izberite načrt in dodajte to domeno v EaseAccess24. Prejeli boste ključ pripomočka, ki ga prilepite tukaj.",
+    "emptyBody": "Ustvarite svojo organizacijo, izberite načrt in dodajte to domeno v EaseAccess24. Dobili boste ključ pripomočka, ki ga boste prilepili sem.",
     "getKeyCta": "Pridobite svoj ključ pripomočka",
-    "fieldLabel": "Ključ pripomočka ali izrezek skripta",
-    "helper": "Prilepite samo ključ (na primer ABC123) ali celoten izrezek <script> – ključ bomo izvlekli iz njega.",
+    "fieldLabel": "Ključ pripomočka ali izrezek skripte",
+    "helper": "Prilepite samo ključ (na primer ABC123) ali celoten izrezek <script> — ključ bomo izvlekli iz njega.",
     "placeholder": "ABC123 —ali— <script async src=\"https://widget.easeaccess24.com/sdk.js?key=ABC123\"></script>",
     "whereLink": "Kje naj to najdem?",
-    "connectCta": "Poveži in preveri",
-    "revealKey": "Razkrij",
+    "connectCta": "Poveži & Preveri",
+    "revealKey": "Odkrij",
     "hideKey": "Skrij",
     "copyKey": "Kopiraj",
     "copied": "Kopirano",
     "errors": {
-      "empty": "Najprej prilepite svoj ključ pripomočka ali izrezek skripta.",
-      "noKey": "V tem nismo mogli najti ključa pripomočka. Prilepite samo ključ ali celoten izrezek skripta, ki ga vsebuje.",
+      "empty": "Najprej prilepite svoj ključ pripomočka ali izrezek skripte.",
+      "noKey": "V tem nismo mogli najti ključa pripomočka. Prilepite samo ključ ali celoten izrezek skripte, ki ga vsebuje.",
       "network": "Nismo mogli shraniti vašega ključa. Preverite svojo povezavo in poskusite znova."
     }
   },
   "stepper": {
-    "aria": "Potek nastavitve",
+    "aria": "Napredek nastavitve",
     "paste": "Prilepi",
     "validate": "Preveri",
     "healthCheck": "Preverjanje stanja",
@@ -42,7 +41,7 @@
     "state": {
       "done": "dokončano",
       "current": "trenutni korak",
-      "upcoming": "prihajajoče"
+      "upcoming": "prihajajoči"
     }
   },
   "dashboard": {
@@ -53,23 +52,22 @@
     "domainLabel": "Domena",
     "lastCheckLabel": "Zadnje preverjanje stanja",
     "neverChecked": "Še ni preverjeno",
-    "healthNotRunYet": "Še ni bil zagnan noben prever"
+    "healthNotRunYet": "Še ni bil izveden noben prever"
   },
   "health": {
     "heading": "Preverjanje stanja",
     "intro": "To se izvaja v vašem brskalniku: naloži vaše spletno mesto in preveri, ali se pripomoček dejansko prikaže. Ničesar ni poslano v EaseAccess24.",
     "run": "Zaženi preverjanje stanja",
-    "rerun": "Zaženi ponovno",
-    "running": "Poteka preverjanje stanja…",
+    "running": "Izvajanje preverjanja stanja…",
     "resultsHeading": "Rezultat",
     "checklistHeading": "Kaj smo preverili",
-    "advisoriesHeading": "Prav tako je vredno preveriti",
+    "advisoriesHeading": "Vredno je preveriti tudi",
     "timeoutTitle": "Nismo mogli dokončati preverjanja",
-    "timeoutBody": "Preverjanje se ni dokončalo v določenem času. To se lahko zgodi, če se je stran počasi nalagala ali če jo je blokirala varnostna nastavitev. Poskusite znova."
+    "timeoutBody": "Preverjanje se ni dokončalo pravočasno. To se lahko zgodi, če se je stran počasi nalagala ali ga je blokirala varnostna nastavitev. Poskusite znova."
   },
   "checklist": {
-    "keySaved": "Ključ pripomočka je shranjen",
-    "sdkTag": "Skript pripomočka je dodan vaši spletni strani",
+    "keySaved": "Ključ pripomočka shranjen",
+    "sdkTag": "Skript pripomočka dodan na vaše spletno mesto",
     "sdkReachable": "Skript pripomočka je dosegljiv",
     "widgetVisible": "Pripomoček se prikaže in je viden",
     "singleInstance": "Natančno en pripomoček na strani",
@@ -90,48 +88,48 @@
     "fixLabel": "Kako popraviti",
     "OK": {
       "title": "Vaš pripomoček je v živo",
-      "why": "Naložili smo vašo spletno stran in pripomoček za dostopnost se je prikazal in je viden.",
-      "fix": "Ničesar ni treba storiti – vse je pripravljeno."
+      "why": "Naložili smo vaše spletno mesto in prikazal se je ter je bil viden pripomoček za dostopnost.",
+      "fix": "Ni se kaj zgoditi – vse je pripravljeno."
     },
     "DOMAIN_NOT_ALLOWED": {
       "title": "Domena ni dovoljena / ključ ni avtoriziran",
-      "why": "Skript pripomočka se je naložil, vendar je sporočil, da ta domena ni avtorizirana za vaš ključ pripomočka. Isto sporočilo zajema napačen ključ in domeno, ki še ni bila dodana.",
-      "fix": "Odprite nadzorno ploščo EaseAccess24, potrdite, da je ta natančna domena dodana pod vašo organizacijo, preverite, ali se ključ pripomočka ujema, nato znova zaženite preverjanje."
+      "why": "Skript pripomočka se je naložil, vendar je sporočil, da ta domena ni avtorizirana za vaš ključ pripomočka. Enako sporočilo zajema napačen ključ in domeno, ki še ni bila dodana.",
+      "fix": "Odprite svojo nadzorno ploščo EaseAccess24, potrdite, da je ta točna domena dodana pod vašo organizacijo, preverite, ali se ključ pripomočka ujema, nato znova zaženite preverjanje."
     },
     "SDK_UNREACHABLE": {
       "title": "Skript pripomočka ni bilo mogoče naložiti",
-      "why": "Vaš brskalnik ni mogel doseči URL-ja skripta pripomočka. To je običajno težava z omrežjem, CDN ali predpomnilnikom, ne pa težava s konfiguracijo.",
-      "fix": "Preverite omrežje/CDN vaše spletne strani, počistite vse predpomnilnike in znova zaženite preverjanje."
+      "why": "Vaš brskalnik ni mogel doseči URL-ja skripta pripomočka. To je običajno težava z omrežjem, CDN ali predpomnjenjem, ne pa težava s konfiguracijo.",
+      "fix": "Preverite omrežje/CDN svojega spletnega mesta, počistite predpomnilnike in znova zaženite preverjanje."
     },
     "WIDGET_NOT_INITIALIZED": {
       "title": "Pripomoček se ni naložil",
-      "why": "Skript pripomočka je na mestu, vendar se vidni pripomoček ni prikazal in ni bilo sporočeno nobenega posebnega razloga. Pogosti vzroki: domena še ni dodana, ključ je napačen ali je bil skript blokiran.",
-      "fix": "Potrdite to domeno in ključ pripomočka v vaši nadzorni plošči EaseAccess24, se prepričajte, da nič ne blokira skripta, nato znova zaženite preverjanje."
+      "why": "Skript pripomočka je na mestu, vendar se ni prikazal noben viden pripomoček in ni bil sporočen noben poseben razlog. Pogosti vzroki: domena še ni dodana, ključ je napačen ali je bil skript blokiran.",
+      "fix": "Potrdite to domeno in ključ pripomočka v svoji nadzorni plošči EaseAccess24, se prepričajte, da nič ne blokira skripta, nato znova zaženite preverjanje."
     },
     "DUPLICATE_WIDGET": {
-      "title": "Zaznan je bil podvojen pripomoček",
-      "why": "Na strani se nalaga več kot en pripomoček. To običajno pomeni, da je SDK dodan dvakrat – na primer, enkrat s tem vtičnikom in drugič z ročnim izrezkom v vaši temi.",
-      "fix": "Obdržite le eno metodo. Če ste skript dodali svoji temi ali drugemu vtičniku, ga odstranite in pustite, da se s tem ukvarja ta vtičnik. Nikoli ne odstranimo skriptov namesto vas."
+      "title": "Odkrit je bil podvojen pripomoček",
+      "why": "Na strani se nalaga več kot en pripomoček. To običajno pomeni, da je bil SDK dodan dvakrat – na primer, enkrat s tem vtičnikom in enkrat z ročno kodo v vaši temi.",
+      "fix": "Ohranite samo en način. Če ste skript dodali v svojo temo ali drug vtičnik, ga odstranite in pustite, da to naredi ta vtičnik. Skriptov nikoli ne odstranjujemo namesto vas."
     },
     "POSSIBLE_DUPLICATE_WIDGET": {
       "title": "Možen podvojen pripomoček",
-      "why": "Našli smo znake drugega skripta pripomočka (na primer, dodaten skriptni oznako), vendar nismo mogli potrditi drugega vidnega pripomočka – predpomnilnik lahko to zakrije.",
-      "fix": "Prepričajte se, da je pripomoček dodan samo enkrat. Če imate ročni izrezek v svoji temi, ga odstranite in se zanesite na ta vtičnik."
+      "why": "Našli smo znake drugega skripta pripomočka (na primer dodatno oznako skripta), vendar nismo mogli potrditi drugega vidnega pripomočka – predpomnjenje lahko to prikrije.",
+      "fix": "Prepričajte se, da je pripomoček dodan samo enkrat. Če imate ročno kodo v svoji temi, jo odstranite in se zanesite na ta vtičnik."
     },
     "OPTIMIZER_INTERFERENCE": {
-      "title": "Vtičnik za predpomnjenje ali optimizacijo lahko moti",
+      "title": "Vmesnik za predpomnjenje ali optimizacijo je lahko vmešavajoč",
       "why": "Ključ pripomočka je shranjen, vendar skript pripomočka ni bil prisoten na strani – vtičnik za predpomnjenje/optimizacijo ga je morda odstranil ali spremenil.",
-      "fix": "Izključite skript EaseAccess24 iz predpomnjenja/optimizacije. Podrobna priporočila za posamezne vtičnike bodo kmalu na voljo v razdelku Združljivost."
+      "fix": "Izključite skript EaseAccess24 iz predpomnjenja/optimizacije. Podrobna priporočila za vsak vtičnik bodo kmalu na voljo v razdelku Združljivost."
     },
     "STAGING_DETECTED": {
-      "title": "Zaznano je bilo testno okolje",
-      "why": "Zdi se, da gre za testno ali razvojno spletno mesto. Pripomoček se prikaže le na domenah, ki so avtorizirane v EaseAccess24, zato se tukaj morda ne bo prikazal.",
-      "fix": "To je pričakovano na testnem okolju. Dodajte to domeno v svojo nadzorno ploščo, če želite, da se pripomoček prikaže tukaj, ali testirajte na svoji spletni domeni."
+      "title": "Odkrito je bilo okolje za uprizarjanje",
+      "why": "To izgleda kot spletno mesto za uprizarjanje ali razvoj. Pripomoček se prikaže samo v domenah, ki so avtorizirane v EaseAccess24, zato se tukaj morda ne bo prikazal.",
+      "fix": "To je pričakovano na uprizarjanju. Dodajte to domeno na svojo nadzorno ploščo, če želite, da se pripomoček prikaže tukaj, ali pa ga preizkusite na svoji živi domeni."
     },
     "LOCALHOST_DETECTED": {
-      "title": "Zaznano je lokalno okolje",
-      "why": "To spletno mesto se izvaja na localhostu. Pripomoček se prikaže le na domenah, ki so avtorizirane v EaseAccess24, zato se lokalno ne bo prikazal.",
-      "fix": "To je pričakovano lokalno. Testirajte na svoji spletni, avtorizirani domeni, da vidite pripomoček."
+      "title": "Odkrito je bilo lokalno okolje",
+      "why": "To spletno mesto deluje na localhostu. Pripomoček se prikaže samo v domenah, ki so avtorizirane v EaseAccess24, zato se lokalno ne bo prikazal.",
+      "fix": "To je pričakovano lokalno. Preizkusite na svoji živi, avtorizirani domeni, da vidite pripomoček."
     },
     "KEY_INVALID": {
       "title": "Ključ pripomočka ni bil sprejet",
@@ -144,13 +142,13 @@
       "fix": "Podaljšajte svoj načrt v nadzorni plošči EaseAccess24."
     },
     "ORG_DISABLED": {
-      "title": "Organizacija onemogočena",
+      "title": "Organizacija je onemogočena",
       "why": "Organizacija za ta ključ pripomočka je onemogočena.",
       "fix": "Obrnite se na podporo EaseAccess24 ali preverite svojo nadzorno ploščo."
     }
   },
   "nav": {
-    "aria": "Razdelki EaseAccess24",
+    "aria": "Odseki EaseAccess24",
     "connection": "Povezava",
     "compatibility": "Združljivost",
     "activity": "Dejavnost",
@@ -159,80 +157,80 @@
   },
   "compatibility": {
     "title": "Združljivost predpomnilnika in optimizacije",
-    "intro": "Vtičniki za predpomnjenje in optimizacijo lahko zamaknejo, združijo ali odstranijo skripte – vključno z gradnikom EaseAccess24. Dodajamo namige, ki jih prosijo, naj pustijo našo skripto pri miru, vendar nekatere nastavitve še vedno potrebujejo ročno izključitev. Nikoli ne spremenimo nastavitev drugega vtičnika namesto vas.",
+    "intro": "Vtičniki za predpomnjenje in optimizacijo lahko nalaganje, združujejo ali odstranjujejo skripte – vključno z gradnikom EaseAccess24. Dodajamo namige, ki prosijo, naj našo skripto pustijo pri miru, vendar nekatere nastavitve še vedno potrebujejo ročno izključitev. Nikoli ne spreminjamo nastavitev drugih vtičnikov namesto vas.",
     "noneTitle": "Ni zaznanih znanih vtičnikov za predpomnjenje ali optimizacijo",
-    "noneBody": "Nismo našli nobenega od vtičnikov za predpomnjenje/optimizacijo, ki jih prepoznamo. Če se gradnik še vedno ne prikaže, zaženite preverjanje stanja na zavihku Povezava.",
-    "cloudflareCdnNote": "Opomba: Cloudflare, ki deluje kot CDN (Rocket Loader, Auto Minify na robu), ni mogoče zaznati z vašega spletnega mesta. Če uporabljate Cloudflare, preverite tudi te nastavitve.",
+    "noneBody": "Nismo našli nobenega od vtičnikov za predpomnjenje/optimizacijo, ki jih prepoznamo. Če se gradnik še vedno ne prikaže, zaženite Zdravstveni pregled na zavihku Povezava.",
+    "cloudflareCdnNote": "Opomba: Cloudflare, ki deluje kot CDN (Rocket Loader, Auto Minify na robu), z vašega spletnega mesta ni mogoče zaznati. Če uporabljate Cloudflare, preverite tudi te nastavitve.",
     "detectedTitle": "Zaznani vtičniki",
     "recommendationLabel": "Priporočilo",
     "modifiedTitle": "Skripta gradnika se morda spreminja",
-    "modifiedBody": "Aktivni so vtičniki za predpomnjenje/optimizacijo, vaša zadnja preveritev stanja pa je ugotovila, da skripte gradnika ni na strani. Uporabite spodnjo izključitev in znova zaženite preverjanje.",
+    "modifiedBody": "Aktiviran je vtičnik za predpomnjenje/optimizacijo, vaš zadnji Zdravstveni pregled pa je ugotovil, da skripta gradnika ni bila na strani. Uporabite spodnjo izključitev in znova zaženite pregled.",
     "plugins": {
       "wp-rocket": {
-        "recommendation": "V WP Rocket → Optimizacija datotek, izključite “widget.easeaccess24.com/sdk.js” iz minifikacije JavaScript, združevanja in „Zaustavitev izvajanja JavaScript“. WP Rocket upošteva tudi naš namig data-no-minify."
+        "recommendation": "V WP Rocket → Optimizacija datotek, izključite »widget.easeaccess24.com/sdk.js« iz minimiziranja JavaScript, združevanja in »Zakasnitve izvajanja JavaScript«. WP Rocket upošteva tudi naš namig data-no-minify."
       },
       "litespeed": {
-        "recommendation": "V LiteSpeed Cache → Optimizacija strani → Nastavitve JS dodajte “widget.easeaccess24.com” v Izključitve JS (in izključitve zamikovanja/odloženega izvajanja, če so omogočene)."
+        "recommendation": "V LiteSpeed Cache → Optimizacija strani → Nastavitve JS, dodajte »widget.easeaccess24.com« v izključitve JS (in izključitve zakasnitve/odložitve, če so omogočene)."
       },
       "autoptimize": {
-        "recommendation": "V Autoptimize → JS, Slike..., dodajte „easeaccess24“ v „Izključi skripte iz Autoptimize“. Autoptimize upošteva tudi naš namig data-no-optimize."
+        "recommendation": "V Autoptimize → JS, slike..., dodajte »easeaccess24« v »Izključi skripte iz Autoptimize«. Autoptimize upošteva tudi naš namig data-no-optimize."
       },
       "perfmatters": {
-        "recommendation": "V Perfmatters → Sredstva, dodajte „easeaccess24“ v izključitve za „Odloži JavaScript“ in vse možnosti združevanja/minifikacije skript."
+        "recommendation": "V Perfmatters → Sredstva, dodajte »easeaccess24« v izključitve za »Zakasnitev JavaScript« in vse možnosti za odlaganje/minimiziranje skript."
       },
       "asset-cleanup": {
-        "recommendation": "V Asset CleanUp zagotovite, da skripta EaseAccess24 ni razbremenjena na vaših straneh, in jo izključite iz vseh možnosti minifikacije/združevanja/odložitve JS."
+        "recommendation": "V Asset CleanUp zagotovite, da skripta EaseAccess24 ni razbremenjena na vaših straneh, in jo izključite iz vseh možnosti minimiziranja/združevanja/odlaganja JS."
       },
       "cloudflare": {
-        "recommendation": "V Cloudflare izključite skripto gradnika iz Rocket Loaderja (naša oznaka že nastavi data-cfasync=\"false\") in iz Auto Minify/Mirage, če je omogočeno za skripte."
+        "recommendation": "V Cloudflare izključite skripto gradnika iz Rocket Loader (naša oznaka že nastavi data-cfasync=\"false\") ter iz Auto Minify/Mirage, če je omogočeno za skripte."
       }
     }
   },
   "eventLog": {
     "title": "Dnevnik dejavnosti",
-    "intro": "Kratka zgodovina preverjanj stanja in dogodkov vtičnikov. Ta dnevnik ostane na vašem spletnem mestu in se nikoli samodejno ne pošilja nikamor.",
-    "empty": "Še ni zabeleženih dogodkov. Zaženite preverjanje stanja na zavihku Povezava, da ga zabeležite.",
+    "intro": "Kratka zgodovina zdravstvenih pregledov in dogodkov vtičnikov. Ta dnevnik ostane na vašem spletnem mestu in nikoli ni samodejno poslan nikamor.",
+    "empty": "Še ni zabeleženih dogodkov. Zaženite Zdravstveni pregled na zavihku Povezava, da ga zabeležite.",
     "clear": "Počisti dnevnik",
     "clearConfirm": "Počisti vse zabeležene dogodke?",
     "confirmClear": "Da, počisti",
     "cancel": "Prekliči",
-    "cleared": "Dnevnik dejavnosti očiščen.",
-    "loadError": "Nismo mogli naložiti dnevnika dejavnosti. Ponovno naložite stran in poskusite znova.",
+    "cleared": "Dnevnik dejavnosti je počiščen.",
+    "loadError": "Nismo mogli naložiti dnevnika dejavnosti. Znova naložite stran in poskusite znova.",
     "loading": "Nalaganje dejavnosti…",
     "types": {
-      "health_check": "Preverjanje stanja",
+      "health_check": "Zdravstveni pregled",
       "key_saved": "Ključ gradnika shranjen",
       "key_updated": "Ključ gradnika posodobljen",
       "activated": "Vtičnik aktiviran",
       "deactivated": "Vtičnik deaktiviran"
     },
     "relative": {
-      "justNow": "Ravno zdaj",
+      "justNow": "Zdaj",
       "minutesAgo": "{{n}} minut nazaj",
       "hoursAgo": "{{n}} ur nazaj",
       "daysAgo": "{{n}} dni nazaj"
     }
   },
   "supportReport": {
-    "title": "Poročilo o podpori",
-    "intro": "Ustvari poročilo, ki ga lahko delite s podporo EaseAccess24. Vključuje vaše okolje, stanje povezave, zaznane vtičnike za predpomnjenje in nedavne dogodke. Vaš ključ gradnika je prikrit in ne vključuje osebnih podatkov.",
-    "privacyNote": "Nič se ne pošilja samodejno. Ni vključen noben strežnik – poročilo spodaj kopirate ali prenesete in ga delite sami.",
+    "title": "Poročilo za podporo",
+    "intro": "Ustvarite poročilo, ki ga lahko delite s podporo EaseAccess24. Vključuje vaše okolje, status povezave, zaznane vtičnike predpomnilnika in nedavne dogodke. Vaš ključ gradnika je prikrit in ne vključuje osebnih podatkov.",
+    "privacyNote": "Nič se ne pošilja samodejno. Ni vključenega strežnika – poročilo spodaj kopirate ali prenesete in ga delite sami.",
     "generate": "Ustvari poročilo",
     "regenerate": "Ponovno ustvari",
     "generating": "Ustvarjanje…",
-    "previewLabel": "Predogled poročila (natančno kar bo kopirano ali preneseno)",
+    "previewLabel": "Predogled poročila (točno to, kar bo kopirano ali preneseno)",
     "copy": "Kopiraj",
     "copied": "Kopirano",
-    "copyFailed": "Kopiranje ni na voljo v tem brskalniku. Namesto tega uporabite Prenesi.",
+    "copyFailed": "Kopiranje v tem brskalniku ni na voljo. Namesto tega uporabite Prenesi.",
     "downloadTxt": "Prenesi .txt",
     "downloadJson": "Prenesi .json",
-    "generateError": "Nismo mogli ustvariti poročila. Ponovno naložite stran in poskusite znova."
+    "generateError": "Poročila nismo mogli ustvariti. Ponovno naložite stran in poskusite znova."
   },
   "pluginInfo": {
     "title": "Informacije o vtičniku",
     "version": "Različica",
     "wpCompat": "Združljivost z WordPressom",
-    "phpMin": "Najmanjša zahtevana PHP različica",
+    "phpMin": "Najmanjša zahtevana PHP",
     "testedUpTo": "Preizkušeno do",
     "supportStatus": "Status podpore",
     "supportStatusActive": "Aktivno podprto"
@@ -244,45 +242,44 @@
     "items": {
       "findKey": {
         "q": "Kje najdem svoj ključ gradnika?",
-        "a": "Prijavite se na app.easeaccess24.com, odprite razdelek »Integracija« in kopirajte svoj ključ gradnika (ali celoten delček kode). Prilepite ga v zavihek »Povezava« – ključ bomo izvzeli iz delčka kode za vas."
+        "a": "Prijavite se na app.easeaccess24.com, odprite razdelek Integriraj in kopirajte svoj ključ gradnika (ali celoten izrezek kode). Prilepite ga na zavihek Povezava – ključ bomo izvzeli iz izrezka kode za vas."
       },
       "notShowing": {
         "q": "Gradnik se ne prikazuje – kaj naj preverim?",
-        "a": "Zaženite preverjanje stanja v zavihku »Povezava«. Pove vam, ali je skript dodan, dosegljiv in ali se gradnik dejansko prikazuje. Najpogostejši vzroki so, da domena ni dodana na vaši nadzorni plošči, napačen ključ ali predpomnilniški vtičnik, ki odstranjuje skript."
+        "a": "Zaženite preverjanje stanja na zavihku Povezava. Pove vam, ali je skript dodan, dosegljiv in ali se gradnik dejansko prikaže. Najpogostejši vzroki so nedodana domena v vaši nadzorni plošči, napačen ključ ali vtičnik za predpomnjenje, ki odstrani skript."
       },
       "cachePlugin": {
-        "q": "Uporabljam vtičnik za predpomnjenje ali optimizacijo. Ali bo v konfliktu?",
-        "a": "Lahko povzroči. Naša oznaka skripta prosi pogoste vtičnike, da jo preskočijo, vendar nekatere nastavitve še vedno potrebujejo ročno izključitev. Preverite zavihek »Združljivost« za priporočila za posamezne vtičnike. Nikoli ne spreminjamo nastavitev drugih vtičnikov namesto vas."
+        "q": "Uporabljam vtičnik za predpomnjenje ali optimizacijo. Bo to povzročilo konflikt?",
+        "a": "Lahko. Naša oznaka skripta prosi običajne vtičnike, naj jo preskočijo, vendar nekatere nastavitve še vedno potrebujejo ročno izključitev. Preverite zavihek Združljivost za priporočila glede posameznih vtičnikov. Nikoli ne spreminjamo nastavitev drugega vtičnika za vas."
       },
       "stagingLocalhost": {
-        "q": "Ali gradnik deluje na pripravi ali lokalnem gostitelju?",
-        "a": "Gradnik se prikaže le na domenah, pooblaščenih za vaš ključ gradnika, zato se običajno ne prikaže na pripravi ali lokalnem gostitelju. To je pričakovano in ne napaka vtičnika – testirajte na vaši veljavni, pooblaščeni domeni."
+        "q": "Ali gradnik deluje na testnih ali lokalnih okoljih?",
+        "a": "Gradnik se prikaže le na domenah, pooblaščenih za vaš ključ gradnika, zato se običajno ne prikaže na testnih ali lokalnih okoljih. To je pričakovano in ne napaka vtičnika – testirajte na svoji aktivni, pooblaščeni domeni."
       },
       "dataPrivacy": {
         "q": "Katere podatke ta vtičnik shranjuje ali pošilja?",
-        "a": "Vtičnik na vašem spletnem mestu shrani vaš ključ gradnika in nastavitve ter kratke lokalne dnevnik dejavnosti. Ne izvaja samodejnih klicev na EaseAccess24, razen dodajanja skripta gradnika in med preverjanjem stanja, testiranja, ali je ta skript dosegljiv. Poročila o podpori delite samo vi, ročno."
+        "a": "Vtičnik shranjuje vaš ključ gradnika in nastavitve na vaši spletni strani ter kratek dnevnik lokalne dejavnosti. Ne izvaja samodejnih klicev na EaseAccess24, razen dodajanja skripta gradnika in med preverjanjem stanja testiranja, ali je ta skript dosegljiv. Poročila o podpori delite samo vi, ročno."
       },
       "removeData": {
         "q": "Kako odstranim vse podatke vtičnika?",
-        "a": "Vaša konfiguracija je ohranjena ob deaktivaciji, da jo lahko ponovno aktivirate pozneje. Če želite odstraniti vse, omogočite »Odstrani vse podatke EaseAccess24« pred brisanjem vtičnika, nato pa ga izbrišite s zaslona z vtičniki."
+        "a": "Vaša konfiguracija se ohrani, ko deaktivirate, da jo lahko ponovno aktivirate pozneje. Če želite odstraniti vse, omogočite »Odstrani vse podatke EaseAccess24« pred brisanjem vtičnika, nato ga izbrišite s zaslona Vtičniki."
       }
     }
   },
   "settings": {
     "languageLabel": "Jezik",
-    "languageAria": "Jezik vmesnika",
     "dataTitle": "Podatki in zasebnost",
     "removeDataLabel": "Odstrani vse podatke EaseAccess24 ob brisanju vtičnika",
-    "removeDataHelp": "Ko je omogočeno, brisanje vtičnika odstrani tudi vaš ključ gradnika, nastavitve in dnevnik dejavnosti. Pustite ga izklopljenega, da obdržite svojo konfiguracijo za poznejšo ponovno namestitev. Datoteke vaše teme nikoli niso prizadete.",
+    "removeDataHelp": "Ko je omogočeno, brisanje vtičnika odstrani tudi vaš ključ gradnika, nastavitve in dnevnik dejavnosti. Pustite izklopljeno, da obdržite svojo konfiguracijo za prihodnjo ponovno namestitev. Vaših tematskih datotek se nikoli ne dotakne.",
     "saved": "Shranjeno",
     "saveError": "Nastavitev nismo mogli shraniti. Preverite svojo povezavo in poskusite znova.",
     "loadError": "Nastavitev nismo mogli naložiti. Ponovno naložite stran in poskusite znova."
   },
   "footer": {
-    "tagline": "Naredimo splet dostopen za vse.",
-    "madeBy": "Ustvaril EaseAccess24",
+    "tagline": "Pomagamo narediti vaše spletno mesto bolj dostopno.",
+    "madeBy": "Izdelal EaseAccess24",
     "platform": "Platforma EaseAccess24",
-    "docs": "Podpora in dokumentacija",
+    "docs": "Podpora",
     "privacyLink": "Politika zasebnosti",
     "reportIssueLink": "Prijavi težavo",
     "copyright": "© {{year}} EaseAccess24"

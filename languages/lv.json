@@ -1,71 +1,69 @@
 {
   "status": {
-    "notConnected": "Not connected",
-    "healthy": "Connected · Healthy",
-    "attention": "Connected · Needs attention"
+    "notConnected": "Nav savienots",
+    "healthy": "Savienots · Vesels",
+    "attention": "Savienots · Nepieciešama uzmanība"
   },
   "common": {
-    "appName": "EaseAccess24 Accessibility",
+    "appName": "EaseAccess24 pieejamība",
     "appNameShort": "EaseAccess24",
-    "saving": "Saving…",
-    "cancel": "Cancel",
-    "retry": "Retry",
-    "updateKey": "Update key"
+    "saving": "Tiek saglabāts…",
+    "cancel": "Atcelt",
+    "updateKey": "Atjaunot atslēgu"
   },
   "onboarding": {
-    "title": "Connect your site to EaseAccess24",
-    "subtitle": "Paste your Widget Key (or the full script snippet) to add the accessibility widget to this site.",
-    "emptyTitle": "Don’t have a Widget Key yet?",
-    "emptyBody": "Create your organization, choose a plan, and add this domain in EaseAccess24. You’ll get a Widget Key to paste here.",
-    "getKeyCta": "Get your Widget Key",
-    "fieldLabel": "Widget Key or script snippet",
-    "helper": "Paste just the key (for example ABC123) or the entire <script> snippet — we’ll pull the key out of it.",
-    "placeholder": "ABC123  —or—  <script async src=\"https://widget.easeaccess24.com/sdk.js?key=ABC123\"></script>",
-    "whereLink": "Where do I find this?",
-    "connectCta": "Connect & Verify",
-    "revealKey": "Reveal",
-    "hideKey": "Hide",
-    "copyKey": "Copy",
-    "copied": "Copied",
+    "title": "Savienojiet savu vietni ar EaseAccess24",
+    "subtitle": "Ievietojiet savu Widget Key (vai pilnu skripta fragmentu), lai pievienotu pieejamības logrīku šai vietnei.",
+    "emptyTitle": "Vēl nav Widget Key?",
+    "emptyBody": "Izveidojiet savu organizāciju, izvēlieties plānu un pievienojiet šo domēnu EaseAccess24. Jūs saņemsiet Widget Key, ko šeit ielīmēt.",
+    "getKeyCta": "Iegūt savu Widget Key",
+    "fieldLabel": "Widget Key vai skripta fragments",
+    "helper": "Ievietojiet tikai atslēgu (piemēram, ABC123) vai visu <script> fragmentu — mēs izvilksim atslēgu no tā.",
+    "placeholder": "ABC123 — vai — <script async src=\"https://widget.easeaccess24.com/sdk.js?key=ABC123\"></script>",
+    "whereLink": "Kur es to atrodu?",
+    "connectCta": "Savienot un pārbaudīt",
+    "revealKey": "Rādīt",
+    "hideKey": "Slēpt",
+    "copyKey": "Kopēt",
+    "copied": "Nokopēts",
     "errors": {
-      "empty": "Paste your Widget Key or script snippet first.",
-      "noKey": "We couldn’t find a Widget Key in that. Paste just the key, or the full script snippet that contains it.",
-      "network": "We couldn’t save your key. Check your connection and try again."
+      "empty": "Vispirms ielīmējiet savu Widget Key vai skripta fragmentu.",
+      "noKey": "Mēs nevarējām atrast Widget Key. Ievietojiet tikai atslēgu vai pilnu skripta fragmentu, kas to satur.",
+      "network": "Mēs nevarējām saglabāt jūsu atslēgu. Pārbaudiet savu savienojumu un mēģiniet vēlreiz."
     }
   },
   "stepper": {
-    "aria": "Setup progress",
-    "paste": "Paste",
-    "validate": "Validate",
-    "healthCheck": "Health Check",
-    "done": "Done",
+    "aria": "Iestatīšanas gaita",
+    "paste": "Ielīmēt",
+    "validate": "Apstiprināt",
+    "healthCheck": "Veselības pārbaude",
+    "done": "Pabeigts",
     "state": {
-      "done": "completed",
-      "current": "current step",
-      "upcoming": "upcoming"
+      "done": "pabeigts",
+      "current": "pašreizējais solis",
+      "upcoming": "gaidāms"
     }
   },
   "dashboard": {
-    "statusBadge": "Connected",
-    "title": "Connection",
-    "subtitle": "Your Widget Key is saved. Run a Health Check to confirm the widget loads and is visible on your site.",
+    "statusBadge": "Savienots",
+    "title": "Savienojums",
+    "subtitle": "Jūsu Widget Key ir saglabāts. Veiciet veselības pārbaudi, lai pārliecinātos, ka logrīks ielādējas un ir redzams jūsu vietnē.",
     "keyLabel": "Widget Key",
-    "domainLabel": "Domain",
-    "lastCheckLabel": "Last health check",
-    "neverChecked": "Not checked yet",
-    "healthNotRunYet": "No check run yet"
+    "domainLabel": "Domēns",
+    "lastCheckLabel": "Pēdējā veselības pārbaude",
+    "neverChecked": "Vēl nav pārbaudīts",
+    "healthNotRunYet": "Vēl nav veikta pārbaude"
   },
   "health": {
-    "heading": "Health Check",
-    "intro": "This runs in your browser: it loads your site and checks whether the widget actually appears. Nothing is sent to EaseAccess24.",
-    "run": "Run Health Check",
-    "rerun": "Run again",
-    "running": "Running Health Check…",
-    "resultsHeading": "Result",
-    "checklistHeading": "What we checked",
-    "advisoriesHeading": "Also worth checking",
+    "heading": "Veselības pārbaude",
+    "intro": "Tas tiek veikts jūsu pārlūkprogrammā: tas ielādē jūsu vietni un pārbauda, vai logrīks faktiski parādās. Nekas netiek nosūtīts uz EaseAccess24.",
+    "run": "Veikt veselības pārbaudi",
+    "running": "Notiek veselības pārbaude…",
+    "resultsHeading": "Rezultāts",
+    "checklistHeading": "Ko mēs pārbaudījām",
+    "advisoriesHeading": "Vērts arī pārbaudīt",
     "timeoutTitle": "Mēs nevarējām pabeigt pārbaudi",
-    "timeoutBody": "Pārbaude netika pabeigta laikā. Tas var notikt, ja lapa lēni ielādējās vai drošības iestatījums to bloķēja. Mēģiniet vēlreiz."
+    "timeoutBody": "Pārbaude netika pabeigta laikā. Tas var notikt, ja lapa tika lēni ielādēta vai to bloķēja drošības iestatījums. Mēģiniet vēlreiz."
   },
   "checklist": {
     "keySaved": "Widget atslēga saglabāta",
@@ -82,71 +80,71 @@
     }
   },
   "actions": {
-    "openDashboard": "Atvērt EaseAccess24 informācijas paneli",
-    "retry": "Sākt pārbaudi vēlreiz"
+    "openDashboard": "Atvērt EaseAccess24 Dashboard",
+    "retry": "Palaist pārbaudi vēlreiz"
   },
   "diagnostics": {
     "whyLabel": "Kāpēc",
-    "fixLabel": "Kā novērst",
+    "fixLabel": "Kā labot",
     "OK": {
       "title": "Jūsu widget ir aktīvs",
       "why": "Mēs ielādējām jūsu vietni, un pieejamības widget parādījās un ir redzams.",
-      "fix": "Nekas nav jādara — viss ir kārtībā."
+      "fix": "Nav ko darīt — viss ir kārtībā."
     },
     "DOMAIN_NOT_ALLOWED": {
-      "title": "Domēns nav atļauts / atslēga nav autorizēta",
-      "why": "Widget skripts tika ielādēts, bet ziņoja, ka šis domēns nav autorizēts jūsu Widget atslēgai. Tāds pats ziņojums attiecas uz nepareizu atslēgu un domēnu, kas vēl nav pievienots.",
-      "fix": "Atveriet savu EaseAccess24 informācijas paneli, pārliecinieties, ka šis domēns ir pievienots jūsu organizācijai, pārbaudiet, vai Widget atslēga atbilst, un pēc tam sāciet pārbaudi vēlreiz."
+      "title": "Domenis nav atļauts / atslēga nav autorizēta",
+      "why": "Widget skripts tika ielādēts, bet ziņoja, ka šis domens nav autorizēts jūsu Widget atslēgai. Tāda pati ziņa attiecas uz nepareizu atslēgu un domenu, kas vēl nav pievienots.",
+      "fix": "Atveriet savu EaseAccess24 Dashboard, pārliecinieties, ka šis precīzais domens ir pievienots jūsu organizācijai, pārbaudiet, vai Widget atslēga atbilst, un pēc tam palaidiet pārbaudi vēlreiz."
     },
     "SDK_UNREACHABLE": {
       "title": "Widget skriptu nevarēja ielādēt",
-      "why": "Jūsu pārlūkprogramma nevarēja sasniegt widget skripta URL. Tā parasti ir tīkla, CDN vai kešatmiņas problēma, nevis konfigurācijas problēma.",
-      "fix": "Pārbaudiet sava vietnes tīklu/CDN, notīriet visu kešatmiņu un sāciet pārbaudi vēlreiz."
+      "why": "Jūsu pārlūkprogramma nevarēja sasniegt widget skripta URL. Parasti tā ir tīkla, CDN vai kešatmiņas problēma, nevis konfigurācijas problēma.",
+      "fix": "Pārbaudiet savas vietnes tīklu/CDN, notīriet kešatmiņu un palaidiet pārbaudi vēlreiz."
     },
     "WIDGET_NOT_INITIALIZED": {
       "title": "Widget netika ielādēts",
-      "why": "Widget skripts ir pieejams, bet neparādījās redzams widget, un netika ziņots par konkrētu iemeslu. Izplatītie cēloņi: domēns vēl nav pievienots, atslēga ir nepareiza vai skripts tika bloķēts.",
-      "fix": "Apstipriniet šo domēnu un Widget atslēgu savā EaseAccess24 informācijas panelī, pārliecinieties, ka nekas nebloķē skriptu, un pēc tam sāciet pārbaudi vēlreiz."
+      "why": "Widget skripts ir ievietots, bet neparādījās redzams widget un netika ziņots par konkrētu iemeslu. Bieži cēloņi: domens vēl nav pievienots, atslēga ir nepareiza vai skripts tika bloķēts.",
+      "fix": "Apstipriniet šo domenu un Widget atslēgu savā EaseAccess24 Dashboard, pārliecinieties, ka nekas nebloķē skriptu, un pēc tam palaidiet pārbaudi vēlreiz."
     },
     "DUPLICATE_WIDGET": {
-      "title": "Konstatēts dublēts widget",
-      "why": "Lappusē tiek ielādēts vairāk nekā viens widget. Tas parasti nozīmē, ka SDK ir pievienots divreiz — piemēram, gan ar šo spraudni, gan manuāli ar fragmentu jūsu tēmā.",
-      "fix": "Saglabājiet tikai vienu metodi. Ja pievienojāt skriptu savai tēmai vai citam spraudnim, noņemiet to un ļaujiet šim spraudnim to apstrādāt. Mēs nekad nenoņemam skriptus jūsu vietā."
+      "title": "Atklāts dublikāts widget",
+      "why": "Lapa ielādē vairāk nekā vienu widget. Tas parasti nozīmē, ka SDK ir pievienots divreiz — piemēram, gan ar šo spraudni, gan ar manuālu fragmentu jūsu tēmā.",
+      "fix": "Paturiet tikai vienu metodi. Ja pievienojāt skriptu savai tēmai vai citam spraudnim, noņemiet to un ļaujiet šim spraudnim to apstrādāt. Mēs nekad nenoņemam skriptus jūsu vietā."
     },
     "POSSIBLE_DUPLICATE_WIDGET": {
-      "title": "Iespējams dublēts widget",
-      "why": "Mēs atradām pazīmes par otro widget skriptu (piemēram, papildu skripta tagu), bet nevarējām apstiprināt otro redzamo widget — kešatmiņa var to aizēnot.",
-      "fix": "Pārliecinieties, ka widget ir pievienots tikai vienu reizi. Ja savā tēmā izmantojat manuālu fragmentu, noņemiet to un paļaujieties uz šo spraudni."
+      "title": "Iespējams dublikāts widget",
+      "why": "Mēs atradām otrā widget skripta pazīmes (piemēram, papildu skripta tagu), bet nevarējām apstiprināt otru redzamo widget — kešatmiņa var to aizēnot.",
+      "fix": "Pārliecinieties, ka widget ir pievienots tikai vienu reizi. Ja jūsu tēmā ir manuāls fragments, noņemiet to un paļaujieties uz šo spraudni."
     },
     "OPTIMIZER_INTERFERENCE": {
-      "title": "Kešošanas vai optimizācijas spraudnis var traucēt",
-      "why": "Widget atslēga ir saglabāta, bet widget skripts lapā nebija — kešošanas/optimizācijas spraudnis to varēja noņemt vai mainīt.",
-      "fix": "Izslēdziet EaseAccess24 skriptu no kešošanas/optimizācijas. Detalizēti ieteikumi katram spraudnim drīzumā būs pieejami sadaļā Saderība."
+      "title": "Kešatmiņas vai optimizācijas spraudnis var traucēt",
+      "why": "Widget atslēga ir saglabāta, taču widget skripts lapā nebija atrodams — kešatmiņas/optimizācijas spraudnis to varēja noņemt vai mainīt.",
+      "fix": "Izslēdziet EaseAccess24 skriptu no kešatmiņas/optimizācijas. Detalizēti ieteikumi katram spraudnim drīzumā būs pieejami sadaļā Saderība."
     },
     "STAGING_DETECTED": {
-      "title": "Konstatēta izvietošanas vide",
-      "why": "Šī izskatās pēc izvietošanas vai izstrādes vietnes. Widget tiek parādīts tikai domēnos, kas ir autorizēti EaseAccess24, tāpēc tas šeit var nebūt redzams.",
-      "fix": "Tas ir sagaidāms izvietošanas vidē. Pievienojiet šo domēnu savā informācijas panelī, ja vēlaties, lai widget parādītos šeit, vai testējiet savā tiešraides domēnā."
+      "title": "Darbības vide ir noteikta",
+      "why": "Šī izskatās pēc darbības vai izstrādes vietnes. Widget tiek rādīts tikai domenās, kas ir autorizēti EaseAccess24, tāpēc šeit tas var nebūt redzams.",
+      "fix": "Tas ir sagaidāms darbības vidē. Pievienojiet šo domenu savā Dashboard, ja vēlaties, lai widget šeit parādās, vai testējiet savā tiešraides domēnā."
     },
     "LOCALHOST_DETECTED": {
-      "title": "Konstatēta lokālā vide",
-      "why": "Šī vietne darbojas lokāli. Widget tiek parādīts tikai domēnos, kas ir autorizēti EaseAccess24, tāpēc tas nebūs redzams lokāli.",
+      "title": "Vietējā vide ir noteikta",
+      "why": "Šī vietne darbojas localhost. Widget tiek rādīts tikai domenās, kas ir autorizēti EaseAccess24, tāpēc lokāli tas nebūs redzams.",
       "fix": "Tas ir sagaidāms lokāli. Testējiet savā tiešraides, autorizētajā domēnā, lai redzētu widget."
     },
     "KEY_INVALID": {
       "title": "Widget atslēga nav pieņemta",
       "why": "Widget atslēga tika noraidīta.",
-      "fix": "Pārbaudiet atslēgu savā EaseAccess24 informācijas panelī un saglabājiet to vēlreiz."
+      "fix": "Pārbaudiet atslēgu savā EaseAccess24 Dashboard un saglabājiet to vēlreiz."
     },
     "SUBSCRIPTION_EXPIRED": {
       "title": "Abonements ir beidzies",
       "why": "Šīs Widget atslēgas abonements vairs nav aktīvs.",
-      "fix": "Atjaunojiet savu plānu EaseAccess24 informācijas panelī."
+      "fix": "Atjaunojiet savu plānu EaseAccess24 Dashboard."
     },
     "ORG_DISABLED": {
       "title": "Organizācija ir atspējota",
-      "why": "Organizācija šai logrīka atslēgai ir atspējota.",
-      "fix": "Sazinieties ar EaseAccess24 atbalsta dienestu vai pārbaudiet savu informācijas paneli."
+      "why": "Šīs Widget atslēgas organizācija ir atspējota.",
+      "fix": "Sazinieties ar EaseAccess24 atbalsta dienestu vai pārbaudiet savu Dashboard."
     }
   },
   "nav": {
@@ -159,39 +157,39 @@
   },
   "compatibility": {
     "title": "Kešatmiņas un optimizācijas saderība",
-    "intro": "Kešatmiņas un optimizācijas spraudņi var atlikt, apvienot vai noņemt skriptus — tostarp EaseAccess24 logrīku. Mēs pievienojam norādes, lai lūgtu tos atstāt mūsu skriptu mierā, taču dažām konfigurācijām joprojām ir nepieciešama manuāla izslēgšana. Mēs nekad nemainīsim cita spraudņa iestatījumus jūsu vietā.",
+    "intro": "Kešatmiņas un optimizācijas spraudņi var aizkavēt, apvienot vai noņemt skriptus — ieskaitot EaseAccess24 logrīku. Mēs pievienojam norādes, kas lūdz tos atstāt mūsu skriptu vienu, taču dažiem iestatījumiem joprojām ir nepieciešama manuāla izslēgšana. Mēs nekad jūsu vietā nemainām cita spraudņa iestatījumus.",
     "noneTitle": "Nav konstatēti zināmi kešatmiņas vai optimizācijas spraudņi",
-    "noneBody": "Mēs neatradām nevienu no mūsu atpazītajiem kešatmiņas/optimizācijas spraudņiem. Ja logrīks joprojām netiek rādīts, palaidiet savienojuma cilnē “Veselības pārbaude”.",
-    "cloudflareCdnNote": "Piezīme: Cloudflare, kas darbojas kā CDN (Rocket Loader, Auto Minify malā), nevar tikt konstatēts no jūsu vietnes. Ja izmantojat Cloudflare, pārbaudiet arī šos iestatījumus.",
+    "noneBody": "Mēs nevarējām atrast nevienu no kešatmiņas/optimizācijas spraudņiem, ko mēs atpazīstam. Ja logrīks joprojām netiek rādīts, palaidiet savienojuma cilnē sadaļu Veselības pārbaude.",
+    "cloudflareCdnNote": "Piezīme: Cloudflare, kas darbojas kā CDN (Rocket Loader, Auto Minify uz robežas), nevar tikt noteikta no jūsu vietnes. Ja izmantojat Cloudflare, pārbaudiet arī tos iestatījumus.",
     "detectedTitle": "Konstatētie spraudņi",
     "recommendationLabel": "Ieteikums",
     "modifiedTitle": "Logrīka skripts var tikt modificēts",
-    "modifiedBody": "Kešatmiņas/optimizācijas spraudnis ir aktīvs, un jūsu pēdējā veselības pārbaude parādīja, ka logrīka skripts nebija lapā. Lietojiet zemāk esošo izslēgšanu un palaidiet pārbaudi vēlreiz.",
+    "modifiedBody": "Kešatmiņas/optimizācijas spraudnis ir aktīvs, un jūsu pēdējā veselības pārbaude konstatēja, ka logrīka skripts nebija lapā. Lietojiet zemāk esošo izslēgšanu un palaidiet pārbaudi vēlreiz.",
     "plugins": {
       "wp-rocket": {
-        "recommendation": "WP Rocket → File Optimization sadaļā izslēdziet “widget.easeaccess24.com/sdk.js” no JavaScript minifikācijas, apvienošanas un “Delay JavaScript execution”. WP Rocket arī ievēro mūsu data-no-minify norādi."
+        "recommendation": "Sadaļā WP Rocket → File Optimization, izslēdziet “widget.easeaccess24.com/sdk.js” no JavaScript minificēšanas, apvienošanas un “Delay JavaScript execution”. WP Rocket arī ievēro mūsu data-no-minify norādi."
       },
       "litespeed": {
-        "recommendation": "LiteSpeed Cache → Page Optimization → JS Settings sadaļā pievienojiet “widget.easeaccess24.com” pie JS Excludes (un Deferred/Delayed excludes, ja tie ir iespējoti)."
+        "recommendation": "Sadaļā LiteSpeed Cache → Page Optimization → JS Settings pievienojiet “widget.easeaccess24.com” pie JS Excludes (un Deferred/Delayed excludes, ja ir iespējoti)."
       },
       "autoptimize": {
-        "recommendation": "Autoptimize → JS, Images... sadaļā pievienojiet “easeaccess24” pie “Exclude scripts from Autoptimize”. Autoptimize arī ievēro mūsu data-no-optimize norādi."
+        "recommendation": "Sadaļā Autoptimize → JS, Images..., pievienojiet “easeaccess24” pie “Exclude scripts from Autoptimize”. Autoptimize arī ievēro mūsu data-no-optimize norādi."
       },
       "perfmatters": {
-        "recommendation": "Perfmatters → Assets sadaļā pievienojiet “easeaccess24” pie izslēgumiem “Delay JavaScript” un jebkurām skriptu atlikšanas/minifikācijas opcijām."
+        "recommendation": "Sadaļā Perfmatters → Assets, pievienojiet “easeaccess24” pie izslēgumiem priekš “Delay JavaScript” un visiem skriptu atlikšanas/minificēšanas opcijām."
       },
       "asset-cleanup": {
-        "recommendation": "Asset CleanUp sadaļā pārliecinieties, ka EaseAccess24 skripts nav izņemts jūsu lapās, un izslēdziet to no jebkurām JS minifikācijas/apvienošanas/atlikšanas opcijām."
+        "recommendation": "Sadaļā Asset CleanUp pārliecinieties, ka EaseAccess24 skripts nav izņemts no jūsu lapām, un izslēdziet to no jebkādām JS minificēšanas/apvienošanas/atlikšanas opcijām."
       },
       "cloudflare": {
-        "recommendation": "Cloudflare sadaļā izslēdziet logrīka skriptu no Rocket Loader (mūsu tag jau iestata data-cfasync=\"false\") un no Auto Minify/Mirage, ja tie ir iespējoti skriptiem."
+        "recommendation": "Sadaļā Cloudflare izslēdziet logrīka skriptu no Rocket Loader (mūsu tag already iestata data-cfasync=\"false\") un no Auto Minify/Mirage, ja ir iespējots skriptiem."
       }
     }
   },
   "eventLog": {
     "title": "Aktivitātes žurnāls",
-    "intro": "Īsa veselības pārbaudes un spraudņu notikumu vēsture. Šis žurnāls paliek jūsu vietnē un nekad netiek automātiski nosūtīts nekur.",
-    "empty": "Vēl nav reģistrēti notikumi. Palaidiet veselības pārbaudi savienojuma cilnē, lai ierakstītu vienu.",
+    "intro": "Īsa veselības pārbaužu un spraudņu notikumu vēsture. Šis žurnāls paliek jūsu vietnē un nekad netiek automātiski nosūtīts nekur.",
+    "empty": "Vēl nav reģistrēti notikumi. Palaidiet Veselības pārbaudi cilnē Savienojums, lai to ierakstītu.",
     "clear": "Notīrīt žurnālu",
     "clearConfirm": "Notīrīt visus reģistrētos notikumus?",
     "confirmClear": "Jā, notīrīt",
@@ -207,7 +205,7 @@
       "deactivated": "Spraudnis deaktivizēts"
     },
     "relative": {
-      "justNow": "Tikko",
+      "justNow": "Tikai tagad",
       "minutesAgo": "{{n}} minūtes atpakaļ",
       "hoursAgo": "{{n}} stundas atpakaļ",
       "daysAgo": "{{n}} dienas atpakaļ"
@@ -215,74 +213,73 @@
   },
   "supportReport": {
     "title": "Atbalsta ziņojums",
-    "intro": "Ģenerējiet ziņojumu, ko varat kopīgot ar EaseAccess24 atbalsta dienestu. Tas ietver jūsu vidi, savienojuma statusu, konstatētos kešatmiņas spraudņus un nesenos notikumus. Jūsu logrīka atslēga ir maskēta, un personiskie dati netiek iekļauti.",
-    "privacyNote": "Nekas netiek sūtīts automātiski. Nav iesaistīta servera — jūs kopējat vai lejupielādējat zemāk esošo ziņojumu un kopīgojat to pats.",
+    "intro": "Ģenerējiet ziņojumu, ko varat kopīgot ar EaseAccess24 atbalsta komandu. Tas ietver jūsu vidi, savienojuma statusu, konstatētos kešatmiņas spraudņus un jaunākos notikumus. Jūsu logrīka atslēga ir maskēta, un personas dati netiek iekļauti.",
+    "privacyNote": "Nekas netiek nosūtīts automātiski. Nav servera — jūs kopējat vai lejupielādējat ziņojumu zemāk un kopīgojat to pats.",
     "generate": "Ģenerēt ziņojumu",
-    "regenerate": "Atkārtoti ģenerēt",
+    "regenerate": "Ģenerēt vēlreiz",
     "generating": "Notiek ģenerēšana…",
-    "previewLabel": "Ziņojuma priekšskatījums (tieši tas, kas tiks kopēts vai lejupielādēts)",
+    "previewLabel": "Ziņojuma priekšskatījums (tieši tas, ko kopēs vai lejupielādēs)",
     "copy": "Kopēt",
-    "copied": "Kopēts",
-    "copyFailed": "Kopēšana nav pieejama šajā pārlūkprogrammā. Izmantojiet lejupielādi.",
+    "copied": "Nokopēts",
+    "copyFailed": "Kopēšana nav pieejama šajā pārlūkprogrammā. Izmantojiet Lejupielādēt vietā.",
     "downloadTxt": "Lejupielādēt .txt",
     "downloadJson": "Lejupielādēt .json",
-    "generateError": "Mēs nevarējām izveidot pārskatu. Lūdzu, atjaunojiet lapu un mēģiniet vēlreiz."
+    "generateError": "Mēs nevarējām izveidot atskaiti. Lūdzu, pārlādējiet lapu un mēģiniet vēlreiz."
   },
   "pluginInfo": {
-    "title": "Informācija par spraudni",
+    "title": "Spraudņa informācija",
     "version": "Versija",
     "wpCompat": "WordPress saderība",
-    "phpMin": "PHP minimālais",
-    "testedUpTo": "Testēts līdz",
+    "phpMin": "PHP minimums",
+    "testedUpTo": "Pārbaudīts līdz",
     "supportStatus": "Atbalsta statuss",
     "supportStatusActive": "Aktīvi atbalstīts"
   },
   "faq": {
     "title": "Palīdzība un FAQ",
-    "intro": "Atbildes uz bieži uzdotajiem jautājumiem par logrīka pievienošanu un problēmu novēršanu.",
+    "intro": "Atbildes uz bieži uzdotiem jautājumiem par logrīka pievienošanu un problēmu novēršanu.",
     "learnMore": "Uzzināt vairāk",
     "items": {
       "findKey": {
         "q": "Kur es varu atrast savu logrīka atslēgu?",
-        "a": "Pierakstieties vietnē app.easeaccess24.com, atveriet sadaļu Integrēt un kopējiet savu logrīka atslēgu (vai pilnu koda fragmentu). Ievietojiet to cilnē Savienojums — mēs izvilksim atslēgu no koda fragmenta jūsu vietā."
+        "a": "Pierakstieties vietnē app.easeaccess24.com, atveriet sadaļu Integrēt un kopējiet savu logrīka atslēgu (vai pilno skripta fragmentu). Ievietojiet to cilnē Savienojums — mēs izvilksim atslēgu no fragmenta jūsu vietā."
       },
       "notShowing": {
         "q": "Logrīks netiek rādīts — ko man pārbaudīt?",
-        "a": "Veiciet savienojuma cilnē veselības pārbaudi. Tā parādīs, vai skripts ir pievienots, sasniedzams un vai logrīks faktiski parādās. Visbiežākās problēmas ir domēna nenorādīšana informācijas panelī, nepareiza atslēga vai kešošanas spraudnis, kas noņem skriptu."
+        "a": "Veiciet veselības pārbaudi cilnē Savienojums. Tā jums pastāstīs, vai skripts ir pievienots, vai tas ir sasniedzams, un vai logrīks faktiski parādās. Visbiežākās problēmas ir tās, ka domēns nav pievienots jūsu informācijas panelī, nepareiza atslēga vai kešošanas spraudnis, kas izņem skriptu."
       },
       "cachePlugin": {
         "q": "Es izmantoju kešošanas vai optimizācijas spraudni. Vai tas radīs konfliktu?",
-        "a": "Tas var radīt. Mūsu skripta tag pieprasa bieži lietotiem spraudņiem to apiet, taču dažām konfigurācijām joprojām ir nepieciešama manuāla izslēgšana. Pārbaudiet cilni Saderība, lai iegūtu ieteikumus katram spraudnim. Mēs nekad nemainām cita spraudņa iestatījumus jūsu vietā."
+        "a": "Tas var radīt. Mūsu skripta atzīme lūdz kopīgos spraudņus to apiet, taču dažām konfigurācijām joprojām ir nepieciešama manuāla izslēgšana. Pārbaudiet cilni Saderība, lai saņemtu ieteikumus par katru spraudni. Mēs nekad nemainīsim cita spraudņa iestatījumus jūsu vietā."
       },
       "stagingLocalhost": {
-        "q": "Vai logrīks darbojas izstrādes (staging) vai localhost vidēs?",
-        "a": "Logrīks parādās tikai domēnos, kas ir autorizēti jūsu logrīka atslēgai, tāpēc tas parasti netiks rādīts izstrādes vai localhost vidē. Tas ir paredzēts un nav spraudņa kļūda — testējiet savā tiešsaistes, autorizētajā domēnā."
+        "q": "Vai logrīks darbojas izstrādes vidē vai localhost?",
+        "a": "Logrīks tiek attēlots tikai domēnos, kas ir autorizēti jūsu logrīka atslēgai, tāpēc tas parasti neparādīsies izstrādes vidē vai localhost. Tas ir paredzēts un nav spraudņa kļūda — testējiet savā tiešraidē, autorizētajā domēnā."
       },
       "dataPrivacy": {
         "q": "Kādus datus šis spraudnis glabā vai nosūta?",
-        "a": "Spraudnis glabā jūsu logrīka atslēgu un iestatījumus jūsu pašu vietnē, kā arī īsu lokālu darbību žurnālu. Tas neveic automātiskus zvanus uz EaseAccess24, izņemot logrīka skripta pievienošanu un, veicot veselības pārbaudi, pārbaudot, vai skripts ir sasniedzams. Atbalsta pārskati tiek kopīgoti tikai ar jums, manuāli."
+        "a": "Spraudnis glabā jūsu logrīka atslēgu un iestatījumus jūsu pašu vietnē, kā arī īsu lokālo darbību žurnālu. Tas neveic automātiskus zvanus uz EaseAccess24, izņemot logrīka skripta pievienošanu un, veicot veselības pārbaudi, testējot, vai skripts ir sasniedzams. Atbalsta atskaites tiek kopīgotas tikai ar jums, manuāli."
       },
       "removeData": {
         "q": "Kā es varu noņemt visus spraudņa datus?",
-        "a": "Jūsu konfigurācija tiek saglabāta, kad atspējojat, lai jūs varētu atkārtoti aktivizēt vēlāk. Lai noņemtu visu, iespējojiet “Noņemt visus EaseAccess24 datus” pirms spraudņa dzēšanas, pēc tam dzēsiet to no spraudņu ekrāna."
+        "a": "Jūsu konfigurācija tiek saglabāta, kad deaktivizējat, lai vēlāk varētu atkārtoti aktivizēt. Lai noņemtu visu, iespējojiet “Noņemt visus EaseAccess24 datus” pirms spraudņa dzēšanas, pēc tam dzēsiet to no spraudņu ekrāna."
       }
     }
   },
   "settings": {
     "languageLabel": "Valoda",
-    "languageAria": "Interfeisa valoda",
-    "dataTitle": "Dati un privātums",
+    "dataTitle": "Dati un konfidencialitāte",
     "removeDataLabel": "Noņemt visus EaseAccess24 datus, kad spraudnis tiek dzēsts",
-    "removeDataHelp": "Ja iespējots, dzēšot spraudni, tiek noņemta arī jūsu logrīka atslēga, iestatījumi un darbību žurnāls. Atstājiet to izslēgtu, lai saglabātu savu konfigurāciju turpmākai atkārtotai instalēšanai. Jūsu tēmas faili nekad netiek mainīti.",
+    "removeDataHelp": "Ja iespējots, dzēšot spraudni, tiek noņemta arī jūsu logrīka atslēga, iestatījumi un darbību žurnāls. Atstājiet to izslēgtu, lai saglabātu savu konfigurāciju turpmākai atkārtotai instalēšanai. Jūsu tēmas faili nekad netiek aizskarti.",
     "saved": "Saglabāts",
     "saveError": "Mēs nevarējām saglabāt jūsu iestatījumus. Pārbaudiet savu savienojumu un mēģiniet vēlreiz.",
-    "loadError": "Mēs nevarējām ielādēt jūsu iestatījumus. Lūdzu, atjaunojiet lapu un mēģiniet vēlreiz."
+    "loadError": "Mēs nevarējām ielādēt jūsu iestatījumus. Lūdzu, pārlādējiet lapu un mēģiniet vēlreiz."
   },
   "footer": {
-    "tagline": "Padarot tīmekli pieejamu visiem.",
+    "tagline": "Palīdzam padarīt jūsu vietni pieejamāku.",
     "madeBy": "Izveidojis EaseAccess24",
     "platform": "EaseAccess24 platforma",
-    "docs": "Atbalsts un dokumentācija",
+    "docs": "Atbalsts",
     "privacyLink": "Privātuma politika",
     "reportIssueLink": "Ziņot par problēmu",
     "copyright": "© {{year}} EaseAccess24"

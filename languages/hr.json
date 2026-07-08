@@ -7,20 +7,19 @@
   "common": {
     "appName": "EaseAccess24 Pristupačnost",
     "appNameShort": "EaseAccess24",
-    "saving": "Spremanje…",
+    "saving": "Sprema se…",
     "cancel": "Odustani",
-    "retry": "Pokušaj ponovno",
     "updateKey": "Ažuriraj ključ"
   },
   "onboarding": {
-    "title": "Povežite svoje mjesto s EaseAccess24",
-    "subtitle": "Zalijepite svoj ključ widgeta (ili cijeli isječak skripte) kako biste dodali widget pristupačnosti na ovu stranicu.",
+    "title": "Povežite svoju stranicu s EaseAccess24",
+    "subtitle": "Zalijepite svoj ključ widgeta (ili cijeli isječak koda) kako biste dodali widget pristupačnosti na ovu stranicu.",
     "emptyTitle": "Još nemate ključ widgeta?",
-    "emptyBody": "Stvorite svoju organizaciju, odaberite plan i dodajte ovu domenu u EaseAccess24. Dobit ćete ključ widgeta koji ćete ovdje zalijepiti.",
-    "getKeyCta": "Preuzmi svoj ključ widgeta",
-    "fieldLabel": "Ključ widgeta ili isječak skripte",
-    "helper": "Zalijepite samo ključ (na primjer ABC123) ili cijeli isječak <script> — mi ćemo izvući ključ iz njega.",
-    "placeholder": "ABC123 —ili— <script async src=\"https://widget.easeaccess24.com/sdk.js?key=ABC123\"></script>",
+    "emptyBody": "Stvorite svoju organizaciju, odaberite plan i dodajte ovu domenu u EaseAccess24. Dobit ćete ključ widgeta za lijepljenje ovdje.",
+    "getKeyCta": "Dohvati svoj ključ widgeta",
+    "fieldLabel": "Ključ widgeta ili isječak koda",
+    "helper": "Zalijepite samo ključ (na primjer ABC123) ili cijeli <script> isječak — mi ćemo izvući ključ iz njega.",
+    "placeholder": "ABC123  —ili—  <script async src=\"https://widget.easeaccess24.com/sdk.js?key=ABC123\"></script>",
     "whereLink": "Gdje to mogu pronaći?",
     "connectCta": "Poveži i provjeri",
     "revealKey": "Otkrij",
@@ -28,27 +27,27 @@
     "copyKey": "Kopiraj",
     "copied": "Kopirano",
     "errors": {
-      "empty": "Prvo zalijepite svoj ključ widgeta ili isječak skripte.",
-      "noKey": "Nismo mogli pronaći ključ widgeta u tome. Zalijepite samo ključ ili cijeli isječak skripte koji ga sadrži.",
-      "network": "Nismo uspjeli spremiti vaš ključ. Provjerite svoju vezu i pokušajte ponovno."
+      "empty": "Prvo zalijepite svoj ključ widgeta ili isječak koda.",
+      "noKey": "Nismo mogli pronaći ključ widgeta u tome. Zalijepite samo ključ ili cijeli isječak koda koji ga sadrži.",
+      "network": "Nismo mogli spremiti vaš ključ. Provjerite svoju vezu i pokušajte ponovno."
     }
   },
   "stepper": {
     "aria": "Napredak postavljanja",
     "paste": "Zalijepi",
-    "validate": "Potvrdi",
+    "validate": "Provjeri",
     "healthCheck": "Provjera zdravlja",
     "done": "Gotovo",
     "state": {
       "done": "završeno",
       "current": "trenutni korak",
-      "upcoming": "nadolazeći"
+      "upcoming": "predstojeći"
     }
   },
   "dashboard": {
     "statusBadge": "Povezano",
     "title": "Veza",
-    "subtitle": "Vaš ključ widgeta je spremljen. Pokrenite Provjeru zdravlja kako biste potvrdili da se widget učitava i vidljiv je na vašoj stranici.",
+    "subtitle": "Vaš ključ widgeta je spremljen. Pokrenite Provjeru zdravlja kako biste potvrdili da se widget učitava i da je vidljiv na vašoj stranici.",
     "keyLabel": "Ključ widgeta",
     "domainLabel": "Domena",
     "lastCheckLabel": "Posljednja provjera zdravlja",
@@ -59,99 +58,98 @@
     "heading": "Provjera zdravlja",
     "intro": "Ovo se pokreće u vašem pregledniku: učitava vašu stranicu i provjerava pojavljuje li se widget. Ništa se ne šalje u EaseAccess24.",
     "run": "Pokreni Provjeru zdravlja",
-    "rerun": "Pokreni ponovno",
-    "running": "Pokretanje Provjere zdravlja…",
+    "running": "Pokreće se Provjera zdravlja…",
     "resultsHeading": "Rezultat",
     "checklistHeading": "Što smo provjerili",
     "advisoriesHeading": "Također vrijedi provjeriti",
     "timeoutTitle": "Nismo mogli dovršiti provjeru",
-    "timeoutBody": "Provjera nije završila na vrijeme. Ovo se može dogoditi ako je stranica sporo učitavala ili ju je blokirala sigurnosna postavka. Pokušajte ponovno."
+    "timeoutBody": "Provjera nije završila na vrijeme. Ovo se može dogoditi ako je stranica sporo učitavala ili je to blokirala sigurnosna postavka. Pokušajte ponovno."
   },
   "checklist": {
     "keySaved": "Ključ widgeta spremljen",
-    "sdkTag": "Skripta widgeta dodana vašoj web-lokaciji",
-    "sdkReachable": "Skripta widgeta je dostupna",
+    "sdkTag": "Widget skripta dodana na vaše web-mjesto",
+    "sdkReachable": "Widget skripta je dostupna",
     "widgetVisible": "Widget se pojavljuje i vidljiv je",
     "singleInstance": "Točno jedan widget na stranici",
     "status": {
       "pass": "prošao",
-      "fail": "nije prošao",
+      "fail": "nije uspio",
       "warn": "upozorenje",
       "info": "informacija",
       "na": "nije primjenjivo"
     }
   },
   "actions": {
-    "openDashboard": "Otvori EaseAccess24 nadzornu ploču",
-    "retry": "Pokreni provjeru ponovno"
+    "openDashboard": "Otvorite EaseAccess24 Nadzornu ploču",
+    "retry": "Ponovno pokreni provjeru"
   },
   "diagnostics": {
     "whyLabel": "Zašto",
     "fixLabel": "Kako popraviti",
     "OK": {
       "title": "Vaš widget je aktivan",
-      "why": "Učitana je vaša web-lokacija i widget za pristupačnost se pojavio i vidljiv je.",
-      "fix": "Nema što raditi — sve je postavljeno."
+      "why": "Učitana su vaša web-mjesta i pojavio se widget za pristupačnost te je vidljiv.",
+      "fix": "Nema potrebe za radnjama - sve je spremno."
     },
     "DOMAIN_NOT_ALLOWED": {
       "title": "Domena nije dopuštena / ključ nije ovlašten",
-      "why": "Učitana je skripta widgeta, ali je prijavila da ova domena nije ovlaštena za vaš Ključ widgeta. Ista poruka pokriva pogrešan ključ i domenu koja još nije dodana.",
-      "fix": "Otvorite svoju EaseAccess24 nadzornu ploču, potvrdite da je ova točna domena dodana pod vašom organizacijom, provjerite podudara li se Ključ widgeta, a zatim ponovno pokrenite provjeru."
+      "why": "Widget skripta je učitana, ali je javila da ova domena nije ovlaštena za vaš ključ widgeta. Ista poruka pokriva i pogrešan ključ te domenu koja još nije dodana.",
+      "fix": "Otvorite svoju EaseAccess24 Nadzornu ploču, potvrdite da je ova točna domena dodana pod vašom organizacijom, provjerite podudara li se ključ widgeta, a zatim ponovno pokrenite provjeru."
     },
     "SDK_UNREACHABLE": {
-      "title": "Skripta widgeta se nije mogla učitati",
-      "why": "Vaš preglednik nije mogao dohvatiti URL skripte widgeta. Ovo je obično problem s mrežom, CDN-om ili predmemorijom, a ne problem s konfiguracijom.",
-      "fix": "Provjerite mrežu/CDN vaše web-lokacije, očistite sve predmemorije i ponovno pokrenite provjeru."
+      "title": "Widget skripta nije se mogla učitati",
+      "why": "Vaš preglednik nije mogao pristupiti URL-u widget skripte. Ovo je obično problem s mrežom, CDN-om ili predmemorijom, a ne problem s konfiguracijom.",
+      "fix": "Provjerite mrežu/CDN vaše web-mjesto, očistite sve predmemorije i ponovno pokrenite provjeru."
     },
     "WIDGET_NOT_INITIALIZED": {
       "title": "Widget se nije učitao",
-      "why": "Skripta widgeta je na mjestu, ali se nije pojavio vidljivi widget i nije prijavljen nijedan poseban razlog. Uobičajeni uzroci: domena još nije dodana, ključ je pogrešan ili je skripta blokirana.",
-      "fix": "Potvrdite ovu domenu i Ključ widgeta u svojoj EaseAccess24 nadzornoj ploči, pobrinite se da ništa ne blokira skriptu, a zatim ponovno pokrenite provjeru."
+      "why": "Widget skripta je na mjestu, ali se nije pojavio vidljivi widget i nije prijavljen nikakav poseban razlog. Uobičajeni uzroci: domena još nije dodana, ključ je pogrešan ili je skripta blokirana.",
+      "fix": "Potvrdite ovu domenu i ključ widgeta u svojoj EaseAccess24 Nadzornoj ploči, provjerite da ništa ne blokira skriptu, a zatim ponovno pokrenite provjeru."
     },
     "DUPLICATE_WIDGET": {
-      "title": "Otkriven je duplikat widgeta",
-      "why": "Na stranici se učitava više od jednog widgeta. To obično znači da je SDK dodan dvaput — na primjer, i ovim dodatkom i ručnim isječkom u vašoj temi.",
-      "fix": "Zadržite samo jedan način. Ako ste dodali skriptu svojoj temi ili drugom dodatku, uklonite je i dopustite ovom dodatku da se pobrine za to. Nikada ne uklanjamo skripte umjesto vas."
+      "title": "Otkriven je duplicirani widget",
+      "why": "Na stranici se učitava više od jednog widgeta. To obično znači da je SDK dodan dvaput - na primjer, i ovim dodatkom i ručnim isječkom u vašoj temi.",
+      "fix": "Zadržite samo jednu metodu. Ako ste skriptu dodali u svoju temu ili drugi dodatak, uklonite je i neka ovaj dodatak upravlja time. Nikada ne uklanjamo skripte umjesto vas."
     },
     "POSSIBLE_DUPLICATE_WIDGET": {
-      "title": "Mogući duplikat widgeta",
-      "why": "Pronašli smo znakove druge skripte widgeta (na primjer, dodatnu oznaku skripte), ali nismo mogli potvrditi drugi vidljivi widget — predmemorija to može sakriti.",
-      "fix": "Pobrinite se da je widget dodan samo jednom. Ako imate ručni isječak u svojoj temi, uklonite ga i oslonite se na ovaj dodatak."
+      "title": "Mogući duplicirani widget",
+      "why": "Pronašli smo znakove druge widget skripte (na primjer, dodatni oznaku skripte), ali nismo mogli potvrditi drugi vidljivi widget - predmemorija to može sakriti.",
+      "fix": "Provjerite je li widget dodan samo jednom. Ako imate ručni isječak u svojoj temi, uklonite ga i oslonite se na ovaj dodatak."
     },
     "OPTIMIZER_INTERFERENCE": {
-      "title": "Dodatak za predmemoriju ili optimizaciju možda ometa",
-      "why": "Ključ widgeta je spremljen, ali skripta widgeta nije bila prisutna na stranici — dodatak za predmemoriju/optimizaciju ju je možda uklonio ili izmijenio.",
-      "fix": "Isključite EaseAccess24 skriptu iz predmemorije/optimizacije. Detaljne preporuke po dodatku uskoro će biti dostupne u odjeljku Kompatibilnost."
+      "title": "Dodatak za predmemoriju ili optimizaciju može ometati",
+      "why": "Ključ widgeta je spremljen, ali widget skripta nije bila prisutna na stranici - dodatak za predmemoriju/optimizaciju ju je možda uklonio ili izmijenio.",
+      "fix": "Isključite EaseAccess24 skriptu iz predmemorije/optimizacije. Detaljne preporuke za svaki dodatak uskoro će biti dostupne u odjeljku Kompatibilnost."
     },
     "STAGING_DETECTED": {
-      "title": "Otkriveno staging okruženje",
-      "why": "Ovo izgleda kao staging ili razvojna web-lokacija. Widget se prikazuje samo na domenama ovlaštenim u EaseAccess24, tako da se možda neće pojaviti ovdje.",
-      "fix": "Ovo je očekivano na staging okruženju. Dodajte ovu domenu u svoju nadzornu ploču ako želite da se widget pojavi ovdje, ili testirajte na svojoj živoj domeni."
+      "title": "Otkriveno je staging okruženje",
+      "why": "Ovo izgleda kao staging ili razvojno web-mjesto. Widget se prikazuje samo na domenama ovlaštenim u EaseAccess24, tako da se možda neće pojaviti ovdje.",
+      "fix": "Ovo je očekivano na staging okruženju. Dodajte ovu domenu u svoju Nadzornu ploču ako želite da se widget pojavi ovdje, ili testirajte na svojoj web-lokaciji uživo."
     },
     "LOCALHOST_DETECTED": {
-      "title": "Otkriveno lokalno okruženje",
-      "why": "Ova web-lokacija radi na localhostu. Widget se prikazuje samo na domenama ovlaštenim u EaseAccess24, tako da se neće pojaviti lokalno.",
-      "fix": "Ovo je očekivano lokalno. Testirajte na svojoj živoj, ovlaštenoj domeni da biste vidjeli widget."
+      "title": "Otkriveno je lokalno okruženje",
+      "why": "Ovo web-mjesto radi na localhostu. Widget se prikazuje samo na domenama ovlaštenim u EaseAccess24, tako da se neće pojaviti lokalno.",
+      "fix": "Ovo je očekivano lokalno. Testirajte na svojoj web-lokaciji uživo, ovlaštenoj domeni da biste vidjeli widget."
     },
     "KEY_INVALID": {
       "title": "Ključ widgeta nije prihvaćen",
       "why": "Ključ widgeta je odbijen.",
-      "fix": "Provjerite ključ u svojoj EaseAccess24 nadzornoj ploči i ponovno ga spremite."
+      "fix": "Provjerite ključ u svojoj EaseAccess24 Nadzornoj ploči i ponovno ga spremite."
     },
     "SUBSCRIPTION_EXPIRED": {
       "title": "Pretplata je istekla",
-      "why": "Pretplata za ovaj Ključ widgeta više nije aktivna.",
-      "fix": "Obnovite svoj plan na EaseAccess24 nadzornoj ploči."
+      "why": "Pretplata za ovaj ključ widgeta više nije aktivna.",
+      "fix": "Obnovite svoj plan u EaseAccess24 Nadzornoj ploči."
     },
     "ORG_DISABLED": {
-      "title": "Organizacija onemogućena",
+      "title": "Organizacija je onemogućena",
       "why": "Organizacija za ovaj ključ widgeta je onemogućena.",
-      "fix": "Kontaktirajte podršku EaseAccess24 ili provjerite svoju nadzornu ploču."
+      "fix": "Kontaktirajte EaseAccess24 podršku ili provjerite svoju Nadzornu ploču."
     }
   },
   "nav": {
-    "aria": "Odjeljci EaseAccess24",
-    "connection": "Povezivanje",
+    "aria": "EaseAccess24 odjeljci",
+    "connection": "Veza",
     "compatibility": "Kompatibilnost",
     "activity": "Aktivnost",
     "support": "Podrška",
@@ -159,74 +157,74 @@
   },
   "compatibility": {
     "title": "Kompatibilnost predmemorije i optimizacije",
-    "intro": "Dodaci za predmemoriju i optimizaciju mogu odgoditi, kombinirati ili ukloniti skripte — uključujući widget EaseAccess24. Dodajemo tragove koji ih mole da našu skriptu ostave na miru, ali neki postavci još uvijek trebaju ručnu iznimku. Nikada ne mijenjamo postavke drugog dodatka za vas.",
+    "intro": "Dodaci za predmemoriju i optimizaciju mogu odgoditi, kombinirati ili ukloniti skripte — uključujući EaseAccess24 widget. Dodajemo tragove koji ih mole da našu skriptu ostave na miru, ali neki postavci i dalje zahtijevaju ručno isključivanje. Nikada ne mijenjamo postavke drugog dodatka za vas.",
     "noneTitle": "Nisu otkriveni poznati dodaci za predmemoriju ili optimizaciju",
-    "noneBody": "Nismo pronašli nijedan od dodataka za predmemoriju/optimizaciju koje prepoznajemo. Ako se widget i dalje ne prikazuje, pokrenite provjeru zdravlja na kartici Povezivanje.",
+    "noneBody": "Nismo pronašli niti jedan dodatak za predmemoriju/optimizaciju koji prepoznajemo. Ako se widget i dalje ne pojavljuje, pokrenite provjeru zdravlja na kartici Veza.",
     "cloudflareCdnNote": "Napomena: Cloudflare koji radi kao CDN (Rocket Loader, Auto Minify na rubu) ne može se otkriti s vaše stranice. Ako koristite Cloudflare, provjerite i te postavke.",
     "detectedTitle": "Otkriveni dodaci",
     "recommendationLabel": "Preporuka",
     "modifiedTitle": "Skripta widgeta se možda mijenja",
-    "modifiedBody": "Aktivan je dodatak za predmemoriju/optimizaciju, a vaša posljednja provjera zdravlja otkrila je da skripta widgeta nije na stranici. Primijenite isključenje u nastavku i ponovno pokrenite provjeru.",
+    "modifiedBody": "Aktivan je dodatak za predmemoriju/optimizaciju, a vaša posljednja provjera zdravlja utvrdila je da skripta widgeta nije bila na stranici. Primijenite isključenje u nastavku i ponovno pokrenite provjeru.",
     "plugins": {
       "wp-rocket": {
-        "recommendation": "U WP Rocket → Optimizacija datoteka, isključite “widget.easeaccess24.com/sdk.js” iz smanjivanja JavaScripta, kombiniranja i “Odgodi izvršavanje JavaScripta”. WP Rocket također poštuje naš trag data-no-minify."
+        "recommendation": "U WP Rocket → Optimizacija datoteka, isključite “widget.easeaccess24.com/sdk.js” iz minifikacije JavaScripta, kombiniranja i „Odgodi izvršavanje JavaScripta“. WP Rocket također uvažava naš trag data-no-minify."
       },
       "litespeed": {
-        "recommendation": "U LiteSpeed Cache → Optimizacija stranice → JS postavke, dodajte “widget.easeaccess24.com” u JS iznimke (i odgodu/kasnije iznimke ako su omogućene)."
+        "recommendation": "U LiteSpeed Cache → Optimizacija stranice → JS postavke, dodajte “widget.easeaccess24.com” u JS iznimke (i iznimke odgode/odgode ako su omogućene)."
       },
       "autoptimize": {
-        "recommendation": "U Autoptimize → JS, slike..., dodajte “easeaccess24” u “Isključi skripte iz Autoptimize”. Autoptimize također poštuje naš trag data-no-optimize."
+        "recommendation": "U Autoptimize → JS, slike..., dodajte “easeaccess24” u „Isključi skripte iz Autoptimize“. Autoptimize također uvažava naš trag data-no-optimize."
       },
       "perfmatters": {
-        "recommendation": "U Perfmatters → Imovina, dodajte “easeaccess24” u iznimke za “Odgodi JavaScript” i bilo koje opcije odgode/smanjivanja skripte."
+        "recommendation": "U Perfmatters → Imovina, dodajte “easeaccess24” u isključenja za „Odgodi JavaScript“ i sve opcije odgode/minifikacije skripti."
       },
       "asset-cleanup": {
-        "recommendation": "U Asset CleanUp, provjerite da skripta EaseAccess24 nije uklonjena s vaših stranica i isključite je iz bilo koje opcije smanjivanja/kombiniranja/odgode JS-a."
+        "recommendation": "U Asset CleanUp, pobrinite se da EaseAccess24 skripta nije onemogućena na vašim stranicama i isključite je iz bilo kojih opcija minifikacije/kombiniranja/odgode JS-a."
       },
       "cloudflare": {
-        "recommendation": "U Cloudflareu, isključite skriptu widgeta iz Rocket Loadera (naša oznaka već postavlja data-cfasync=\"false\") i iz Auto Minify/Mirage ako je omogućeno za skripte."
+        "recommendation": "U Cloudflareu, isključite skriptu widgeta iz Rocket Loadera (naša oznaka već postavlja data-cfasync=\"false\") i iz automatskog minifikacije/Miragea ako je omogućen za skripte."
       }
     }
   },
   "eventLog": {
     "title": "Dnevnik aktivnosti",
-    "intro": "Kratka povijest provjera zdravlja i događaja dodataka. Ovaj zapisnik ostaje na vašoj stranici i nikada se automatski ne šalje nigdje.",
-    "empty": "Još nema zabilježenih događaja. Pokrenite provjeru zdravlja na kartici Povezivanje da biste zabilježili jedan.",
-    "clear": "Obriši zapisnik",
-    "clearConfirm": "Obriši sve zabilježene događaje?",
-    "confirmClear": "Da, obriši",
+    "intro": "Kratka povijest provjera zdravlja i događaja dodataka. Ovaj zapisnik ostaje na vašoj web-lokaciji i nikada se automatski ne šalje nigdje.",
+    "empty": "Još nema zabilježenih događaja. Pokrenite provjeru zdravlja na kartici Veza da biste zabilježili jedan.",
+    "clear": "Očisti zapisnik",
+    "clearConfirm": "Očistiti sve zabilježene događaje?",
+    "confirmClear": "Da, očisti",
     "cancel": "Odustani",
-    "cleared": "Dnevnik aktivnosti je obrisan.",
+    "cleared": "Dnevnik aktivnosti je očišćen.",
     "loadError": "Nismo mogli učitati dnevnik aktivnosti. Ponovno učitajte stranicu i pokušajte ponovno.",
     "loading": "Učitavanje aktivnosti...",
     "types": {
       "health_check": "Provjera zdravlja",
       "key_saved": "Ključ widgeta je spremljen",
       "key_updated": "Ključ widgeta je ažuriran",
-      "activated": "Dodatak aktiviran",
-      "deactivated": "Dodatak deaktiviran"
+      "activated": "Dodatak je aktiviran",
+      "deactivated": "Dodatak je deaktiviran"
     },
     "relative": {
       "justNow": "Upravo sada",
-      "minutesAgo": "{{n}} minuta prije",
-      "hoursAgo": "{{n}} sati prije",
-      "daysAgo": "{{n}} dana prije"
+      "minutesAgo": "prije {{n}} minuta",
+      "hoursAgo": "prije {{n}} sati",
+      "daysAgo": "prije {{n}} dana"
     }
   },
   "supportReport": {
-    "title": "Izvješće o podršci",
-    "intro": "Generirajte izvješće koje možete podijeliti s podrškom EaseAccess24. Uključuje vaše okruženje, status povezivanja, otkrivene dodatke za predmemoriju i nedavne događaje. Vaš Ključ widgeta je maskiran i ne uključuju se osobni podaci.",
-    "privacyNote": "Ništa se ne šalje automatski. Nema poslužitelja — kopirate ili preuzimate izvješće u nastavku i sami ga dijelite.",
+    "title": "Izvješće za podršku",
+    "intro": "Generirajte izvješće koje možete podijeliti s podrškom EaseAccess24. Uključuje vaše okruženje, status veze, otkrivene dodatke za predmemoriju i nedavne događaje. Vaš ključ widgeta je maskiran i ne uključuje osobne podatke.",
+    "privacyNote": "Ništa se ne šalje automatski. Nema uključenog poslužitelja — kopirate ili preuzimate izvješće u nastavku i sami ga dijelite.",
     "generate": "Generiraj izvješće",
     "regenerate": "Ponovno generiraj",
     "generating": "Generiranje...",
     "previewLabel": "Pregled izvješća (točno ono što će biti kopirano ili preuzeto)",
     "copy": "Kopiraj",
     "copied": "Kopirano",
-    "copyFailed": "Kopiranje nije dostupno u ovom pregledniku. Upotrijebite Preuzmi umjesto toga.",
+    "copyFailed": "Kopiranje nije dostupno u ovom pregledniku. Umjesto toga upotrijebite Preuzimanje.",
     "downloadTxt": "Preuzmi .txt",
     "downloadJson": "Preuzmi .json",
-    "generateError": "Nismo uspjeli generirati izvješće. Ponovno učitajte stranicu i pokušajte ponovno."
+    "generateError": "Nismo mogli generirati izvješće. Ponovo učitajte stranicu i pokušajte ponovno."
   },
   "pluginInfo": {
     "title": "Informacije o dodatku",
@@ -239,51 +237,50 @@
   },
   "faq": {
     "title": "Pomoć i često postavljana pitanja",
-    "intro": "Odgovori na česta pitanja o povezivanju i rješavanju problema s widgetom.",
-    "learnMore": "Saznajte više",
+    "intro": "Odgovori na uobičajena pitanja o povezivanju i rješavanju problema s widgetom.",
+    "learnMore": "Saznaj više",
     "items": {
       "findKey": {
-        "q": "Gdje pronalazim svoj Widget Key?",
-        "a": "Prijavite se na app.easeaccess24.com, otvorite odjeljak Integrate i kopirajte svoj Widget Key (ili cijeli isječak koda). Zalijepite ga u karticu Connection – mi ćemo izvući ključ iz isječka za vas."
+        "q": "Gdje mogu pronaći svoj Widget ključ?",
+        "a": "Prijavite se na app.easeaccess24.com, otvorite odjeljak Integracija i kopirajte svoj Widget ključ (ili cijeli isječak koda). Zalijepite ga u karticu Veza - mi ćemo izdvojiti ključ iz isječka za vas."
       },
       "notShowing": {
-        "q": "Widget se ne prikazuje — što trebam provjeriti?",
-        "a": "Pokrenite Health Check na kartici Connection. To vam govori je li skripta dodana, dostupna i prikazuje li se widget. Najčešći uzroci su nedodavanje domene u vašoj nadzornoj ploči, pogrešan ključ ili dodatak za predmemoriranje koji uklanja skriptu."
+        "q": "Widget se ne prikazuje - što trebam provjeriti?",
+        "a": "Pokrenite Provjeru stanja na kartici Veza. Ona vam govori je li skripta dodana, dostupna te prikazuje li se widget. Najčešći uzroci su nedodan domen na vašoj nadzornoj ploči, pogrešan ključ ili predmemorija koja uklanja skriptu."
       },
       "cachePlugin": {
-        "q": "Koristim dodatak za predmemoriranje ili optimizaciju. Hoće li to biti u sukobu?",
-        "a": "Može. Naš oznaka skripte traži od uobičajenih dodataka da je preskoče, ali neke postavke još uvijek zahtijevaju ručno isključenje. Provjerite karticu Compatibility za preporuke za svaki dodatak. Nikada ne mijenjamo postavke drugog dodatka za vas."
+        "q": "Koristim dodatak za predmemoriju ili optimizaciju. Hoće li biti sukoba?",
+        "a": "Može. Naša oznaka skripte traži od uobičajenih dodataka da je preskoče, ali neki još uvijek trebaju ručno isključenje. Provjerite karticu Kompatibilnost za preporuke po dodacima. Nikada ne mijenjamo postavke drugog dodatka za vas."
       },
       "stagingLocalhost": {
         "q": "Radi li widget na staging ili localhost okruženju?",
-        "a": "Widget se prikazuje samo na domenama ovlaštenim za vaš Widget Key, tako da se obično neće pojaviti na staging ili localhost okruženju. Ovo je očekivano i nije greška dodatka — testirajte na svojoj aktivnoj, ovlaštenoj domeni."
+        "a": "Widget se prikazuje samo na domenama ovlaštenim za vaš Widget ključ, stoga se obično neće prikazati na staging ili localhost okruženju. Ovo je očekivano i nije greška dodatka - testirajte na svojoj stvarnoj, ovlaštenoj domeni."
       },
       "dataPrivacy": {
         "q": "Koje podatke ovaj dodatak pohranjuje ili šalje?",
-        "a": "Dodatak pohranjuje vaš Widget Key i postavke na vašoj vlastitoj web-lokaciji, plus kratki lokalni zapis aktivnosti. Ne vrši automatske pozive na EaseAccess24 osim dodavanja skripte widgeta i, tijekom Health Checka, testiranja dostupnosti te skripte. Izvješća o podršci uvijek dijelite samo vi, ručno."
+        "a": "Dodatak pohranjuje vaš Widget ključ i postavke na vašoj vlastitoj web-lokaciji, plus kratki lokalni zapis aktivnosti. Ne vrši automatske pozive EaseAccess24 osim dodavanja skripte widgeta i, tijekom Provjere stanja, testiranja je li ta skripta dostupna. Izvješća podrške uvijek dijelite samo vi, ručno."
       },
       "removeData": {
-        "q": "Kako uklanjam sve podatke dodatka?",
-        "a": "Vaša konfiguracija se čuva prilikom deaktivacije kako biste je mogli ponovno aktivirati kasnije. Da biste uklonili sve, omogućite opciju “Remove all EaseAccess24 data” prije brisanja dodatka, a zatim ga izbrišite sa zaslona Plugins."
+        "q": "Kako mogu ukloniti sve podatke dodatka?",
+        "a": "Vaša konfiguracija se zadržava kada deaktivirate dodatak kako biste ga mogli ponovno aktivirati kasnije. Da biste uklonili sve, omogućite opciju „Ukloni sve podatke EaseAccess24“ prije brisanja dodatka, a zatim ga izbrišite s zaslona Dodaci."
       }
     }
   },
   "settings": {
     "languageLabel": "Jezik",
-    "languageAria": "Jezik sučelja",
     "dataTitle": "Podaci i privatnost",
-    "removeDataLabel": "Ukloni sve EaseAccess24 podatke prilikom brisanja dodatka",
-    "removeDataHelp": "Kada je omogućeno, brisanje dodatka također uklanja vaš Widget Key, postavke i zapis aktivnosti. Ostavite isključeno kako biste zadržali svoju konfiguraciju za buduću ponovnu instalaciju. Datoteke vaše teme nikada se ne diraju.",
+    "removeDataLabel": "Ukloni sve podatke EaseAccess24 prilikom brisanja dodatka",
+    "removeDataHelp": "Kada je omogućeno, brisanje dodatka također uklanja vaš Widget ključ, postavke i zapis aktivnosti. Ostavite isključeno kako biste zadržali svoju konfiguraciju za buduću ponovnu instalaciju. Vaše datoteke teme se nikada ne diraju.",
     "saved": "Spremljeno",
-    "saveError": "Nismo uspjeli spremiti vaše postavke. Provjerite svoju vezu i pokušajte ponovno.",
-    "loadError": "Nismo uspjeli učitati vaše postavke. Ponovno učitajte stranicu i pokušajte ponovno."
+    "saveError": "Nismo mogli spremiti vaše postavke. Provjerite svoju vezu i pokušajte ponovno.",
+    "loadError": "Nismo mogli učitati vaše postavke. Ponovno učitajte stranicu i pokušajte ponovno."
   },
   "footer": {
-    "tagline": "Činimo web pristupačnim svima.",
+    "tagline": "Pomažemo da vaša stranica bude pristupačnija.",
     "madeBy": "Izradio EaseAccess24",
     "platform": "EaseAccess24 platforma",
-    "docs": "Podrška i dokumentacija",
-    "privacyLink": "Politika privatnosti",
+    "docs": "Podrška",
+    "privacyLink": "Pravila privatnosti",
     "reportIssueLink": "Prijavi problem",
     "copyright": "© {{year}} EaseAccess24"
   }

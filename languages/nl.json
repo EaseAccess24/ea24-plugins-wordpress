@@ -2,34 +2,33 @@
   "status": {
     "notConnected": "Niet verbonden",
     "healthy": "Verbonden · Gezond",
-    "attention": "Verbonden · Vereist aandacht"
+    "attention": "Verbonden · Aandacht nodig"
   },
   "common": {
     "appName": "EaseAccess24 Toegankelijkheid",
     "appNameShort": "EaseAccess24",
     "saving": "Opslaan…",
     "cancel": "Annuleren",
-    "retry": "Opnieuw proberen",
     "updateKey": "Sleutel bijwerken"
   },
   "onboarding": {
-    "title": "Verbind uw website met EaseAccess24",
-    "subtitle": "Plak uw Widget-sleutel (of het volledige scriptfragment) om de toegankelijkheids-widget aan deze site toe te voegen.",
+    "title": "Koppel uw site aan EaseAccess24",
+    "subtitle": "Plak uw Widget-sleutel (of het volledige scriptfragment) om de toegankelijkheidswidget aan deze site toe te voegen.",
     "emptyTitle": "Nog geen Widget-sleutel?",
-    "emptyBody": "Maak uw organisatie aan, kies een abonnement en voeg dit domein toe in EaseAccess24. U ontvangt een Widget-sleutel om hier te plakken.",
-    "getKeyCta": "Haal uw Widget-sleutel op",
+    "emptyBody": "Maak uw organisatie aan, kies een abonnement en voeg dit domein toe in EaseAccess24. U ontvangt dan een Widget-sleutel om hier te plakken.",
+    "getKeyCta": "Uw Widget-sleutel ophalen",
     "fieldLabel": "Widget-sleutel of scriptfragment",
     "helper": "Plak alleen de sleutel (bijvoorbeeld ABC123) of het volledige <script>-fragment — wij halen de sleutel er wel uit.",
     "placeholder": "ABC123 —of— <script async src=\"https://widget.easeaccess24.com/sdk.js?key=ABC123\"></script>",
     "whereLink": "Waar vind ik dit?",
     "connectCta": "Verbinden & Verifiëren",
-    "revealKey": "Weergeven",
+    "revealKey": "Tonen",
     "hideKey": "Verbergen",
     "copyKey": "Kopiëren",
     "copied": "Gekopieerd",
     "errors": {
       "empty": "Plak eerst uw Widget-sleutel of scriptfragment.",
-      "noKey": "We konden geen Widget-sleutel vinden in dat. Plak alleen de sleutel, of het volledige scriptfragment waarin deze staat.",
+      "noKey": "We konden hierin geen Widget-sleutel vinden. Plak alleen de sleutel, of het volledige scriptfragment waarin deze staat.",
       "network": "We konden uw sleutel niet opslaan. Controleer uw verbinding en probeer het opnieuw."
     }
   },
@@ -38,17 +37,17 @@
     "paste": "Plakken",
     "validate": "Valideren",
     "healthCheck": "Gezondheidscontrole",
-    "done": "Klaar",
+    "done": "Gereed",
     "state": {
       "done": "voltooid",
       "current": "huidige stap",
-      "upcoming": "volgende"
+      "upcoming": "aanstaande"
     }
   },
   "dashboard": {
     "statusBadge": "Verbonden",
     "title": "Verbinding",
-    "subtitle": "Uw Widget-sleutel is opgeslagen. Voer een Gezondheidscontrole uit om te bevestigen dat de widget laadt en zichtbaar is op uw website.",
+    "subtitle": "Uw Widget-sleutel is opgeslagen. Voer een Gezondheidscontrole uit om te bevestigen dat de widget wordt geladen en zichtbaar is op uw site.",
     "keyLabel": "Widget-sleutel",
     "domainLabel": "Domein",
     "lastCheckLabel": "Laatste gezondheidscontrole",
@@ -57,15 +56,14 @@
   },
   "health": {
     "heading": "Gezondheidscontrole",
-    "intro": "Dit wordt in uw browser uitgevoerd: het laadt uw website en controleert of de widget daadwerkelijk verschijnt. Niets wordt naar EaseAccess24 verzonden.",
-    "run": "Voer Gezondheidscontrole uit",
-    "rerun": "Opnieuw uitvoeren",
-    "running": "Gezondheidscontrole uitvoeren…",
+    "intro": "Dit wordt in uw browser uitgevoerd: het laadt uw site en controleert of de widget daadwerkelijk verschijnt. Niets wordt naar EaseAccess24 verzonden.",
+    "run": "Gezondheidscontrole uitvoeren",
+    "running": "Gezondheidscontrole wordt uitgevoerd…",
     "resultsHeading": "Resultaat",
     "checklistHeading": "Wat we hebben gecontroleerd",
     "advisoriesHeading": "Ook de moeite waard om te controleren",
     "timeoutTitle": "We konden de controle niet voltooien",
-    "timeoutBody": "De controle is niet op tijd voltooid. Dit kan gebeuren als de pagina traag laadde of als een beveiligingsinstelling dit blokkeerde. Probeer het opnieuw."
+    "timeoutBody": "De controle is niet op tijd voltooid. Dit kan gebeuren als de pagina langzaam laadde of als een beveiligingsinstelling dit blokkeerde. Probeer het opnieuw."
   },
   "checklist": {
     "keySaved": "Widget-sleutel opgeslagen",
@@ -95,8 +93,8 @@
     },
     "DOMAIN_NOT_ALLOWED": {
       "title": "Domein niet toegestaan / sleutel niet geautoriseerd",
-      "why": "Het widget-script is geladen, maar meldde dat dit domein niet is geautoriseerd voor uw Widget-sleutel. Dezelfde melding dekt een verkeerde sleutel en een domein dat nog niet is toegevoegd.",
-      "fix": "Open uw EaseAccess24 Dashboard, bevestig dat dit exacte domein is toegevoegd onder uw organisatie, controleer of de Widget-sleutel overeenkomt, en voer de controle opnieuw uit."
+      "why": "Het widget-script werd geladen, maar meldde dat dit domein niet is geautoriseerd voor uw Widget-sleutel. Dezelfde melding dekt een verkeerde sleutel en een domein dat nog niet is toegevoegd.",
+      "fix": "Open uw EaseAccess24 Dashboard, bevestig dat dit exacte domein is toegevoegd onder uw organisatie, controleer of de Widget-sleutel overeenkomt en voer de controle opnieuw uit."
     },
     "SDK_UNREACHABLE": {
       "title": "Het widget-script kon niet worden geladen",
@@ -106,22 +104,22 @@
     "WIDGET_NOT_INITIALIZED": {
       "title": "De widget is niet geladen",
       "why": "Het widget-script is aanwezig, maar er verscheen geen zichtbare widget en er werd geen specifieke reden gerapporteerd. Veelvoorkomende oorzaken: het domein is nog niet toegevoegd, de sleutel is verkeerd, of een script werd geblokkeerd.",
-      "fix": "Bevestig dit domein en de Widget-sleutel in uw EaseAccess24 Dashboard, zorg ervoor dat niets het script blokkeert, voer vervolgens de controle opnieuw uit."
+      "fix": "Bevestig dit domein en de Widget-sleutel in uw EaseAccess24 Dashboard, zorg ervoor dat niets het script blokkeert, en voer de controle vervolgens opnieuw uit."
     },
     "DUPLICATE_WIDGET": {
       "title": "Dubbele widget gedetecteerd",
-      "why": "Meer dan één widget wordt op de pagina geladen. Dit betekent meestal dat de SDK twee keer is toegevoegd - bijvoorbeeld, zowel door deze plug-in als door een handmatig codefragment in uw thema.",
-      "fix": "Houd slechts één methode aan. Als u het script aan uw thema of een andere plug-in hebt toegevoegd, verwijder dit dan en laat deze plug-in het afhandelen. Wij verwijderen nooit scripts voor u."
+      "why": "Meer dan één widget wordt op de pagina geladen. Dit betekent meestal dat de SDK twee keer is toegevoegd - bijvoorbeeld zowel door deze plugin als door een handmatig codefragment in uw thema.",
+      "fix": "Houd slechts één methode aan. Als u het script aan uw thema of een andere plugin hebt toegevoegd, verwijder het dan en laat deze plugin het afhandelen. We verwijderen nooit scripts voor u."
     },
     "POSSIBLE_DUPLICATE_WIDGET": {
       "title": "Mogelijke dubbele widget",
       "why": "We hebben tekenen gevonden van een tweede widget-script (bijvoorbeeld een extra script-tag), maar konden geen tweede zichtbare widget bevestigen - caching kan dit verdoezelen.",
-      "fix": "Zorg ervoor dat de widget slechts één keer is toegevoegd. Als u een handmatig codefragment in uw thema hebt, verwijder dit dan en vertrouw op deze plug-in."
+      "fix": "Zorg ervoor dat de widget slechts één keer is toegevoegd. Als u een handmatig codefragment in uw thema heeft, verwijder het dan en vertrouw op deze plugin."
     },
     "OPTIMIZER_INTERFERENCE": {
-      "title": "Een caching- of optimalisatieplug-in kan interfereren",
-      "why": "Een Widget-sleutel is opgeslagen, maar het widget-script was niet aanwezig op de pagina - een caching/optimalisatieplug-in kan het hebben verwijderd of gewijzigd.",
-      "fix": "Sluit het EaseAccess24-script uit van caching/optimalisatie. Gedetailleerde, per plug-in aanbevelingen komen binnenkort naar de Compatibiliteitssectie."
+      "title": "Een caching- of optimalisatieplugin kan interfereren",
+      "why": "Een Widget-sleutel is opgeslagen, maar het widget-script was niet aanwezig op de pagina - een caching/optimalisatieplugin heeft het mogelijk verwijderd of gewijzigd.",
+      "fix": "Sluit het EaseAccess24-script uit van caching/optimalisatie. Gedetailleerde, per plugin aanbevelingen komen naar de compatibiliteitssectie."
     },
     "STAGING_DETECTED": {
       "title": "Stagingomgeving gedetecteerd",
@@ -130,8 +128,8 @@
     },
     "LOCALHOST_DETECTED": {
       "title": "Lokale omgeving gedetecteerd",
-      "why": "Deze site draait op localhost. De widget wordt alleen weergegeven op domeinen die zijn geautoriseerd in EaseAccess24, dus deze zal lokaal niet verschijnen.",
-      "fix": "Dit is te verwachten op lokaal niveau. Test op uw live, geautoriseerde domein om de widget te zien."
+      "why": "Deze site draait op localhost. De widget wordt alleen weergegeven op domeinen die zijn geautoriseerd in EaseAccess24, dus deze verschijnt niet lokaal.",
+      "fix": "Dit is te verwachten lokaal. Test op uw live, geautoriseerde domein om de widget te zien."
     },
     "KEY_INVALID": {
       "title": "Widget-sleutel niet geaccepteerd",
@@ -141,11 +139,11 @@
     "SUBSCRIPTION_EXPIRED": {
       "title": "Abonnement verlopen",
       "why": "Het abonnement voor deze Widget-sleutel is niet langer actief.",
-      "fix": "Vernieuw uw abonnement in het EaseAccess24 Dashboard."
+      "fix": "Vernieuw uw plan in het EaseAccess24 Dashboard."
     },
     "ORG_DISABLED": {
       "title": "Organisatie uitgeschakeld",
-      "why": "De organisatie voor deze Widget Key is uitgeschakeld.",
+      "why": "De organisatie voor deze Widget-sleutel is uitgeschakeld.",
       "fix": "Neem contact op met de EaseAccess24-ondersteuning of controleer uw Dashboard."
     }
   },
@@ -155,33 +153,33 @@
     "compatibility": "Compatibiliteit",
     "activity": "Activiteit",
     "support": "Ondersteuning",
-    "help": "Help"
+    "help": "Hulp"
   },
   "compatibility": {
-    "title": "Compatibiliteit van cache en optimalisatie",
-    "intro": "Caching- en optimalisatieplug-ins kunnen scripts uitstellen, combineren of strippen — inclusief de EaseAccess24-widget. We voegen hints toe die hen vragen om ons script met rust te laten, maar sommige configuraties hebben nog steeds een handmatige uitsluiting nodig. We wijzigen nooit de instellingen van een andere plug-in voor u.",
+    "title": "Compatibiliteit cache & optimalisatie",
+    "intro": "Caching- en optimalisatieplug-ins kunnen scripts uitstellen, combineren of strippen — inclusief de EaseAccess24-widget. We voegen hints toe die hen vragen om ons script met rust te laten, maar sommige configuraties vereisen nog steeds een handmatige uitsluiting. We wijzigen nooit de instellingen van een andere plug-in voor u.",
     "noneTitle": "Geen bekende cache- of optimalisatieplug-ins gedetecteerd",
-    "noneBody": "We hebben geen van de caching/optimalisatieplug-ins gevonden die we herkennen. Als de widget nog steeds niet verschijnt, voer dan een Gezondheidscontrole uit op het tabblad Verbinding.",
-    "cloudflareCdnNote": "Opmerking: Cloudflare dat als CDN draait (Rocket Loader, Auto Minify aan de rand) kan niet vanaf uw site worden gedetecteerd. Als u Cloudflare gebruikt, controleer dan ook die instellingen.",
+    "noneBody": "We hebben geen van de caching/optimalisatieplug-ins die we herkennen kunnen vinden. Als de widget nog steeds niet verschijnt, voer dan een Health Check uit op het tabblad Verbinding.",
+    "cloudflareCdnNote": "Opmerking: Cloudflare, actief als CDN (Rocket Loader, Auto Minify aan de rand), kan niet vanaf uw site worden gedetecteerd. Als u Cloudflare gebruikt, controleer dan ook die instellingen.",
     "detectedTitle": "Gedetecteerde plug-ins",
     "recommendationLabel": "Aanbeveling",
-    "modifiedTitle": "Het widgetscript wordt mogelijk aangepast",
-    "modifiedBody": "Een cache/optimalisatieplug-in is actief en uw laatste Gezondheidscontrole heeft vastgesteld dat het widgetscript niet op de pagina stond. Pas de onderstaande uitsluiting toe en voer de controle opnieuw uit.",
+    "modifiedTitle": "Het widgetscript wordt mogelijk gewijzigd",
+    "modifiedBody": "Een cache-/optimalisatieplug-in is actief en uw laatste Health Check heeft vastgesteld dat het widgetscript niet op de pagina stond. Pas de onderstaande uitsluiting toe en voer de controle opnieuw uit.",
     "plugins": {
       "wp-rocket": {
-        "recommendation": "In WP Rocket → Bestandsoptimalisatie, sluit “widget.easeaccess24.com/sdk.js” uit van JavaScript-minificatie, -combinatie en “JavaScript-uitvoering vertragen”. WP Rocket respecteert ook onze data-no-minify hint."
+        "recommendation": "In WP Rocket → Bestandoptimalisatie, sluit 'widget.easeaccess24.com/sdk.js' uit van JavaScript-minificatie, -combinatie en 'JavaScript-uitstel'. WP Rocket respecteert ook onze data-no-minify-hint."
       },
       "litespeed": {
-        "recommendation": "In LiteSpeed Cache → Paginaoptimalisatie → JS-instellingen, voeg “widget.easeaccess24.com” toe aan de JS-uitsluitingen (en uitgestelde/vertraagde uitsluitingen indien ingeschakeld)."
+        "recommendation": "In LiteSpeed Cache → Paginaoptimalisatie → JS-instellingen, voeg 'widget.easeaccess24.com' toe aan de JS-uitsluitingen (en de uitsluitingen voor uitstel/vertraging indien ingeschakeld)."
       },
       "autoptimize": {
-        "recommendation": "In Autoptimize → JS, Afbeeldingen..., voeg “easeaccess24” toe aan “Scripts van Autoptimize uitsluiten”. Autoptimize respecteert ook onze data-no-optimize hint."
+        "recommendation": "In Autoptimize → JS, Afbeeldingen..., voeg 'easeaccess24' toe aan 'Scripts uitsluiten van Autoptimize'. Autoptimize respecteert ook onze data-no-optimize-hint."
       },
       "perfmatters": {
-        "recommendation": "In Perfmatters → Assets, voeg “easeaccess24” toe aan de uitsluitingen voor “JavaScript vertragen” en eventuele opties voor script-uitstel/minificatie."
+        "recommendation": "In Perfmatters → Assets, voeg 'easeaccess24' toe aan de uitsluitingen voor 'JavaScript-uitstel' en eventuele opties voor script-uitstel/minificatie."
       },
       "asset-cleanup": {
-        "recommendation": "Zorg ervoor dat het EaseAccess24-script op Asset CleanUp niet van uw pagina's wordt ontladen en sluit het uit van alle opties voor JS-minificatie/combinatie/uitstel."
+        "recommendation": "Zorg er in Asset CleanUp voor dat het EaseAccess24-script niet wordt uitgeladen op uw pagina's en sluit het uit van eventuele opties voor JS-minificatie/combinatie/uitstel."
       },
       "cloudflare": {
         "recommendation": "Sluit in Cloudflare het widgetscript uit van Rocket Loader (onze tag stelt al data-cfasync=\"false\" in) en van Auto Minify/Mirage indien ingeschakeld voor scripts."
@@ -189,20 +187,20 @@
     }
   },
   "eventLog": {
-    "title": "Activiteitslogboek",
-    "intro": "Een korte geschiedenis van gezondheidscontroles en plug-inevenementen. Dit logboek blijft op uw site en wordt nooit automatisch ergens naartoe verzonden.",
-    "empty": "Nog geen gebeurtenissen geregistreerd. Voer een Gezondheidscontrole uit op het tabblad Verbinding om er een op te nemen.",
+    "title": "Activiteitenlogboek",
+    "intro": "Een korte geschiedenis van health checks en plug-in-gebeurtenissen. Dit logboek blijft op uw site en wordt nooit automatisch ergens naartoe verzonden.",
+    "empty": "Nog geen gebeurtenissen geregistreerd. Voer een Health Check uit op het tabblad Verbinding om er een vast te leggen.",
     "clear": "Logboek wissen",
     "clearConfirm": "Alle geregistreerde gebeurtenissen wissen?",
     "confirmClear": "Ja, wissen",
     "cancel": "Annuleren",
-    "cleared": "Activiteitslogboek gewist.",
-    "loadError": "We konden het activiteitslogboek niet laden. Vernieuw de pagina en probeer het opnieuw.",
-    "loading": "Activiteit laden…",
+    "cleared": "Activiteitenlogboek gewist.",
+    "loadError": "We konden het activiteitenlogboek niet laden. Laad de pagina opnieuw en probeer het nogmaals.",
+    "loading": "Activiteit laden...",
     "types": {
-      "health_check": "Gezondheidscontrole",
-      "key_saved": "Widget Key opgeslagen",
-      "key_updated": "Widget Key bijgewerkt",
+      "health_check": "Health Check",
+      "key_saved": "Widget-sleutel opgeslagen",
+      "key_updated": "Widget-sleutel bijgewerkt",
       "activated": "Plug-in geactiveerd",
       "deactivated": "Plug-in gedeactiveerd"
     },
@@ -215,21 +213,21 @@
   },
   "supportReport": {
     "title": "Ondersteuningsrapport",
-    "intro": "Genereer een rapport dat u kunt delen met de EaseAccess24-ondersteuning. Het bevat uw omgeving, verbindingsstatus, gedetecteerde cacheplug-ins en recente gebeurtenissen. Uw Widget Key is gemaskeerd en er zijn geen persoonlijke gegevens opgenomen.",
-    "privacyNote": "Niets wordt automatisch verzonden. Er is geen server betrokken — u kopieert of downloadt het rapport hieronder en deelt het zelf.",
+    "intro": "Genereer een rapport dat u kunt delen met de EaseAccess24-ondersteuning. Het bevat uw omgeving, verbindingsstatus, gedetecteerde cache-plug-ins en recente gebeurtenissen. Uw Widget-sleutel is gemaskeerd en er worden geen persoonlijke gegevens opgenomen.",
+    "privacyNote": "Niets wordt automatisch verzonden. Er is geen server bij betrokken — u kopieert of downloadt het rapport hieronder en deelt het zelf.",
     "generate": "Rapport genereren",
     "regenerate": "Opnieuw genereren",
-    "generating": "Genereren…",
+    "generating": "Genereren...",
     "previewLabel": "Rapportvoorbeeld (exact wat zal worden gekopieerd of gedownload)",
     "copy": "Kopiëren",
     "copied": "Gekopieerd",
-    "copyFailed": "Kopiëren is niet beschikbaar in deze browser. Gebruik in plaats daarvan Download.",
+    "copyFailed": "Kopiëren is niet beschikbaar in deze browser. Gebruik in plaats daarvan Downloaden.",
     "downloadTxt": "Download .txt",
     "downloadJson": "Download .json",
     "generateError": "We konden het rapport niet genereren. Laad de pagina opnieuw en probeer het nogmaals."
   },
   "pluginInfo": {
-    "title": "Plugininformatie",
+    "title": "Plugin-informatie",
     "version": "Versie",
     "wpCompat": "WordPress-compatibiliteit",
     "phpMin": "Minimale PHP-versie",
@@ -244,45 +242,44 @@
     "items": {
       "findKey": {
         "q": "Waar vind ik mijn Widget-sleutel?",
-        "a": "Log in op app.easeaccess24.com, open de sectie Integreren en kopieer uw Widget-sleutel (of het volledige scriptfragment). Plak dit in het tabblad Verbinding – wij halen de sleutel uit een fragment voor u."
+        "a": "Log in op app.easeaccess24.com, open de sectie Integreren en kopieer uw Widget-sleutel (of het volledige scriptfragment). Plak deze in het tabblad Verbinding — wij halen de sleutel uit een fragment voor u."
       },
       "notShowing": {
         "q": "De widget wordt niet weergegeven - wat moet ik controleren?",
         "a": "Voer een Gezondheidscontrole uit op het tabblad Verbinding. Dit vertelt u of het script is toegevoegd, bereikbaar is en of de widget daadwerkelijk verschijnt. De meest voorkomende oorzaken zijn dat het domein niet is toegevoegd in uw dashboard, een verkeerde sleutel, of een caching-plugin die het script verwijdert."
       },
       "cachePlugin": {
-        "q": "Ik gebruik een caching- of optimalisatieplug-in. Zal dit conflicteren?",
-        "a": "Dat kan. Onze scripttag vraagt veelvoorkomende plug-ins om deze over te slaan, maar sommige configuraties vereisen nog steeds een handmatige uitsluiting. Controleer het tabblad Compatibiliteit voor aanbevelingen per plug-in. We wijzigen nooit de instellingen van een andere plug-in voor u."
+        "q": "Ik gebruik een caching- of optimalisatieplugin. Zal dit conflicteren?",
+        "a": "Dat kan. Onze scripttag vraagt veelvoorkomende plugins om deze over te slaan, maar sommige configuraties hebben nog steeds een handmatige uitsluiting nodig. Controleer het tabblad Compatibiliteit voor aanbevelingen per plugin. We wijzigen nooit de instellingen van een andere plugin voor u."
       },
       "stagingLocalhost": {
         "q": "Werkt de widget op staging of localhost?",
-        "a": "De widget wordt alleen weergegeven op domeinen die zijn geautoriseerd voor uw Widget-sleutel, dus deze verschijnt meestal niet op staging of localhost. Dit is verwacht en geen plug-in-fout – test op uw live, geautoriseerde domein."
+        "a": "De widget wordt alleen weergegeven op domeinen die zijn geautoriseerd voor uw Widget-sleutel, dus deze verschijnt meestal niet op staging of localhost. Dit is normaal en geen plugin-fout — test op uw live, geautoriseerde domein."
       },
       "dataPrivacy": {
-        "q": "Welke gegevens slaat deze plug-in op of stuurt deze door?",
-        "a": "De plug-in slaat uw Widget-sleutel en instellingen op uw eigen site op, plus een kort lokaal activiteitslogboek. Het maakt geen automatische oproepen naar EaseAccess24 behalve het toevoegen van het widgetscript en, tijdens een Gezondheidscontrole, het testen of dat script bereikbaar is. Rapportages voor ondersteuning worden alleen door u gedeeld, handmatig."
+        "q": "Welke gegevens slaat deze plugin op of stuurt deze?",
+        "a": "De plugin slaat uw Widget-sleutel en instellingen op uw eigen site op, plus een kort lokaal activiteitenlogboek. Het maakt geen automatische oproepen naar EaseAccess24, behalve het toevoegen van het widgetscript en, tijdens een Gezondheidscontrole, het testen of dat script bereikbaar is. Rapportages worden alleen door u gedeeld, handmatig."
       },
       "removeData": {
-        "q": "Hoe verwijder ik alle plug-in-gegevens?",
-        "a": "Uw configuratie wordt bewaard wanneer u deactiveert, zodat u later opnieuw kunt activeren. Om alles te verwijderen, schakelt u 'Verwijder alle EaseAccess24-gegevens' in voordat u de plug-in verwijdert, en verwijdert u deze vervolgens van het scherm Plugins."
+        "q": "Hoe verwijder ik alle plugin-gegevens?",
+        "a": "Uw configuratie blijft behouden wanneer u deactiveert, zodat u later opnieuw kunt activeren. Om alles te verwijderen, schakelt u 'Verwijder alle EaseAccess24-gegevens' in voordat u de plugin verwijdert, en verwijdert u deze vervolgens van het scherm Plugins."
       }
     }
   },
   "settings": {
     "languageLabel": "Taal",
-    "languageAria": "Taal van de interface",
     "dataTitle": "Gegevens & privacy",
-    "removeDataLabel": "Verwijder alle EaseAccess24-gegevens wanneer de plug-in wordt verwijderd",
-    "removeDataHelp": "Wanneer ingeschakeld, verwijdert het verwijderen van de plug-in ook uw Widget-sleutel, instellingen en activiteitslogboek. Laat dit uitgeschakeld om uw configuratie te bewaren voor een toekomstige herinstallatie. Uw themabestanden worden nooit aangeraakt.",
+    "removeDataLabel": "Verwijder alle EaseAccess24-gegevens wanneer de plugin wordt verwijderd",
+    "removeDataHelp": "Wanneer ingeschakeld, verwijdert het verwijderen van de plugin ook uw Widget-sleutel, instellingen en activiteitenlogboek. Laat het uitgeschakeld om uw configuratie te behouden voor een toekomstige herinstallatie. Uw thema-bestanden worden nooit aangeraakt.",
     "saved": "Opgeslagen",
     "saveError": "We konden uw instellingen niet opslaan. Controleer uw verbinding en probeer het opnieuw.",
     "loadError": "We konden uw instellingen niet laden. Laad de pagina opnieuw en probeer het nogmaals."
   },
   "footer": {
-    "tagline": "De webtoegankelijkheid voor iedereen.",
+    "tagline": "Helpen uw site toegankelijker te maken.",
     "madeBy": "Gemaakt door EaseAccess24",
-    "platform": "EaseAccess24-platform",
-    "docs": "Ondersteuning & documentatie",
+    "platform": "EaseAccess24 platform",
+    "docs": "Ondersteuning",
     "privacyLink": "Privacybeleid",
     "reportIssueLink": "Meld een probleem",
     "copyright": "© {{year}} EaseAccess24"

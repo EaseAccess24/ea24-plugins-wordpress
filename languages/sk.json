@@ -1,26 +1,25 @@
 {
   "status": {
-    "notConnected": "Nie je pripojené",
-    "healthy": "Pripojené · V poriadku",
+    "notConnected": "Nepripojené",
+    "healthy": "Pripojené · Zdravé",
     "attention": "Pripojené · Vyžaduje pozornosť"
   },
   "common": {
     "appName": "EaseAccess24 Dostupnosť",
     "appNameShort": "EaseAccess24",
-    "saving": "Ukladá sa…",
+    "saving": "Ukladanie…",
     "cancel": "Zrušiť",
-    "retry": "Opakovať",
     "updateKey": "Aktualizovať kľúč"
   },
   "onboarding": {
     "title": "Pripojte svoju stránku k EaseAccess24",
-    "subtitle": "Prilepte svoj kľúč widgetu (alebo celý úryvok skriptu), aby ste pridali widget dostupnosti na túto stránku.",
+    "subtitle": "Vložte svoj kľúč widgetu (alebo celý úryvok skriptu), aby ste pridali widget dostupnosti na túto stránku.",
     "emptyTitle": "Ešte nemáte kľúč widgetu?",
-    "emptyBody": "Vytvorte svoju organizáciu, vyberte si plán a pridajte túto doménu v EaseAccess24. Dostanete kľúč widgetu, ktorý tu prilepíte.",
+    "emptyBody": "Vytvorte svoju organizáciu, vyberte plán a pridajte túto doménu v EaseAccess24. Dostanete kľúč widgetu, ktorý sem môžete vložiť.",
     "getKeyCta": "Získať kľúč widgetu",
     "fieldLabel": "Kľúč widgetu alebo úryvok skriptu",
-    "helper": "Prilepte iba kľúč (napríklad ABC123) alebo celý úryvok <script> — kľúč z neho extrahujeme.",
-    "placeholder": "ABC123 —alebo— <script async src=\"https://widget.easeaccess24.com/sdk.js?key=ABC123\"></script>",
+    "helper": "Vložte iba kľúč (napríklad ABC123) alebo celý úryvok skriptu <script> — kľúč z neho získame.",
+    "placeholder": "ABC123 — alebo — <script async src=\"https://widget.easeaccess24.com/sdk.js?key=ABC123\"></script>",
     "whereLink": "Kde to nájdem?",
     "connectCta": "Pripojiť a overiť",
     "revealKey": "Zobraziť",
@@ -28,14 +27,14 @@
     "copyKey": "Kopírovať",
     "copied": "Skopírované",
     "errors": {
-      "empty": "Najprv prilepte svoj kľúč widgetu alebo úryvok skriptu.",
-      "noKey": "Nemohli sme v tom nájsť kľúč widgetu. Prilepte iba kľúč alebo celý úryvok skriptu, ktorý ho obsahuje.",
+      "empty": "Najprv vložte svoj kľúč widgetu alebo úryvok skriptu.",
+      "noKey": "Nenašli sme v tom kľúč widgetu. Vložte iba kľúč alebo celý úryvok skriptu, ktorý ho obsahuje.",
       "network": "Nepodarilo sa nám uložiť váš kľúč. Skontrolujte svoje pripojenie a skúste to znova."
     }
   },
   "stepper": {
-    "aria": "Priebeh nastavenia",
-    "paste": "Prilepiť",
+    "aria": "Postup nastavenia",
+    "paste": "Vložiť",
     "validate": "Overiť",
     "healthCheck": "Kontrola stavu",
     "done": "Hotovo",
@@ -48,36 +47,35 @@
   "dashboard": {
     "statusBadge": "Pripojené",
     "title": "Pripojenie",
-    "subtitle": "Váš kľúč widgetu je uložený. Spustite kontrolu stavu, aby ste sa uistili, že sa widget na vašej stránke načíta a je viditeľný.",
+    "subtitle": "Váš kľúč widgetu je uložený. Spustite kontrolu stavu, aby ste potvrdili, že sa widget na vašej stránke načíta a je viditeľný.",
     "keyLabel": "Kľúč widgetu",
     "domainLabel": "Doména",
     "lastCheckLabel": "Posledná kontrola stavu",
     "neverChecked": "Ešte sa neskontrolovalo",
-    "healthNotRunYet": "Zatiaľ sa žiadna kontrola nespustila"
+    "healthNotRunYet": "Žiadna kontrola ešte nebola spustená"
   },
   "health": {
     "heading": "Kontrola stavu",
     "intro": "Toto sa spustí vo vašom prehliadači: načíta vašu stránku a skontroluje, či sa widget skutočne zobrazuje. Nič sa neposiela do EaseAccess24.",
     "run": "Spustiť kontrolu stavu",
-    "rerun": "Spustiť znova",
-    "running": "Spúšťa sa kontrola stavu…",
+    "running": "Spúšťanie kontroly stavu…",
     "resultsHeading": "Výsledok",
     "checklistHeading": "Čo sme skontrolovali",
     "advisoriesHeading": "Tiež stojí za kontrolu",
-    "timeoutTitle": "Preverjanja nismo mogli dokončati",
-    "timeoutBody": "Preverjanje se ni končalo pravočasno. To se lahko zgodi, če se je stran počasi nalagala ali če je nastala varnostna nastavitev to preprečila. Poskusite znova."
+    "timeoutTitle": "Nemohli sme dokončiť kontrolu",
+    "timeoutBody": "Kontrola sa včas nedokončila. Toto sa môže stať, ak sa stránka pomaly načítavala alebo ju zablokovalo bezpečnostné nastavenie. Skúste to znova."
   },
   "checklist": {
     "keySaved": "Ključ pripomočka shranjen",
-    "sdkTag": "Spletni poziv pripomočka dodan na vaše spletno mesto",
-    "sdkReachable": "Spletni poziv pripomočka je dosegljiv",
+    "sdkTag": "Skript pripomočka dodan na vaše spletno mesto",
+    "sdkReachable": "Skript pripomočka je dosegljiv",
     "widgetVisible": "Pripomoček se prikaže in je viden",
-    "singleInstance": "Natančno en pripomoček na strani",
+    "singleInstance": "Na strani samo en pripomoček",
     "status": {
       "pass": "opravljeno",
       "fail": "neuspelo",
       "warn": "opozorilo",
-      "info": "informacije",
+      "info": "informacija",
       "na": "ni primerno"
     }
   },
@@ -90,48 +88,48 @@
     "fixLabel": "Kako popraviti",
     "OK": {
       "title": "Vaš pripomoček je v živo",
-      "why": "Naložili smo vaše spletno mesto in pripomoček za dostopnost se je pojavil in je viden.",
-      "fix": "Ničesar ni treba storiti – vse je pripravljeno."
+      "why": "Naložili smo vaše spletno mesto in prikazal se je pripomoček za dostopnost, ki je viden.",
+      "fix": "Ničesar ni treba storiti – vse je urejeno."
     },
     "DOMAIN_NOT_ALLOWED": {
-      "title": "Domena ni dovoljena / ključ ni pooblaščen",
-      "why": "Spletni poziv pripomočka se je naložil, vendar je sporočil, da ta domena ni pooblaščena za vaš ključ pripomočka. Isto sporočilo zajema napačen ključ in domeno, ki še ni bila dodana.",
-      "fix": "Odprite nadzorno ploščo EaseAccess24, potrdite, da je ta natančen domen dodana v vaši organizaciji, preverite, ali se ključ pripomočka ujema, nato znova zaženite preverjanje."
+      "title": "Domena ni dovoljena / ključ ni avtoriziran",
+      "why": "Skript pripomočka se je naložil, vendar je sporočil, da ta domena ni avtorizirana za vaš ključ pripomočka. Enako sporočilo zajema napačen ključ in domeno, ki še ni bila dodana.",
+      "fix": "Odprite nadzorno ploščo EaseAccess24, potrdite, da je ta natančna domena dodana v vaši organizaciji, preverite, ali se ključ pripomočka ujema, nato znova zaženite preverjanje."
     },
     "SDK_UNREACHABLE": {
-      "title": "Spletnega poziva pripomočka ni bilo mogoče naložiti",
-      "why": "Vaš brskalnik ni mogel doseči URL-ja spletnega poziva pripomočka. To je običajno težava z omrežjem, CDN ali predpomnilnikom, ne težava s konfiguracijo.",
-      "fix": "Preverite omrežje/CDN svojega spletnega mesta, počistite predpomnilnik in znova zaženite preverjanje."
+      "title": "Skript pripomočka ni bilo mogoče naložiti",
+      "why": "Vaš brskalnik ni mogel doseči URL-ja skripta pripomočka. To je običajno težava z omrežjem, CDN ali predpomnjenjem, ne težava s konfiguracijo.",
+      "fix": "Preverite omrežje/CDN vašega spletnega mesta, počistite vse predpomnilnike in znova zaženite preverjanje."
     },
     "WIDGET_NOT_INITIALIZED": {
       "title": "Pripomoček se ni naložil",
-      "why": "Spletni poziv pripomočka je na mestu, vendar se ni pojavil noben viden pripomoček in ni bilo sporočeno nobenega posebnega razloga. Pogosti vzroki: domena še ni dodana, ključ je napačen ali je bil skript blokiran.",
-      "fix": "V svoji nadzorni plošči EaseAccess24 potrdite to domeno in ključ pripomočka, zagotovite, da nič ne blokira skripta, nato znova zaženite preverjanje."
+      "why": "Skript pripomočka je na mestu, vendar se ni prikazal noben viden pripomoček in ni bil sporočen noben poseben razlog. Pogosti vzroki: domena še ni dodana, ključ je napačen ali je bil skript blokiran.",
+      "fix": "Potrdite to domeno in ključ pripomočka v vaši nadzorni plošči EaseAccess24, zagotovite, da nič ne blokira skripta, nato znova zaženite preverjanje."
     },
     "DUPLICATE_WIDGET": {
-      "title": "Zaznan je bil podvojen pripomoček",
-      "why": "Na strani se nalaga več kot en pripomoček. To običajno pomeni, da je spletni poziv dodan dvakrat – na primer, tako s tem vtičnikom kot z ročno posneto kodo v vaši temi.",
-      "fix": "Ohranite samo eno metodo. Če ste skript dodali v svojo temo ali drug vtičnik, ga odstranite in pustite, da se s tem ukvarja ta vtičnik. Nikoli ne odstranjujemo skriptov namesto vas."
+      "title": "Odkrit je bil podvojen pripomoček",
+      "why": "Na strani se nalaga več kot en pripomoček. To običajno pomeni, da je SDK dodan dvakrat – na primer, enkrat s tem vtičnikom in enkrat z ročno kodo v vaši temi.",
+      "fix": "Obdržite samo eno metodo. Če ste skript dodali v svojo temo ali drug vtičnik, ga odstranite in pustite, da ga obravnava ta vtičnik. Skriptov vam nikoli ne odstranimo."
     },
     "POSSIBLE_DUPLICATE_WIDGET": {
       "title": "Možen podvojen pripomoček",
-      "why": "Našli smo znake drugega skripta pripomočka (na primer dodatne oznake skripta), vendar nismo mogli potrditi drugega vidnega pripomočka – to lahko prikrije predpomnilnik.",
-      "fix": "Zagotovite, da je pripomoček dodan samo enkrat. Če imate v svoji temi ročno posneto kodo, jo odstranite in se zanesite na ta vtičnik."
+      "why": "Našli smo znake drugega skripta pripomočka (na primer, dodatno oznako skripta), vendar nismo mogli potrditi drugega vidnega pripomočka – predpomnjenje lahko to zakrije.",
+      "fix": "Zagotovite, da je pripomoček dodan samo enkrat. Če imate ročno kodo v svoji temi, jo odstranite in se zanesite na ta vtičnik."
     },
     "OPTIMIZER_INTERFERENCE": {
-      "title": "Vmesnik predpomnilnika ali optimizacijskega vtičnika je morda vpleten",
-      "why": "Ključ pripomočka je shranjen, vendar skript pripomočka ni bil prisoten na strani – predpomnilniški/optimizacijski vtičnik ga je morda odstranil ali spremenil.",
+      "title": "Vmesnik za predpomnjenje ali optimizacijo je morda vmešan",
+      "why": "Ključ pripomočka je shranjen, vendar skript pripomočka na strani ni bil prisoten – vtičnik za predpomnjenje/optimizacijo ga je morda odstranil ali spremenil.",
       "fix": "Izključite skript EaseAccess24 iz predpomnjenja/optimizacije. Podrobna priporočila za posamezne vtičnike bodo kmalu na voljo v razdelku Združljivost."
     },
     "STAGING_DETECTED": {
-      "title": "Zaznano okolje za namestitev",
-      "why": "To je videti kot namestitveno ali razvojno spletno mesto. Pripomoček se prikaže samo na domenah, pooblaščenih v EaseAccess24, zato se morda tukaj ne prikaže.",
-      "fix": "To je pričakovano pri namestitvi. Dodajte to domeno v svojo nadzorno ploščo, če želite, da se pripomoček prikaže tukaj, ali pa ga preizkusite na svoji živi domeni."
+      "title": "Odkrito je bilo okolje za postavitev",
+      "why": "Zdi se, da gre za postavitev ali razvojno spletno mesto. Pripomoček se prikaže samo na domenah, ki so avtorizirane v EaseAccess24, zato se morda tukaj ne prikaže.",
+      "fix": "To je pričakovano na postavitvi. Dodajte to domeno v svojo nadzorno ploščo, če želite, da se pripomoček prikaže tukaj, ali pa testirajte na svoji domeni v živo."
     },
     "LOCALHOST_DETECTED": {
-      "title": "Zaznano lokalno okolje",
-      "why": "To spletno mesto deluje na lokalnem gostitelju. Pripomoček se prikaže samo na domenah, pooblaščenih v EaseAccess24, zato se lokalno ne bo prikazal.",
-      "fix": "To je pričakovano lokalno. Preizkusite na svoji živi, pooblaščeni domeni, da vidite pripomoček."
+      "title": "Odkrito je bilo lokalno okolje",
+      "why": "To spletno mesto deluje na localhostu. Pripomoček se prikaže samo na domenah, ki so avtorizirane v EaseAccess24, zato se lokalno ne bo prikazal.",
+      "fix": "To je pričakovano lokalno. Testirajte na svoji domeni v živo, ki je avtorizirana, da vidite pripomoček."
     },
     "KEY_INVALID": {
       "title": "Ključ pripomočka ni bil sprejet",
@@ -145,12 +143,12 @@
     },
     "ORG_DISABLED": {
       "title": "Organizacija onemogočena",
-      "why": "Organizácia pre tento kľúč miniaplikácie je neaktívna.",
-      "fix": "Kontaktujte podporu EaseAccess24 alebo skontrolujte svoj Dashboard."
+      "why": "Organizacija za ta ključ pripomočka je onemogočena.",
+      "fix": "Obrnite se na podporo EaseAccess24 ali preverite svojo nadzorno ploščo."
     }
   },
   "nav": {
-    "aria": "Časti EaseAccess24",
+    "aria": "Sekcie EaseAccess24",
     "connection": "Pripojenie",
     "compatibility": "Kompatibilita",
     "activity": "Aktivita",
@@ -158,133 +156,132 @@
     "help": "Pomoc"
   },
   "compatibility": {
-    "title": "Kompatibilita s vyrovnávacou pamäťou a optimalizáciou",
-    "intro": "Pluginy na vyrovnávanie a optimalizáciu môžu odložiť, skombinovať alebo odstrániť skripty — vrátane miniaplikácie EaseAccess24. Pridávame pokyny, ktoré ich žiadajú, aby náš skript nechali tak, ale niektoré nastavenia stále vyžadujú manuálne vylúčenie. Nikdy za vás nezmeníme nastavenia iného pluginu.",
-    "noneTitle": "Nezistené žiadne pluginy na vyrovnávanie alebo optimalizáciu",
-    "noneBody": "Nenašli sme žiadne z rozpoznávaných pluginov na vyrovnávanie/optimalizáciu. Ak sa miniaplikácia stále nezobrazuje, spustite kontrolu stavu na karte Pripojenie.",
-    "cloudflareCdnNote": "Poznámka: Cloudflare bežiaci ako CDN (Rocket Loader, Auto Minify na hrane) sa z vašej lokality nedá zistiť. Ak používate Cloudflare, skontrolujte aj tie nastavenia.",
+    "title": "Kompatibilita predpamäte a optimalizácie",
+    "intro": "Pluginy na predpamäť a optimalizáciu môžu odložiť, skombinovať alebo odstrániť skripty — vrátane widgetu EaseAccess24. Pridávame pokyny, ktoré ich žiadajú, aby náš skript nechali na pokoji, ale niektoré nastavenia si stále vyžadujú manuálne vylúčenie. Nikdy za vás nemeníme nastavenia iných pluginov.",
+    "noneTitle": "Nezistené žiadne pluginy na predpamäť alebo optimalizáciu",
+    "noneBody": "Nenašli sme žiadne pluginy na predpamäť/optimalizáciu, ktoré by sme poznali. Ak sa widget stále nezobrazuje, spustite kontrolu stavu na karte Pripojenie.",
+    "cloudflareCdnNote": "Poznámka: Cloudflare bežiaci ako CDN (Rocket Loader, Auto Minify na hrane) sa z vašej lokality nedá zistiť. Ak používate Cloudflare, skontrolujte aj toto nastavenie.",
     "detectedTitle": "Detekované pluginy",
     "recommendationLabel": "Odporúčanie",
-    "modifiedTitle": "Skript miniaplikácie sa môže upravovať",
-    "modifiedBody": "Je aktívny plugin na vyrovnávanie/optimalizáciu a vaša posledná kontrola stavu zistila, že skript miniaplikácie nebol na stránke. Použite nižšie uvedené vylúčenie a znova spustite kontrolu.",
+    "modifiedTitle": "Skript widgetu sa môže meniť",
+    "modifiedBody": "Je aktívny plugin na predpamäť/optimalizáciu a posledná kontrola stavu zistila, že skript widgetu nebol na stránke. Použite nižšie uvedené vylúčenie a spustite kontrolu znova.",
     "plugins": {
       "wp-rocket": {
-        "recommendation": "V WP Rocket → Optimalizácia súborov vylúčte „widget.easeaccess24.com/sdk.js“ z minimalizácie JavaScriptu, kombinácie a „Odloženia vykonávania JavaScriptu“. WP Rocket tiež rešpektuje náš pokyn data-no-minify."
+        "recommendation": "V WP Rocket → Optimalizácia súborov vylúčte „widget.easeaccess24.com/sdk.js“ z minifikácie JavaScriptu, kombinácie a „Odloženia vykonávania JavaScriptu“. WP Rocket tiež rešpektuje náš pokyn data-no-minify."
       },
       "litespeed": {
-        "recommendation": "V LiteSpeed Cache → Optimalizácia stránky → Nastavenia JS pridajte „widget.easeaccess24.com“ do výnimiek JS (a výnimiek pre odložené/oneskorené, ak sú povolené)."
+        "recommendation": "V LiteSpeed Cache → Optimalizácia stránky → Nastavenia JS pridajte „widget.easeaccess24.com“ do vylúčení JS (a vylúčení odložených/odložených, ak sú povolené)."
       },
       "autoptimize": {
-        "recommendation": "V Autoptimize → JS, Images... pridajte „easeaccess24“ do „Vylúčiť skripty z Autoptimize“. Autoptimize tiež rešpektuje náš pokyn data-no-optimize."
+        "recommendation": "V Autoptimize → JS, Obrázky... pridajte „easeaccess24“ do „Vylúčiť skripty z Autoptimize“. Autoptimize tiež rešpektuje náš pokyn data-no-optimize."
       },
       "perfmatters": {
-        "recommendation": "V Perfmatters → Assets pridajte „easeaccess24“ do výnimiek pre „Odložiť JavaScript“ a akýchkoľvek možností zlučovania/minimalizácie skriptov."
+        "recommendation": "V Perfmatters → Assets pridajte „easeaccess24“ do vylúčení pre „Odloženie JavaScriptu“ a akékoľvek možnosti zlučovania/minimalizácie/odkladania skriptov."
       },
       "asset-cleanup": {
-        "recommendation": "V Asset CleanUp sa uistite, že skript EaseAccess24 nie je na vašich stránkach neprístupný, a vylúčte ho z akýchkoľvek možností zlučovania/minimalizácie/odkladania JS."
+        "recommendation": "V Asset CleanUp sa uistite, že skript EaseAccess24 nie je na vašich stránkach neaktívny, a vylúčte ho z akýchkoľvek možností minifikácie/kombinovania/odkladania JS."
       },
       "cloudflare": {
-        "recommendation": "V Cloudflare vylúčte skript miniaplikácie z Rocket Loader (náš tag už nastavuje data-cfasync=\"false\") a z Auto Minify/Mirage, ak je povolené pre skripty."
+        "recommendation": "V Cloudflare vylúčte skript widgetu z Rocket Loader (náš tag už nastavuje data-cfasync=\"false\") a z Auto Minify/Mirage, ak je povolené pre skripty."
       }
     }
   },
   "eventLog": {
-    "title": "Záznam aktivít",
-    "intro": "Krátka história kontrol stavu a udalostí pluginov. Tento záznam zostáva na vašej lokalite a nikdy sa automaticky neodosiela nikam.",
-    "empty": "Zatiaľ žiadne udalosti zaznamenané. Spustite kontrolu stavu na karte Pripojenie, aby ste zaznamenali jednu.",
-    "clear": "Vymazať záznam",
+    "title": "Záznam aktivity",
+    "intro": "Krátka história kontrol stavu a udalostí pluginov. Tento denník zostáva na vašej lokalite a nikdy sa automaticky nikam neposiela.",
+    "empty": "Zatiaľ žiadne udalosti zaznamenané. Spustite kontrolu stavu na karte Pripojenie a zaznamenajte ju.",
+    "clear": "Vymazať denník",
     "clearConfirm": "Vymazať všetky zaznamenané udalosti?",
     "confirmClear": "Áno, vymazať",
     "cancel": "Zrušiť",
-    "cleared": "Záznam aktivít bol vymazaný.",
-    "loadError": "Nepodarilo sa načítať záznam aktivít. Obnovte stránku a skúste to znova.",
-    "loading": "Načítava sa aktivita…",
+    "cleared": "Záznam aktivity bol vymazaný.",
+    "loadError": "Nepodarilo sa načítať záznam aktivity. Obnovte stránku a skúste znova.",
+    "loading": "Načítava sa aktivita...",
     "types": {
       "health_check": "Kontrola stavu",
-      "key_saved": "Kľúč miniaplikácie uložený",
-      "key_updated": "Kľúč miniaplikácie aktualizovaný",
+      "key_saved": "Kľúč widgetu uložený",
+      "key_updated": "Kľúč widgetu aktualizovaný",
       "activated": "Plugin aktivovaný",
       "deactivated": "Plugin deaktivovaný"
     },
     "relative": {
       "justNow": "Práve teraz",
-      "minutesAgo": "{{n}} minútami",
-      "hoursAgo": "{{n}} hodinami",
-      "daysAgo": "{{n}} dňami"
+      "minutesAgo": "pred {{n}} minútami",
+      "hoursAgo": "pred {{n}} hodinami",
+      "daysAgo": "pred {{n}} dňami"
     }
   },
   "supportReport": {
-    "title": "Správa podpory",
-    "intro": "Vygenerujte správu, ktorú môžete zdieľať s podporou EaseAccess24. Obsahuje vaše prostredie, stav pripojenia, detekované pluginy na vyrovnávanie a nedávne udalosti. Váš Kľúč miniaplikácie je maskovaný a neobsahuje žiadne osobné údaje.",
-    "privacyNote": "Niç sa neodosiela automaticky. Nezapája sa žiadny server – správu nižšie skopírujte alebo stiahnite a zdieľajte ju sami.",
+    "title": "Správa pre podporu",
+    "intro": "Vygenerujte správu, ktorú môžete zdieľať s podporou EaseAccess24. Obsahuje vaše prostredie, stav pripojenia, zistené pluginy na predpamäť a nedávne udalosti. Váš kľúč widgetu je maskovaný a neobsahuje žiadne osobné údaje.",
+    "privacyNote": "Automaticky sa neodosiela nič. Nie je zapojený žiadny server – správu nižšie skopírujte alebo stiahnite a zdieľajte ju sami.",
     "generate": "Generovať správu",
-    "regenerate": "Pregenerovať",
-    "generating": "Generuje sa…",
+    "regenerate": "Znovu vygenerovať",
+    "generating": "Generuje sa...",
     "previewLabel": "Náhľad správy (presne to, čo sa skopíruje alebo stiahne)",
     "copy": "Kopírovať",
-    "copied": "Copied",
-    "copyFailed": "Copy isn’t available in this browser. Use Download instead.",
-    "downloadTxt": "Download .txt",
-    "downloadJson": "Download .json",
-    "generateError": "We couldn’t generate the report. Reload the page and try again."
+    "copied": "Skopírované",
+    "copyFailed": "Kopírovanie v tomto prehliadači nie je k dispozícii. Namiesto toho použite sťahovanie.",
+    "downloadTxt": "Stiahnuť .txt",
+    "downloadJson": "Stiahnuť .json",
+    "generateError": "Nepodarilo sa nám vygenerovať prehľad. Obnovte stránku a skúste to znova."
   },
   "pluginInfo": {
-    "title": "Plugin information",
-    "version": "Version",
-    "wpCompat": "WordPress compatibility",
-    "phpMin": "PHP minimum",
-    "testedUpTo": "Tested up to",
-    "supportStatus": "Support status",
-    "supportStatusActive": "Actively supported"
+    "title": "Informácie o plugine",
+    "version": "Verzia",
+    "wpCompat": "Kompatibilita s WordPressom",
+    "phpMin": "Minimálna verzia PHP",
+    "testedUpTo": "Testované do verzie",
+    "supportStatus": "Stav podpory",
+    "supportStatusActive": "Aktívne podporované"
   },
   "faq": {
-    "title": "Help & FAQ",
-    "intro": "Answers to common questions about connecting and troubleshooting the widget.",
-    "learnMore": "Learn more",
+    "title": "Pomoc a Časté otázky",
+    "intro": "Odpovede na bežné otázky týkajúce sa pripojenia a riešenia problémov s widgetom.",
+    "learnMore": "Zistiť viac",
     "items": {
       "findKey": {
-        "q": "Where do I find my Widget Key?",
-        "a": "Sign in at app.easeaccess24.com, open the Integrate section, and copy your Widget Key (or the full script snippet). Paste it into the Connection tab — we’ll pull the key out of a snippet for you."
+        "q": "Kde nájdem môj kľúč widgetu?",
+        "a": "Prihláste sa na app.easeaccess24.com, otvorte sekciu Integrácia a skopírujte váš Kľúč widgetu (alebo celý útržok skriptu). Vložte ho na kartu Pripojenie – kľúč z útržku pre vás extrahujeme."
       },
       "notShowing": {
-        "q": "The widget isn’t showing — what should I check?",
-        "a": "Run a Health Check on the Connection tab. It tells you whether the script is added, reachable, and whether the widget actually appears. The most common causes are the domain not being added in your dashboard, a wrong key, or a caching plugin stripping the script."
+        "q": "Widget sa nezobrazuje – čo mám skontrolovať?",
+        "a": "Spustite Kontrolu stavu na karte Pripojenie. Tá vám povie, či je skript pridaný, dosiahnuteľný a či sa widget skutočne zobrazuje. Najčastejšími príčinami sú, že doména nie je pridaná vo vašom ovládacom paneli, nesprávny kľúč alebo plugin na cachovanie, ktorý odstraňuje skript."
       },
       "cachePlugin": {
-        "q": "I use a caching or optimization plugin. Will it conflict?",
-        "a": "It can. Our script tag asks common plugins to skip it, but some setups still need a manual exclusion. Check the Compatibility tab for per-plugin recommendations. We never change another plugin’s settings for you."
+        "q": "Používam plugin na cachovanie alebo optimalizáciu. Bude to v konflikte?",
+        "a": "Môže byť. Náš značkovací skript vyzýva bežné pluginy, aby ho preskočili, ale niektoré nastavenia si stále vyžadujú manuálne vylúčenie. Pozrite si kartu Kompatibilita pre odporúčania pre konkrétne pluginy. Nikdy za vás nemeníme nastavenia iných pluginov."
       },
       "stagingLocalhost": {
-        "q": "Does the widget work on staging or localhost?",
-        "a": "The widget only renders on domains authorized for your Widget Key, so it usually won’t appear on staging or localhost. This is expected and not a plugin error — test on your live, authorized domain."
+        "q": "Funguje widget na dočasných prostrediach alebo localhoste?",
+        "a": "Widget sa vykresľuje iba na doménach autorizovaných pre váš Kľúč widgetu, takže sa zvyčajne nezobrazí na dočasných prostrediach alebo localhoste. Toto je očakávané a nie je to chyba pluginu – testujte na svojej živej, autorizovanej doméne."
       },
       "dataPrivacy": {
-        "q": "What data does this plugin store or send?",
-        "a": "The plugin stores your Widget Key and settings on your own site, plus a short local activity log. It makes no automatic calls to EaseAccess24 beyond adding the widget script and, during a Health Check, testing whether that script is reachable. Support reports are only ever shared by you, manually."
+        "q": "Aké údaje tento plugin ukladá alebo posiela?",
+        "a": "Plugin ukladá váš Kľúč widgetu a nastavenia na vašej vlastnej stránke, plus krátky lokálny denník aktivít. Nevykonáva žiadne automatické volania na EaseAccess24 okrem pridania skriptu widgetu a, počas Kontroly stavu, testovania, či je tento skript dosiahnuteľný. Prehľady podpory sú vždy zdieľané iba vami, manuálne."
       },
       "removeData": {
-        "q": "How do I remove all plugin data?",
-        "a": "Your configuration is kept when you deactivate so you can reactivate later. To remove everything, enable “Remove all EaseAccess24 data” before deleting the plugin, then delete it from the Plugins screen."
+        "q": "Ako odstránim všetky údaje pluginu?",
+        "a": "Vaša konfigurácia sa pri deaktivácii zachová, aby ste ju mohli neskôr znova aktivovať. Ak chcete odstrániť všetko, pred odstránením pluginu aktivujte možnosť „Odstrániť všetky údaje EaseAccess24“, potom ho odstráňte z obrazovky Pluginy."
       }
     }
   },
   "settings": {
-    "languageLabel": "Language",
-    "languageAria": "Interface language",
-    "dataTitle": "Data & privacy",
-    "removeDataLabel": "Remove all EaseAccess24 data when the plugin is deleted",
-    "removeDataHelp": "When enabled, deleting the plugin also removes your Widget Key, settings, and activity log. Leave it off to keep your configuration for a future reinstall. Your theme files are never touched.",
-    "saved": "Saved",
-    "saveError": "We couldn’t save your settings. Check your connection and try again.",
-    "loadError": "We couldn’t load your settings. Reload the page and try again."
+    "languageLabel": "Jazyk",
+    "dataTitle": "Údaje a súkromie",
+    "removeDataLabel": "Odstrániť všetky údaje EaseAccess24 pri odstránení pluginu",
+    "removeDataHelp": "Keď je táto možnosť povolená, odstránenie pluginu odstráni aj váš Kľúč widgetu, nastavenia a denník aktivít. Ponechajte ju vypnutú, aby ste si svoju konfiguráciu zachovali pre budúcu opätovnú inštaláciu. Vaše súbory šablóny sa nikdy nedotýkame.",
+    "saved": "Uložené",
+    "saveError": "Nepodarilo sa nám uložiť vaše nastavenia. Skontrolujte svoje pripojenie a skúste to znova.",
+    "loadError": "Nepodarilo sa nám načítať vaše nastavenia. Obnovte stránku a skúste to znova."
   },
   "footer": {
-    "tagline": "Making the web accessible for everyone.",
-    "madeBy": "Made by EaseAccess24",
-    "platform": "EaseAccess24 platform",
-    "docs": "Support & docs",
-    "privacyLink": "Privacy policy",
-    "reportIssueLink": "Report an issue",
+    "tagline": "Pomáhame urobiť vašu stránku prístupnejšou.",
+    "madeBy": "Vytvorila EaseAccess24",
+    "platform": "Platforma EaseAccess24",
+    "docs": "Podpora",
+    "privacyLink": "Zásady ochrany osobných údajov",
+    "reportIssueLink": "Nahlásiť problém",
     "copyright": "© {{year}} EaseAccess24"
   }
 }

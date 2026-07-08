@@ -1,26 +1,25 @@
 {
   "status": {
     "notConnected": "Non connesso",
-    "healthy": "Connesso · Funzionante",
-    "attention": "Connesso · Richiede attenzione"
+    "healthy": "Connesso · Integro",
+    "attention": "Connesso · Necessita attenzione"
   },
   "common": {
     "appName": "EaseAccess24 Accessibilità",
     "appNameShort": "EaseAccess24",
-    "saving": "Salvataggio in corso…",
+    "saving": "Salvataggio…",
     "cancel": "Annulla",
-    "retry": "Riprova",
     "updateKey": "Aggiorna chiave"
   },
   "onboarding": {
     "title": "Collega il tuo sito a EaseAccess24",
-    "subtitle": "Incolla la tua chiave del widget (o l'intero snippet di script) per aggiungere il widget di accessibilità a questo sito.",
-    "emptyTitle": "Non hai ancora una chiave del widget?",
-    "emptyBody": "Crea la tua organizzazione, scegli un piano e aggiungi questo dominio in EaseAccess24. Riceverai una chiave del widget da incollare qui.",
-    "getKeyCta": "Ottieni la tua chiave del widget",
-    "fieldLabel": "Chiave del widget o snippet di script",
+    "subtitle": "Incolla la tua Widget Key (o l'intero snippet di script) per aggiungere il widget di accessibilità a questo sito.",
+    "emptyTitle": "Non hai ancora una Widget Key?",
+    "emptyBody": "Crea la tua organizzazione, scegli un piano e aggiungi questo dominio in EaseAccess24. Riceverai una Widget Key da incollare qui.",
+    "getKeyCta": "Ottieni la tua Widget Key",
+    "fieldLabel": "Widget Key o snippet di script",
     "helper": "Incolla solo la chiave (ad esempio ABC123) o l'intero snippet <script> — estrarremo la chiave da esso.",
-    "placeholder": "ABC123 —oppure— <script async src=\"https://widget.easeaccess24.com/sdk.js?key=ABC123\"></script>",
+    "placeholder": "ABC123 —o— <script async src=\"https://widget.easeaccess24.com/sdk.js?key=ABC123\"></script>",
     "whereLink": "Dove la trovo?",
     "connectCta": "Connetti e verifica",
     "revealKey": "Mostra",
@@ -28,61 +27,60 @@
     "copyKey": "Copia",
     "copied": "Copiato",
     "errors": {
-      "empty": "Incolla prima la tua chiave del widget o lo snippet di script.",
-      "noKey": "Non siamo riusciti a trovare una chiave del widget in questo. Incolla solo la chiave o l'intero snippet di script che la contiene.",
-      "network": "Non siamo riusciti a salvare la tua chiave. Controlla la connessione e riprova."
+      "empty": "Incolla prima la tua Widget Key o lo snippet di script.",
+      "noKey": "Non siamo riusciti a trovare una Widget Key in questo testo. Incolla solo la chiave, o l'intero snippet di script che la contiene.",
+      "network": "Non siamo riusciti a salvare la tua chiave. Controlla la tua connessione e riprova."
     }
   },
   "stepper": {
-    "aria": "Stato dell'impostazione",
+    "aria": "Progresso configurazione",
     "paste": "Incolla",
     "validate": "Valida",
-    "healthCheck": "Controllo integrità",
+    "healthCheck": "Controllo Integrità",
     "done": "Fatto",
     "state": {
       "done": "completato",
       "current": "passaggio corrente",
-      "upcoming": "futuro"
+      "upcoming": "successivo"
     }
   },
   "dashboard": {
     "statusBadge": "Connesso",
     "title": "Connessione",
-    "subtitle": "La tua chiave del widget è salvata. Esegui un controllo integrità per confermare che il widget venga caricato e sia visibile sul tuo sito.",
-    "keyLabel": "Chiave del widget",
+    "subtitle": "La tua Widget Key è salvata. Esegui un Controllo Integrità per confermare che il widget venga caricato e sia visibile sul tuo sito.",
+    "keyLabel": "Widget Key",
     "domainLabel": "Dominio",
     "lastCheckLabel": "Ultimo controllo integrità",
     "neverChecked": "Non ancora controllato",
     "healthNotRunYet": "Nessun controllo eseguito ancora"
   },
   "health": {
-    "heading": "Controllo integrità",
+    "heading": "Controllo Integrità",
     "intro": "Questo viene eseguito nel tuo browser: carica il tuo sito e verifica se il widget appare effettivamente. Nulla viene inviato a EaseAccess24.",
-    "run": "Esegui controllo integrità",
-    "rerun": "Esegui di nuovo",
-    "running": "Esecuzione controllo integrità in corso…",
+    "run": "Esegui Controllo Integrità",
+    "running": "Esecuzione Controllo Integrità in corso…",
     "resultsHeading": "Risultato",
     "checklistHeading": "Cosa abbiamo controllato",
-    "advisoriesHeading": "Vale anche la pena controllare",
-    "timeoutTitle": "Non siamo riusciti a completare il controllo",
-    "timeoutBody": "Il controllo non è terminato in tempo. Ciò può accadere se la pagina è stata lenta a caricarsi o se un'impostazione di sicurezza l'ha bloccata. Riprova."
+    "advisoriesHeading": "Anche da controllare",
+    "timeoutTitle": "Non è stato possibile completare il controllo",
+    "timeoutBody": "Il controllo non è terminato in tempo. Ciò può accadere se la pagina era lenta a caricarsi o un'impostazione di sicurezza l'ha bloccato. Riprova."
   },
   "checklist": {
     "keySaved": "Chiave del widget salvata",
     "sdkTag": "Script del widget aggiunto al tuo sito",
     "sdkReachable": "Script del widget raggiungibile",
-    "widgetVisible": "Widget appare ed è visibile",
+    "widgetVisible": "Il widget appare ed è visibile",
     "singleInstance": "Esattamente un widget sulla pagina",
     "status": {
       "pass": "superato",
       "fail": "fallito",
       "warn": "avviso",
-      "info": "informazioni",
+      "info": "info",
       "na": "non applicabile"
     }
   },
   "actions": {
-    "openDashboard": "Apri la Dashboard di EaseAccess24",
+    "openDashboard": "Apri la dashboard di EaseAccess24",
     "retry": "Esegui nuovamente il controllo"
   },
   "diagnostics": {
@@ -91,62 +89,62 @@
     "OK": {
       "title": "Il tuo widget è attivo",
       "why": "Abbiamo caricato il tuo sito e il widget di accessibilità è apparso ed è visibile.",
-      "fix": "Nulla da fare: sei pronto."
+      "fix": "Nessuna azione richiesta: è tutto a posto."
     },
     "DOMAIN_NOT_ALLOWED": {
       "title": "Dominio non consentito / chiave non autorizzata",
-      "why": "Lo script del widget è stato caricato ma ha segnalato che questo dominio non è autorizzato per la tua Chiave del widget. Lo stesso messaggio copre una chiave errata e un dominio non ancora aggiunto.",
-      "fix": "Apri la tua Dashboard EaseAccess24, conferma che questo dominio esatto sia aggiunto nella tua organizzazione, verifica che la Chiave del widget corrisponda, quindi esegui nuovamente il controllo."
+      "why": "Lo script del widget è stato caricato ma ha segnalato che questo dominio non è autorizzato per la tua chiave del widget. Lo stesso messaggio copre una chiave errata e un dominio che non è ancora stato aggiunto.",
+      "fix": "Apri la tua dashboard EaseAccess24, conferma che questo dominio esatto sia aggiunto nella tua organizzazione, controlla che la chiave del widget corrisponda, quindi esegui nuovamente il controllo."
     },
     "SDK_UNREACHABLE": {
-      "title": "Lo script del widget non è stato raggiungibile",
-      "why": "Il tuo browser non è riuscito a raggiungere l'URL dello script del widget. Questo è solitamente un problema di rete, CDN o cache, piuttosto che un problema di configurazione.",
-      "fix": "Controlla la rete/CDN del tuo sito, svuota eventuali cache ed esegui nuovamente il controllo."
+      "title": "Lo script del widget non è stato caricato",
+      "why": "Il tuo browser non è riuscito a raggiungere l'URL dello script del widget. Questo è solitamente un problema di rete, CDN o cache piuttosto che un problema di configurazione.",
+      "fix": "Controlla la rete/CDN del tuo sito, cancella eventuali cache ed esegui nuovamente il controllo."
     },
     "WIDGET_NOT_INITIALIZED": {
       "title": "Il widget non è stato caricato",
-      "why": "Lo script del widget è presente, ma non è apparso alcun widget visibile e non è stato segnalato alcun motivo specifico. Cause comuni: il dominio non è ancora stato aggiunto, la chiave è errata o uno script è stato bloccato.",
-      "fix": "Conferma questo dominio e la Chiave del widget nella tua Dashboard EaseAccess24, assicurati che nulla stia bloccando lo script, quindi esegui nuovamente il controllo."
+      "why": "Lo script del widget è presente, ma non è apparso alcun widget visibile e non è stata segnalata alcuna ragione specifica. Cause comuni: il dominio non è ancora stato aggiunto, la chiave è errata o uno script è stato bloccato.",
+      "fix": "Conferma questo dominio e la chiave del widget nella tua dashboard EaseAccess24, assicurati che nulla stia bloccando lo script, quindi esegui nuovamente il controllo."
     },
     "DUPLICATE_WIDGET": {
-      "title": "Widget duplicato rilevato",
-      "why": "Stanno caricando più di un widget sulla pagina. Ciò di solito significa che l'SDK è stato aggiunto due volte, ad esempio sia da questo plugin che da uno snippet manuale nel tuo tema.",
-      "fix": "Mantieni un solo metodo. Se hai aggiunto lo script al tuo tema o a un altro plugin, rimuovilo e lascia che sia questo plugin a gestirlo. Non rimuoviamo mai gli script per te."
+      "title": "Rilevato widget duplicato",
+      "why": "Più di un widget viene caricato sulla pagina. Ciò significa solitamente che l'SDK è stato aggiunto due volte, ad esempio sia da questo plugin che da uno snippet manuale nel tuo tema.",
+      "fix": "Mantieni un solo metodo. Se hai aggiunto lo script al tuo tema o a un altro plugin, rimuovilo e lascia che questo plugin se ne occupi. Non rimuoviamo mai gli script per te."
     },
     "POSSIBLE_DUPLICATE_WIDGET": {
       "title": "Possibile widget duplicato",
-      "why": "Abbiamo trovato segni di un secondo script del widget (ad esempio, un tag script aggiuntivo) ma non siamo riusciti a confermare un secondo widget visibile; la cache può nasconderlo.",
+      "why": "Abbiamo trovato segni di un secondo script del widget (ad esempio, un tag script aggiuntivo) ma non siamo riusciti a confermare un secondo widget visibile: la cache può oscurare questo aspetto.",
       "fix": "Assicurati che il widget sia aggiunto una sola volta. Se hai uno snippet manuale nel tuo tema, rimuovilo e affidati a questo plugin."
     },
     "OPTIMIZER_INTERFERENCE": {
       "title": "Un plugin di cache o ottimizzazione potrebbe interferire",
-      "why": "È stata salvata una Chiave del widget, ma lo script del widget non era presente sulla pagina; un plugin di cache/ottimizzazione potrebbe averlo rimosso o alterato.",
-      "fix": "Escludi lo script EaseAccess24 dalla cache/ottimizzazione. Raccomandazioni dettagliate per ogni plugin saranno presto disponibili nella sezione Compatibilità."
+      "why": "È stata salvata una chiave del widget, ma lo script del widget non era presente sulla pagina: un plugin di cache/ottimizzazione potrebbe averlo rimosso o alterato.",
+      "fix": "Escludi lo script EaseAccess24 dalla cache/ottimizzazione. Raccomandazioni dettagliate, per plugin, arriveranno presto nella sezione Compatibilità."
     },
     "STAGING_DETECTED": {
-      "title": "Ambiente di staging rilevato",
+      "title": "Rilevato ambiente di staging",
       "why": "Questo sembra un sito di staging o di sviluppo. Il widget viene visualizzato solo sui domini autorizzati in EaseAccess24, quindi potrebbe non apparire qui.",
-      "fix": "Ciò è previsto in staging. Aggiungi questo dominio nella tua Dashboard se desideri che il widget appaia qui, oppure testa sul tuo dominio live."
+      "fix": "Questo è normale in staging. Aggiungi questo dominio nella tua dashboard se desideri che il widget appaia qui, oppure testa sul tuo dominio live."
     },
     "LOCALHOST_DETECTED": {
-      "title": "Ambiente locale rilevato",
+      "title": "Rilevato ambiente locale",
       "why": "Questo sito è in esecuzione su localhost. Il widget viene visualizzato solo sui domini autorizzati in EaseAccess24, quindi non apparirà localmente.",
-      "fix": "Ciò è previsto localmente. Testa sul tuo dominio live autorizzato per vedere il widget."
+      "fix": "Questo è normale in locale. Testa sul tuo dominio live autorizzato per vedere il widget."
     },
     "KEY_INVALID": {
       "title": "Chiave del widget non accettata",
-      "why": "La Chiave del widget è stata rifiutata.",
-      "fix": "Controlla la chiave nella tua Dashboard EaseAccess24 e salvala nuovamente."
+      "why": "La chiave del widget è stata rifiutata.",
+      "fix": "Controlla la chiave nella tua dashboard EaseAccess24 e salvala nuovamente."
     },
     "SUBSCRIPTION_EXPIRED": {
       "title": "Abbonamento scaduto",
-      "why": "L'abbonamento per questa Chiave del widget non è più attivo.",
-      "fix": "Rinnova il tuo piano nella Dashboard EaseAccess24."
+      "why": "L'abbonamento per questa chiave del widget non è più attivo.",
+      "fix": "Rinnova il tuo piano nella dashboard EaseAccess24."
     },
     "ORG_DISABLED": {
-      "title": "Organizzazione disabilitata",
-      "why": "L'organizzazione per questa Widget Key è disabilitata.",
-      "fix": "Contatta il supporto EaseAccess24 o controlla la tua Dashboard."
+      "title": "Organizzazione disattivata",
+      "why": "L'organizzazione per questa chiave del widget è disattivata.",
+      "fix": "Contatta l'assistenza EaseAccess24 o controlla la tua dashboard."
     }
   },
   "nav": {
@@ -159,29 +157,29 @@
   },
   "compatibility": {
     "title": "Compatibilità cache e ottimizzazione",
-    "intro": "I plugin di caching e ottimizzazione possono posticipare, combinare o rimuovere script, incluso il widget EaseAccess24. Aggiungiamo suggerimenti che chiedono loro di lasciare indisturbato il nostro script, ma alcune configurazioni necessitano comunque di un'esclusione manuale. Non modifichiamo mai le impostazioni di un altro plugin per te.",
+    "intro": "I plugin di caching e ottimizzazione possono posticipare, combinare o rimuovere script, incluso il widget EaseAccess24. Aggiungiamo degli indicatori che chiedono di non modificare il nostro script, ma alcune configurazioni necessitano ancora di un'esclusione manuale. Non modifichiamo mai le impostazioni di altri plugin per te.",
     "noneTitle": "Nessun plugin di cache o ottimizzazione noto rilevato",
-    "noneBody": "Non abbiamo trovato nessuno dei plugin di caching/ottimizzazione che riconosciamo. Se il widget non viene ancora visualizzato, esegui un Controllo integrità nella scheda Connessione.",
-    "cloudflareCdnNote": "Nota: Cloudflare in esecuzione come CDN (Rocket Loader, Auto Minify al edge) non può essere rilevato dal tuo sito. Se utilizzi Cloudflare, controlla anche quelle impostazioni.",
+    "noneBody": "Non abbiamo trovato nessuno dei plugin di caching/ottimizzazione che riconosciamo. Se il widget ancora non appare, esegui un Controllo Integrità nella scheda Connessione.",
+    "cloudflareCdnNote": "Nota: Cloudflare in esecuzione come CDN (Rocket Loader, Auto Minify al limite) non può essere rilevato dal tuo sito. Se utilizzi Cloudflare, controlla anche quelle impostazioni.",
     "detectedTitle": "Plugin rilevati",
     "recommendationLabel": "Raccomandazione",
     "modifiedTitle": "Lo script del widget potrebbe essere modificato",
-    "modifiedBody": "È attivo un plugin di cache/ottimizzazione e il tuo ultimo Controllo integrità ha rilevato che lo script del widget non era presente nella pagina. Applica l'esclusione sottostante ed esegui nuovamente il controllo.",
+    "modifiedBody": "È attivo un plugin di cache/ottimizzazione e il tuo ultimo Controllo Integrità ha rilevato che lo script del widget non era presente nella pagina. Applica l'esclusione seguente ed esegui nuovamente il controllo.",
     "plugins": {
       "wp-rocket": {
-        "recommendation": "In WP Rocket → Ottimizzazione file, escludi \"widget.easeaccess24.com/sdk.js\" dalla minificazione JavaScript, dalla combinazione e da \"Ritarda l'esecuzione di JavaScript\". WP Rocket rispetta anche il nostro suggerimento data-no-minify."
+        "recommendation": "In WP Rocket → Ottimizzazione file, escludi “widget.easeaccess24.com/sdk.js” dalla minificazione JavaScript, dalla combinazione e dall'esecuzione posticipata di JavaScript. WP Rocket rispetta anche il nostro indicatore data-no-minify."
       },
       "litespeed": {
-        "recommendation": "In LiteSpeed Cache → Ottimizzazione pagina → Impostazioni JS, aggiungi \"widget.easeaccess24.com\" agli Escludi JS (e agli escludi Posticipa/Ritarda se abilitati)."
+        "recommendation": "In LiteSpeed Cache → Ottimizzazione pagina → Impostazioni JS, aggiungi “widget.easeaccess24.com” agli esclusi JS (ed esclusioni posticipate/ritardate se abilitate)."
       },
       "autoptimize": {
-        "recommendation": "In Autoptimize → JS, Immagini..., aggiungi \"easeaccess24\" a \"Escludi script da Autoptimize\". Autoptimize rispetta anche il nostro suggerimento data-no-optimize."
+        "recommendation": "In Autoptimize → JS, Immagini..., aggiungi “easeaccess24” a “Escludi script da Autoptimize”. Autoptimize rispetta anche il nostro indicatore data-no-optimize."
       },
       "perfmatters": {
-        "recommendation": "In Perfmatters → Assets, aggiungi \"easeaccess24\" alle esclusioni per \"Ritarda JavaScript\" e qualsiasi opzione di posticipo/minificazione degli script."
+        "recommendation": "In Perfmatters → Asset, aggiungi “easeaccess24” alle esclusioni per “Ritarda JavaScript” e per qualsiasi opzione di posticipo/minificazione script."
       },
       "asset-cleanup": {
-        "recommendation": "In Asset CleanUp, assicurati che lo script EaseAccess24 non venga scaricato dalle tue pagine ed escludilo da eventuali opzioni di minificazione/combinazione/posticipo JS."
+        "recommendation": "In Asset CleanUp, assicurati che lo script EaseAccess24 non venga scaricato dalle tue pagine ed escludilo da qualsiasi opzione di minificazione/combinazione/posticipo JS."
       },
       "cloudflare": {
         "recommendation": "In Cloudflare, escludi lo script del widget da Rocket Loader (il nostro tag imposta già data-cfasync=\"false\") e da Auto Minify/Mirage se abilitato per gli script."
@@ -190,40 +188,40 @@
   },
   "eventLog": {
     "title": "Registro attività",
-    "intro": "Una breve cronologia dei controlli integrità ed eventi dei plugin. Questo registro rimane sul tuo sito e non viene mai inviato automaticamente da nessuna parte.",
-    "empty": "Nessun evento registrato ancora. Esegui un Controllo integrità nella scheda Connessione per registrarne uno.",
+    "intro": "Una breve cronologia dei controlli integrità ed eventi dei plugin. Questo registro rimane sul tuo sito e non viene mai inviato automaticamente.",
+    "empty": "Nessun evento registrato ancora. Esegui un Controllo Integrità nella scheda Connessione per registrarne uno.",
     "clear": "Cancella registro",
-    "clearConfirm": "Cancellare tutti gli eventi registrati?",
+    "clearConfirm": "Cancella tutti gli eventi registrati?",
     "confirmClear": "Sì, cancella",
     "cancel": "Annulla",
     "cleared": "Registro attività cancellato.",
     "loadError": "Impossibile caricare il registro attività. Ricarica la pagina e riprova.",
-    "loading": "Caricamento attività...",
+    "loading": "Caricamento attività in corso...",
     "types": {
-      "health_check": "Controllo integrità",
-      "key_saved": "Widget Key salvata",
-      "key_updated": "Widget Key aggiornata",
+      "health_check": "Controllo Integrità",
+      "key_saved": "Chiave widget salvata",
+      "key_updated": "Chiave widget aggiornata",
       "activated": "Plugin attivato",
       "deactivated": "Plugin disattivato"
     },
     "relative": {
-      "justNow": "Adesso",
+      "justNow": "Appena adesso",
       "minutesAgo": "{{n}} minuti fa",
       "hoursAgo": "{{n}} ore fa",
       "daysAgo": "{{n}} giorni fa"
     }
   },
   "supportReport": {
-    "title": "Rapporto di supporto",
-    "intro": "Genera un rapporto che puoi condividere con il supporto EaseAccess24. Include il tuo ambiente, lo stato della connessione, i plugin di cache rilevati e gli eventi recenti. La tua Widget Key è mascherata e non sono inclusi dati personali.",
-    "privacyNote": "Nulla viene inviato automaticamente. Non c'è alcun server coinvolto: copia o scarica il rapporto sottostante e condividilo tu stesso.",
-    "generate": "Genera rapporto",
+    "title": "Report di supporto",
+    "intro": "Genera un report che puoi condividere con il supporto EaseAccess24. Include il tuo ambiente, lo stato della connessione, i plugin di cache rilevati e gli eventi recenti. La tua chiave widget è mascherata e non sono inclusi dati personali.",
+    "privacyNote": "Nulla viene inviato automaticamente. Non c'è alcun server coinvolto: copia o scarica il report qui sotto e condividilo tu stesso.",
+    "generate": "Genera report",
     "regenerate": "Rigenera",
-    "generating": "Generazione...",
-    "previewLabel": "Anteprima del rapporto (esattamente ciò che verrà copiato o scaricato)",
+    "generating": "Generazione in corso...",
+    "previewLabel": "Anteprima report (esattamente ciò che verrà copiato o scaricato)",
     "copy": "Copia",
     "copied": "Copiato",
-    "copyFailed": "La copia non è disponibile in questo browser. Utilizza Scarica invece.",
+    "copyFailed": "La copia non è disponibile in questo browser. Utilizza invece Scarica.",
     "downloadTxt": "Scarica .txt",
     "downloadJson": "Scarica .json",
     "generateError": "Non è stato possibile generare il report. Ricarica la pagina e riprova."
@@ -239,50 +237,49 @@
   },
   "faq": {
     "title": "Aiuto e FAQ",
-    "intro": "Risposte alle domande più comuni sulla connessione e sulla risoluzione dei problemi del widget.",
+    "intro": "Risposte alle domande più frequenti sulla connessione e sulla risoluzione dei problemi del widget.",
     "learnMore": "Scopri di più",
     "items": {
       "findKey": {
-        "q": "Dove trovo la mia chiave del widget?",
-        "a": "Accedi su app.easeaccess24.com, apri la sezione Integra e copia la tua chiave del widget (o l'intero snippet di codice). Incollala nella scheda Connessione: estrarremo la chiave dallo snippet per te."
+        "q": "Dove trovo la mia Chiave Widget?",
+        "a": "Accedi a app.easeaccess24.com, apri la sezione Integrazione e copia la tua Chiave Widget (o lo snippet di script completo). Incollala nella scheda Connessione: estrarremo la chiave dallo snippet per te."
       },
       "notShowing": {
         "q": "Il widget non viene visualizzato: cosa devo controllare?",
-        "a": "Esegui un controllo di integrità nella scheda Connessione. Ti dice se lo script è stato aggiunto, se è raggiungibile e se il widget viene effettivamente visualizzato. Le cause più comuni sono il dominio non aggiunto nella dashboard, una chiave errata o un plugin di caching che rimuove lo script."
+        "a": "Esegui un Controllo Integrità nella scheda Connessione. Ti dice se lo script è stato aggiunto, se è raggiungibile e se il widget viene effettivamente visualizzato. Le cause più comuni sono il dominio non aggiunto nella tua dashboard, una chiave errata o un plugin di cache che rimuove lo script."
       },
       "cachePlugin": {
-        "q": "Utilizzo un plugin di caching o ottimizzazione. Potrebbe creare conflitti?",
-        "a": "Potrebbe. Il nostro tag di script chiede ai plugin comuni di saltarlo, ma alcune configurazioni richiedono ancora un'esclusione manuale. Controlla la scheda Compatibilità per raccomandazioni per plugin specifici. Non modifichiamo mai le impostazioni di un altro plugin per te."
+        "q": "Utilizzo un plugin di cache o ottimizzazione. Ci saranno conflitti?",
+        "a": "Potrebbe esserci. Il nostro tag di script chiede ai plugin comuni di ignorarlo, ma alcune configurazioni richiedono ancora un'esclusione manuale. Controlla la scheda Compatibilità per raccomandazioni specifiche per plugin. Non modifichiamo mai le impostazioni di un altro plugin per te."
       },
       "stagingLocalhost": {
         "q": "Il widget funziona su staging o localhost?",
-        "a": "Il widget viene visualizzato solo sui domini autorizzati per la tua chiave del widget, quindi di solito non apparirà su staging o localhost. Questo è previsto e non è un errore del plugin: testa sul tuo dominio live autorizzato."
+        "a": "Il widget viene visualizzato solo sui domini autorizzati per la tua Chiave Widget, quindi di solito non appare su staging o localhost. Questo è previsto e non un errore del plugin: testa sul tuo dominio live autorizzato."
       },
       "dataPrivacy": {
         "q": "Quali dati memorizza o invia questo plugin?",
-        "a": "Il plugin memorizza la tua chiave del widget e le impostazioni sul tuo sito, oltre a un breve registro delle attività locali. Non effettua chiamate automatiche a EaseAccess24 oltre all'aggiunta dello script del widget e, durante un controllo di integrità, al test della raggiungibilità dello script. I report di supporto vengono condivisi solo da te, manualmente."
+        "a": "Il plugin memorizza la tua Chiave Widget e le impostazioni sul tuo sito, oltre a un breve registro delle attività locali. Non effettua chiamate automatiche a EaseAccess24 oltre all'aggiunta dello script del widget e, durante un Controllo Integrità, al test della raggiungibilità di tale script. I report di supporto vengono condivisi solo da te, manualmente."
       },
       "removeData": {
         "q": "Come rimuovo tutti i dati del plugin?",
-        "a": "La tua configurazione viene mantenuta quando disattivi il plugin in modo da poterlo riattivare in seguito. Per rimuovere tutto, abilita \"Rimuovi tutti i dati di EaseAccess24\" prima di eliminare il plugin, quindi eliminalo dalla schermata dei plugin."
+        "a": "La tua configurazione viene mantenuta quando disattivi il plugin in modo da poterlo riattivare in seguito. Per rimuovere tutto, abilita \"Rimuovi tutti i dati EaseAccess24\" prima di eliminare il plugin, quindi eliminalo dalla schermata Plugin."
       }
     }
   },
   "settings": {
     "languageLabel": "Lingua",
-    "languageAria": "Lingua dell'interfaccia",
     "dataTitle": "Dati e privacy",
-    "removeDataLabel": "Rimuovi tutti i dati di EaseAccess24 quando il plugin viene eliminato",
-    "removeDataHelp": "Se abilitato, l'eliminazione del plugin rimuove anche la chiave del widget, le impostazioni e il registro delle attività. Lascialo disattivato per mantenere la configurazione per una futura reinstallazione. I file del tuo tema non vengono mai modificati.",
-    "saved": "Salvataggio effettuato",
-    "saveError": "Non è stato possibile salvare le tue impostazioni. Controlla la connessione e riprova.",
-    "loadError": "Non è stato possibile caricare le tue impostazioni. Ricarica la pagina e riprova."
+    "removeDataLabel": "Rimuovi tutti i dati EaseAccess24 quando il plugin viene eliminato",
+    "removeDataHelp": "Quando abilitata, l'eliminazione del plugin rimuove anche la tua Chiave Widget, le impostazioni e il registro delle attività. Lasciala disattivata per mantenere la tua configurazione per una futura reinstallazione. I file del tuo tema non vengono mai toccati.",
+    "saved": "Salvate",
+    "saveError": "Impossibile salvare le impostazioni. Controlla la tua connessione e riprova.",
+    "loadError": "Impossibile caricare le impostazioni. Ricarica la pagina e riprova."
   },
   "footer": {
-    "tagline": "Rendere il web accessibile a tutti.",
+    "tagline": "Aiutiamo a rendere il tuo sito più accessibile.",
     "madeBy": "Realizzato da EaseAccess24",
     "platform": "Piattaforma EaseAccess24",
-    "docs": "Supporto e documentazione",
+    "docs": "Supporto",
     "privacyLink": "Informativa sulla privacy",
     "reportIssueLink": "Segnala un problema",
     "copyright": "© {{year}} EaseAccess24"

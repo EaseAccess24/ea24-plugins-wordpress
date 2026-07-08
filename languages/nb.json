@@ -9,35 +9,34 @@
     "appNameShort": "EaseAccess24",
     "saving": "Lagrer…",
     "cancel": "Avbryt",
-    "retry": "Prøv igjen",
     "updateKey": "Oppdater nøkkel"
   },
   "onboarding": {
     "title": "Koble nettstedet ditt til EaseAccess24",
-    "subtitle": "Lim inn Widget-nøkkelen din (eller hele skriptsnutten) for å legge til tilgjengelighetswidgeten på dette nettstedet.",
+    "subtitle": "Lim inn Widget-nøkkelen din (eller hele skriptutdraget) for å legge til tilgjengelighetswidgeten på dette nettstedet.",
     "emptyTitle": "Har du ikke en Widget-nøkkel ennå?",
-    "emptyBody": "Opprett organisasjonen din, velg en plan, og legg til dette domenet i EaseAccess24. Du får en Widget-nøkkel som du kan lime inn her.",
-    "getKeyCta": "Hent Widget-nøkkelen din",
-    "fieldLabel": "Widget-nøkkel eller skriptsnutt",
-    "helper": "Lim inn bare nøkkelen (for eksempel ABC123) eller hele <script>-snutten – vi henter nøkkelen ut av den.",
+    "emptyBody": "Opprett organisasjonen din, velg en plan, og legg til dette domenet i EaseAccess24. Du vil få en Widget-nøkkel å lime inn her.",
+    "getKeyCta": "Få Widget-nøkkelen din",
+    "fieldLabel": "Widget-nøkkel eller skriptutdrag",
+    "helper": "Lim inn bare nøkkelen (for eksempel ABC123) eller hele <script>-utdraget — vi henter nøkkelen ut av det.",
     "placeholder": "ABC123 —eller— <script async src=\"https://widget.easeaccess24.com/sdk.js?key=ABC123\"></script>",
-    "whereLink": "Hvor finner jeg denne?",
+    "whereLink": "Hvor finner jeg dette?",
     "connectCta": "Koble til og verifiser",
     "revealKey": "Vis",
     "hideKey": "Skjul",
     "copyKey": "Kopier",
     "copied": "Kopiert",
     "errors": {
-      "empty": "Lim inn Widget-nøkkelen eller skriptsnutten først.",
-      "noKey": "Vi fant ikke en Widget-nøkkel i dette. Lim inn bare nøkkelen, eller hele skriptsnutten som inneholder den.",
-      "network": "Vi klarte ikke å lagre nøkkelen din. Sjekk tilkoblingen din og prøv igjen."
+      "empty": "Lim inn Widget-nøkkelen eller skriptutdraget ditt først.",
+      "noKey": "Vi fant ingen Widget-nøkkel i det. Lim inn bare nøkkelen, eller hele skriptutdraget som inneholder den.",
+      "network": "Vi kunne ikke lagre nøkkelen din. Sjekk tilkoblingen din og prøv igjen."
     }
   },
   "stepper": {
-    "aria": "Oppsettprosess",
+    "aria": "Oppsettfremdrift",
     "paste": "Lim inn",
     "validate": "Valider",
-    "healthCheck": "Helsjekk",
+    "healthCheck": "Helsetjek",
     "done": "Ferdig",
     "state": {
       "done": "fullført",
@@ -48,29 +47,28 @@
   "dashboard": {
     "statusBadge": "Tilkoblet",
     "title": "Tilkobling",
-    "subtitle": "Widget-nøkkelen din er lagret. Kjør en helsesjekk for å bekrefte at widgeten lastes og er synlig på nettstedet ditt.",
+    "subtitle": "Widget-nøkkelen din er lagret. Kjør et helsetjek for å bekrefte at widgeten lastes og er synlig på nettstedet ditt.",
     "keyLabel": "Widget-nøkkel",
     "domainLabel": "Domene",
-    "lastCheckLabel": "Siste helsesjekk",
+    "lastCheckLabel": "Siste helsetjek",
     "neverChecked": "Ikke sjekket ennå",
     "healthNotRunYet": "Ingen sjekk kjørt ennå"
   },
   "health": {
-    "heading": "Helsjekk",
-    "intro": "Dette kjører i nettleseren din: den laster nettstedet ditt og sjekker om widgeten faktisk vises. Ingenting sendes til EaseAccess24.",
-    "run": "Kjør helsesjekk",
-    "rerun": "Kjør igjen",
-    "running": "Kjører helsesjekk…",
+    "heading": "Helsetjek",
+    "intro": "Dette kjører i nettleseren din: det laster nettstedet ditt og sjekker om widgeten faktisk vises. Ingenting sendes til EaseAccess24.",
+    "run": "Kjør Helsetjek",
+    "running": "Kjører Helsetjek…",
     "resultsHeading": "Resultat",
     "checklistHeading": "Hva vi sjekket",
     "advisoriesHeading": "Også verdt å sjekke",
-    "timeoutTitle": "Vi klarte ikke å fullføre sjekken",
-    "timeoutBody": "Sjekken ble ikke ferdig i tide. Dette kan skje hvis siden tok lang tid å laste eller en sikkerhetsinnstilling blokkerte den. Prøv igjen."
+    "timeoutTitle": "Vi kunne ikke fullføre sjekken",
+    "timeoutBody": "Sjekken ble ikke fullført i tide. Dette kan skje hvis siden var treg å laste eller en sikkerhetsinnstilling blokkerte den. Prøv igjen."
   },
   "checklist": {
     "keySaved": "Widget-nøkkel lagret",
     "sdkTag": "Widget-skript lagt til på nettstedet ditt",
-    "sdkReachable": "Widget-skript er tilgjengelig",
+    "sdkReachable": "Widget-skript kan nås",
     "widgetVisible": "Widget vises og er synlig",
     "singleInstance": "Nøyaktig én widget på siden",
     "status": {
@@ -83,60 +81,60 @@
   },
   "actions": {
     "openDashboard": "Åpne EaseAccess24 Dashboard",
-    "retry": "Kjør sjekken igjen"
+    "retry": "Kjør kontrollen på nytt"
   },
   "diagnostics": {
     "whyLabel": "Hvorfor",
     "fixLabel": "Hvordan fikse",
     "OK": {
       "title": "Widgeten din er aktiv",
-      "why": "Vi lastet nettstedet ditt og tilgjengelighetswidgeten dukket opp og er synlig.",
+      "why": "Vi lastet nettstedet ditt, og tilgjengelighetswidgeten dukket opp og er synlig.",
       "fix": "Ingenting å gjøre – du er klar."
     },
     "DOMAIN_NOT_ALLOWED": {
       "title": "Domene ikke tillatt / nøkkel ikke autorisert",
       "why": "Widget-skriptet ble lastet, men rapporterte at dette domenet ikke er autorisert for din Widget-nøkkel. Samme melding dekker en feil nøkkel og et domene som ennå ikke er lagt til.",
-      "fix": "Åpne EaseAccess24 Dashboard, bekreft at dette nøyaktige domenet er lagt til under organisasjonen din, sjekk at Widget-nøkkelen stemmer, og kjør deretter sjekken igjen."
+      "fix": "Åpne EaseAccess24 Dashboard, bekreft at dette nøyaktige domenet er lagt til under organisasjonen din, sjekk at Widget-nøkkelen stemmer, og kjør deretter kontrollen på nytt."
     },
     "SDK_UNREACHABLE": {
       "title": "Widget-skriptet kunne ikke lastes",
       "why": "Nettleseren din kunne ikke nå URL-en til widget-skriptet. Dette er vanligvis et nettverks-, CDN- eller hurtigbufferproblem, heller enn et konfigurasjonsproblem.",
-      "fix": "Sjekk nettstedets nettverk/CDN, tøm hurtigbufferen, og kjør sjekken igjen."
+      "fix": "Sjekk nettstedets nettverk/CDN, tøm eventuelle hurtigbuffer, og kjør kontrollen på nytt."
     },
     "WIDGET_NOT_INITIALIZED": {
       "title": "Widgeten ble ikke lastet",
-      "why": "Widget-skriptet er på plass, men ingen synlig widget dukket opp, og ingen spesifikk årsak ble rapportert. Vanlige årsaker: domenet er ikke lagt til ennå, nøkkelen er feil, eller et skript ble blokkert.",
-      "fix": "Bekreft dette domenet og Widget-nøkkelen i EaseAccess24 Dashboard, sørg for at ingenting blokkerer skriptet, og kjør deretter sjekken igjen."
+      "why": "Widget-skriptet er på plass, men ingen synlig widget dukket opp, og ingen spesifikk grunn ble rapportert. Vanlige årsaker: domenet er ikke lagt til ennå, nøkkelen er feil, eller et skript ble blokkert.",
+      "fix": "Bekreft dette domenet og Widget-nøkkelen i EaseAccess24 Dashboard, sørg for at ingenting blokkerer skriptet, og kjør deretter kontrollen på nytt."
     },
     "DUPLICATE_WIDGET": {
       "title": "Duplikat widget oppdaget",
-      "why": "Mer enn én widget lastes på siden. Dette betyr vanligvis at SDK-en er lagt til to ganger – for eksempel både av dette pluginet og av et manuelt utdrag i temaet ditt.",
-      "fix": "Behold bare én metode. Hvis du la til skriptet i temaet ditt eller et annet plugin, fjern det og la dette pluginet håndtere det. Vi fjerner aldri skript for deg."
+      "why": "Mer enn én widget lastes på siden. Dette betyr vanligvis at SDK-en er lagt til to ganger – for eksempel, både av dette pluginet og av et manuelt utdrag i temaet ditt.",
+      "fix": "Behold kun én metode. Hvis du la til skriptet i temaet ditt eller et annet plugin, fjern det og la dette pluginet håndtere det. Vi fjerner aldri skript for deg."
     },
     "POSSIBLE_DUPLICATE_WIDGET": {
       "title": "Mulig duplikat widget",
-      "why": "Vi fant tegn til et andre widget-skript (for eksempel en ekstra skript-tag), men kunne ikke bekrefte en andre synlig widget – hurtigbuffer kan skjule dette.",
+      "why": "Vi fant tegn på et andre widget-skript (for eksempel en ekstra skript-tag), men kunne ikke bekrefte en andre synlig widget – hurtigbuffer kan skjule dette.",
       "fix": "Sørg for at widgeten kun legges til én gang. Hvis du har et manuelt utdrag i temaet ditt, fjern det og stol på dette pluginet."
     },
     "OPTIMIZER_INTERFERENCE": {
       "title": "Et hurtigbuffer- eller optimaliseringsplugin kan forstyrre",
       "why": "En Widget-nøkkel er lagret, men widget-skriptet var ikke til stede på siden – et hurtigbuffer-/optimaliseringsplugin kan ha fjernet eller endret det.",
-      "fix": "Ekskluder EaseAccess24-skriptet fra hurtigbuffer/optimalisering. Detaljerte anbefalinger per plugin kommer til Kompatibilitetsseksjonen."
+      "fix": "Ekskluder EaseAccess24-skriptet fra hurtigbuffer/optimalisering. Detaljerte, per-plugin anbefalinger kommer snart til Kompatibilitetsseksjonen."
     },
     "STAGING_DETECTED": {
       "title": "Staging-miljø oppdaget",
       "why": "Dette ser ut som et staging- eller utviklingsnettsted. Widgeten vises kun på domener som er autorisert i EaseAccess24, så den vises kanskje ikke her.",
-      "fix": "Dette er forventet på staging. Legg til dette domenet i Dashboardet ditt hvis du vil at widgeten skal vises her, eller test på ditt live domene."
+      "fix": "Dette er forventet på staging. Legg til dette domenet i Dashboardet ditt hvis du vil at widgeten skal vises her, eller test på ditt live-domene."
     },
     "LOCALHOST_DETECTED": {
       "title": "Lokalt miljø oppdaget",
-      "why": "Dette nettstedet kjører på localhost. Widgeten vises kun på domener som er autorisert i EaseAccess24, så den vil ikke vises lokalt.",
+      "why": "Dette nettstedet kjører på localhost. Widgeten vises kun på domener som er autorisert i EaseAccess24, så den vises ikke lokalt.",
       "fix": "Dette er forventet lokalt. Test på ditt live, autoriserte domene for å se widgeten."
     },
     "KEY_INVALID": {
-      "title": "Widget-nøkkel aksepteres ikke",
+      "title": "Widget-nøkkel ikke akseptert",
       "why": "Widget-nøkkelen ble avvist.",
-      "fix": "Sjekk nøkkelen i EaseAccess24 Dashboard og lagre den igjen."
+      "fix": "Sjekk nøkkelen i EaseAccess24 Dashboard og lagre den på nytt."
     },
     "SUBSCRIPTION_EXPIRED": {
       "title": "Abonnement utløpt",
@@ -146,7 +144,7 @@
     "ORG_DISABLED": {
       "title": "Organisasjon deaktivert",
       "why": "Organisasjonen for denne Widget-nøkkelen er deaktivert.",
-      "fix": "Kontakt EaseAccess24-støtte eller sjekk instrumentbordet ditt."
+      "fix": "Kontakt EaseAccess24-støtte eller sjekk Dashboardet ditt."
     }
   },
   "nav": {
@@ -159,29 +157,29 @@
   },
   "compatibility": {
     "title": "Kompatibilitet for hurtigbuffer og optimalisering",
-    "intro": "Plugins for hurtigbuffer og optimalisering kan utsette, kombinere eller fjerne skript – inkludert EaseAccess24-widgeten. Vi legger til hint som ber dem om å la skriptet vårt være i fred, men noen oppsett krever fortsatt en manuell ekskludering. Vi endrer aldri innstillingene til en annen plugin for deg.",
+    "intro": "Plugins for hurtigbuffer og optimalisering kan utsette, kombinere eller fjerne skript — inkludert EaseAccess24-widgeten. Vi legger til hint som ber dem om å la skriptet vårt være i fred, men noen oppsett krever fortsatt en manuell ekskludering. Vi endrer aldri innstillingene til en annen plugin for deg.",
     "noneTitle": "Ingen kjente hurtigbuffer- eller optimaliseringsplugins oppdaget",
-    "noneBody": "Vi fant ingen av hurtigbuffer-/optimaliseringsplugins vi kjenner igjen. Hvis widgeten fortsatt ikke vises, kjør en helsesjekk på tilkoblingsfanen.",
-    "cloudflareCdnNote": "Merk: Cloudflare som kjører som CDN (Rocket Loader, Auto Minify ved kanten) kan ikke oppdages fra nettstedet ditt. Hvis du bruker Cloudflare, sjekk også disse innstillingene.",
+    "noneBody": "Vi fant ingen av hurtigbuffer-/optimaliseringspluginene vi kjenner igjen. Hvis widgeten fortsatt ikke vises, kjør en helsesjekk på Tilkobling-fanen.",
+    "cloudflareCdnNote": "Merk: Cloudflare som kjører som CDN (Rocket Loader, Auto Minify ved kanten) kan ikke oppdages fra nettstedet ditt. Hvis du bruker Cloudflare, sjekk disse innstillingene også.",
     "detectedTitle": "Oppdagede plugins",
     "recommendationLabel": "Anbefaling",
-    "modifiedTitle": "Widget-skriptet kan bli modifisert",
-    "modifiedBody": "En plugin for hurtigbuffer/optimalisering er aktiv, og din siste helsesjekk fant at widget-skriptet ikke var på siden. Bruk ekskluderingen nedenfor og kjør sjekken på nytt.",
+    "modifiedTitle": "Widget-skriptet kan bli endret",
+    "modifiedBody": "En hurtigbuffer-/optimaliseringsplugin er aktiv, og din siste helsesjekk fant at widget-skriptet ikke var på siden. Bruk ekskluderingen nedenfor og kjør sjekken på nytt.",
     "plugins": {
       "wp-rocket": {
-        "recommendation": "I WP Rocket → Filoptimalisering, ekskluder “widget.easeaccess24.com/sdk.js” fra minifikasjon av JavaScript, kombinasjon og “Forsinkelse av JavaScript-utførelse”. WP Rocket respekterer også vårt data-no-minify-hint."
+        "recommendation": "I WP Rocket → File Optimization, ekskluder “widget.easeaccess24.com/sdk.js” fra JavaScript-minifisering, kombinasjon og “Delay JavaScript execution”. WP Rocket respekterer også vårt data-no-minify-hint."
       },
       "litespeed": {
-        "recommendation": "I LiteSpeed Cache → Sideoptimalisering → JS-innstillinger, legg til “widget.easeaccess24.com” i JS-ekskluderinger (og ekskluderinger for forsinkelse/utsettelse hvis aktivert)."
+        "recommendation": "I LiteSpeed Cache → Page Optimization → JS Settings, legg til “widget.easeaccess24.com” i JS Excludes (og Deferred/Delayed excludes hvis aktivert)."
       },
       "autoptimize": {
-        "recommendation": "I Autoptimize → JS, bilder..., legg til “easeaccess24” i “Ekskluder skript fra Autoptimize”. Autoptimize respekterer også vårt data-no-optimize-hint."
+        "recommendation": "I Autoptimize → JS, Images..., legg til “easeaccess24” i “Exclude scripts from Autoptimize”. Autoptimize respekterer også vårt data-no-optimize-hint."
       },
       "perfmatters": {
-        "recommendation": "I Perfmatters → Aktiva, legg til “easeaccess24” i ekskluderingene for “Forsink JavaScript” og eventuelle skriptutsettelses-/minifikasjonsalternativer."
+        "recommendation": "I Perfmatters → Assets, legg til “easeaccess24” i ekskluderingene for “Delay JavaScript” og eventuelle skriptutsettelses-/minifiseringsalternativer."
       },
       "asset-cleanup": {
-        "recommendation": "I Asset CleanUp, sørg for at EaseAccess24-skriptet ikke blir fjernet fra sidene dine, og ekskluder det fra alle alternativer for minifikasjon/kombinasjon/utsettelse av JS."
+        "recommendation": "I Asset CleanUp, sørg for at EaseAccess24-skriptet ikke blir fjernet fra sidene dine, og ekskluder det fra eventuelle JS-minifiserings-/kombinerings-/utsettelsesalternativer."
       },
       "cloudflare": {
         "recommendation": "I Cloudflare, ekskluder widget-skriptet fra Rocket Loader (taggen vår setter allerede data-cfasync=\"false\") og fra Auto Minify/Mirage hvis aktivert for skript."
@@ -190,14 +188,14 @@
   },
   "eventLog": {
     "title": "Aktivitetslogg",
-    "intro": "En kort historie over helsesjekker og plugin-hendelser. Denne loggen beholdes på nettstedet ditt og sendes aldri noe sted automatisk.",
-    "empty": "Ingen hendelser logget ennå. Kjør en helsesjekk på tilkoblingsfanen for å registrere en.",
-    "clear": "Tøm loggen",
+    "intro": "En kort historikk over helsesjekker og plugin-hendelser. Denne loggen beholdes på nettstedet ditt og sendes aldri noe sted automatisk.",
+    "empty": "Ingen hendelser logget ennå. Kjør en helsesjekk på Tilkobling-fanen for å registrere en.",
+    "clear": "Tøm logg",
     "clearConfirm": "Tøm alle loggede hendelser?",
     "confirmClear": "Ja, tøm",
     "cancel": "Avbryt",
     "cleared": "Aktivitetsloggen er tømt.",
-    "loadError": "Vi kunne ikke laste aktivitetsloggen. Last inn siden på nytt og prøv igjen.",
+    "loadError": "Vi kunne ikke laste inn aktivitetsloggen. Last inn siden på nytt og prøv igjen.",
     "loading": "Laster aktivitet…",
     "types": {
       "health_check": "Helsesjekk",
@@ -214,13 +212,13 @@
     }
   },
   "supportReport": {
-    "title": "Støtterapport",
-    "intro": "Generer en rapport du kan dele med EaseAccess24-støtte. Den inkluderer miljøet ditt, tilkoblingsstatus, oppdagede hurtigbufferplugins og nylige hendelser. Widget-nøkkelen din er maskert, og ingen personlige data er inkludert.",
-    "privacyNote": "Ingenting sendes automatisk. Det er ingen server involvert – du kopierer eller laster ned rapporten nedenfor og deler den selv.",
+    "title": "Supportrapport",
+    "intro": "Generer en rapport du kan dele med EaseAccess24-support. Den inkluderer miljøet ditt, tilkoblingsstatus, oppdagede hurtigbuffer-plugins og nylige hendelser. Widget-nøkkelen din er maskert, og ingen personlige data er inkludert.",
+    "privacyNote": "Ingenting sendes automatisk. Det er ingen server involvert — du kopierer eller laster ned rapporten nedenfor og deler den selv.",
     "generate": "Generer rapport",
     "regenerate": "Generer på nytt",
     "generating": "Genererer…",
-    "previewLabel": "Rapportforhåndsvisning (nøyaktig hva som vil bli kopiert eller lastet ned)",
+    "previewLabel": "Forhåndsvisning av rapport (nøyaktig hva som vil bli kopiert eller lastet ned)",
     "copy": "Kopier",
     "copied": "Kopiert",
     "copyFailed": "Kopiering er ikke tilgjengelig i denne nettleseren. Bruk nedlasting i stedet.",
@@ -234,55 +232,54 @@
     "wpCompat": "WordPress-kompatibilitet",
     "phpMin": "PHP minimum",
     "testedUpTo": "Testet opp til",
-    "supportStatus": "Supportstatus",
+    "supportStatus": "Støttestatus",
     "supportStatusActive": "Aktivt støttet"
   },
   "faq": {
-    "title": "Hjelp og vanlige spørsmål",
+    "title": "Hjelp og FAQ",
     "intro": "Svar på vanlige spørsmål om tilkobling og feilsøking av widgeten.",
-    "learnMore": "Lær mer",
+    "learnMore": "Les mer",
     "items": {
       "findKey": {
-        "q": "Hvor finner jeg widgetnøkkelen min?",
-        "a": "Logg inn på app.easeaccess24.com, åpne Integrate-delen, og kopier widgetnøkkelen din (eller hele skriptutdraget). Lim den inn i Connection-fanen – vi henter nøkkelen fra et utdrag for deg."
+        "q": "Hvor finner jeg min Widget Key?",
+        "a": "Logg inn på app.easeaccess24.com, åpne Integrasjonsdelen og kopier din Widget Key (eller hele skriptsnutten). Lim den inn i Tilkobling-fanen – vi henter nøkkelen ut av en snutt for deg."
       },
       "notShowing": {
         "q": "Widgeten vises ikke – hva bør jeg sjekke?",
-        "a": "Kjør en helsesjekk i Connection-fanen. Den forteller deg om skriptet er lagt til, nåbart, og om widgeten faktisk vises. De vanligste årsakene er at domenet ikke er lagt til i dashbordet ditt, feil nøkkel, eller et hurtigbufferplugin som fjerner skriptet."
+        "a": "Kjør en Helsenivåsjekk i Tilkobling-fanen. Den forteller deg om skriptet er lagt til, om det er tilgjengelig, og om widgeten faktisk vises. De vanligste årsakene er at domenet ikke er lagt til i dashbordet ditt, feil nøkkel, eller at et cache-plugin fjerner skriptet."
       },
       "cachePlugin": {
-        "q": "Jeg bruker et plugin for hurtigbuffer eller optimalisering. Vil det forårsake konflikter?",
-        "a": "Det kan det. Skripttaggen vår ber vanlige plugins om å hoppe over den, men noen oppsett krever fortsatt en manuell unntak. Sjekk Compatibility-fanen for anbefalinger per plugin. Vi endrer aldri innstillingene til et annet plugin for deg."
+        "q": "Jeg bruker et cache- eller optimaliserings-plugin. Vil det være en konflikt?",
+        "a": "Det kan det være. Skript-taggen vår ber vanlige plugins om å hoppe over den, men noen oppsett krever fortsatt en manuell unntakelse. Sjekk Kompatibilitets-fanen for anbefalinger per plugin. Vi endrer aldri innstillingene til et annet plugin for deg."
       },
       "stagingLocalhost": {
         "q": "Fungerer widgeten på staging eller localhost?",
-        "a": "Widgeten vises bare på domener som er autorisert for widgetnøkkelen din, så den vil vanligvis ikke vises på staging eller localhost. Dette er forventet og ikke en pluginfeil – test på ditt aktive, autoriserte domene."
+        "a": "Widgeten vises kun på domener som er autorisert for din Widget Key, så den vil vanligvis ikke vises på staging eller localhost. Dette er forventet og ikke en plugin-feil – test på ditt live, autoriserte domene."
       },
       "dataPrivacy": {
         "q": "Hvilke data lagrer eller sender dette pluginet?",
-        "a": "Pluginet lagrer widgetnøkkelen din og innstillinger på ditt eget nettsted, pluss en kort lokal aktivitetslogg. Det foretar ingen automatiske anrop til EaseAccess24 utover å legge til widgetskriptet og, under en helsesjekk, teste om skriptet er nåbart. Supportrapporter deles kun av deg, manuelt."
+        "a": "Pluginet lagrer din Widget Key og innstillinger på ditt eget nettsted, pluss en kort lokal aktivitetslogg. Det foretar ingen automatiske kall til EaseAccess24 utover å legge til widget-skriptet og, under en Helsenivåsjekk, teste om skriptet er tilgjengelig. Støtterapporter deles kun av deg, manuelt."
       },
       "removeData": {
         "q": "Hvordan fjerner jeg alle plugin-data?",
-        "a": "Konfigurasjonen din beholdes når du deaktiverer slik at du kan reaktivere senere. For å fjerne alt, aktiver «Fjern alle EaseAccess24-data» før du sletter pluginet, og slett det deretter fra Plugins-skjermen."
+        "a": "Konfigurasjonen din beholdes når du deaktiverer, slik at du kan reaktivere senere. For å fjerne alt, aktiver «Fjern alle EaseAccess24-data» før du sletter pluginet, og slett det deretter fra Plugins-skjermen."
       }
     }
   },
   "settings": {
     "languageLabel": "Språk",
-    "languageAria": "Grensespråk",
     "dataTitle": "Data og personvern",
     "removeDataLabel": "Fjern alle EaseAccess24-data når pluginet slettes",
-    "removeDataHelp": "Når dette er aktivert, slettes også widgetnøkkelen, innstillingene og aktivitetsloggen din når pluginet slettes. La det være av for å beholde konfigurasjonen for en fremtidig reinstallasjon. Temamappen din blir aldri berørt.",
+    "removeDataHelp": "Når dette er aktivert, vil sletting av pluginet også fjerne din Widget Key, innstillinger og aktivitetslogg. La dette stå av for å beholde konfigurasjonen for en fremtidig reinstallasjon. Tema-filene dine blir aldri berørt.",
     "saved": "Lagret",
     "saveError": "Vi klarte ikke å lagre innstillingene dine. Sjekk tilkoblingen din og prøv igjen.",
     "loadError": "Vi klarte ikke å laste inn innstillingene dine. Last inn siden på nytt og prøv igjen."
   },
   "footer": {
-    "tagline": "Vi gjør nettet tilgjengelig for alle.",
+    "tagline": "Bidrar til å gjøre nettstedet ditt mer tilgjengelig.",
     "madeBy": "Laget av EaseAccess24",
     "platform": "EaseAccess24-plattformen",
-    "docs": "Support og dokumentasjon",
+    "docs": "Støtte",
     "privacyLink": "Personvernerklæring",
     "reportIssueLink": "Rapporter et problem",
     "copyright": "© {{year}} EaseAccess24"
