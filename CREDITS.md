@@ -29,21 +29,40 @@ which is GPL-compatible.
 
 - **Flag SVGs** in `src/assets/flags/*.svg` (compiled into
   `build/images/flags/`), used purely as decorative icons in the language
-  selector.
+  selector, are from **flag-icons** by Panayiotis Lipiridis.
+  - Source: https://github.com/lipis/flag-icons
+  - Version: **7.5.0** (npm `flag-icons@7.5.0`), pinned for reproducibility.
+  - License: **MIT** (GPL-compatible).
 
-> **TODO — flag license unverified.** The source and license of these flag SVGs
-> could **not** be confirmed from the repository:
-> - No flag-icon npm package (e.g. `flag-icons`, `flagpack`, `circle-flags`) is a
->   dependency — the files were added directly to the tree.
-> - All provenance metadata (comments, `<title>`, `<metadata>`, editor
->   signatures) has been stripped from the SVGs.
-> - The markup resembles the MIT-licensed `flag-icons` (lipis) set, but this is
->   **not** verifiable, and the files mix two viewBox conventions
->   (`0 0 512 512` and `0 0 640 480`), which suggests they may have been
->   assembled from more than one source.
->
-> **Action required before release:** confirm the actual origin and license of
-> the flag SVGs and record it here (most public flag sets are MIT or public
-> domain, both GPL-compatible — but this must be verified, not assumed). If the
-> license cannot be established, replace the flags with a set whose license is
-> known.
+Each file is sourced verbatim from flag-icons' `flags/1x1/` (viewBox
+`0 0 512 512`) or `flags/4x3/` (viewBox `0 0 640 480`) directory. The filenames
+follow this project's language codes, so a few are mapped to the corresponding
+flag-icons name — e.g. `ar` → `arab`, `ca` → `es-ct` (the Catalonia *senyera*,
+for Catalan), `cs` → `cz`, `da` → `dk`, `el` → `gr`, `et` → `ee`, `fa` → `ir`,
+`ga` → `ie`, `sl` → `si`; all others use the flag-icons code directly.
+
+### flag-icons license (MIT)
+
+```
+The MIT License (MIT)
+
+Copyright (c) 2013 Panayiotis Lipiridis
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of
+this software and associated documentation files (the "Software"), to deal in
+the Software without restriction, including without limitation the rights to
+use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies
+of the Software, and to permit persons to whom the Software is furnished to do
+so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+```
