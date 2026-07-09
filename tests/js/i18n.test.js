@@ -64,7 +64,7 @@ describe( 'i18n launch-language registry', () => {
 
 	it( 'also falls back cleanly for an RTL language with no JSON', async () => {
 		await changeLanguage( 'ar' );
-		expect( t( 'common.retry' ) ).toBe( 'Retry' );
+		expect( t( 'actions.retry' ) ).toBe( 'Run check again' );
 		await changeLanguage( 'en' );
 	} );
 } );

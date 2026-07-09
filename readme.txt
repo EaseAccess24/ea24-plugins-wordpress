@@ -109,10 +109,12 @@ platform.
 
 == Screenshots ==
 
-1. Connect screen — paste your Widget Key or a full script snippet.
-2. Connected dashboard with the on-demand Health Check.
-3. Health Check results: plain-language diagnostics and a transparency checklist.
-4. Activity log and user-initiated Support Report with preview.
+1. Connect your site — paste your Widget Key or a full script snippet to link your site to EaseAccess24.
+2. Connection dashboard — connected & healthy status with live Health Check results.
+3. Compatibility tab — detects cache/optimization plugins (e.g. WP Rocket) and recommends safe exclusions.
+4. Activity log — a local, timestamped history of health checks and plugin events.
+5. Support tab — plugin information, one-click Support Report generation, and the opt-in data-removal control.
+6. Help & FAQ — built-in answers to common connection and troubleshooting questions.
 
 == Changelog ==
 

@@ -11,6 +11,7 @@
 /.editorconfig
 /.claude
 /SETUP-INSTRUCTIONS.txt
+/README.md
 
 # Local dev environment
 /.wp-env.json
@@ -45,6 +46,9 @@
 /artifacts
 /test-results
 /playwright-report
+
+# Translation QA artifacts (not needed at runtime)
+/languages/_report.json
 
 # Logs & OS cruft
 *.log
