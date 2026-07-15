@@ -2,8 +2,9 @@
 /**
  * SDK loader.
  *
- * Injects exactly one external, async widget SDK <script> into <head> when a
- * Widget Key is stored. This is the only place the plugin prints a raw tag.
+ * Enqueues exactly one external, async widget SDK <script> into <head> when a
+ * Widget Key is stored, via wp_enqueue_script() + the script_loader_tag filter
+ * (the WordPress-sanctioned way to attach custom attributes to a script tag).
  *
  * @package EaseAccess24\Accessibility
  */
@@ -15,7 +16,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 /**
- * Prints the widget SDK script on the front end.
+ * Enqueues the widget SDK script on the front end.
  *
  * The plugin validates nothing: it emits the SDK tag and lets the SDK/platform
  * handle key, domain and subscription checks at load time.
@@ -28,17 +29,12 @@ class SdkLoader {
 	const SDK_URL = 'https://widget.easeaccess24.com/sdk.js';
 
 	/**
-	 * DOM id of the injected script. Gives the health probe and duplicate
-	 * detection (later phases) a stable element to look for.
+	 * Script handle and DOM id of the injected script. Gives the health probe
+	 * and duplicate detection a stable element to look for. Also used as the
+	 * script_loader_tag filter's own rendered id (WordPress core would
+	 * otherwise append "-js" to the handle for the id attribute).
 	 */
 	const SCRIPT_ID = 'easeaccess24-sdk';
-
-	/**
-	 * Guards against printing the tag more than once per request.
-	 *
-	 * @var bool
-	 */
-	private $printed = false;
 
 	/**
 	 * Build the external SDK URL for a given Widget Key.
@@ -65,53 +61,74 @@ class SdkLoader {
 	 * Hook into WordPress.
 	 */
 	public function register() {
-		add_action( 'wp_head', array( $this, 'print_sdk_script' ) );
+		// Priority 20: HealthCheck enqueues the probe on wp_enqueue_scripts at the
+		// default priority (10) and its console-capture logic depends on printing
+		// before the SDK tag. Both now print via the same wp_print_head_scripts
+		// call, so enqueue order (not hook priority) decides print order — this
+		// keeps the SDK enqueued after the probe, every time.
+		add_action( 'wp_enqueue_scripts', array( $this, 'enqueue_sdk_script' ), 20 );
+		add_filter( 'script_loader_tag', array( $this, 'filter_script_tag' ), 10, 2 );
 	}
 
 	/**
-	 * Print the single async SDK script tag into <head>.
+	 * Enqueue the SDK script for printing in <head>.
 	 *
 	 * Emits nothing when no Widget Key is stored. No inline configuration is
-	 * printed — only the external script with the key in its query string.
+	 * enqueued — only the external script with the key in its query string.
 	 */
-	public function print_sdk_script() {
-		if ( $this->printed ) {
-			return;
-		}
-
+	public function enqueue_sdk_script() {
 		$key = Connection::get_widget_key();
 
 		if ( '' === $key ) {
 			return;
 		}
 
-		$this->printed = true;
+		// $ver = null is intentional, not an oversight: it avoids WordPress
+		// appending its own "?ver=" query string, preserving the exact
+		// "?key=..." URL the SDK requires. in_footer = false keeps it in
+		// <head>, matching the previous raw-tag placement.
+		// phpcs:ignore WordPress.WP.EnqueuedResourceParameters.MissingVersion
+		wp_enqueue_script( self::SCRIPT_ID, esc_url( self::url_for( $key ) ), array(), null, false );
+	}
 
-		$url = self::url_for( $key );
+	/**
+	 * Re-apply the SDK tag's required attributes via script_loader_tag.
+	 *
+	 * Data-* attributes are non-destructive hints that tell common
+	 * cache/optimizer plugins to leave this tag alone. They never alter other
+	 * scripts and are ignored by hosts that do not recognize them:
+	 *   - data-cfasync="false"  -> Cloudflare Rocket Loader skips it.
+	 *   - data-no-optimize="1"  -> Autoptimize / Perfmatters / LiteSpeed.
+	 *   - data-no-defer="1"     -> prevents defer/delay rewriting.
+	 *   - data-no-minify="1"    -> WP Rocket skips minification.
+	 *
+	 * The tag is rebuilt from scratch (rather than patched) so the rendered id
+	 * stays exactly self::SCRIPT_ID — WordPress core would otherwise append
+	 * "-js" to the handle, which would break the health probe's selector and
+	 * the e2e assertions that look for this exact id.
+	 *
+	 * @param string $tag    The script tag WordPress generated.
+	 * @param string $handle The script's registered handle.
+	 * @return string
+	 */
+	public function filter_script_tag( $tag, $handle ) {
+		if ( self::SCRIPT_ID !== $handle ) {
+			return $tag;
+		}
 
-		/*
-		 * data-* attributes are non-destructive hints that tell common
-		 * cache/optimizer plugins to leave this tag alone. They never alter
-		 * other scripts and are ignored by hosts that do not recognize them:
-		 *   - data-cfasync="false"  -> Cloudflare Rocket Loader skips it.
-		 *   - data-no-optimize="1"  -> Autoptimize / Perfmatters / LiteSpeed.
-		 *   - data-no-defer="1"     -> prevents defer/delay rewriting.
-		 *   - data-no-minify="1"    -> WP Rocket skips minification.
-		 */
+		$key = Connection::get_widget_key();
 
-		/*
-		 * This is the ONE intentional raw <script> tag the plugin prints (see the
-		 * project's hard rules): a single external, async SDK loader in <head>. It
-		 * cannot go through wp_enqueue_script() because the widget SDK must load
-		 * without WordPress's version query arg or dependency rewriting, and with
-		 * the cache/optimizer data-* hints intact. Output is escaped below. The
-		 * WordPress.WP.EnqueuedResources sniff is excluded for this file in
-		 * phpcs.xml.dist for exactly this reason.
-		 */
-		printf(
+		if ( '' === $key ) {
+			return $tag;
+		}
+
+		// This rebuilds the tag WordPress already enqueued via wp_enqueue_script()
+		// above; it is not a second, unregistered script output.
+		return sprintf(
+			// phpcs:ignore WordPress.WP.EnqueuedResources.NonEnqueuedScript
 			'<script id="%1$s" async src="%2$s" data-cfasync="false" data-no-optimize="1" data-no-defer="1" data-no-minify="1"></script>' . "\n",
 			esc_attr( self::SCRIPT_ID ),
-			esc_url( $url )
+			esc_url( self::url_for( $key ) )
 		);
 	}
 }
