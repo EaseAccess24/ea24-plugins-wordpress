@@ -25,7 +25,7 @@ class SdkLoader {
 	/**
 	 * Base URL of the widget SDK. The Widget Key is appended as a query arg.
 	 */
-	const SDK_URL = 'https://widget.easeaccess24.com/sdk.js';
+	const SDK_URL = 'https://dev-widget.easeaccess24.com/sdk.js';
 
 	/**
 	 * DOM id of the injected script. Gives the health probe and duplicate
