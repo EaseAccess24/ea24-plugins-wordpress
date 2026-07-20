@@ -43,16 +43,6 @@
 		<exclude name="WordPress.Files.FileName"/>
 	</rule>
 
-	<!--
-		The SDK loader prints the ONE intentional raw <script> tag the plugin is
-		allowed to emit (a single external, async loader in <head>) — it cannot use
-		wp_enqueue_script() without breaking the widget. Output is escaped; the
-		NonEnqueuedScript sniff is a false positive here only.
-	-->
-	<rule ref="WordPress.WP.EnqueuedResources.NonEnqueuedScript">
-		<exclude-pattern>includes/class-sdk-loader.php</exclude-pattern>
-	</rule>
-
 	<!-- Enforce our global prefix so nothing collides with other plugins. -->
 	<rule ref="WordPress.NamingConventions.PrefixAllGlobals">
 		<properties>
