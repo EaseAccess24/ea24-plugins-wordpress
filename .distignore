@@ -48,7 +48,11 @@
 /test-results
 /playwright-report
 
-# Translation QA artifacts (not needed at runtime)
+# Translation QA artifacts (not needed at runtime).
+# NOTE: this file governs the WordPress.org deploy (10up/action-wordpress-plugin-deploy
+# excludes from it). `wp-scripts plugin-zip` ignores .distignore entirely — it
+# packs a fixed allowlist that includes languages/** — so a locally built ZIP
+# still contains this report. Strip it if you hand that ZIP to anyone.
 /languages/_report.json
 
 # Logs & OS cruft
