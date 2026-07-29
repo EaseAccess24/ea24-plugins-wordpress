@@ -46,13 +46,14 @@ test.describe( 'Lifecycle', () => {
 			data: { key: 'E2ELIFE1' },
 		} );
 
-		// Active + key saved → the SDK tag is injected.
+		// Active + key saved → the SDK tag is enqueued. WordPress renders the id
+		// as "<handle>-js" for enqueued scripts.
 		await page.goto( '/' );
-		await expect( page.locator( '#easeaccess24-sdk' ) ).toHaveCount( 1 );
+		await expect( page.locator( '#easeaccess24-sdk-js' ) ).toHaveCount( 1 );
 
-		// Deactivated → no injection at all (wp_head hook is gone).
+		// Deactivated → nothing enqueued (the plugin's hooks are gone).
 		await setPluginStatus( requestUtils, 'inactive' );
 		await page.goto( '/' );
-		await expect( page.locator( '#easeaccess24-sdk' ) ).toHaveCount( 0 );
+		await expect( page.locator( '#easeaccess24-sdk-js' ) ).toHaveCount( 0 );
 	} );
 } );

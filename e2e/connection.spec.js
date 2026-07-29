@@ -54,7 +54,8 @@ test.describe( 'Connection', () => {
 
 		await page.goto( '/' );
 
-		const sdk = page.locator( '#easeaccess24-sdk' );
+		// WordPress renders the id as "<handle>-js" for enqueued scripts.
+		const sdk = page.locator( '#easeaccess24-sdk-js' );
 		await expect( sdk ).toHaveCount( 1 );
 		await expect( sdk ).toHaveAttribute(
 			'src',
@@ -81,7 +82,7 @@ test.describe( 'Connection', () => {
 
 		// The injected tag carries only the extracted key, proving extraction.
 		await page.goto( '/' );
-		await expect( page.locator( '#easeaccess24-sdk' ) ).toHaveAttribute(
+		await expect( page.locator( '#easeaccess24-sdk-js' ) ).toHaveAttribute(
 			'src',
 			/\/sdk\.js\?key=SNIP456$/
 		);

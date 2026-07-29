@@ -5,6 +5,7 @@
 # Version control / project meta
 /.git
 /.github
+/docs
 /.gitignore
 /.gitattributes
 /.distignore

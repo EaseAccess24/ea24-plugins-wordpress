@@ -3,7 +3,7 @@
  * Plugin Name:       EaseAccess24 Accessibility
  * Description:       Connects your WordPress site to the EaseAccess24 accessibility platform: paste your Widget Key, inject the widget SDK, and run an on-demand health check.
  * Version:           1.0.0
- * Requires at least: 6.0
+ * Requires at least: 6.3
  * Requires PHP:      7.4
  * Tested up to:      7.0
  * Author:            EaseAccess24
