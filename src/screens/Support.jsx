@@ -19,13 +19,14 @@ import { downloadFile } from '../utils/download';
 const TXT_FILENAME = 'easeaccess24-support-report.txt';
 const JSON_FILENAME = 'easeaccess24-support-report.json';
 
-// Static plugin-info values: no PHP constants are exposed for these (only
-// plain docblock comments in the plugin header), and they change at most
-// once per release, so a hardcoded string is acceptable here. Only the
-// version below is read from already-exposed bootstrap data.
-const WP_COMPAT_VALUE = '6.0 and above';
-const PHP_MIN_VALUE = '7.4 or higher';
-const TESTED_UP_TO_VALUE = 'WordPress 7.0';
+// These used to be hardcoded here and silently went stale when the plugin's
+// WordPress floor was raised — the screen kept advertising the old version. They
+// now come from the plugin header via bootstrap data (Admin::plugin_info()), so
+// the header is the single source of truth. The fallbacks only cover a missing
+// bootstrap payload, and deliberately show nothing rather than a stale number.
+function compatValue( raw, suffix ) {
+	return raw ? `${ raw }${ suffix }` : '—';
+}
 
 export default function Support() {
 	const [ status, setStatus ] = useState( 'idle' ); // 'idle' | 'generating'
@@ -133,6 +134,7 @@ export default function Support() {
 	const boot =
 		( typeof window !== 'undefined' && window.easeAccess24Data ) || {};
 	const version = boot.version || '';
+	const info = boot.pluginInfo || {};
 
 	return (
 		<div className="ea24-mx-auto ea24-max-w-[740px]">
@@ -150,17 +152,19 @@ export default function Support() {
 					</InfoRow>
 					<InfoRow label={ t( 'pluginInfo.wpCompat' ) }>
 						<span className="ea24-text-sm ea24-font-semibold ea24-text-ea24-body">
-							{ WP_COMPAT_VALUE }
+							{ compatValue( info.requiresWp, ' and above' ) }
 						</span>
 					</InfoRow>
 					<InfoRow label={ t( 'pluginInfo.phpMin' ) }>
 						<span className="ea24-text-sm ea24-font-semibold ea24-text-ea24-body">
-							{ PHP_MIN_VALUE }
+							{ compatValue( info.requiresPhp, ' or higher' ) }
 						</span>
 					</InfoRow>
 					<InfoRow label={ t( 'pluginInfo.testedUpTo' ) }>
 						<span className="ea24-text-sm ea24-font-semibold ea24-text-ea24-body">
-							{ TESTED_UP_TO_VALUE }
+							{ info.testedUpTo
+								? `WordPress ${ info.testedUpTo }`
+								: '—' }
 						</span>
 					</InfoRow>
 					<InfoRow label={ t( 'pluginInfo.supportStatus' ) } last>

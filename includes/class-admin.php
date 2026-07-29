@@ -139,6 +139,9 @@ class Admin {
 				'sdkUrl'           => SdkLoader::url_for( $key ),
 				'healthCheckNonce' => wp_create_nonce( HealthCheck::NONCE_ACTION ),
 				'version'          => EASEACCESS24_VERSION,
+				// Support-screen facts read from the plugin header, never
+				// duplicated in JS — see self::plugin_info().
+				'pluginInfo'       => self::plugin_info(),
 				'locale'           => get_user_locale(),
 				// Active UI language + the shipped translation bundles. i18next is
 				// initialized from these on the JS side (src/i18n). Both launch
@@ -180,6 +183,34 @@ class Admin {
 		return array(
 			'isLocalhost' => $is_localhost,
 			'isStaging'   => $is_staging && ! $is_localhost,
+		);
+	}
+
+	/**
+	 * Read the support-relevant values straight out of the plugin header.
+	 *
+	 * The Support screen shows "WordPress compatibility", "PHP minimum" and
+	 * "Tested up to". These used to be hardcoded in the React screen, which
+	 * silently went stale the moment the header's floor was raised — the UI kept
+	 * advertising the old version. Reading the header itself makes it impossible
+	 * for the two to disagree: the header is the same thing WordPress.org parses.
+	 *
+	 * @return array<string,string> { requiresWp, requiresPhp, testedUpTo }
+	 */
+	public static function plugin_info() {
+		$headers = get_file_data(
+			EASEACCESS24_FILE,
+			array(
+				'requiresWp'  => 'Requires at least',
+				'requiresPhp' => 'Requires PHP',
+				'testedUpTo'  => 'Tested up to',
+			)
+		);
+
+		return array(
+			'requiresWp'  => (string) $headers['requiresWp'],
+			'requiresPhp' => (string) $headers['requiresPhp'],
+			'testedUpTo'  => (string) $headers['testedUpTo'],
 		);
 	}
 }
