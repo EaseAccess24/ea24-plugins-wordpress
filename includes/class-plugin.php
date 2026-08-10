@@ -41,7 +41,6 @@ final class Plugin {
 	 * Register module hooks.
 	 */
 	private function __construct() {
-		( new I18n() )->register();
 		( new Settings() )->register();
 		( new Admin() )->register();
 		( new SdkLoader() )->register();

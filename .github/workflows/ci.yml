@@ -56,6 +56,20 @@ jobs:
         steps:
             - uses: actions/checkout@v4
 
+            # PHPUnit runs inside the wp-env tests container, whose plugin dir is
+            # this repo (see .wp-env.json mapping). The WP test bootstrap needs the
+            # yoast/phpunit-polyfills library from vendor/, so install Composer deps
+            # on the host BEFORE starting wp-env — the mapped vendor/ then satisfies
+            # tests/php/bootstrap.php inside the container.
+            - name: Set up PHP
+              uses: shivammathur/setup-php@v2
+              with:
+                  php-version: '7.4'
+                  tools: composer
+
+            - name: Install Composer dependencies
+              run: composer install --prefer-dist --no-progress
+
             - name: Set up Node
               uses: actions/setup-node@v4
               with:

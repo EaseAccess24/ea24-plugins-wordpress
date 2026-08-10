@@ -1,10 +1,10 @@
 === EaseAccess24 Accessibility ===
 Contributors: easeaccess24
 Tags: accessibility, a11y, wcag, widget, ada
-Requires at least: 6.0
+Requires at least: 6.3
 Tested up to: 7.0
 Requires PHP: 7.4
-Stable tag: 0.1.0
+Stable tag: 1.0.0
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -118,10 +118,10 @@ platform.
 
 == Changelog ==
 
-= 0.1.0 =
+= 1.0.0 =
 * Initial release.
 * Widget Key input with extraction from a pasted script snippet.
-* Single async SDK `<script>` injection into `<head>`.
+* Single async SDK script enqueued into `<head>` via `wp_enqueue_script()`.
 * On-demand, client-side Health Check with plain-language diagnostics, reason
   codes, and a transparency checklist.
 * Duplicate-widget and cache/optimizer interference detection.
@@ -133,5 +133,5 @@ platform.
 
 == Upgrade Notice ==
 
-= 0.1.0 =
+= 1.0.0 =
 Initial release of EaseAccess24 Accessibility.

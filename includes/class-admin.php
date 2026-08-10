@@ -35,9 +35,6 @@ class Admin {
 	public function register() {
 		add_action( 'admin_menu', array( $this, 'register_menu' ) );
 		add_action( 'admin_enqueue_scripts', array( $this, 'enqueue_assets' ) );
-		// De-clutter our own screen only: strip other plugins'/themes' promo
-		// notices so the app UI is not buried. Core notices are preserved.
-		add_action( 'current_screen', array( $this, 'suppress_foreign_notices' ) );
 	}
 
 	/**
@@ -142,6 +139,9 @@ class Admin {
 				'sdkUrl'           => SdkLoader::url_for( $key ),
 				'healthCheckNonce' => wp_create_nonce( HealthCheck::NONCE_ACTION ),
 				'version'          => EASEACCESS24_VERSION,
+				// Support-screen facts read from the plugin header, never
+				// duplicated in JS — see self::plugin_info().
+				'pluginInfo'       => self::plugin_info(),
 				'locale'           => get_user_locale(),
 				// Active UI language + the shipped translation bundles. i18next is
 				// initialized from these on the JS side (src/i18n). Both launch
@@ -158,129 +158,6 @@ class Admin {
 				'compatibility'    => Compatibility::detect(),
 			)
 		);
-	}
-
-	/**
-	 * Remove foreign (third-party plugin/theme) admin notices on OUR screen only.
-	 *
-	 * Many plugins (CookieYes, WP Rocket, TGM installers, …) inject promo notices
-	 * on every wp-admin page via `admin_notices` / `all_admin_notices`, which
-	 * bury our single-purpose app UI. This runs only when the current screen is
-	 * our page (matched by the captured page hook suffix) and removes only the
-	 * callbacks that originate from OTHER plugins or themes. Genuine WordPress
-	 * core notices (update nags, plugin errors) live in wp-admin/wp-includes and
-	 * are therefore left untouched, and nothing is affected on any other screen.
-	 *
-	 * @param \WP_Screen $screen Current admin screen.
-	 */
-	public function suppress_foreign_notices( $screen ) {
-		if ( empty( $this->hook_suffix )
-			|| ! isset( $screen->id )
-			|| $screen->id !== $this->hook_suffix
-		) {
-			return;
-		}
-
-		$this->remove_third_party_notices( 'admin_notices' );
-		$this->remove_third_party_notices( 'all_admin_notices' );
-	}
-
-	/**
-	 * Strip third-party callbacks from a notice hook, keeping WordPress core.
-	 *
-	 * @param string $hook Hook name ('admin_notices' | 'all_admin_notices').
-	 */
-	private function remove_third_party_notices( $hook ) {
-		global $wp_filter;
-
-		if ( empty( $wp_filter[ $hook ] ) || empty( $wp_filter[ $hook ]->callbacks ) ) {
-			return;
-		}
-
-		// Snapshot: we mutate the hook while iterating.
-		$by_priority = $wp_filter[ $hook ]->callbacks;
-
-		foreach ( $by_priority as $priority => $callbacks ) {
-			foreach ( $callbacks as $callback ) {
-				$file = $this->callback_source_file( $callback['function'] );
-
-				if ( $file && $this->is_foreign_file( $file ) ) {
-					remove_action( $hook, $callback['function'], $priority );
-				}
-			}
-		}
-	}
-
-	/**
-	 * Resolve the file a hook callback is defined in, or null if undeterminable.
-	 *
-	 * Wrapped in try/catch so a callback we cannot reflect on never fatals — we
-	 * simply leave that notice in place (fail safe, not fail loud).
-	 *
-	 * @param callable $callback The hook callback.
-	 * @return string|null Absolute file path, or null.
-	 */
-	private function callback_source_file( $callback ) {
-		try {
-			if ( $callback instanceof \Closure ) {
-				return ( new \ReflectionFunction( $callback ) )->getFileName();
-			}
-			if ( is_string( $callback ) ) {
-				if ( false !== strpos( $callback, '::' ) ) {
-					list( $class, $method ) = explode( '::', $callback, 2 );
-					return ( new \ReflectionMethod( $class, $method ) )->getFileName();
-				}
-				if ( function_exists( $callback ) ) {
-					return ( new \ReflectionFunction( $callback ) )->getFileName();
-				}
-				return null;
-			}
-			if ( is_array( $callback ) && isset( $callback[0], $callback[1] ) ) {
-				$class = is_object( $callback[0] ) ? get_class( $callback[0] ) : $callback[0];
-				return ( new \ReflectionMethod( $class, $callback[1] ) )->getFileName();
-			}
-		} catch ( \Throwable $e ) {
-			return null;
-		}
-
-		return null;
-	}
-
-	/**
-	 * Whether a file belongs to another plugin/theme (i.e. not WP core, not us).
-	 *
-	 * Core lives under wp-admin/wp-includes and never matches the plugin/theme
-	 * roots, so it is preserved. Our own plugin is explicitly excluded too.
-	 *
-	 * @param string $file Absolute file path.
-	 * @return bool True if the file is a third-party plugin/theme file.
-	 */
-	private function is_foreign_file( $file ) {
-		$file = wp_normalize_path( $file );
-
-		// Never treat our own files as foreign.
-		if ( defined( 'EASEACCESS24_PATH' )
-			&& 0 === strpos( $file, wp_normalize_path( EASEACCESS24_PATH ) )
-		) {
-			return false;
-		}
-
-		$roots = array();
-		if ( defined( 'WP_PLUGIN_DIR' ) ) {
-			$roots[] = wp_normalize_path( WP_PLUGIN_DIR );
-		}
-		if ( defined( 'WPMU_PLUGIN_DIR' ) ) {
-			$roots[] = wp_normalize_path( WPMU_PLUGIN_DIR );
-		}
-		$roots[] = wp_normalize_path( get_theme_root() );
-
-		foreach ( $roots as $root ) {
-			if ( $root && 0 === strpos( $file, $root ) ) {
-				return true;
-			}
-		}
-
-		return false;
 	}
 
 	/**
@@ -306,6 +183,34 @@ class Admin {
 		return array(
 			'isLocalhost' => $is_localhost,
 			'isStaging'   => $is_staging && ! $is_localhost,
+		);
+	}
+
+	/**
+	 * Read the support-relevant values straight out of the plugin header.
+	 *
+	 * The Support screen shows "WordPress compatibility", "PHP minimum" and
+	 * "Tested up to". These used to be hardcoded in the React screen, which
+	 * silently went stale the moment the header's floor was raised — the UI kept
+	 * advertising the old version. Reading the header itself makes it impossible
+	 * for the two to disagree: the header is the same thing WordPress.org parses.
+	 *
+	 * @return array<string,string> { requiresWp, requiresPhp, testedUpTo }
+	 */
+	public static function plugin_info() {
+		$headers = get_file_data(
+			EASEACCESS24_FILE,
+			array(
+				'requiresWp'  => 'Requires at least',
+				'requiresPhp' => 'Requires PHP',
+				'testedUpTo'  => 'Tested up to',
+			)
+		);
+
+		return array(
+			'requiresWp'  => (string) $headers['requiresWp'],
+			'requiresPhp' => (string) $headers['requiresPhp'],
+			'testedUpTo'  => (string) $headers['testedUpTo'],
 		);
 	}
 }

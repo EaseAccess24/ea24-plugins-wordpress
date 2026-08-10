@@ -75,4 +75,35 @@ class Test_HealthCheck extends TestCase {
 
 		unset( $_GET[ HealthCheck::QUERY_VAR ] );
 	}
+
+	/**
+	 * The probe looks the SDK element up with document.getElementById( sdkScriptId ),
+	 * so that value must be the id WordPress actually renders — which is the script
+	 * handle plus a "-js" suffix, not the bare handle.
+	 *
+	 * This is guarded because the failure is silent and misleading rather than loud:
+	 * a stale id makes the probe report the SDK as missing AND count our own tag as a
+	 * foreign duplicate, surfacing as a false "optimizer interference" plus a
+	 * "possible duplicate widget" warning in the admin UI.
+	 */
+	public function test_probe_config_uses_the_rendered_sdk_element_id() {
+		$this->login_as_admin();
+		Connection::save_widget_key( 'DEMO-WIDGET-KEY' );
+
+		$_GET[ HealthCheck::QUERY_VAR ] = wp_create_nonce( HealthCheck::NONCE_ACTION );
+
+		( new HealthCheck() )->register();
+		do_action( 'wp_enqueue_scripts' );
+
+		$data = (string) wp_scripts()->registered[ HealthCheck::PROBE_HANDLE ]->extra['data'];
+
+		$this->assertSame(
+			SdkLoader::SCRIPT_HANDLE . '-js',
+			SdkLoader::SCRIPT_ID,
+			'The rendered id must stay in step with how WordPress derives it.'
+		);
+		$this->assertStringContainsString( '"sdkScriptId":"easeaccess24-sdk-js"', $data );
+
+		unset( $_GET[ HealthCheck::QUERY_VAR ] );
+	}
 }
