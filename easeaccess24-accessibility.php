@@ -2,10 +2,10 @@
 /**
  * Plugin Name:       EaseAccess24 Accessibility
  * Description:       Connects your WordPress site to the EaseAccess24 accessibility platform: paste your Widget Key, inject the widget SDK, and run an on-demand health check.
- * Version:           1.0.0
+ * Version:           1.0.1
  * Requires at least: 6.3
  * Requires PHP:      7.4
- * Tested up to:      7.0
+ * Tested up to:      7.1
  * Author:            EaseAccess24
  * Author URI:        https://easeaccess24.com/
  * License:           GPL-2.0-or-later
@@ -26,7 +26,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 /**
  * Plugin constants. Prefixed with EASEACCESS24_ to avoid collisions.
  */
-define( 'EASEACCESS24_VERSION', '1.0.0' );
+define( 'EASEACCESS24_VERSION', '1.0.1' );
 define( 'EASEACCESS24_FILE', __FILE__ );
 define( 'EASEACCESS24_PATH', plugin_dir_path( __FILE__ ) );
 define( 'EASEACCESS24_URL', plugin_dir_url( __FILE__ ) );
