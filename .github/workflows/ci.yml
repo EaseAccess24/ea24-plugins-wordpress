@@ -18,7 +18,7 @@ jobs:
         name: Lint & unit tests
         runs-on: ubuntu-latest
         steps:
-            - uses: actions/checkout@v4
+            - uses: actions/checkout@v7
 
             # --- PHP: CodeSniffer against the project ruleset (phpcs.xml.dist) ---
             - name: Set up PHP
@@ -36,7 +36,7 @@ jobs:
 
             # --- JavaScript: ESLint + Jest unit tests ---
             - name: Set up Node
-              uses: actions/setup-node@v4
+              uses: actions/setup-node@v7
               with:
                   node-version: 18
                   cache: npm
@@ -54,7 +54,7 @@ jobs:
         name: Build, PHPUnit & Playwright e2e
         runs-on: ubuntu-latest
         steps:
-            - uses: actions/checkout@v4
+            - uses: actions/checkout@v7
 
             # PHPUnit runs inside the wp-env tests container, whose plugin dir is
             # this repo (see .wp-env.json mapping). The WP test bootstrap needs the
@@ -71,7 +71,7 @@ jobs:
               run: composer install --prefer-dist --no-progress
 
             - name: Set up Node
-              uses: actions/setup-node@v4
+              uses: actions/setup-node@v7
               with:
                   node-version: 18
                   cache: npm
@@ -97,7 +97,7 @@ jobs:
 
             - name: Upload Playwright report
               if: ${{ !cancelled() }}
-              uses: actions/upload-artifact@v4
+              uses: actions/upload-artifact@v7
               with:
                   name: playwright-report
                   path: playwright-report/
