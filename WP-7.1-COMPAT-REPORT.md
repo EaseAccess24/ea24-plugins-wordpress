@@ -407,13 +407,17 @@ It probably deserves its own commit.
 - **SDK tag absence on wp-admin screens** — see §4. The `id` guard is unit-tested
   and no attribute leakage was observed on the front end, but a logged-in
   admin-page source check was not run.
-- **Stale context documentation.** `.claude/context/` describes a
-  `script_loader_tag` filter and a WordPress **6.0** floor. The repository
-  actually uses `wp_script_attributes` and **6.3**. The docs are wrong, not the
-  code: `script_loader_tag` was the round-2 rejection cause, and 6.3 is required
-  by both core features the loader depends on. `.claude/context/01-tech-stack.md`
-  and `04-constraints.md` need correcting — **a separate change, not done on this
-  branch.**
+- **Stale context documentation — since corrected.** The docs described a raw
+  script tag printed in `wp_head`, and a WordPress **6.0** floor. Neither matched
+  the repository, which enqueues via `wp_enqueue_script()` with
+  `'strategy' => 'async'` plus a `wp_script_attributes` filter guarded on
+  `$attributes['id']`, on a **6.3** floor required by both of those APIs. The docs
+  were wrong, not the code — and the hand-built tag they described was the
+  round-2 rejection cause, so following them would have reintroduced it.
+  **Corrected after the 1.0.1 release:** eight edits across five files under
+  `.claude/context/` and `.claude/README-FOR-CLAUDE.md`. `.claude/prompts/` and
+  `.claude/AUDIT-REPORT.md` were deliberately left unchanged, as the historical
+  record of what was originally specified and what was true when that audit ran.
 - **PHP 8.5 at runtime.** Covered statically (§8) and at runtime only up to
   8.4.24. No 8.5 container was exercised.
 - **Sniff coverage above PHP 8.0 in the committed toolchain.** The pinned
